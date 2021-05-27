@@ -1,0 +1,872 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Bastos2014}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
+           family={Bastos},
+           familyi={B\bibinitperiod},
+           given={Jorge\bibnamedelima Tiago},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidade de São Paulo / Hasselt University}%
+      }
+      \strng{namehash}{7dca03449cb038020b8b7c85e9df6804}
+      \strng{fullhash}{7dca03449cb038020b8b7c85e9df6804}
+      \strng{bibnamehash}{7dca03449cb038020b8b7c85e9df6804}
+      \strng{authorbibnamehash}{7dca03449cb038020b8b7c85e9df6804}
+      \strng{authornamehash}{7dca03449cb038020b8b7c85e9df6804}
+      \strng{authorfullhash}{7dca03449cb038020b8b7c85e9df6804}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{{Análise Estratégica da Segurança viária no Brasil: Pesquisa de índices e Indicadores}}
+      \field{type}{phdthesis}
+      \field{year}{2014}
+      \field{pages}{290}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Bastos - 2014 - An{\'{a}}lise Estrat{\'{e}}gica da Seguran{\c{c}}a vi{\'{a}}ria no Brasil Pesquisa de {\'{i}}ndices e Indicadores.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Bhalla2016}{incollection}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e865f6bda2cd66fd3fbad885a69b347d}{%
+           family={Bhalla},
+           familyi={B\bibinitperiod},
+           given={Kavi},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=174e01077fe132fb8250cd990634ceef}{%
+           family={Mohan},
+           familyi={M\bibinitperiod},
+           given={Dinesh},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{96294765920467bd574d94318a77a72b}
+      \strng{fullhash}{96294765920467bd574d94318a77a72b}
+      \strng{bibnamehash}{96294765920467bd574d94318a77a72b}
+      \strng{authorbibnamehash}{96294765920467bd574d94318a77a72b}
+      \strng{authornamehash}{96294765920467bd574d94318a77a72b}
+      \strng{authorfullhash}{96294765920467bd574d94318a77a72b}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Transport Planning and Traffic Safety}
+      \field{title}{{Understanding the Road Safety Performance of OECD Countries}}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1201/b19737-2
+      \endverb
+    \endentry
+    \entry{Brasil2001}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
+           family={Brasil},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília}%
+      }
+      \list{publisher}{1}{%
+        {Presidência da República}%
+      }
+      \strng{namehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{fullhash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{bibnamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authorbibnamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authornamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authorfullhash}{aa43becf0d21463be7540bf3b40bf243}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Lei n{º} 10.257, de 10 de julho de 2001 - Estatuto das Cidades}}
+      \field{year}{2001}
+    \endentry
+    \entry{Brasil2012}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
+           family={Brasil},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília}%
+      }
+      \list{publisher}{1}{%
+        {Presidência da República}%
+      }
+      \strng{namehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{fullhash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{bibnamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authorbibnamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authornamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authorfullhash}{aa43becf0d21463be7540bf3b40bf243}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Lei n{º} 12.587, de 3 de janeiro de 2012 - Lei da Mobilidade}}
+      \field{year}{2012}
+    \endentry
+    \entry{Brasil1997}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
+           family={Brasil},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{fullhash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{bibnamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authorbibnamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authornamehash}{aa43becf0d21463be7540bf3b40bf243}
+      \strng{authorfullhash}{aa43becf0d21463be7540bf3b40bf243}
+      \field{extraname}{3}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Código de trânsito Brasileiro}
+      \field{title}{{Lei n{º} 9.503, de 23 de setembro de 1997}}
+      \field{year}{1997}
+    \endentry
+    \entry{Brunsdon2010}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=98a0d3717c90f41d9846124c798cbfc3}{%
+           family={Brunsdon},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e52298fded4bb1d9451c3fce80fe1bf7}{%
+           family={Fotheringham},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi Stewart},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fbe89bd5b3987d9f87a564cedd2ebe6}{%
+           family={Charlton},
+           familyi={C\bibinitperiod},
+           given={Martin\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{66bdcdd2498a216337bde2af0ae301af}
+      \strng{fullhash}{66bdcdd2498a216337bde2af0ae301af}
+      \strng{bibnamehash}{66bdcdd2498a216337bde2af0ae301af}
+      \strng{authorbibnamehash}{66bdcdd2498a216337bde2af0ae301af}
+      \strng{authornamehash}{66bdcdd2498a216337bde2af0ae301af}
+      \strng{authorfullhash}{66bdcdd2498a216337bde2af0ae301af}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00167363}
+      \field{journaltitle}{Geographical Analysis}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{4}
+      \field{title}{{Geographically Weighted Regression: A Method for Exploring Spatial Nonstationarity}}
+      \field{volume}{28}
+      \field{year}{1996}
+      \field{pages}{281\bibrangedash 298}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/j.1538-4632.1996.tb00936.x
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1111/j.1538-4632.1996.tb00936.x
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1111/j.1538-4632.1996.tb00936.x
+      \endverb
+    \endentry
+    \entry{DeVos2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c4c98454616a178ca3f7808872daed38}{%
+           family={{De Vos}},
+           familyi={D\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f24aa7334fd0c65c5e96510112b1f66}{%
+           family={Witlox},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Ltd}%
+      }
+      \strng{namehash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \strng{fullhash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \strng{bibnamehash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \strng{authorbibnamehash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \strng{authornamehash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \strng{authorfullhash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09666923}
+      \field{journaltitle}{Journal of Transport Geography}
+      \field{title}{{Transportation policy as spatial planning tool; Reducing urban sprawl by increasing travel costs and clustering infrastructure and public transportation}}
+      \field{volume}{33}
+      \field{year}{2013}
+      \field{pages}{117\bibrangedash 125}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.jtrangeo.2013.09.014
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/De Vos, Witlox - 2013 - Transportation policy as spatial planning tool Reducing urban sprawl by increasing travel costs and clustering i.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.jtrangeo.2013.09.014
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.jtrangeo.2013.09.014
+      \endverb
+      \keyw{Flanders,Land use,Residential location choice,Road pricing,Transit-oriented development,Travel behaviour}
+    \endentry
+    \entry{Elvik2009}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
+           family={Elvik},
+           familyi={E\bibinitperiod},
+           given={Rune},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c41bcfc098b594e42a0fa0d132f052d}{%
+           family={H{ø}ye},
+           familyi={H\bibinitperiod},
+           given={Alena},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e234bc03f44eba14e5c052677ad6370f}{%
+           family={Vaa},
+           familyi={V\bibinitperiod},
+           given={Truls},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5846513e0670fd59e4ef3ab7d79ee1d}{%
+           family={S{ø}rensen},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Bingley}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Group Publishing Limited}%
+      }
+      \strng{namehash}{999adf5aac01cfacd1caa1a9748c5eb5}
+      \strng{fullhash}{acbe366e750e980b9191fd72c7ec30dc}
+      \strng{bibnamehash}{999adf5aac01cfacd1caa1a9748c5eb5}
+      \strng{authorbibnamehash}{999adf5aac01cfacd1caa1a9748c5eb5}
+      \strng{authornamehash}{999adf5aac01cfacd1caa1a9748c5eb5}
+      \strng{authorfullhash}{acbe366e750e980b9191fd72c7ec30dc}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second edi}
+      \field{isbn}{9781848552500}
+      \field{title}{{The Handbook of Road Safety Measures}}
+      \field{year}{2009}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Elvik et al. - 2009 - The Handbook of Road Safety Measures.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Ewing2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b4be218f366717b817a9ec46bfc7f9a2}{%
+           family={Ewing},
+           familyi={E\bibinitperiod},
+           given={Reid},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
+           family={Dumbaugh},
+           familyi={D\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4835395dd56ef11d79b3fffd9d6866e0}
+      \strng{fullhash}{4835395dd56ef11d79b3fffd9d6866e0}
+      \strng{bibnamehash}{4835395dd56ef11d79b3fffd9d6866e0}
+      \strng{authorbibnamehash}{4835395dd56ef11d79b3fffd9d6866e0}
+      \strng{authornamehash}{4835395dd56ef11d79b3fffd9d6866e0}
+      \strng{authorfullhash}{4835395dd56ef11d79b3fffd9d6866e0}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The article reaches two conclusions counter to accepted transportation engineering theory. First, the traffic environments of dense urban areas appear to be safer than the lower-volume environments of the suburbs. The reason is that many fewer miles are driven on a per capita basis, and the driving that is done is at lower speeds that are less likely to produce fatal crashes. Second, at least in dense urban areas, less-"forgiving" design treatments - such as narrow lanes, traffic-calming measures, and street trees close to the roadway - appear to enhance a roadway's safety performance when compared to more conventional roadway designs. The reason for this apparent anomaly may be that less-forgiving designs provide drivers with clear information on safe and appropriate operating speeds. {©} 2009 SAGE Publications.}
+      \field{issn}{08854122}
+      \field{journaltitle}{Journal of Planning Literature}
+      \field{number}{4}
+      \field{title}{{The built environment and traffic safety: A review of empirical evidence}}
+      \field{volume}{23}
+      \field{year}{2009}
+      \field{pages}{347\bibrangedash 367}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1177/0885412209335553
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Ewing, Dumbaugh - 2009 - The built environment and traffic safety A review of empirical evidence.pdf:pdf
+      \endverb
+      \keyw{Built environment,Street design,Traffic safety,Urban sprawl}
+    \endentry
+    \entry{Gollini2013}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=3f189e61e7672236da1a837cb8134b25}{%
+           family={Gollini},
+           familyi={G\bibinitperiod},
+           given={Isabella},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66af269a1b29bcbc8312ffb1ece00ccd}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Binbin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18e010ad6f178bf5db6f777026b33739}{%
+           family={Charlton},
+           familyi={C\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=246b981b6500d867366bd3930ac52e74}{%
+           family={Brunsdon},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e97ccc4a9d97f443fcd29d15e25c4e7e}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{401ec4b1c69878e26c97cadcbeb87983}
+      \strng{fullhash}{d0462e0697d8cbde042740902960570c}
+      \strng{bibnamehash}{401ec4b1c69878e26c97cadcbeb87983}
+      \strng{authorbibnamehash}{401ec4b1c69878e26c97cadcbeb87983}
+      \strng{authornamehash}{401ec4b1c69878e26c97cadcbeb87983}
+      \strng{authorfullhash}{d0462e0697d8cbde042740902960570c}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Spatial statistics is a growing discipline providing important analytical techniques in a wide range of disciplines in the natural and social sciences. In the R package GWmodel, we introduce techniques from a particular branch of spatial statistics, termed geographically weighted (GW) models. GW models suit situations when data are not described well by some global model, but where there are spatial regions where a suitably localised calibration provides a better description. The approach uses a moving window weighting technique, where localised models are found at target locations. Outputs are mapped to provide a useful exploratory tool into the nature of the data spatial heterogeneity. GWmodel includes: GW summary statistics, GW principal components analysis, GW regression, GW regression with a local ridge compensation, and GW regression for prediction; some of which are provided in basic and robust forms.}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{title}{{GWmodel: an R Package for Exploring Spatial Heterogeneity using Geographically Weighted Models}}
+      \field{year}{2013}
+      \verb{eprint}
+      \verb 1306.0413
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1306.0413
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1306.0413
+      \endverb
+    \endentry
+    \entry{Lindley1987}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a85acbe3d53663769cf20b0728b505c}{%
+           family={Lindley},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Palgrave Macmillan UK}%
+      }
+      \strng{namehash}{2a85acbe3d53663769cf20b0728b505c}
+      \strng{fullhash}{2a85acbe3d53663769cf20b0728b505c}
+      \strng{bibnamehash}{2a85acbe3d53663769cf20b0728b505c}
+      \strng{authorbibnamehash}{2a85acbe3d53663769cf20b0728b505c}
+      \strng{authornamehash}{2a85acbe3d53663769cf20b0728b505c}
+      \strng{authorfullhash}{2a85acbe3d53663769cf20b0728b505c}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The New Palgrave Dictionary of Economics}
+      \field{title}{{Regression and Correlation Analysis}}
+      \field{year}{1987}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1057/978-1-349-95121-5_1873-1
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/Downloads/lindley1987.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1057/978-1-349-95121-5_1873-1
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1057/978-1-349-95121-5_1873-1
+      \endverb
+    \endentry
+    \entry{MinistryofHealth2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6084931ef0755c98128315da26980b25}{%
+           family={{Ministry of Health}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ministry of Health}%
+      }
+      \strng{namehash}{6084931ef0755c98128315da26980b25}
+      \strng{fullhash}{6084931ef0755c98128315da26980b25}
+      \strng{bibnamehash}{6084931ef0755c98128315da26980b25}
+      \strng{authorbibnamehash}{6084931ef0755c98128315da26980b25}
+      \strng{authornamehash}{6084931ef0755c98128315da26980b25}
+      \strng{authorfullhash}{6084931ef0755c98128315da26980b25}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{DATASUS}
+      \field{title}{{Number of traffic fatalities in Brazil}}
+      \field{year}{2020}
+    \endentry
+    \entry{Obelheiro2020}{article}{}
+      \name{author}{5}{ul=3}{%
+        {{un=0,uniquepart=base,hash=70014628bf3ff62312e3e69c939c1620}{%
+           family={Obelheiro},
+           familyi={O\bibinitperiod},
+           given={Marta\bibnamedelima Rodrigues},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c66fc75d201070f030f4b8d800c34a99}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Alan\bibnamedelima Ricardo},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=7f5e2b75aae32af8eb78a1c6dcf3c746}{%
+           family={Nodari},
+           familyi={N\bibinitperiod},
+           given={Christine\bibnamedelima Tessele},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ff8ffbf2b13ffd65a46b19a143439c6}{%
+           family={Cybis},
+           familyi={C\bibinitperiod},
+           given={Helena\bibnamedelimb Beatriz\bibnamedelima Bettella},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a1299e1af9c041a690a815b28329570}{%
+           family={Lindau},
+           familyi={L\bibinitperiod},
+           given={Luis\bibnamedelima Antonio},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b61c8c830dd166ee38333201400c06d}
+      \strng{fullhash}{a562d19baab1912f0e9e941c5de3f7fd}
+      \strng{bibnamehash}{7b61c8c830dd166ee38333201400c06d}
+      \strng{authorbibnamehash}{7b61c8c830dd166ee38333201400c06d}
+      \strng{authornamehash}{7b61c8c830dd166ee38333201400c06d}
+      \strng{authorfullhash}{a562d19baab1912f0e9e941c5de3f7fd}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09666923}
+      \field{journaltitle}{Journal of Transport Geography}
+      \field{month}{4}
+      \field{title}{{A new zone system to analyze the spatial relationships between the built environment and traffic safety}}
+      \field{volume}{84}
+      \field{year}{2020}
+      \field{pages}{102699}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jtrangeo.2020.102699
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Obelheiro et al. - 2020 - A new zone system to analyze the spatial relationships between the built environment and traffic safety.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S096669231930225X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S096669231930225X
+      \endverb
+    \endentry
+    \entry{Obelheiro2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=70014628bf3ff62312e3e69c939c1620}{%
+           family={Obelheiro},
+           familyi={O\bibinitperiod},
+           given={Marta\bibnamedelima Rodrigues},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9fdd8154bb643ef01dc8a531791188e}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Alan\bibnamedelima Ricardo},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f5e2b75aae32af8eb78a1c6dcf3c746}{%
+           family={Nodari},
+           familyi={N\bibinitperiod},
+           given={Christine\bibnamedelima Tessele},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{be2ddada532d61373a940c2492c2ae14}
+      \strng{fullhash}{be2ddada532d61373a940c2492c2ae14}
+      \strng{bibnamehash}{be2ddada532d61373a940c2492c2ae14}
+      \strng{authorbibnamehash}{be2ddada532d61373a940c2492c2ae14}
+      \strng{authornamehash}{be2ddada532d61373a940c2492c2ae14}
+      \strng{authorfullhash}{be2ddada532d61373a940c2492c2ae14}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{33{º} Congresso de Pesquisa e Ensino em Transporte da ANPET}
+      \field{title}{{UMA ANÁLISE DA RELAÇÃO ENTRE AMBIENTE CONSTRUÍDO E ACIDENTES DE TRÂNSITO EM ZONAS DE TRÁFEGO}}
+      \field{year}{2019}
+      \field{pages}{3696\bibrangedash 3707}
+      \range{pages}{12}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Obelheiro, Silva, Nodari - 2019 - UMA AN{\'{A}}LISE DA RELA{\c{C}}{\~{A}}O ENTRE AMBIENTE CONSTRU{\'{I}}DO E ACIDENTES DE TR{\^{A}}NSITO EM ZONAS DE TR{\'{A}}FEGO.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Wei2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=151a6f7b2c9241f0fbad9aa684165f52}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61f6ea13c90706cd92aea72b141c40ad}{%
+           family={Lovegrove},
+           familyi={L\bibinitperiod},
+           given={Gordon},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
+      \strng{fullhash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
+      \strng{bibnamehash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
+      \strng{authorbibnamehash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
+      \strng{authornamehash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
+      \strng{authorfullhash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis \& Prevention}
+      \field{month}{12}
+      \field{title}{{An empirical tool to evaluate the safety of cyclists: Community based, macro-level collision prediction models using negative binomial regression}}
+      \field{volume}{61}
+      \field{year}{2013}
+      \field{pages}{129\bibrangedash 137}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.aap.2012.05.018
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512002023
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512002023
+      \endverb
+    \endentry
+    \entry{WHO2011}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+           family={WHO},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {World Health Organization}%
+      }
+      \strng{namehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{fullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{bibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Global Plan for the Decade of Action for Road Safety 2011-2020}}
+      \field{type}{techreport}
+      \field{year}{2011}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2018 - Global status report on road safety.pdf:pdf
+      \endverb
+    \endentry
+    \entry{WHO2013}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+           family={WHO},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {World Health Organization}%
+      }
+      \strng{namehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{fullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{bibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Global status report on road safety 2013 - supporting a decade of action}}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 318}
+      \range{pages}{318}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2013 - Global status report on road safety 2013 - supporting a decade of action.pdf:pdf;:home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2013 - Global status report on road safety 2013 - supporting a decade of action(2).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.who.int/about/licensing/copyright_form/en/index.html
+      \endverb
+      \verb{url}
+      \verb http://www.who.int/about/licensing/copyright_form/en/index.html
+      \endverb
+    \endentry
+    \entry{WHO2018}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+           family={WHO},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{fullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{bibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Global status report on road safety 2018}}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2018 - Global status report on road safety 2018.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Yu2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3c5e34e663c8455a6c3e5ed5467f616f}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Chia-Yuan},
+           giveni={C\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=788cd26629b5d0f2395a1d1bae7b5be7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Minjie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9647007a60745ce22f4a0f67f0af0064}
+      \strng{fullhash}{9647007a60745ce22f4a0f67f0af0064}
+      \strng{bibnamehash}{9647007a60745ce22f4a0f67f0af0064}
+      \strng{authorbibnamehash}{9647007a60745ce22f4a0f67f0af0064}
+      \strng{authornamehash}{9647007a60745ce22f4a0f67f0af0064}
+      \strng{authorfullhash}{9647007a60745ce22f4a0f67f0af0064}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0739-456X}
+      \field{journaltitle}{Journal of Planning Education and Research}
+      \field{month}{3}
+      \field{title}{{Local Variations in the Impacts of Built Environments on Traffic Safety}}
+      \field{year}{2017}
+      \field{pages}{0739456X1769603}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1177/0739456X17696035
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.1177/0739456X17696035
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.1177/0739456X17696035
+      \endverb
+    \endentry
+    \entry{Zhang2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6a165ce81f591eac196e5172d5663081}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Cuiping},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac82c9ecb71af52d080d155a1861a839}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Xuedong},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=789bd3fede6cddb7ab809344084f58ed}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db783c9bdbfbac31bbe382285c7e7858}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Meiwu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f4985f62fdaf493b38831420edc165cf}
+      \strng{fullhash}{04a1b4374a475958c2f05f4a58374468}
+      \strng{bibnamehash}{f4985f62fdaf493b38831420edc165cf}
+      \strng{authorbibnamehash}{f4985f62fdaf493b38831420edc165cf}
+      \strng{authornamehash}{f4985f62fdaf493b38831420edc165cf}
+      \strng{authorfullhash}{04a1b4374a475958c2f05f4a58374468}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Traffic safety evaluation for traffic analysis zones (TAZs) plays an important role in transportation safety planning and long-range transportation plan development. This paper aims to present a comprehensive analysis of zonal safety evaluation. First, several criteria are proposed to measure the crash risk at zonal level. Then these criteria are integrated into one measure-average hazard index (AHI), which is used to identify unsafe zones. In addition, the study develops a negative binomial regression model to statistically estimate significant factors for the unsafe zones. The model results indicate that the zonal crash frequency can be associated with several social-economic, demographic, and transportation system factors. The impact of these significant factors on zonal crash is also discussed. The finding of this study suggests that safety evaluation and estimation might benefit engineers and decision makers in identifying high crash locations for potential safety improvements.}
+      \field{issn}{1024-123X}
+      \field{journaltitle}{Mathematical Problems in Engineering}
+      \field{title}{{Crash Prediction and Risk Evaluation Based on Traffic Analysis Zones}}
+      \field{volume}{2014}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1155/2014/987978
+      \endverb
+      \verb{urlraw}
+      \verb http://www.hindawi.com/journals/mpe/2014/987978/
+      \endverb
+      \verb{url}
+      \verb http://www.hindawi.com/journals/mpe/2014/987978/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,235 @@
+% !TeX root = ./main.tex
+
+% ------------------------------------------------------------------------------------
+
+\chapter[INTRODUCTION]{INTRODUCTION}
+
+Very general introduction why the topic of the thesis is relevant.
+
+Road Safety Scenario in the World and in Brazil.
+
+Urban planning having a crucial role on the road safety in cities.
+
+\section{OBJECTIVES}
+
+In the context of the urban planning practices and road safety management, the main objective of this research is to investigate the influence of demographic, socioeconomic, land use and constructed environment on the speeding practices as a risk factor on the frequency and severity of road crashes. The scenario of the study is the city of Curitiba, capital of the state of Paraná, Brazil. The correlation (or lack of) will be analyzed with the use of the Geographically Weighted Regression statistical model.
+
+With the use of speeding data collected from drivers that participated in a Naturalistic Driving Study (NDS) performed in Curitiba, this investigation aims to contribute to the knowledge of its relationship with variables from the built environment (BE). These BE variables are categorized by \textcite{Ewing2009} in five groups called '5D': density, diversity, design, destination accessibility and distance to transit. In addition to these variables, this study aims to relate the income as a socioeconomic variable to the speeding as well.
+
+As co-benefits in the investigation, this thesis aims to offer some level of insight regarding the development and update of speed control in cities, considering the operational and structural planning guidelines for the road systems and land use. With these factors in mind, it could be possible to present new ideas to the planning practices in Curitiba, regarding mobility plans, master plans and zoning laws.
+    
+
+\section{JUSTIFICATION}
+
+The excess of traffic speed performed by vehicles on urban environments are a main risk factor in the chance and severity of road crashes, considering there is great volume of interaction between motorized and vulnerable users \cite{Elvik2009}. Considering the direct relationship between the mobility, the land use patterns and the built environment \cite{DeVos2013}, it is important to investigate these factors in search of improvements in the management process of the road safety. Speeding, which is on the primary causes for traffic crashes \cite{WHO2013} can be better studied and analyzed by the collection of naturalistic data.
+
+Having in mind that most of the traffic crashes and conflicts happens in cities \cite{WHO2018}, as a consequence of the fast process of urbanization in the last decades, it is crucial to create safer conditions in these localities. In Brazil, the management of the mobility is attributed to the municipalities \cite{Brasil1997}. Therefore, the management of road safety, as a task inherent to traffic management, is also an attribution of the municipalities. It is necessary to have in mind the issues of road safety in cities when conducting the process of urban planning. Having this in mind, it was established laws in which this integration between the planning process by the municipalities and the sustainable mobility are clearly defined: The Statute of the Cities \cite{Brasil2001} and The Law of the Urban Mobility \cite{Brasil2012}.    
+
+The built environment can affect the traffic safety through three main mediators: the traffic volumes, traffic conflicts and traffic speeds - which can directly affect the crash safety and severity in urban environments \cite{Ewing2009}. Traffic crashes are a final outcome of the problems involving the road safety. Therefore, in order to have a method to analyzed the operational conditions of the traffic safety in cities, it can be beneficial to use a intermediate outcome - or a safety performance indicator (SPI) \cite{Bastos2014}- which can be the amount of speeding that occurs across its territory, in addition to the studies that uses the traffic crashes as dependent variables. 
+
+\section{THESIS STRUCTURE}
+
+General composition of the thesis, giving which chapters the reader should expect
+
+Write this part after completion of chapters 2 and 3
+
+% ------------------------------------------------------------------------------------
+
+\chapter{LITERATURE REVIEW}
+
+%Develop a review based on the theme of the thesis (road safety, city planning, land use ...)
+
+%Identify a gap in the literature I want to fill (Most of the works analyses the road accident as a response variable), assessing the importance of this thesis.
+
+\section{ROAD SAFETY}
+
+% 1. Road safety in the world: OECD countries, the three hypothesis involving development and road safety, how LMIC countries can overcome road safety problems and learn from OECD, relate to socioeconomic development. One of the main death causes in the world (WHO)
+
+Road traffic crashes around the world claims more than 1.3 million lives in each year, representing the eighth leading cause of deaths and causing up to 50 million injuries. Low and middle income countries (LMICs), including Brazil, suffers from traffic crashes death rates three times higher when compared to developed countries \cite{WHO2018}. The increasing number of traffic crashes deaths on LMICs is a consequence of a intense process of motorization that has been occurring in the last decades. To \textcite{Bhalla2016}, it is important to understand the evolution of road safety management on OECD developed countries in order to overcome the road safety problems in LMICs. 
+
+%% present the three hypothesis involving development and road safety and how lmics can overcome this
+
+Over the last century, the road safety performance of the OECD countries showed a consistent pattern. The road traffic death rate (per 100,000 population) in these countries were rising until the 1960s, as seen in \autoref{fig:oecd}. After this period, all countries showed a declining pattern, whilst the LMICs still had a rising pattern due to the rapid growth in their motor vehicle fleets. This behavior of rising and declining trend on the road traffic death rate could be explained by three phenomenons: economic determinism, risk substitution and a political shift in the road safety paradigm \cite{Bhalla2016}.
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{ROAD TRAFFIC RATES IN OECD COUNTRIES}
+    \includegraphics[width=0.8\textwidth]{fig/oecd.png}
+    \label{fig:oecd}
+    \par SOURCE: \textcite{Bhalla2016}.
+\end{figure}
+
+In the scope of economic determinism, the road traffic deaths are defined as a process related to the country development. The rising pattern is associated with the increase in motorization, and the falling happens after a certain level of development, where the countries have the means to start investing in road safety. But this hypothesis has some flaws. This creates an impression that LMICs are not able to invest in road safety before becoming full developed, which is inaccurate. Also, this idea shifts the focus on investment in direct interventions, encouraging the countries to focus on income growth as a strategy for road safety \cite{Bhalla2016}.
+
+As the mobility in general becomes more motorized towards the use of the car, pedestrians starts transitioning into car users. This circumstance is known as risk substitution, where the increase in car users occurs at the same time as the number of pedestrians declines, lowering the exposure to more severe road traffic injuries like the collision between cars and pedestrians and lowering the number of road traffic deaths. But this phenomenon can be imprecise when considering the motorization of LMICs, in which mass transit, motorcycles and other non motorized transports have a greater role on the vehicle fleet \cite{Bhalla2016}.   
+
+A factor that explains this pattern in a more precise way is the political shift in the road safety paradigm that happened on the OECD countries. Before the 1950s, the belief that drivers were the only responsible for the road crashes lead the discussions regarding road safety. Therefore, most of the interventions in road safety management ignored the design and development of the build environment and the vehicles. Between the 1960s and the 1970s, OECD countries started to regulate transport in order to tackle the road safety problems that were rising, establishing new laws and road safety management institution on national e local levels. \cite{Bhalla2016}
+
+% 2. Road Safety historic in Brazil. Death rates evolution ...
+
+%% Brazil standing, absolute value for 2019 (WHO)
+
+According to \textcite{WHO2018}, it was predicted that Brazil would had a road traffic mortality rate (number of deaths per 100,000 inhabitants) of 22.5 in 2016, the highest rate between the south american countries. In 2019 (the last entry available by \textcite{MinistryofHealth2020}), road crashes were responsible for 31.945 deaths. Considering the Decade of Action for Road Safety 2011-2020 \cite{WHO2011}, Brazil will reach the goal of reducing the road traffic deaths in half (comparing to the number projected for 2020, in case of a rising trend in deaths) by the end of the 2010s. \autoref{fig:br_abs} has the time series of road traffic deaths in the last decades.  
+
+%% Plots with absolute values as well.
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{ROAD TRAFFIC DEATHS IN BRAZIL}
+    \includegraphics{fig/brazil_abs.pdf}
+    \label{fig:br_abs}
+    \par SOURCE: \textcite{MinistryofHealth2020}.
+\end{figure}
+
+%% Situation regarding the Decade of Action
+
+The year of 1979 is the earliest official data entry available. Starting in the 1980s, there is a overall rising trend in the numbers of road traffic deaths that reach its peak in 2012, then it starts declining. In 2010, the year before the Decade of Action, Brazil had 42,844 deaths and reached the max value in 2012: 44,812 road traffic deaths. Almost at the end of the decade the number of deaths declined, reaching 31,945. The next plot (\autoref{fig:br_mort}) shows the mortality rate in Brazil, considering the same time span. The time series  
+
+%% Show mortality, gdp and motorization as well; correlation between gdp and motorization (Bastos, 2014; Ferraz et al, 2012)
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{ROAD TRAFFIC MORTALITY RATE IN BRAZIL}
+    \includegraphics{fig/brazil_mort.pdf}
+    \label{fig:br_mort}
+    \par SOURCE: \textcite{MinistryofHealth2020}.
+\end{figure}
+
+%% Explain the relation between deaths and economic situation in Brazil (Ferraz, search in Tiago doctor thesis, ...)
+
+%% Historic of interventions: CTB, 1998; Lei seca, 2012
+
+%% death rates in curitiba (compare to others capitals) -- fatality rate, mortality rate, motorization, gdp)
+
+% 3. Road safety as a public health problem, as a result of the interaction between human, environmental and vehicle factors
+
+% 4. How these problems are divided between roadways and urban environments.
+
+% 5. Main risk factors (WHO, WRI): MPU, seat belt, DUI, speeding (inappropriate speeds (ferraz): focus on urban environments
+
+% 6. Create a hook to the speeding section (next one)
+
+\section{SPEEDING}
+
+% 1. Ashton's curve: speeding regarding severity. Also explain the speeding related to the occurrence of road crashes.
+
+% 2. Speed management in urban environments: roadways have higher operational speeds, but cities show a bigger interaction between vulnerable and non-vulnerable users, in which lower speeds can represent a risk situation for pedestrians and cyclists.
+
+% 3. What influences the speed in urban environments? Relate to speed management policies in general.
+
+% 4. Speeding as a risk behavior problem. (shinar 2017, elvik et al 2009)
+
+% 5. How to collect speeding data: speeding tickets, speed traps (fixed or mobile), researches that considers the accidents reports, behavioral studies, case studies with a local perspective.
+
+\section{SAFETY MANAGEMENT AND THE BUILT ENVIRONMENT}
+
+Present all the available and used indicators. Guide the literature review based on the indicators (which articles are using the same indicators and why - ewing ...)
+
+add ewing, dumbaugh scheme of BE, mediators and safety.
+
+Add description from urban elements (reports passed form Tiago)
+
+Master plan, mobility planning and zoning laws (try to focus on the mobility and road safety, maybe a brief history). --> relating to the previously described elements
+
+\section{NATURALISTIC DRIVING STUDY}
+
+\begin{itemize}
+    \item Introduce the Naturalistic Driving Studies as an alternative for the analysis of behavior. Describe multiple international NDS programs, reference the NDS that analyses the speeding. (this part needs to be well described.)
+    \item categorize the nds programs and compared with the method used in this work. (maybe construct a table)
+    \item Focus on authors that used NDS to study speeding. 
+\end{itemize}
+
+\section{GEOGRAPHICALLY WEIGHTED REGRESSION}
+
+Regression analysis is a tool to investigate the dependency between variables and to predict future parameters based on previous ones. This type of statistical analysis can show the relationship between dependent variables (road accidents or speeding) and independent variables (land use, road design etc.) \cite{Lindley1987}. In investigation of the effects of the constructed environment on the occurrence of crashes in urban areas, negative binomial regression is a traditional model used \cite{Wei2013, Zhang2014}. But the quality of this model is limited by the incapacity of analyzing the spatial dependency and heterogeneity expected to happen on road safety factors related to the urban environment \cite{Obelheiro2019}.
+
+% Explain better why GWR is batter and how the previous studies are less precise. 
+
+To overcome this limitation, the Geographically Weighted Regression (GWR) allows the exploration of relationship between variables on a spatial nonstationarity context. The spatial nonstationarity is a scenario where it is assumed that parameters are not constant across the space. In this thesis context, these parameters are the occurrence of speeding across Curitiba's territory. A global regression model may be incapable of explaining the relationship between sets of variables with a acceptable level of precision in this scenario. The GWR model considers that the nature of the model must alter over space to reflect the structure within the data, allowing the actual parameters for each location in space to be modeled and mapped \cite{Brunsdon2010}.
+
+The basic form of GW linear regression is based on the following equation:\begin{align}
+    y_i = \beta_{i0} + \sum_{k=1}^{m} \beta_{ik} x_{ik} + \epsilon_i \mbox{;}
+    \label{eq:gwr}
+\end{align} where $y_i$ is the dependent variable (speeding) at location $i$, $x_{ik}$ is the value of the $k$th independent variable at location $i$, $m$ is the number of independent variables, $\beta_{i0}$ is the intercept parameter at location $i$, $\beta_{ik}$ is the local regression coefficient for the $k$th parameter at location $i$ and $\epsilon_i$ is the random error at location $i$. The GWR model depends on a spatial weighting function called $w_{ij}$ that controls the contribution of the point $j$ on the calibration of a model for point $i$. The spatial weighting function represents the idea that for each point $i$ there is a bump of influence around it. Considering this "bump", observations closer to $i$ have more influence in the estimation of $i$'s parameters \cite{Brunsdon2010,Gollini2013}.
+
+In the context of a multivariate GW model, these influences are calculated by a weighted least squares approach, described on the following equation: \begin{align}
+    \hat{\beta}_i = (X^T W(u_i,v_i)X)^{-1} X^T W(u_i, v_i)y \mbox{;}
+    \label{eq:wls}
+\end{align} where $X$ is the matrix of the independent variables with a column of 1s (ones) for the intercept, $y$ is the dependent variable vector, $\hat{\beta} = (\beta_{i0},...,\beta_{im})^T$ is the vector of $m + 1$ local regression coefficients and $W_i$ is the diagonal matrix denoting the spatial weighting ($w_{ij}$) of each observed data for regression point $i$ at location $(u_i, v_i)$ (defined by the selected kernel function) \cite{Gollini2013}. The spatial weighting function is also known as the kernel function. This function can have multiple configurations, including Gaussian, Exponential, Boxcar, Bisquare and Tricube configurations, detailed on \autoref{tab:kernel}.
+
+\vspace{\baselineskip}
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{POSSIBLE KERNEL FUNCTIONS}
+    \centering
+    \begin{tabular}{l|l}
+        \hline
+        \multicolumn{1}{c|}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{Equation}}  \\
+        \hline
+        Global Model             & $w_{ij} = 1$                              \\
+        Gaussian \rule{0pt}{3ex} & $w_{ij} = \exp (- \frac{1}{2} (\frac{d_{ij}}{b})^2)$ \\
+        Exponential  \rule{0pt}{4ex} & $w_{ij} = \exp (- \frac{|d_{ij}|}{b})$               \\
+        Boxcar \rule{0pt}{4ex} & $w_{ij} = \begin{cases}
+            1 & \mbox{if } |d_{ij}| < b, \\
+            0 & \mbox{otherwise}
+                                 \end{cases}$                               \\
+        Bisquare \rule{0pt}{4ex} & $w_{ij} = \begin{cases}
+            (1 - (d_{ij}/b)^2)^2 & \mbox{if } |d_{ij}| < b, \\
+            0 & \mbox{otherwise}
+                                 \end{cases}$                               \\
+        Tricube \rule{0pt}{4ex} & $w_{ij} = \begin{cases}
+            (1 - (|d_{ij}|/b)^3)^3 & \mbox{if } |d_{ij}| < b, \\
+            0 & \mbox{otherwise}
+                                 \end{cases}$                               \\
+        \hline
+        \end{tabular}
+    \label{tab:kernel}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: \textcite{Gollini2013}
+\end{table}
+
+\vspace{\baselineskip}
+
+The distance between observations $i$ and $j$ is defined by $d_{ij}$, inside a chosen $b$ bandwidth, which is the key controlling parameter in all kernel functions. The optimal bandwidth can be estimated by a cross-validation function, a process that will be detailed in the section \ref{gwm}. \autoref{fig:kernel} presents the plot of the kernel functions, for a generic bandwidth $b = 1000$, where $w$ is the weight and $d$ is the distance between two observations. As the plot shows, the global kernel function represents a global linear regression, where all the variables are constant across the space.
+
+\vspace{\baselineskip}
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{KERNEL FUNCTIONS PLOT}
+    \includegraphics{fig/kernel.pdf}
+    \label{fig:kernel}
+    \par SOURCE: The Author (2021), based on \textcite{Gollini2013}.
+\end{figure}
+
+\vspace{\baselineskip}
+
+In addition to the different types of kernel functions, the GWR has multiple configurations based on the type of regression: negative binomial (GWNBR), Poisson (GWPR) and Gaussian, which is the basic form of linear GWR described on  \autoref{eq:gwr}. The GWNBR and GWPR models were used by \textcite{Obelheiro2019}; \textcite{Obelheiro2020} and \textcite{Yu2017} to study the impacts of the built environment on the occurrence of road crashes inside urban areas. % cite Li et al, Xu huang, Gomes as another examples. It wasn't possible to find gwr applications of intermediate outcomes of road safety level, like speeding.
+
+In conclusion, GWR is a method that enables the exploration of findings that might otherwise be missed if only a global regression method is applied. It is always important to really check if the GWR model will describe the data better than a global regression model comparing the results from both. All the process of constructing a GWR model and its parameters for this work is described in section \ref{gwm}.
+
+% ----------------------------------------------------------------------------------
+
+\chapter{METHODS}
+
+\section{NATURALISTIC DATA COLLECTION}
+
+\section{DATA PROCESSING}
+
+\section{GEOGRAPHICALLY WEIGHTED MODEL} \label{gwm}
+
+% ----------------------------------------------------------------------------------
+
+\chapter{ANALYSIS AND RESULTS}
+
+% ----------------------------------------------------------------------------------
+
+\chapter{CONCLUSIONS}

@@ -1,0 +1,17 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'main.blg'
+[64] biber:330> INFO - === Wed May 26, 2021, 17:57:48
+[75] Biber.pm:415> INFO - Reading 'main.bcf'
+[144] Biber.pm:952> INFO - Found 20 citekeys in bib section 0
+[157] Biber.pm:4334> INFO - Processing section 0
+[166] Biber.pm:4523> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[167] bibtex.pm:1682> INFO - LaTeX decoding ...
+[193] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
+[194] Utils.pm:384> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
+[348] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[348] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[348] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[348] Biber.pm:4168> INFO - No sort tailoring available for locale 'pt-BR'
+[374] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[385] bbl.pm:754> INFO - Output to main.bbl
+[386] Biber.pm:128> INFO - WARNINGS: 1

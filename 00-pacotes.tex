@@ -1,0 +1,141 @@
+% !TeX root = ./main.tex
+
+% Pacotes básicos
+% ----------------------------------------------------------
+%\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}		    	% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{ifthen}		    	% para montar condicionais
+\usepackage[brazil]{babel}		% para utilizar termos em portugues
+\usepackage[final]{pdfpages}    % para incluir páginas de arquivos pdf
+\usepackage{lipsum}				% para geração de dummy text
+\usepackage{csquotes}
+
+%\usepackage[style=long]{glossaries}
+%\usepackage{abntex2glossaries}
+
+
+\usepackage{cancel} 		% permite representar o cancelamento de termos em texto ou equacoes
+\usepackage{xcolor} 		% cores extendidas
+\usepackage{smartdiagram}   	% gera diagramas a partir de listas
+%\usepackage{float} 		% Para a figura ficar na posição correta
+\usepackage{textcomp} 		% supporte para fontes da Text Companion
+\usepackage{longtable}		% uso de longtable
+\usepackage{amsmath}		% simbolos matematicos
+\usepackage{lscape}		% páginas em paisagem
+\usepackage{multicol}		% mescla de colunas em tabelas
+\usepackage{multirow}		% mescla de linhas em tabelas
+\usepackage{newfloat} 		% criação do indice de quadros
+\usepackage{caption} 		% configura legenda
+	%[format=plain]
+	%\renewcommand\caption[1]{%
+    	%\captionsetup{font=small}	% tamanho da fonte 10pt
+    	%,format=hang
+ 	% \caption{#1}}
+	%\captionsetup{width=0.8\textwidth}
+\captiondelim{-- }
+\captiontitlefont{\small}
+\captionnamefont{\small}
+
+% Pacotes de citações BibLaTeX
+% ----------------------------------------------------------
+\usepackage[style=abnt,
+	backref=true,
+	repeatfields=false,
+	backend=biber,
+	citecounter=true,
+	backrefstyle=three,
+	url=true,
+	language=english]{biblatex}
+
+% Texto padrão para as referências
+% ----------------------------------------------------------
+\DefineBibliographyStrings{brazil}{%
+	 backrefpage  = {Cited on page},		% originally "cited on page"
+	 backrefpages = {Cited on pages},	% originally "cited on pages"
+	 urlfrom      = {Available in},
+}
+
+% Ajusta indentação de Referencias no ToC
+% ----------------------------------------------------------
+\defbibheading{bay}[\bibname]{%
+  \chapter*{#1}%
+  \markboth{#1}{#1}%
+  \addcontentsline{toc}{chapter}
+  {\protect\numberline{}\bibname}
+}
+
+% Formatando o avançao dos títulos no sumário
+% ----------------------------------------------------------
+\makeatletter
+	\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{-12\p@}}}{}{}
+	\pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{-3\p@}}}{}{}
+\makeatother
+
+% Para retirar os símbolos <> da URL
+% ----------------------------------------------------------
+\DeclareFieldFormat{illustrated}{\addspace #1\isdot}%
+%\DeclareFieldFormat{url}{\bibstring{urlform}\addcolon\addspace<\url{#1}>}%
+%\DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon\addspace<\url{#1}>}%
+\DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon \space\addspace{#1}}
+% remove <> em urls de acordo com abnt-6023:2018
+
+% Ajustar o espaço para a formatação da data
+% ----------------------------------------------------------
+\DeclareFieldFormat{urldate}{\bibstring{urlseen}\addcolon\addspace #1}%
+\DeclareFieldFormat*{note}{\addspace #1}%
+
+% Para ajustar o tamanho da fonte do número da primeira página do capítulo
+% comando utilizado na parte textual
+% ----------------------------------------------------------
+\makepagestyle{chapfirst}% Just for the first page of a chapter
+\makeoddhead{chapfirst}{}{}{\footnotesize{\thepage}}
+
+%%criar um novo estilo de cabeçalhos e rodapés
+\makepagestyle{simplestextual}
+  %%cabeçalhos
+  \makeevenhead{simplestextual} %%pagina par
+     {}{}{\footnotesize \thepage}
+
+  \makeoddhead{simplestextual} %%pagina ímpar ou com oneside
+     {}{}{\footnotesize \thepage}
+  %\makeheadrule{simplestextual}{\textwidth}{\normalrulethickness} %linha
+  %% rodapé
+  \makeevenfoot{simplestextual}
+     {}{}{} %%pagina par
+
+  \makeoddfoot{simplestextual} %%pagina ímpar ou com oneside
+     {}{}{}
+
+% Define a formatação dos capítulos póstextuais numerados
+% ----------------------------------------------------------
+\newcommand{\poschap}[1]{
+	\stepcounter{chapter}
+	\markboth{#1}{#1}%
+	\pdfbookmark[2]{#1}{#1}
+	\addtocontents{toc}{\vspace{-0pt}}
+	\addcontentsline{toc}{chapter}{\hspace{14.5mm}\textbf{\appendixname~
+	\thechapter~- #1}}
+	\chapter*{\appendixname\space\space\thechapter~- \uppercase{#1}}%
+	{}
+}
+\newcommand{\refap}[1]{\hyperref[#1]{Apêndice~\ref{#1}}} 	% Referência apÊndices
+% uso do tikz e pgfplots
+% ----------------------------------------------------------
+%\usetikzlibrary{external}
+\usetikzlibrary{arrows,calc,patterns,angles,quotes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+% Define o comando para citação de fontes em elementos gráficos (figuras, imagens,...).
+% ----------------------------------------------------------
+%  AUTOR(ano)
+%
+% parâmetro é a bibkey da fonte
+
+\newcommand{\citefg}[1]{~\citeauthor{#1}(\citeyear{#1})}
