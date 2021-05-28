@@ -41,7 +41,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{13}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -73,6 +73,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{19}{chapter*.13}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{19}{chapter*.14}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}

@@ -284,6 +284,34 @@
       \endverb
       \keyw{Flanders,Land use,Residential location choice,Road pricing,Transit-oriented development,Travel behaviour}
     \endentry
+    \entry{DENATRAN2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b7138f86a9de04acdb66b682a5ac05b}{%
+           family={DENATRAN},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b7138f86a9de04acdb66b682a5ac05b}
+      \strng{fullhash}{8b7138f86a9de04acdb66b682a5ac05b}
+      \strng{bibnamehash}{8b7138f86a9de04acdb66b682a5ac05b}
+      \strng{authorbibnamehash}{8b7138f86a9de04acdb66b682a5ac05b}
+      \strng{authornamehash}{8b7138f86a9de04acdb66b682a5ac05b}
+      \strng{authorfullhash}{8b7138f86a9de04acdb66b682a5ac05b}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Ministério da Infraestrutura}
+      \field{title}{{Estatísticas - Frota de veículos}}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.infraestrutura.gov.br/component/content/article/115-portal-denatran/8552-estat{\'{i}}sticas-frota-de-ve{\'{i}}culos-denatran.html
+      \endverb
+      \verb{url}
+      \verb https://www.infraestrutura.gov.br/component/content/article/115-portal-denatran/8552-estat%7B%5C'%7Bi%7D%7Dsticas-frota-de-ve%7B%5C'%7Bi%7D%7Dculos-denatran.html
+      \endverb
+    \endentry
     \entry{Elvik2009}{book}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
@@ -513,6 +541,12 @@
       \field{booktitle}{DATASUS}
       \field{title}{{Number of traffic fatalities in Brazil}}
       \field{year}{2020}
+      \verb{urlraw}
+      \verb http://www2.datasus.gov.br/DATASUS/index.php?area=02
+      \endverb
+      \verb{url}
+      \verb http://www2.datasus.gov.br/DATASUS/index.php?area=02
+      \endverb
     \endentry
     \entry{Obelheiro2020}{article}{}
       \name{author}{5}{ul=3}{%
