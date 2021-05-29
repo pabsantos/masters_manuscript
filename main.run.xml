@@ -53,19 +53,19 @@
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>standard.bbx</file>
       <file>abnt.bbx</file>
-      <file>authoryear-comp.cbx</file>
+      <file>standard.bbx</file>
       <file>abnt.cbx</file>
+      <file>authoryear-comp.cbx</file>
       <file>biblatex.cfg</file>
-      <file>brazilian.lbx</file>
-      <file>brazilian-abnt.lbx</file>
-      <file>brazil.lbx</file>
       <file>brazil-abnt.lbx</file>
-      <file>spanish.lbx</file>
+      <file>brazilian-abnt.lbx</file>
+      <file>brazilian.lbx</file>
+      <file>brazil.lbx</file>
       <file>spanish-abnt.lbx</file>
-      <file>english.lbx</file>
+      <file>spanish.lbx</file>
       <file>english-abnt.lbx</file>
+      <file>english.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
