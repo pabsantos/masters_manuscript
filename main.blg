@@ -1,17 +1,18 @@
-[0] Config.pm:312> INFO - This is Biber 2.15
-[0] Config.pm:315> INFO - Logfile is 'main.blg'
-[78] biber:330> INFO - === Thu Jun  3, 2021, 13:44:47
-[96] Biber.pm:415> INFO - Reading 'main.bcf'
-[180] Biber.pm:952> INFO - Found 27 citekeys in bib section 0
-[195] Biber.pm:4334> INFO - Processing section 0
-[205] Biber.pm:4523> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[207] bibtex.pm:1682> INFO - LaTeX decoding ...
-[247] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
-[249] Utils.pm:384> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
-[520] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[520] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[520] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
-[520] Biber.pm:4168> INFO - No sort tailoring available for locale 'pt-BR'
-[579] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[604] bbl.pm:754> INFO - Output to main.bbl
-[605] Biber.pm:128> INFO - WARNINGS: 1
+[0] Config.pm:302> INFO - This is Biber 2.9
+[1] Config.pm:305> INFO - Logfile is 'main.blg'
+[73] biber:313> INFO - === sáb jun  5, 2021, 17:06:04
+[134] Biber.pm:371> INFO - Reading 'main.bcf'
+[335] Biber.pm:857> INFO - Found 30 citekeys in bib section 0
+[381] Biber.pm:3981> INFO - Processing section 0
+[434] Biber.pm:4154> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[439] bibtex.pm:1468> INFO - LaTeX decoding ...
+[577] bibtex.pm:1294> INFO - Found BibTeX data source 'referencias.bib'
+[585] Utils.pm:169> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
+[958] Utils.pm:169> WARN - month field 'oct' in entry 'Shinar2007' is not an integer - this will probably not sort properly.
+[1281] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1281] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1282] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[1282] Biber.pm:3815> INFO - No sort tailoring available for locale 'pt-BR'
+[1434] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1499] bbl.pm:720> INFO - Output to main.bbl
+[1500] Biber.pm:110> INFO - WARNINGS: 2

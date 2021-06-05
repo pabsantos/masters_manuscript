@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -21,7 +21,7 @@
   \datalist[entry]{nty/global//global/global}
     \entry{Bastos2014}{thesis}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
+        {{uniquename=0,uniquepart=base,hash=04e4f74e2faf75f5180a4df22ebf8e88}{%
            family={Bastos},
            familyi={B\bibinitperiod},
            given={Jorge\bibnamedelima Tiago},
@@ -29,22 +29,22 @@
            givenun=0}}%
       }
       \list{institution}{1}{%
-        {Universidade de São Paulo / Hasselt University}%
+        {Universidade de S{ã}o Paulo / Hasselt University}%
       }
-      \strng{namehash}{7dca03449cb038020b8b7c85e9df6804}
-      \strng{fullhash}{7dca03449cb038020b8b7c85e9df6804}
-      \strng{bibnamehash}{7dca03449cb038020b8b7c85e9df6804}
-      \strng{authorbibnamehash}{7dca03449cb038020b8b7c85e9df6804}
-      \strng{authornamehash}{7dca03449cb038020b8b7c85e9df6804}
-      \strng{authorfullhash}{7dca03449cb038020b8b7c85e9df6804}
+      \strng{namehash}{04e4f74e2faf75f5180a4df22ebf8e88}
+      \strng{fullhash}{04e4f74e2faf75f5180a4df22ebf8e88}
+      \strng{bibnamehash}{04e4f74e2faf75f5180a4df22ebf8e88}
+      \strng{authorbibnamehash}{04e4f74e2faf75f5180a4df22ebf8e88}
+      \strng{authornamehash}{04e4f74e2faf75f5180a4df22ebf8e88}
+      \strng{authorfullhash}{04e4f74e2faf75f5180a4df22ebf8e88}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{bookpagination}{sheet}
-      \field{title}{{Análise Estratégica da Segurança viária no Brasil: Pesquisa de índices e Indicadores}}
+      \field{title}{{An{á}lise Estrat{é}gica da Seguran{ç}a vi{á}ria no Brasil: Pesquisa de {í}ndices e Indicadores}}
       \field{type}{phdthesis}
       \field{year}{2014}
       \field{pages}{290}
@@ -54,20 +54,20 @@
       \endverb
     \endentry
     \entry{Bastos2020}{book}{}
-      \name{author}{5}{ul=1}{%
-        {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
+      \name{author}{5}{uniquelist=1}{%
+        {{uniquename=0,uniquepart=base,hash=04e4f74e2faf75f5180a4df22ebf8e88}{%
            family={Bastos},
            familyi={B\bibinitperiod},
            given={Jorge\bibnamedelima Tiago},
            giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=6fe3587843bbda84b4373f6e0f8d49b4}{%
+        {{uniquename=0,uniquepart=base,hash=b4cf6f97065e5e5dee07b1dc229b3afa}{%
            family={Garronce},
            familyi={G\bibinitperiod},
            given={Francisco\bibnamedelima Vieira},
            giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=ad01ab047c28d48759a18a202b491073}{%
+        {{uniquename=0,uniquepart=base,hash=b874c946adde273987670063092f90a9}{%
            family={Santos},
            familyi={S\bibinitperiod},
            given={Pedro\bibnamedelimb Augusto\bibnamedelima B.},
@@ -76,13 +76,13 @@
            prefix={dos},
            prefixi={d\bibinitperiod},
            prefixun=0}}%
-        {{un=0,uniquepart=base,hash=7eebf6b35a79365394d6db6ba9130e6f}{%
+        {{uniquename=0,uniquepart=base,hash=725bafeae49e1a5e17172d41d0c56b32}{%
            family={Igarashi},
            familyi={I\bibinitperiod},
-           given={André\bibnamedelima Victor},
+           given={Andr{é}\bibnamedelima Victor},
            giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5f3be2ab671f006782f7cf18210db6fb}{%
+        {{uniquename=0,uniquepart=base,hash=d24673472640a00a09d8a31e0b2f6dda}{%
            family={Andrade},
            familyi={A\bibinitperiod},
            given={Gabriel\bibnamedelimb Antoniassi\bibnamedelima Marrocos},
@@ -98,32 +98,32 @@
       \list{publisher}{1}{%
         {Viva editora}%
       }
-      \strng{namehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
-      \strng{fullhash}{be794fd9e5c39524ff46443ee3afd9e8}
-      \strng{bibnamehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
-      \strng{authorbibnamehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
-      \strng{authornamehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
-      \strng{authorfullhash}{be794fd9e5c39524ff46443ee3afd9e8}
+      \strng{namehash}{34660bd95ff47edcb4de58680ebc6166}
+      \strng{fullhash}{5a3aea5d2c53d9dbc1085d72e4c09692}
+      \strng{bibnamehash}{34660bd95ff47edcb4de58680ebc6166}
+      \strng{authorbibnamehash}{34660bd95ff47edcb4de58680ebc6166}
+      \strng{authornamehash}{34660bd95ff47edcb4de58680ebc6166}
+      \strng{authorfullhash}{5a3aea5d2c53d9dbc1085d72e4c09692}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Desempenho brasileiro na década de ação pela segurança no trânsito: análise, perspectivas e indicadores 2011-2020}}
+      \field{title}{{Desempenho brasileiro na d{é}cada de a{ç}{ã}o pela seguran{ç}a no tr{â}nsito: an{á}lise, perspectivas e indicadores 2011-2020}}
       \field{year}{2020}
       \field{pages}{120}
       \range{pages}{1}
     \endentry
     \entry{Bhalla2016}{incollection}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=e865f6bda2cd66fd3fbad885a69b347d}{%
+        {{uniquename=0,uniquepart=base,hash=e865f6bda2cd66fd3fbad885a69b347d}{%
            family={Bhalla},
            familyi={B\bibinitperiod},
            given={Kavi},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=174e01077fe132fb8250cd990634ceef}{%
+        {{uniquename=0,uniquepart=base,hash=174e01077fe132fb8250cd990634ceef}{%
            family={Mohan},
            familyi={M\bibinitperiod},
            given={Dinesh},
@@ -158,7 +158,7 @@
       \strng{editornamehash}{132df633fdaab24b9706faeb56db4200}
       \strng{editorfullhash}{132df633fdaab24b9706faeb56db4200}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -174,15 +174,15 @@
     \endentry
     \entry{Brasil2001}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
+        {{uniquename=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
            family={Brasil},
            familyi={B\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Brasília}%
+        {Bras{í}lia}%
       }
       \list{publisher}{1}{%
-        {Presidência da República}%
+        {Presid{ê}ncia da Rep{ú}blica}%
       }
       \strng{namehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{fullhash}{aa43becf0d21463be7540bf3b40bf243}
@@ -190,27 +190,26 @@
       \strng{authorbibnamehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{authornamehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{authorfullhash}{aa43becf0d21463be7540bf3b40bf243}
-      \field{extraname}{1}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Lei n{º} 10.257, de 10 de julho de 2001 - Estatuto das Cidades}}
+      \field{title}{{Lei nº 10.257, de 10 de julho de 2001 - Estatuto das Cidades}}
       \field{year}{2001}
     \endentry
     \entry{Brasil2012}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
+        {{uniquename=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
            family={Brasil},
            familyi={B\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Brasília}%
+        {Bras{í}lia}%
       }
       \list{publisher}{1}{%
-        {Presidência da República}%
+        {Presid{ê}ncia da Rep{ú}blica}%
       }
       \strng{namehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{fullhash}{aa43becf0d21463be7540bf3b40bf243}
@@ -218,19 +217,18 @@
       \strng{authorbibnamehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{authornamehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{authorfullhash}{aa43becf0d21463be7540bf3b40bf243}
-      \field{extraname}{2}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Lei n{º} 12.587, de 3 de janeiro de 2012 - Lei da Mobilidade}}
+      \field{title}{{Lei nº 12.587, de 3 de janeiro de 2012 - Lei da Mobilidade}}
       \field{year}{2012}
     \endentry
     \entry{Brasil1997}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
+        {{uniquename=0,uniquepart=base,hash=aa43becf0d21463be7540bf3b40bf243}{%
            family={Brasil},
            familyi={B\bibinitperiod}}}%
       }
@@ -240,32 +238,31 @@
       \strng{authorbibnamehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{authornamehash}{aa43becf0d21463be7540bf3b40bf243}
       \strng{authorfullhash}{aa43becf0d21463be7540bf3b40bf243}
-      \field{extraname}{3}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Código de trânsito Brasileiro}
-      \field{title}{{Lei n{º} 9.503, de 23 de setembro de 1997}}
+      \field{journaltitle}{C{ó}digo de tr{â}nsito Brasileiro}
+      \field{title}{{Lei nº 9.503, de 23 de setembro de 1997}}
       \field{year}{1997}
     \endentry
     \entry{Brunsdon2010}{article}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=98a0d3717c90f41d9846124c798cbfc3}{%
+        {{uniquename=0,uniquepart=base,hash=98a0d3717c90f41d9846124c798cbfc3}{%
            family={Brunsdon},
            familyi={B\bibinitperiod},
            given={Chris},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e52298fded4bb1d9451c3fce80fe1bf7}{%
+        {{uniquename=0,uniquepart=base,hash=4819b6c3a6c8c626a06c23762fe8ee97}{%
            family={Fotheringham},
            familyi={F\bibinitperiod},
            given={A.\bibnamedelimi Stewart},
            giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1fbe89bd5b3987d9f87a564cedd2ebe6}{%
+        {{uniquename=0,uniquepart=base,hash=50a314a22657d17860d1daca33247e4e}{%
            family={Charlton},
            familyi={C\bibinitperiod},
            given={Martin\bibnamedelima E.},
@@ -275,14 +272,14 @@
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{66bdcdd2498a216337bde2af0ae301af}
-      \strng{fullhash}{66bdcdd2498a216337bde2af0ae301af}
-      \strng{bibnamehash}{66bdcdd2498a216337bde2af0ae301af}
-      \strng{authorbibnamehash}{66bdcdd2498a216337bde2af0ae301af}
-      \strng{authornamehash}{66bdcdd2498a216337bde2af0ae301af}
-      \strng{authorfullhash}{66bdcdd2498a216337bde2af0ae301af}
+      \strng{namehash}{57074afc2c1a2ed52809e8b9f4d1238c}
+      \strng{fullhash}{57074afc2c1a2ed52809e8b9f4d1238c}
+      \strng{bibnamehash}{57074afc2c1a2ed52809e8b9f4d1238c}
+      \strng{authorbibnamehash}{57074afc2c1a2ed52809e8b9f4d1238c}
+      \strng{authornamehash}{57074afc2c1a2ed52809e8b9f4d1238c}
+      \strng{authorfullhash}{57074afc2c1a2ed52809e8b9f4d1238c}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -312,13 +309,13 @@
     \endentry
     \entry{DeVos2013}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=c4c98454616a178ca3f7808872daed38}{%
+        {{uniquename=0,uniquepart=base,hash=55759bd6f0bb9bed6deb71ec25d3b0b6}{%
            family={{De Vos}},
            familyi={D\bibinitperiod},
            given={Jonas},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1f24aa7334fd0c65c5e96510112b1f66}{%
+        {{uniquename=0,uniquepart=base,hash=1f24aa7334fd0c65c5e96510112b1f66}{%
            family={Witlox},
            familyi={W\bibinitperiod},
            given={Frank},
@@ -328,14 +325,14 @@
       \list{publisher}{1}{%
         {Elsevier Ltd}%
       }
-      \strng{namehash}{4ee5ee4b23d7edccc4378b091bc9282f}
-      \strng{fullhash}{4ee5ee4b23d7edccc4378b091bc9282f}
-      \strng{bibnamehash}{4ee5ee4b23d7edccc4378b091bc9282f}
-      \strng{authorbibnamehash}{4ee5ee4b23d7edccc4378b091bc9282f}
-      \strng{authornamehash}{4ee5ee4b23d7edccc4378b091bc9282f}
-      \strng{authorfullhash}{4ee5ee4b23d7edccc4378b091bc9282f}
+      \strng{namehash}{a3c64710e7ba683c5ab4a345d0b314b8}
+      \strng{fullhash}{a3c64710e7ba683c5ab4a345d0b314b8}
+      \strng{bibnamehash}{a3c64710e7ba683c5ab4a345d0b314b8}
+      \strng{authorbibnamehash}{a3c64710e7ba683c5ab4a345d0b314b8}
+      \strng{authornamehash}{a3c64710e7ba683c5ab4a345d0b314b8}
+      \strng{authorfullhash}{a3c64710e7ba683c5ab4a345d0b314b8}
       \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -363,7 +360,7 @@
     \endentry
     \entry{DENATRAN2020}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=8b7138f86a9de04acdb66b682a5ac05b}{%
+        {{uniquename=0,uniquepart=base,hash=8b7138f86a9de04acdb66b682a5ac05b}{%
            family={DENATRAN},
            familyi={D\bibinitperiod}}}%
       }
@@ -374,13 +371,13 @@
       \strng{authornamehash}{8b7138f86a9de04acdb66b682a5ac05b}
       \strng{authorfullhash}{8b7138f86a9de04acdb66b682a5ac05b}
       \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Ministério da Infraestrutura}
-      \field{title}{{Estatísticas - Frota de veículos}}
+      \field{booktitle}{Minist{é}rio da Infraestrutura}
+      \field{title}{{Estat{í}sticas - Frota de ve{í}culos}}
       \field{year}{2020}
       \verb{urlraw}
       \verb https://www.infraestrutura.gov.br/component/content/article/115-portal-denatran/8552-estat{\'{i}}sticas-frota-de-ve{\'{i}}culos-denatran.html
@@ -391,26 +388,26 @@
     \endentry
     \entry{Elvik2009}{book}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
+        {{uniquename=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
            family={Elvik},
            familyi={E\bibinitperiod},
            given={Rune},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=4c41bcfc098b594e42a0fa0d132f052d}{%
-           family={H{ø}ye},
+        {{uniquename=0,uniquepart=base,hash=4c41bcfc098b594e42a0fa0d132f052d}{%
+           family={Høye},
            familyi={H\bibinitperiod},
            given={Alena},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e234bc03f44eba14e5c052677ad6370f}{%
+        {{uniquename=0,uniquepart=base,hash=e234bc03f44eba14e5c052677ad6370f}{%
            family={Vaa},
            familyi={V\bibinitperiod},
            given={Truls},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c5846513e0670fd59e4ef3ab7d79ee1d}{%
-           family={S{ø}rensen},
+        {{uniquename=0,uniquepart=base,hash=c5846513e0670fd59e4ef3ab7d79ee1d}{%
+           family={Sørensen},
            familyi={S\bibinitperiod},
            given={Michael},
            giveni={M\bibinitperiod},
@@ -429,7 +426,7 @@
       \strng{authornamehash}{999adf5aac01cfacd1caa1a9748c5eb5}
       \strng{authorfullhash}{acbe366e750e980b9191fd72c7ec30dc}
       \field{sortinit}{E}
-      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -444,13 +441,13 @@
     \endentry
     \entry{Ewing2009}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=b4be218f366717b817a9ec46bfc7f9a2}{%
+        {{uniquename=0,uniquepart=base,hash=b4be218f366717b817a9ec46bfc7f9a2}{%
            family={Ewing},
            familyi={E\bibinitperiod},
            given={Reid},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
+        {{uniquename=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
            family={Dumbaugh},
            familyi={D\bibinitperiod},
            given={Eric},
@@ -464,7 +461,7 @@
       \strng{authornamehash}{4835395dd56ef11d79b3fffd9d6866e0}
       \strng{authorfullhash}{4835395dd56ef11d79b3fffd9d6866e0}
       \field{sortinit}{E}
-      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -488,31 +485,31 @@
     \endentry
     \entry{Ferraz2012}{book}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=21927ba56f86b952bccaf58d91ababde}{%
+        {{uniquename=0,uniquepart=base,hash=8f4f23a4c3f104aa7890a4eb2da35555}{%
            family={Ferraz},
            familyi={F\bibinitperiod},
-           given={Antonio\bibnamedelimb Clóvis\bibnamedelimb Pinto\bibnamedelima "Coca"},
+           given={Antonio\bibnamedelimb Cl{ó}vis\bibnamedelimb Pinto\bibnamedelima "Coca"},
            giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim "\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=7c99f05b80884d093d26b3ec0c560220}{%
+        {{uniquename=0,uniquepart=base,hash=73045994c1d251b24ea298467b9a8756}{%
            family={{Raia Junior}},
            familyi={R\bibinitperiod},
            given={Achimedes\bibnamedelima Azevedo},
            giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=40db24c86a6151773258715756b0e062}{%
+        {{uniquename=0,uniquepart=base,hash=cf27fb1991f7a40aa6bc844996a45597}{%
            family={Bezerra},
            familyi={B\bibinitperiod},
-           given={Bárbara\bibnamedelima Stolte},
+           given={B{á}rbara\bibnamedelima Stolte},
            giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
+        {{uniquename=0,uniquepart=base,hash=04e4f74e2faf75f5180a4df22ebf8e88}{%
            family={Bastos},
            familyi={B\bibinitperiod},
            given={Jorge\bibnamedelima Tiago},
            giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=571b61843170a4ffb3de11bc1440504b}{%
+        {{uniquename=0,uniquepart=base,hash=532d6b7bada6e9b4e45538f1065f1c30}{%
            family={Silva},
            familyi={S\bibinitperiod},
            given={Karla\bibnamedelimb Cristina\bibnamedelima Rodrigues},
@@ -520,51 +517,51 @@
            givenun=0}}%
       }
       \list{location}{1}{%
-        {São Carlos}%
+        {S{ã}o Carlos}%
       }
-      \strng{namehash}{ac081a66881096f46de71ee8c9a7f8b0}
-      \strng{fullhash}{13e1e6f4b83f16afc0642e80a34348b5}
-      \strng{bibnamehash}{ac081a66881096f46de71ee8c9a7f8b0}
-      \strng{authorbibnamehash}{ac081a66881096f46de71ee8c9a7f8b0}
-      \strng{authornamehash}{ac081a66881096f46de71ee8c9a7f8b0}
-      \strng{authorfullhash}{13e1e6f4b83f16afc0642e80a34348b5}
+      \strng{namehash}{025c8ba24e47e712783008b2686d7e71}
+      \strng{fullhash}{ea17fb55d40a9cdd84a773757d4d7915}
+      \strng{bibnamehash}{025c8ba24e47e712783008b2686d7e71}
+      \strng{authorbibnamehash}{025c8ba24e47e712783008b2686d7e71}
+      \strng{authornamehash}{025c8ba24e47e712783008b2686d7e71}
+      \strng{authorfullhash}{ea17fb55d40a9cdd84a773757d4d7915}
       \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9788598156699}
-      \field{title}{{Segurança viária}}
+      \field{title}{{Seguran{ç}a vi{á}ria}}
       \field{year}{2012}
     \endentry
     \entry{Gollini2013}{article}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=3f189e61e7672236da1a837cb8134b25}{%
+        {{uniquename=0,uniquepart=base,hash=3f189e61e7672236da1a837cb8134b25}{%
            family={Gollini},
            familyi={G\bibinitperiod},
            given={Isabella},
            giveni={I\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=66af269a1b29bcbc8312ffb1ece00ccd}{%
+        {{uniquename=0,uniquepart=base,hash=66af269a1b29bcbc8312ffb1ece00ccd}{%
            family={Lu},
            familyi={L\bibinitperiod},
            given={Binbin},
            giveni={B\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=18e010ad6f178bf5db6f777026b33739}{%
+        {{uniquename=0,uniquepart=base,hash=18e010ad6f178bf5db6f777026b33739}{%
            family={Charlton},
            familyi={C\bibinitperiod},
            given={Martin},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=246b981b6500d867366bd3930ac52e74}{%
+        {{uniquename=0,uniquepart=base,hash=246b981b6500d867366bd3930ac52e74}{%
            family={Brunsdon},
            familyi={B\bibinitperiod},
            given={Christopher},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e97ccc4a9d97f443fcd29d15e25c4e7e}{%
+        {{uniquename=0,uniquepart=base,hash=e97ccc4a9d97f443fcd29d15e25c4e7e}{%
            family={Harris},
            familyi={H\bibinitperiod},
            given={Paul},
@@ -578,7 +575,7 @@
       \strng{authornamehash}{401ec4b1c69878e26c97cadcbeb87983}
       \strng{authorfullhash}{d0462e0697d8cbde042740902960570c}
       \field{sortinit}{G}
-      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -603,7 +600,7 @@
     \endentry
     \entry{Haddon1980}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a60f24fd3101045aa9b8d233751ddca6}{%
+        {{uniquename=0,uniquepart=base,hash=a60f24fd3101045aa9b8d233751ddca6}{%
            family={Haddon},
            familyi={H\bibinitperiod},
            given={W},
@@ -617,7 +614,7 @@
       \strng{authornamehash}{a60f24fd3101045aa9b8d233751ddca6}
       \strng{authorfullhash}{a60f24fd3101045aa9b8d233751ddca6}
       \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -637,10 +634,10 @@
       \verb http://www.ncbi.nlm.nih.gov/pubmed/7422807
       \endverb
     \endentry
-    \entry{Jørgensen2005}{incollection}{}
+    \entry{Jorgensen2005}{incollection}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cf6491fb0156d508605ef71b40bb8f39}{%
-           family={J{ø}rgensen},
+        {{uniquename=0,uniquepart=base,hash=7fcfcd1f67c5f233ea7313e6f0f2d11f}{%
+           family={Jørgensen},
            familyi={J\bibinitperiod},
            given={N.O.},
            giveni={N\bibinitperiod},
@@ -660,17 +657,17 @@
         {Chapman}%
         {Hall}%
       }
-      \strng{namehash}{cf6491fb0156d508605ef71b40bb8f39}
-      \strng{fullhash}{cf6491fb0156d508605ef71b40bb8f39}
-      \strng{bibnamehash}{cf6491fb0156d508605ef71b40bb8f39}
-      \strng{authorbibnamehash}{cf6491fb0156d508605ef71b40bb8f39}
-      \strng{authornamehash}{cf6491fb0156d508605ef71b40bb8f39}
-      \strng{authorfullhash}{cf6491fb0156d508605ef71b40bb8f39}
+      \strng{namehash}{7fcfcd1f67c5f233ea7313e6f0f2d11f}
+      \strng{fullhash}{7fcfcd1f67c5f233ea7313e6f0f2d11f}
+      \strng{bibnamehash}{7fcfcd1f67c5f233ea7313e6f0f2d11f}
+      \strng{authorbibnamehash}{7fcfcd1f67c5f233ea7313e6f0f2d11f}
+      \strng{authornamehash}{7fcfcd1f67c5f233ea7313e6f0f2d11f}
+      \strng{authorfullhash}{7fcfcd1f67c5f233ea7313e6f0f2d11f}
       \strng{editorbibnamehash}{fe5412fc3aed59fdfbb28efbf7b576ec}
       \strng{editornamehash}{fe5412fc3aed59fdfbb28efbf7b576ec}
       \strng{editorfullhash}{fe5412fc3aed59fdfbb28efbf7b576ec}
       \field{sortinit}{J}
-      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -685,7 +682,7 @@
     \endentry
     \entry{Lindley1987}{incollection}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=2a85acbe3d53663769cf20b0728b505c}{%
+        {{uniquename=0,uniquepart=base,hash=464cc263cb427e97cc079a3dcd9ca804}{%
            family={Lindley},
            familyi={L\bibinitperiod},
            given={D.\bibnamedelimi V.},
@@ -698,14 +695,14 @@
       \list{publisher}{1}{%
         {Palgrave Macmillan UK}%
       }
-      \strng{namehash}{2a85acbe3d53663769cf20b0728b505c}
-      \strng{fullhash}{2a85acbe3d53663769cf20b0728b505c}
-      \strng{bibnamehash}{2a85acbe3d53663769cf20b0728b505c}
-      \strng{authorbibnamehash}{2a85acbe3d53663769cf20b0728b505c}
-      \strng{authornamehash}{2a85acbe3d53663769cf20b0728b505c}
-      \strng{authorfullhash}{2a85acbe3d53663769cf20b0728b505c}
+      \strng{namehash}{464cc263cb427e97cc079a3dcd9ca804}
+      \strng{fullhash}{464cc263cb427e97cc079a3dcd9ca804}
+      \strng{bibnamehash}{464cc263cb427e97cc079a3dcd9ca804}
+      \strng{authorbibnamehash}{464cc263cb427e97cc079a3dcd9ca804}
+      \strng{authornamehash}{464cc263cb427e97cc079a3dcd9ca804}
+      \strng{authorfullhash}{464cc263cb427e97cc079a3dcd9ca804}
       \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -730,21 +727,21 @@
     \endentry
     \entry{MinistryofHealth2020}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=6084931ef0755c98128315da26980b25}{%
+        {{uniquename=0,uniquepart=base,hash=e172656619fc80f0d9b83b1e08d0536b}{%
            family={{Ministry of Health}},
            familyi={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Ministry of Health}%
       }
-      \strng{namehash}{6084931ef0755c98128315da26980b25}
-      \strng{fullhash}{6084931ef0755c98128315da26980b25}
-      \strng{bibnamehash}{6084931ef0755c98128315da26980b25}
-      \strng{authorbibnamehash}{6084931ef0755c98128315da26980b25}
-      \strng{authornamehash}{6084931ef0755c98128315da26980b25}
-      \strng{authorfullhash}{6084931ef0755c98128315da26980b25}
+      \strng{namehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{fullhash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{bibnamehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{authorbibnamehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{authornamehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{authorfullhash}{e172656619fc80f0d9b83b1e08d0536b}
       \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -759,9 +756,37 @@
       \verb http://www2.datasus.gov.br/DATASUS/index.php?area=02
       \endverb
     \endentry
+    \entry{MinistryofHealth2021}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e172656619fc80f0d9b83b1e08d0536b}{%
+           family={{Ministry of Health}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{fullhash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{bibnamehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{authorbibnamehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{authornamehash}{e172656619fc80f0d9b83b1e08d0536b}
+      \strng{authorfullhash}{e172656619fc80f0d9b83b1e08d0536b}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{DATASUS}
+      \field{title}{{Resident population in Brazil}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb http://www2.datasus.gov.br/DATASUS/index.php?area=02
+      \endverb
+      \verb{url}
+      \verb http://www2.datasus.gov.br/DATASUS/index.php?area=02
+      \endverb
+    \endentry
     \entry{Mohan2016}{incollection}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=174e01077fe132fb8250cd990634ceef}{%
+        {{uniquename=0,uniquepart=base,hash=174e01077fe132fb8250cd990634ceef}{%
            family={Mohan},
            familyi={M\bibinitperiod},
            given={Dinesh},
@@ -797,7 +822,7 @@
       \strng{editornamehash}{132df633fdaab24b9706faeb56db4200}
       \strng{editorfullhash}{132df633fdaab24b9706faeb56db4200}
       \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -811,14 +836,14 @@
       \range{pages}{11}
     \endentry
     \entry{Obelheiro2020}{article}{}
-      \name{author}{5}{ul=3}{%
-        {{un=0,uniquepart=base,hash=70014628bf3ff62312e3e69c939c1620}{%
+      \name{author}{5}{uniquelist=3}{%
+        {{uniquename=0,uniquepart=base,hash=5b2bd30c2e614e22467dd40d7a98cafd}{%
            family={Obelheiro},
            familyi={O\bibinitperiod},
            given={Marta\bibnamedelima Rodrigues},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c66fc75d201070f030f4b8d800c34a99}{%
+        {{uniquename=0,uniquepart=base,hash=fbda86af6f55e91936b3c5f88f868f6a}{%
            family={Silva},
            familyi={S\bibinitperiod},
            given={Alan\bibnamedelima Ricardo},
@@ -827,33 +852,33 @@
            prefix={da},
            prefixi={d\bibinitperiod},
            prefixun=0}}%
-        {{un=0,uniquepart=base,hash=7f5e2b75aae32af8eb78a1c6dcf3c746}{%
+        {{uniquename=0,uniquepart=base,hash=d643385ada6354d06346deae5128d884}{%
            family={Nodari},
            familyi={N\bibinitperiod},
            given={Christine\bibnamedelima Tessele},
            giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=3ff8ffbf2b13ffd65a46b19a143439c6}{%
+        {{uniquename=0,uniquepart=base,hash=5aa2e2432d6348e4cc62a21384f34c2a}{%
            family={Cybis},
            familyi={C\bibinitperiod},
            given={Helena\bibnamedelimb Beatriz\bibnamedelima Bettella},
            giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim B\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1a1299e1af9c041a690a815b28329570}{%
+        {{uniquename=0,uniquepart=base,hash=3a4308ca532526e709c593fe2b11dfcb}{%
            family={Lindau},
            familyi={L\bibinitperiod},
            given={Luis\bibnamedelima Antonio},
            giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{7b61c8c830dd166ee38333201400c06d}
-      \strng{fullhash}{a562d19baab1912f0e9e941c5de3f7fd}
-      \strng{bibnamehash}{7b61c8c830dd166ee38333201400c06d}
-      \strng{authorbibnamehash}{7b61c8c830dd166ee38333201400c06d}
-      \strng{authornamehash}{7b61c8c830dd166ee38333201400c06d}
-      \strng{authorfullhash}{a562d19baab1912f0e9e941c5de3f7fd}
+      \strng{namehash}{102b0fd9993e78e6a9a7616466f76848}
+      \strng{fullhash}{5b042022916e38710d317b2cf24427f1}
+      \strng{bibnamehash}{102b0fd9993e78e6a9a7616466f76848}
+      \strng{authorbibnamehash}{102b0fd9993e78e6a9a7616466f76848}
+      \strng{authornamehash}{102b0fd9993e78e6a9a7616466f76848}
+      \strng{authorfullhash}{5b042022916e38710d317b2cf24427f1}
       \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -881,39 +906,39 @@
     \endentry
     \entry{Obelheiro2019}{article}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=70014628bf3ff62312e3e69c939c1620}{%
+        {{uniquename=0,uniquepart=base,hash=5b2bd30c2e614e22467dd40d7a98cafd}{%
            family={Obelheiro},
            familyi={O\bibinitperiod},
            given={Marta\bibnamedelima Rodrigues},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b9fdd8154bb643ef01dc8a531791188e}{%
+        {{uniquename=0,uniquepart=base,hash=8939f61bf36655c823e1ae0c682dfc82}{%
            family={Silva},
            familyi={S\bibinitperiod},
            given={Alan\bibnamedelima Ricardo},
            giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=7f5e2b75aae32af8eb78a1c6dcf3c746}{%
+        {{uniquename=0,uniquepart=base,hash=d643385ada6354d06346deae5128d884}{%
            family={Nodari},
            familyi={N\bibinitperiod},
            given={Christine\bibnamedelima Tessele},
            giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{be2ddada532d61373a940c2492c2ae14}
-      \strng{fullhash}{be2ddada532d61373a940c2492c2ae14}
-      \strng{bibnamehash}{be2ddada532d61373a940c2492c2ae14}
-      \strng{authorbibnamehash}{be2ddada532d61373a940c2492c2ae14}
-      \strng{authornamehash}{be2ddada532d61373a940c2492c2ae14}
-      \strng{authorfullhash}{be2ddada532d61373a940c2492c2ae14}
+      \strng{namehash}{a60858a5f72bc8669a348bc22ca68449}
+      \strng{fullhash}{a60858a5f72bc8669a348bc22ca68449}
+      \strng{bibnamehash}{a60858a5f72bc8669a348bc22ca68449}
+      \strng{authorbibnamehash}{a60858a5f72bc8669a348bc22ca68449}
+      \strng{authornamehash}{a60858a5f72bc8669a348bc22ca68449}
+      \strng{authorfullhash}{a60858a5f72bc8669a348bc22ca68449}
       \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{33{º} Congresso de Pesquisa e Ensino em Transporte da ANPET}
-      \field{title}{{UMA ANÁLISE DA RELAÇÃO ENTRE AMBIENTE CONSTRUÍDO E ACIDENTES DE TRÂNSITO EM ZONAS DE TRÁFEGO}}
+      \field{journaltitle}{33º Congresso de Pesquisa e Ensino em Transporte da ANPET}
+      \field{title}{{UMA AN{Á}LISE DA RELA{Ç}{Ã}O ENTRE AMBIENTE CONSTRU{Í}DO E ACIDENTES DE TR{Â}NSITO EM ZONAS DE TR{Á}FEGO}}
       \field{year}{2019}
       \field{pages}{3696\bibrangedash 3707}
       \range{pages}{12}
@@ -921,9 +946,57 @@
       \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Obelheiro, Silva, Nodari - 2019 - UMA AN{\'{A}}LISE DA RELA{\c{C}}{\~{A}}O ENTRE AMBIENTE CONSTRU{\'{I}}DO E ACIDENTES DE TR{\^{A}}NSITO EM ZONAS DE TR{\'{A}}FEGO.pdf:pdf
       \endverb
     \endentry
+    \entry{Shinar2007}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7f2709c40eb3dcacea6613c00e11fdd2}{%
+           family={Shinar},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=a643c8627b404cbfabc3857c269fa4b1}{%
+           family={Shinar},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Group Publishing Limited}%
+      }
+      \strng{namehash}{7f2709c40eb3dcacea6613c00e11fdd2}
+      \strng{fullhash}{7f2709c40eb3dcacea6613c00e11fdd2}
+      \strng{bibnamehash}{7f2709c40eb3dcacea6613c00e11fdd2}
+      \strng{authorbibnamehash}{7f2709c40eb3dcacea6613c00e11fdd2}
+      \strng{authornamehash}{7f2709c40eb3dcacea6613c00e11fdd2}
+      \strng{authorfullhash}{7f2709c40eb3dcacea6613c00e11fdd2}
+      \strng{editorbibnamehash}{a643c8627b404cbfabc3857c269fa4b1}
+      \strng{editornamehash}{a643c8627b404cbfabc3857c269fa4b1}
+      \strng{editorfullhash}{a643c8627b404cbfabc3857c269fa4b1}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-08-045029-2}
+      \field{month}{10}
+      \field{title}{{Traffic Safety and Human Behavior}}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1108/9780080555874
+      \endverb
+      \verb{urlraw}
+      \verb https://www.emerald.com/insight/publication/doi/10.1108/9780080555874
+      \endverb
+      \verb{url}
+      \verb https://www.emerald.com/insight/publication/doi/10.1108/9780080555874
+      \endverb
+    \endentry
     \entry{SWOV2003}{report}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f7654b386ab8a94a00cd4b4767a72e7f}{%
+        {{uniquename=0,uniquepart=base,hash=f7654b386ab8a94a00cd4b4767a72e7f}{%
            family={SWOV},
            familyi={S\bibinitperiod}}}%
       }
@@ -934,7 +1007,7 @@
       \strng{authornamehash}{f7654b386ab8a94a00cd4b4767a72e7f}
       \strng{authorfullhash}{f7654b386ab8a94a00cd4b4767a72e7f}
       \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -945,13 +1018,13 @@
     \endentry
     \entry{Wei2013}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=151a6f7b2c9241f0fbad9aa684165f52}{%
+        {{uniquename=0,uniquepart=base,hash=151a6f7b2c9241f0fbad9aa684165f52}{%
            family={Wei},
            familyi={W\bibinitperiod},
            given={Feng},
            giveni={F\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=61f6ea13c90706cd92aea72b141c40ad}{%
+        {{uniquename=0,uniquepart=base,hash=61f6ea13c90706cd92aea72b141c40ad}{%
            family={Lovegrove},
            familyi={L\bibinitperiod},
            given={Gordon},
@@ -965,7 +1038,7 @@
       \strng{authornamehash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
       \strng{authorfullhash}{0d76aff1b7006aaf9ff8daa4b6b7da24}
       \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -990,7 +1063,7 @@
     \endentry
     \entry{WHO2011}{report}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+        {{uniquename=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
            family={WHO},
            familyi={W\bibinitperiod}}}%
       }
@@ -1003,9 +1076,8 @@
       \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
-      \field{extraname}{1}
       \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1019,7 +1091,7 @@
     \endentry
     \entry{WHO2013}{report}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+        {{uniquename=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
            family={WHO},
            familyi={W\bibinitperiod}}}%
       }
@@ -1032,9 +1104,8 @@
       \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
-      \field{extraname}{2}
       \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1056,7 +1127,7 @@
     \endentry
     \entry{WHO2018}{report}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+        {{uniquename=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
            family={WHO},
            familyi={W\bibinitperiod}}}%
       }
@@ -1069,9 +1140,8 @@
       \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
-      \field{extraname}{3}
       \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1083,15 +1153,53 @@
       \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2018 - Global status report on road safety 2018.pdf:pdf
       \endverb
     \endentry
+    \entry{WHO2004}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+           family={WHO},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {World Health Institute}%
+      }
+      \strng{namehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{fullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{bibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{World Report on Road Traffic Injury Prevention}
+      \field{isbn}{9789241562607}
+      \field{title}{{World Report on Road Traffic Injury Prevention}}
+      \field{type}{techreport}
+      \field{year}{2004}
+      \field{pages}{238}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/pabsantos/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2004 - World Report on Road Traffic Injury Prevention.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://whqlibdoc.who.int/publications/2004/9241562609.pdf
+      \endverb
+      \verb{url}
+      \verb http://whqlibdoc.who.int/publications/2004/9241562609.pdf
+      \endverb
+    \endentry
     \entry{Yu2017}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=3c5e34e663c8455a6c3e5ed5467f616f}{%
+        {{uniquename=0,uniquepart=base,hash=3c5e34e663c8455a6c3e5ed5467f616f}{%
            family={Yu},
            familyi={Y\bibinitperiod},
            given={Chia-Yuan},
            giveni={C\bibinithyphendelim Y\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=788cd26629b5d0f2395a1d1bae7b5be7}{%
+        {{uniquename=0,uniquepart=base,hash=788cd26629b5d0f2395a1d1bae7b5be7}{%
            family={Xu},
            familyi={X\bibinitperiod},
            given={Minjie},
@@ -1105,7 +1213,7 @@
       \strng{authornamehash}{9647007a60745ce22f4a0f67f0af0064}
       \strng{authorfullhash}{9647007a60745ce22f4a0f67f0af0064}
       \field{sortinit}{Y}
-      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1129,25 +1237,25 @@
     \endentry
     \entry{Zhang2014}{article}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=6a165ce81f591eac196e5172d5663081}{%
+        {{uniquename=0,uniquepart=base,hash=6a165ce81f591eac196e5172d5663081}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
            given={Cuiping},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=ac82c9ecb71af52d080d155a1861a839}{%
+        {{uniquename=0,uniquepart=base,hash=ac82c9ecb71af52d080d155a1861a839}{%
            family={Yan},
            familyi={Y\bibinitperiod},
            given={Xuedong},
            giveni={X\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=789bd3fede6cddb7ab809344084f58ed}{%
+        {{uniquename=0,uniquepart=base,hash=789bd3fede6cddb7ab809344084f58ed}{%
            family={Ma},
            familyi={M\bibinitperiod},
            given={Lu},
            giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=db783c9bdbfbac31bbe382285c7e7858}{%
+        {{uniquename=0,uniquepart=base,hash=db783c9bdbfbac31bbe382285c7e7858}{%
            family={An},
            familyi={A\bibinitperiod},
            given={Meiwu},
@@ -1161,7 +1269,7 @@
       \strng{authornamehash}{f4985f62fdaf493b38831420edc165cf}
       \strng{authorfullhash}{04a1b4374a475958c2f05f4a58374468}
       \field{sortinit}{Z}
-      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
