@@ -24,7 +24,7 @@
         {{un=0,uniquepart=base,hash=b7e15035b91bdf5f8695fa277d8b874f}{%
            family={Ashton},
            familyi={A\bibinitperiod},
-           given={S.\bibnamedelimi J.},
+           given={S\bibnamedelima J},
            giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
            givenun=0}}%
       }
@@ -424,8 +424,50 @@
       \verb https://www.infraestrutura.gov.br/component/content/article/115-portal-denatran/8552-estat%7B%5C'%7Bi%7D%7Dsticas-frota-de-ve%7B%5C'%7Bi%7D%7Dculos-denatran.html
       \endverb
     \endentry
+    \entry{Elvik2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
+           family={Elvik},
+           familyi={E\bibinitperiod},
+           given={Rune},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{863a15ae7b18da8c75f57102c232117e}
+      \strng{fullhash}{863a15ae7b18da8c75f57102c232117e}
+      \strng{bibnamehash}{863a15ae7b18da8c75f57102c232117e}
+      \strng{authorbibnamehash}{863a15ae7b18da8c75f57102c232117e}
+      \strng{authornamehash}{863a15ae7b18da8c75f57102c232117e}
+      \strng{authorfullhash}{863a15ae7b18da8c75f57102c232117e}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis and Prevention}
+      \field{month}{1}
+      \field{title}{{A re-parameterisation of the Power Model of the relationship between the speed of traffic and the number of accidents and accident victims}}
+      \field{volume}{50}
+      \field{year}{2013}
+      \field{pages}{854\bibrangedash 860}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.aap.2012.07.012
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Elvik - 2013 - A re-parameterisation of the Power Model of the relationship between the speed of traffic and the number of accidents and.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512002667
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512002667
+      \endverb
+    \endentry
     \entry{Elvik2009}{book}{}
-      \name{author}{4}{}{%
+      \name{author}{4}{ul=1}{%
         {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
            family={Elvik},
            familyi={E\bibinitperiod},
@@ -1308,6 +1350,38 @@
       \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2018 - Global status report on road safety 2018.pdf:pdf
       \endverb
     \endentry
+    \entry{WHO2008}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+           family={WHO},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Global Road Safety Partnership}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{fullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{bibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \field{extraname}{4}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-2-940395-04-0}
+      \field{title}{{Speed management: a road safety manual for decision-makers and practioners}}
+      \field{year}{2008}
+      \verb{file}
+      \verb :home/pabsantos/Downloads/9782940395040_eng.pdf:pdf
+      \endverb
+    \endentry
     \entry{WHO2004}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
@@ -1323,7 +1397,7 @@
       \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{extradatescope}{labelyear}

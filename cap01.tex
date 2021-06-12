@@ -275,31 +275,37 @@ Considering the event of an impact between a front of a car and a pedestrian, \t
 
 % 3. Speed management in urban environments: roadways have higher operational speeds, but cities show a bigger interaction between vulnerable and non-vulnerable users, in which lower speeds can represent a risk situation for pedestrians and cyclists.
 
-Theses factors shows the importance of proper speed management in road traffic, specially in urban environments. Roadways have higher operational speeds, but cities contains a more expressive interaction between motorized and vulnerable users, in which lower speeds can still represent a risk to pedestrians and cyclists. One method to manage the operating speed is the enforcement of speed limits. % recommended speeds 
+Theses factors shows the importance of proper speed management in road traffic, specially in urban environments. Roadways have higher operational speeds, but cities contains a more expressive interaction between motorized and vulnerable users, in which lower speeds can still represent a risk to pedestrians and cyclists. One method to manage the operating speed is the enforcement of speed limits. It is recommended a speed limit of 50 km/h in urban arterial roads, and a limit of 30 km/h in roads with a high flow of pedestrians and cyclists \cite{WHO2008}. Reducing the mean speeds can greatly favor the decline in fatal, non fatal and property damage only (PDO) road crashes \cite{Elvik2013}. 
 
 %% ETSC, 1995 (OPAS, 2012 - EMBARQ): recommendations for speed limits. How to enforce? 
 
-%% elvik power mode: use the 2013 model
+The operating and mean speed of the road traffic depends on how the drivers chooses the speed. This choice is related to the power and stability of the user's vehicle, to road and traffic conditions,to  driver's perception of safety, to the level of enforcement, travel motivations, personal characteristics and behavior of other drivers \cite{Mohan2016a, Shinar2017}. Considering all theses factors, it is not effective to rely only on traffic limits to prevent speeding. If the design speed of a road is higher than the speed limit and the road traffic has a low density, it is more difficult to enforce a the desired limit. The difficulty to enforce the speed limits may be higher to LMICs, which have less resources to adopt the proper road designs policies and enforcement levels required to this task \cite{Mohan2016a}. 
+
+% 4. What influences the speed in urban environments? Relate to speed management policies in general (SPEEDING AND ENVIRONMENT).
+
+%% Balance between speed, flow and density. (See Bastos classes and my TCC)
+
+The speed and speed variance are to a certain extent determined by the traffic flow regime \cite{Shinar2017}.  
+
+"In urban areas speeds are controlled by the presence of intersections and the high density of traffic on the roads."
+
+%% WRI
 
 %% Traffic calming measures - WRI
 
 %% Speed differentials
 
-%% countermeasures (shinar, 2017)
+%% countermeasures (shinar, 2007)
 
-% 4. What influences the speed in urban environments? Relate to speed management policies in general.
-
-%% WRI
-
-%% Balance between speed, flow and density. (See Bastos classes and my TCC)
-
-% 5. Speeding as a risk behavior problem. (shinar 2007, elvik et al 2009)
+% 5. Speeding and behavior. (shinar 2007, elvik et al 2009)
 
 %% How drivers percepts speeding?
 
 %% Drivers choice of speed
 
-% 6. How to collect speeding data: speeding tickets, speed traps (fixed or mobile), researches that considers the accidents reports, behavioral studies, case studies with a local perspective.
+%% Richards
+
+% 6. How to collect speeding data: speeding tickets, speed traps (fixed or mobile), researches that considers the accidents reports, behavioral studies, case studies with a local perspective (SPEEDING DATA COLLECTION).
 
 %% Quick pass through speed collection.
 
@@ -355,8 +361,6 @@ In the context of a multivariate GW model, these influences are calculated by a 
     \label{eq:wls}
 \end{align} where $X$ is the matrix of the independent variables with a column of 1s (ones) for the intercept, $y$ is the dependent variable vector, $\hat{\beta} = (\beta_{i0},...,\beta_{im})^T$ is the vector of $m + 1$ local regression coefficients and $W_i$ is the diagonal matrix denoting the spatial weighting ($w_{ij}$) of each observed data for regression point $i$ at location $(u_i, v_i)$ (defined by the selected kernel function) \cite{Gollini2013}. The spatial weighting function is also known as the kernel function. This function can have multiple configurations, including Gaussian, Exponential, Boxcar, Bisquare and Tricube configurations, detailed on \autoref{tab:kernel}.
 
-\vspace{\baselineskip}
-
 \begin{table}[!hbtp]
     \footnotesize
     \captionsetup{justification=raggedright,
@@ -390,11 +394,7 @@ In the context of a multivariate GW model, these influences are calculated by a 
     SOURCE: \textcite{Gollini2013}
 \end{table}
 
-\vspace{\baselineskip}
-
 The distance between observations $i$ and $j$ is defined by $d_{ij}$, inside a chosen $b$ bandwidth, which is the key controlling parameter in all kernel functions. The optimal bandwidth can be estimated by a cross-validation function, a process that will be detailed in the section \ref{gwm}. \autoref{fig:kernel} presents the plot of the kernel functions, for a generic bandwidth $b = 1000$, where $w$ is the weight and $d$ is the distance between two observations. As the plot shows, the global kernel function represents a global linear regression, where all the variables are constant across the space.
-
-\vspace{\baselineskip}
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -404,8 +404,6 @@ The distance between observations $i$ and $j$ is defined by $d_{ij}$, inside a c
     \label{fig:kernel}
     \par SOURCE: The Author (2021), based on \textcite{Gollini2013}.
 \end{figure}
-
-\vspace{\baselineskip}
 
 In addition to the different types of kernel functions, the GWR has multiple configurations based on the type of regression: negative binomial (GWNBR), Poisson (GWPR) and Gaussian, which is the basic form of linear GWR described on  \autoref{eq:gwr}. The GWNBR and GWPR models were used by \textcite{Obelheiro2019}; \textcite{Obelheiro2020} and \textcite{Yu2017} to study the impacts of the built environment on the occurrence of road crashes inside urban areas. % cite Li et al, Xu huang, Gomes as another examples. It wasn't possible to find gwr applications of intermediate outcomes of road safety level, like speeding.
 

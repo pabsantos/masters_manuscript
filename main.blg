@@ -1,20 +1,21 @@
 [0] Config.pm:312> INFO - This is Biber 2.15
 [0] Config.pm:315> INFO - Logfile is 'main.blg'
-[66] biber:330> INFO - === Thu Jun 10, 2021, 20:51:40
-[79] Biber.pm:415> INFO - Reading 'main.bcf'
-[154] Biber.pm:952> INFO - Found 35 citekeys in bib section 0
-[169] Biber.pm:4334> INFO - Processing section 0
-[178] Biber.pm:4523> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[180] bibtex.pm:1682> INFO - LaTeX decoding ...
-[224] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
-[226] Utils.pm:384> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
-[372] Utils.pm:384> WARN - month field 'oct' in entry 'Shinar2017' is not an integer - this will probably not sort properly.
-[385] Utils.pm:384> WARN - month field 'jan' in entry 'Zervas2008' is not an integer - this will probably not sort properly.
-[388] Utils.pm:384> WARN - month field 'sep' in entry 'Ashton1980' is not an integer - this will probably not sort properly.
-[499] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[499] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[499] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
-[499] Biber.pm:4168> INFO - No sort tailoring available for locale 'pt-BR'
-[540] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[560] bbl.pm:754> INFO - Output to main.bbl
-[560] Biber.pm:128> INFO - WARNINGS: 4
+[165] biber:330> INFO - === sáb jun 12, 2021, 17:23:01
+[194] Biber.pm:415> INFO - Reading 'main.bcf'
+[344] Biber.pm:952> INFO - Found 37 citekeys in bib section 0
+[369] Biber.pm:4334> INFO - Processing section 0
+[387] Biber.pm:4523> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[392] bibtex.pm:1682> INFO - LaTeX decoding ...
+[485] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
+[488] Utils.pm:384> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
+[1048] Utils.pm:384> WARN - month field 'oct' in entry 'Shinar2017' is not an integer - this will probably not sort properly.
+[1116] Utils.pm:384> WARN - month field 'jan' in entry 'Zervas2008' is not an integer - this will probably not sort properly.
+[1122] Utils.pm:384> WARN - month field 'sep' in entry 'Ashton1980' is not an integer - this will probably not sort properly.
+[1138] Utils.pm:384> WARN - month field 'jan' in entry 'Elvik2013' is not an integer - this will probably not sort properly.
+[1336] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1337] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1337] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[1337] Biber.pm:4168> INFO - No sort tailoring available for locale 'pt-BR'
+[1400] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1439] bbl.pm:754> INFO - Output to main.bbl
+[1439] Biber.pm:128> INFO - WARNINGS: 5
