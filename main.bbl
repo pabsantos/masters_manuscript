@@ -89,7 +89,7 @@
       \endverb
     \endentry
     \entry{Bastos2020}{book}{}
-      \name{author}{5}{ul=1}{%
+      \name{author}{5}{ul=2}{%
         {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
            family={Bastos},
            familyi={B\bibinitperiod},
@@ -133,11 +133,11 @@
       \list{publisher}{1}{%
         {Viva editora}%
       }
-      \strng{namehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
+      \strng{namehash}{b030ee07c1e928d322dd42e6d05527fe}
       \strng{fullhash}{be794fd9e5c39524ff46443ee3afd9e8}
-      \strng{bibnamehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
-      \strng{authorbibnamehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
-      \strng{authornamehash}{9cbf82f3ce3ff5c5b3353e37a3d6e463}
+      \strng{bibnamehash}{b030ee07c1e928d322dd42e6d05527fe}
+      \strng{authorbibnamehash}{b030ee07c1e928d322dd42e6d05527fe}
+      \strng{authornamehash}{b030ee07c1e928d322dd42e6d05527fe}
       \strng{authorfullhash}{be794fd9e5c39524ff46443ee3afd9e8}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
@@ -149,6 +149,168 @@
       \field{year}{2020}
       \field{pages}{120}
       \range{pages}{1}
+    \endentry
+    \entry{Bastos2021}{article}{}
+      \name{author}{7}{ul=2}{%
+        {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
+           family={Bastos},
+           familyi={B\bibinitperiod},
+           given={Jorge\bibnamedelima Tiago},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad01ab047c28d48759a18a202b491073}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Pedro\bibnamedelimb Augusto\bibnamedelima B.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0,
+           prefix={dos},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=a05058cc409b02c4625b0805de2d4188}{%
+           family={Amancio},
+           familyi={A\bibinitperiod},
+           given={Eduardo\bibnamedelima Cesar},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb8071fbe537441959b6a3753fc9720a}{%
+           family={Gadda},
+           familyi={G\bibinitperiod},
+           given={Tatiana\bibnamedelimb Maria\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c13416b446592dae5590042caea2e4f9}{%
+           family={Ramalho},
+           familyi={R\bibinitperiod},
+           given={José\bibnamedelima Aurélio},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e17994baf629f796c5363129d41a26c4}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f1bf5e397dab611d2405b8ac96596bd}{%
+           family={Oviedo-Trespalacios},
+           familyi={O\bibinithyphendelim T\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{fullhash}{34daa8c176a919c0f7a9d6f4103f974c}
+      \strng{bibnamehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{authorbibnamehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{authornamehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{authorfullhash}{34daa8c176a919c0f7a9d6f4103f974c}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{3}
+      \field{title}{{Is organized carpooling safer? Speeding and distracted driving behaviors from a naturalistic driving study in Brazil}}
+      \field{volume}{152}
+      \field{year}{2021}
+      \field{pages}{105992}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.aap.2021.105992
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457521000233
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457521000233
+      \endverb
+    \endentry
+    \entry{Bastos2020a}{article}{}
+      \name{author}{7}{ul=2}{%
+        {{un=0,uniquepart=base,hash=7dca03449cb038020b8b7c85e9df6804}{%
+           family={Bastos},
+           familyi={B\bibinitperiod},
+           given={Jorge\bibnamedelima Tiago},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad01ab047c28d48759a18a202b491073}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Pedro\bibnamedelimb Augusto\bibnamedelima B.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0,
+           prefix={dos},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=a05058cc409b02c4625b0805de2d4188}{%
+           family={Amancio},
+           familyi={A\bibinitperiod},
+           given={Eduardo\bibnamedelima Cesar},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb8071fbe537441959b6a3753fc9720a}{%
+           family={Gadda},
+           familyi={G\bibinitperiod},
+           given={Tatiana\bibnamedelimb Maria\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c13416b446592dae5590042caea2e4f9}{%
+           family={Ramalho},
+           familyi={R\bibinitperiod},
+           given={José\bibnamedelima Aurélio},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e17994baf629f796c5363129d41a26c4}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f1bf5e397dab611d2405b8ac96596bd}{%
+           family={Oviedo-Trespalacios},
+           familyi={O\bibinithyphendelim T\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{fullhash}{34daa8c176a919c0f7a9d6f4103f974c}
+      \strng{bibnamehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{authorbibnamehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{authornamehash}{98d2e8fe540b85f2f7f004b41f749f64}
+      \strng{authorfullhash}{34daa8c176a919c0f7a9d6f4103f974c}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1660-4601}
+      \field{journaltitle}{International Journal of Environmental Research and Public Health}
+      \field{month}{9}
+      \field{number}{17}
+      \field{title}{{Naturalistic Driving Study in Brazil: An Analysis of Mobile Phone Use Behavior while Driving}}
+      \field{volume}{17}
+      \field{year}{2020}
+      \field{pages}{6412}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ijerph17176412
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Bastos et al. - 2020 - Naturalistic Driving Study in Brazil An Analysis of Mobile Phone Use Behavior while Driving.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1660-4601/17/17/6412
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1660-4601/17/17/6412
+      \endverb
     \endentry
     \entry{Bhalla2016}{incollection}{}
       \name{author}{2}{}{%
@@ -424,6 +586,51 @@
       \verb https://www.infraestrutura.gov.br/component/content/article/115-portal-denatran/8552-estat%7B%5C'%7Bi%7D%7Dsticas-frota-de-ve%7B%5C'%7Bi%7D%7Dculos-denatran.html
       \endverb
     \endentry
+    \entry{Dinh2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2ac8c3c67c47f056f85441e1ae783014}{%
+           family={Dinh},
+           familyi={D\bibinitperiod},
+           given={Do\bibnamedelima Duy},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=574fe07e86a2b72b6e9cf4e41ed6b8dc}{%
+           family={Kubota},
+           familyi={K\bibinitperiod},
+           given={Hisashi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f769d25d39d992a8f90be342a3c04e4d}
+      \strng{fullhash}{f769d25d39d992a8f90be342a3c04e4d}
+      \strng{bibnamehash}{f769d25d39d992a8f90be342a3c04e4d}
+      \strng{authorbibnamehash}{f769d25d39d992a8f90be342a3c04e4d}
+      \strng{authornamehash}{f769d25d39d992a8f90be342a3c04e4d}
+      \strng{authorfullhash}{f769d25d39d992a8f90be342a3c04e4d}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0967070X}
+      \field{journaltitle}{Transport Policy}
+      \field{month}{9}
+      \field{title}{{Speeding behavior on urban residential streets with a 30km/h speed limit under the framework of the theory of planned behavior}}
+      \field{volume}{29}
+      \field{year}{2013}
+      \field{pages}{199\bibrangedash 208}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.tranpol.2013.06.003
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0967070X13000905
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0967070X13000905
+      \endverb
+    \endentry
     \entry{Elvik2013}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
@@ -678,6 +885,52 @@
       \verb http://arxiv.org/abs/1306.0413
       \endverb
     \endentry
+    \entry{Green2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f72f1bf19bb1b96499fb71be3e3822d4}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92a588fd38c837e8508eadd7883bdcf9}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Austroads}%
+      }
+      \list{location}{1}{%
+        {Sydney}%
+      }
+      \list{publisher}{1}{%
+        {Austroads}%
+      }
+      \strng{namehash}{1c2ea0e898cfb623f20c9a26a0b45bd3}
+      \strng{fullhash}{1c2ea0e898cfb623f20c9a26a0b45bd3}
+      \strng{bibnamehash}{1c2ea0e898cfb623f20c9a26a0b45bd3}
+      \strng{authorbibnamehash}{1c2ea0e898cfb623f20c9a26a0b45bd3}
+      \strng{authornamehash}{1c2ea0e898cfb623f20c9a26a0b45bd3}
+      \strng{authorfullhash}{1c2ea0e898cfb623f20c9a26a0b45bd3}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3.0}
+      \field{isbn}{978-1-925854-76-3}
+      \field{title}{{Guide to Traffic Management Part 2: Traffic Theory Concepts}}
+      \field{year}{2020}
+      \field{pages}{122}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/pabsantos/Documents/dissertacao/material/AGTM02-20-Part-2-Traffic-Theory-Concepts.pdf:pdf
+      \endverb
+    \endentry
     \entry{Haddon1980}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a60f24fd3101045aa9b8d233751ddca6}{%
@@ -742,6 +995,65 @@
       \field{year}{1982}
       \field{pages}{6\bibrangedash 32}
       \range{pages}{27}
+    \endentry
+    \entry{Hidalgo-Solorzano2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ef676451fea3c94914de319cf8854d0d}{%
+           family={Hidalgo-Solórzano},
+           familyi={H\bibinithyphendelim S\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a5aa16ea71bf28547d5de8db10a1f4e}{%
+           family={Gómez-García},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Lourdes},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f332ef9e64a6d38b28d63bca9a0d0769}{%
+           family={Mojarro-Íñiguez},
+           familyi={M\bibinithyphendelim Í\bibinitperiod},
+           given={Francisco\bibnamedelima R},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fbd4c5013485c88f2e7f4e5214aaa17}{%
+           family={Pérez-Núñez},
+           familyi={P\bibinithyphendelim N\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5d2b3d04fdb5af601f67937541d27a5d}
+      \strng{fullhash}{e7da3ca34a9a5643b019e8014685d2a9}
+      \strng{bibnamehash}{5d2b3d04fdb5af601f67937541d27a5d}
+      \strng{authorbibnamehash}{5d2b3d04fdb5af601f67937541d27a5d}
+      \strng{authornamehash}{5d2b3d04fdb5af601f67937541d27a5d}
+      \strng{authorfullhash}{e7da3ca34a9a5643b019e8014685d2a9}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0143-005X}
+      \field{journaltitle}{Journal of Epidemiology and Community Health}
+      \field{month}{4}
+      \field{title}{{Prevalence of speeding and associated factors in four Mexican cities}}
+      \field{year}{2020}
+      \field{pages}{jech--2019\bibrangedash 213352}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1136/jech-2019-213352
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Hidalgo-Sol{\'{o}}rzano et al. - 2020 - Prevalence of speeding and associated factors in four Mexican cities.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://jech.bmj.com/lookup/doi/10.1136/jech-2019-213352
+      \endverb
+      \verb{url}
+      \verb http://jech.bmj.com/lookup/doi/10.1136/jech-2019-213352
+      \endverb
     \endentry
     \entry{Jorgensen2005}{incollection}{}
       \name{author}{1}{}{%
@@ -999,6 +1311,54 @@
       \field{pages}{127\bibrangedash 137}
       \range{pages}{11}
     \endentry
+    \entry{Moreno2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=abe12385b7fa925869fd97e16fc535ef}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Ana\bibnamedelima Tsui},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=603b29e287dcaa226457f0abb99ef2dd}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{33af449228a3e68e8f25b071ea63ffa9}
+      \strng{fullhash}{33af449228a3e68e8f25b071ea63ffa9}
+      \strng{bibnamehash}{33af449228a3e68e8f25b071ea63ffa9}
+      \strng{authorbibnamehash}{33af449228a3e68e8f25b071ea63ffa9}
+      \strng{authornamehash}{33af449228a3e68e8f25b071ea63ffa9}
+      \strng{authorfullhash}{33af449228a3e68e8f25b071ea63ffa9}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{12}
+      \field{title}{{Use of speed profile as surrogate measure: Effect of traffic calming devices on crosstown road safety performance}}
+      \field{volume}{61}
+      \field{year}{2013}
+      \field{pages}{23\bibrangedash 32}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.aap.2012.10.013
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Moreno, Garc{\'{i}}a - 2013 - Use of speed profile as surrogate measure Effect of traffic calming devices on crosstown road safety performanc.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512003697
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512003697
+      \endverb
+    \endentry
     \entry{Obelheiro2020}{article}{}
       \name{author}{5}{ul=3}{%
         {{un=0,uniquepart=base,hash=70014628bf3ff62312e3e69c939c1620}{%
@@ -1110,6 +1470,158 @@
       \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Obelheiro, Silva, Nodari - 2019 - UMA AN{\'{A}}LISE DA RELA{\c{C}}{\~{A}}O ENTRE AMBIENTE CONSTRU{\'{I}}DO E ACIDENTES DE TR{\^{A}}NSITO EM ZONAS DE TR{\'{A}}FEGO.pdf:pdf
       \endverb
     \endentry
+    \entry{Richard2013}{article}{}
+      \name{author}{6}{ul=3}{%
+        {{un=0,uniquepart=base,hash=f3fded87228ccf447fcc0855dd8c025f}{%
+           family={Richard},
+           familyi={R\bibinitperiod},
+           given={Christian\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b04cb15d0d768a854f0de031a941c53}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eac378785625f93bb1e474554b53cce7}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b01e294dc797d03e73be5f585bbfb941}{%
+           family={Lichty},
+           familyi={L\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2c222cdaa12af5cd08fd4478f430b45}{%
+           family={Chrysler},
+           familyi={C\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69fe0ba00f0e32aecd0a3486d02e5d1e}{%
+           family={Atkins},
+           familyi={A\bibinitperiod},
+           given={Randolph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{778ed594d99dda83e997ee5842a96946}
+      \strng{fullhash}{9beac15473e45291add3d3ec250e5722}
+      \strng{bibnamehash}{778ed594d99dda83e997ee5842a96946}
+      \strng{authorbibnamehash}{778ed594d99dda83e997ee5842a96946}
+      \strng{authornamehash}{778ed594d99dda83e997ee5842a96946}
+      \strng{authorfullhash}{9beac15473e45291add3d3ec250e5722}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{03611981}
+      \field{journaltitle}{Transportation Research Record}
+      \field{month}{1}
+      \field{number}{2365}
+      \field{title}{{Investigating speeding behavior with naturalistic approaches}}
+      \field{volume}{2365}
+      \field{year}{2013}
+      \field{pages}{58\bibrangedash 65}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3141/2365-08
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.3141/2365-08
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.3141/2365-08
+      \endverb
+    \endentry
+    \entry{Richard2013a}{report}{}
+      \name{author}{8}{ul=3}{%
+        {{un=0,uniquepart=base,hash=f3fded87228ccf447fcc0855dd8c025f}{%
+           family={Richard},
+           familyi={R\bibinitperiod},
+           given={Christian\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=996e40995fd8cc25b8e2c92578f7ba97}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76746fb10fbe65f14f1cf1379da95e15}{%
+           family={Lichty},
+           familyi={L\bibinitperiod},
+           given={Monica\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=001a5178a7d55d7aecf264976762c4d8}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdf43bfeb5bf78b55048d11c7edc603d}{%
+           family={Chrysler},
+           familyi={C\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=409186774237760830d521434ed6cc21}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={J\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ffb95ebdab0fe39caed8132e5f7b074}{%
+           family={Boyle},
+           familyi={B\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ae0e0a804217325acd5bc002a18d6f7}{%
+           family={Reagle},
+           familyi={R\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Highway Traffic Safety Administration}%
+      }
+      \list{location}{1}{%
+        {Washington, D.C.}%
+      }
+      \strng{namehash}{4655b258aa29f02666c0dce74c400820}
+      \strng{fullhash}{bd1cc4d6ed755ee249577f410026f16a}
+      \strng{bibnamehash}{4655b258aa29f02666c0dce74c400820}
+      \strng{authorbibnamehash}{4655b258aa29f02666c0dce74c400820}
+      \strng{authornamehash}{4655b258aa29f02666c0dce74c400820}
+      \strng{authorfullhash}{bd1cc4d6ed755ee249577f410026f16a}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Motivations for Speeding, Volume II: Findings Report}}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Richard et al. - 2013 - Motivations for Speeding, Volume II Findings Report.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nhtsa.gov/sites/nhtsa.gov/files/811818.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.nhtsa.gov/sites/nhtsa.gov/files/811818.pdf
+      \endverb
+    \endentry
     \entry{Shinar2017}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=fff714ff5d4986b50205d3be54e39f05}{%
@@ -1209,6 +1721,189 @@
       \field{labeltitlesource}{title}
       \field{title}{{Políticas de Transporte no Brasil - A Construção da Mobilidade Excludente}}
       \field{year}{2013}
+    \endentry
+    \entry{Wang2018}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=7bcc46183c4630c9daf67327af80a956}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xuesong},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e5426e95257bbaea6ace40646543a69}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Qingya},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41f88546ac18e2d38408089bf2e97df1}{%
+           family={Quddus},
+           familyi={Q\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25e999140a1edb88a435f518e8e37bb0}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Tianxiang},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aff3a17adf15bdaa145eb2288bff8dce}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Shou'en},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{06f4787bd1a9ec1bc35332f881c8a9e0}
+      \strng{fullhash}{5ca69092226d60be6d18028402fb355e}
+      \strng{bibnamehash}{06f4787bd1a9ec1bc35332f881c8a9e0}
+      \strng{authorbibnamehash}{06f4787bd1a9ec1bc35332f881c8a9e0}
+      \strng{authornamehash}{06f4787bd1a9ec1bc35332f881c8a9e0}
+      \strng{authorfullhash}{5ca69092226d60be6d18028402fb355e}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{4}
+      \field{title}{{Speed, speed variation and crash relationships for urban arterials}}
+      \field{volume}{113}
+      \field{year}{2018}
+      \field{pages}{236\bibrangedash 243}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.aap.2018.01.032
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Wang et al. - 2018 - Speed, speed variation and crash relationships for urban arterials.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457518300381
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457518300381
+      \endverb
+    \endentry
+    \entry{Warren2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b5ae56f4f78714e5b293164e9042d92d}{%
+           family={Warren},
+           familyi={W\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c68e42d6fb0a7bb58dbc5ebfc538b2cd}{%
+           family={Lipkowitz},
+           familyi={L\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac03bb6a59212d98f16714c550b8bec5}{%
+           family={Sokolov},
+           familyi={S\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{161e8d4cad7e99ea90be9c11faebb7b0}
+      \strng{fullhash}{161e8d4cad7e99ea90be9c11faebb7b0}
+      \strng{bibnamehash}{161e8d4cad7e99ea90be9c11faebb7b0}
+      \strng{authorbibnamehash}{161e8d4cad7e99ea90be9c11faebb7b0}
+      \strng{authornamehash}{161e8d4cad7e99ea90be9c11faebb7b0}
+      \strng{authorfullhash}{161e8d4cad7e99ea90be9c11faebb7b0}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1939-1390}
+      \field{journaltitle}{IEEE Intelligent Transportation Systems Magazine}
+      \field{number}{3}
+      \field{title}{{Clusters of Driving Behavior From Observational Smartphone Data}}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{171\bibrangedash 180}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MITS.2019.2919516
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Warren, Lipkowitz, Sokolov - 2019 - Clusters of Driving Behavior From Observational Smartphone Data.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8743351/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8743351/
+      \endverb
+    \endentry
+    \entry{Watson2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d75f654bd63377ce5f34389d68acf5b8}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c849c572065673d667861b74af8d3c8}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8bac78624a3c8afe389ebb8f16ec1a4}{%
+           family={Siskind},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e613f4d08fe130cf7ba211c676bc91ca}{%
+           family={Fleiter},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32471f8994c035ec3b45a01a1e00ce9d}{%
+           family={Soole},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5a63b6a7eab923d90994700d6fec4e0e}
+      \strng{fullhash}{8ab03e6dcf0d43165e056c70c9037454}
+      \strng{bibnamehash}{5a63b6a7eab923d90994700d6fec4e0e}
+      \strng{authorbibnamehash}{5a63b6a7eab923d90994700d6fec4e0e}
+      \strng{authornamehash}{5a63b6a7eab923d90994700d6fec4e0e}
+      \strng{authorfullhash}{8ab03e6dcf0d43165e056c70c9037454}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{1}
+      \field{title}{{Profiling high-range speeding offenders: Investigating criminal history, personal characteristics, traffic offences, and crash history}}
+      \field{volume}{74}
+      \field{year}{2015}
+      \field{pages}{87\bibrangedash 96}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.aap.2014.10.013
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457514003108
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457514003108
+      \endverb
     \endentry
     \entry{Wei2013}{article}{}
       \name{author}{2}{}{%
@@ -1419,6 +2114,54 @@
       \endverb
       \verb{url}
       \verb http://whqlibdoc.who.int/publications/2004/9241562609.pdf
+      \endverb
+    \endentry
+    \entry{Yadav2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f3bb8fa1ce4fb4126bdbd543159ce135}{%
+           family={Yadav},
+           familyi={Y\bibinitperiod},
+           given={Ankit\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=960f849c5fb7e972046ba94a02435c5d}{%
+           family={Velaga},
+           familyi={V\bibinitperiod},
+           given={Nagendra\bibnamedelima R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3ff896c41f3c7441ef2deb3757f3697c}
+      \strng{fullhash}{3ff896c41f3c7441ef2deb3757f3697c}
+      \strng{bibnamehash}{3ff896c41f3c7441ef2deb3757f3697c}
+      \strng{authorbibnamehash}{3ff896c41f3c7441ef2deb3757f3697c}
+      \strng{authornamehash}{3ff896c41f3c7441ef2deb3757f3697c}
+      \strng{authorfullhash}{3ff896c41f3c7441ef2deb3757f3697c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{6}
+      \field{title}{{Alcohol-impaired driving in rural and urban road environments: Effect on speeding behaviour and crash probabilities}}
+      \field{volume}{140}
+      \field{year}{2020}
+      \field{pages}{105512}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.aap.2020.105512
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Yadav, Velaga - 2020 - Alcohol-impaired driving in rural and urban road environments Effect on speeding behaviour and crash probabilitie.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457519315866
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457519315866
       \endverb
     \endentry
     \entry{Yu2017}{article}{}
