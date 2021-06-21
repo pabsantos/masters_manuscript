@@ -1950,6 +1950,73 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457512002023
       \endverb
     \endentry
+    \entry{Welle2016}{report}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=cd0fb7e54b9f8297c8e27fce87a6e9d3}{%
+           family={Welle},
+           familyi={W\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22e3a93f116b3c0ed71d6bd362d87972}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qingnan},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bec73ccd76c735b8a80a52f497c96845}{%
+           family={Adriazola-Steil},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb96b69f6650f423ea8a9d0a2f6b5aee}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f6d85cba54e0afb782606346b1d1d81}{%
+           family={Sarmiento},
+           familyi={S\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=634c6a66ff5b7a0d22a4d3bd52601265}{%
+           family={Obelheiro},
+           familyi={O\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {World Resources Institute - Brasil}%
+      }
+      \strng{namehash}{8cf696a6ec4f50926c404956210eb756}
+      \strng{fullhash}{be17b86308a282caa1bbab37bb0ebda3}
+      \strng{bibnamehash}{8cf696a6ec4f50926c404956210eb756}
+      \strng{authorbibnamehash}{8cf696a6ec4f50926c404956210eb756}
+      \strng{authornamehash}{8cf696a6ec4f50926c404956210eb756}
+      \strng{authorfullhash}{be17b86308a282caa1bbab37bb0ebda3}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{O Desenho de Cidades Seguras}}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \verb{file}
+      \verb :home/pabsantos/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Welle et al. - 2016 - O Desenho de Cidades Seguras.pdf:pdf
+      \endverb
+    \endentry
     \entry{WHO2011}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%

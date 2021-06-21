@@ -1,30 +1,30 @@
 [0] Config.pm:312> INFO - This is Biber 2.15
-[0] Config.pm:315> INFO - Logfile is 'main.blg'
-[66] biber:330> INFO - === Thu Jun 17, 2021, 19:20:04
-[78] Biber.pm:415> INFO - Reading 'main.bcf'
-[159] Biber.pm:952> INFO - Found 49 citekeys in bib section 0
-[172] Biber.pm:4334> INFO - Processing section 0
-[181] Biber.pm:4523> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[183] bibtex.pm:1682> INFO - LaTeX decoding ...
-[240] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
-[241] Utils.pm:384> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
-[373] Utils.pm:384> WARN - month field 'oct' in entry 'Shinar2017' is not an integer - this will probably not sort properly.
-[384] Utils.pm:384> WARN - month field 'jan' in entry 'Zervas2008' is not an integer - this will probably not sort properly.
-[388] Utils.pm:384> WARN - month field 'sep' in entry 'Ashton1980' is not an integer - this will probably not sort properly.
-[394] Utils.pm:384> WARN - month field 'jan' in entry 'Elvik2013' is not an integer - this will probably not sort properly.
-[416] Utils.pm:384> WARN - month field 'mar' in entry 'Bastos2021' is not an integer - this will probably not sort properly.
-[430] Utils.pm:384> WARN - month field 'jan' in entry 'Richard2013' is not an integer - this will probably not sort properly.
-[437] Utils.pm:384> WARN - month field 'apr' in entry 'Hidalgo-Solorzano2020' is not an integer - this will probably not sort properly.
-[445] Utils.pm:384> WARN - month field 'jan' in entry 'Watson2015' is not an integer - this will probably not sort properly.
-[450] Utils.pm:384> WARN - month field 'sep' in entry 'Dinh2013' is not an integer - this will probably not sort properly.
-[460] Utils.pm:384> WARN - month field 'dec' in entry 'Moreno2013' is not an integer - this will probably not sort properly.
-[469] Utils.pm:384> WARN - month field 'apr' in entry 'Wang2018' is not an integer - this will probably not sort properly.
-[479] Utils.pm:384> WARN - month field 'sep' in entry 'Bastos2020a' is not an integer - this will probably not sort properly.
-[484] Utils.pm:384> WARN - month field 'jun' in entry 'Yadav2020' is not an integer - this will probably not sort properly.
-[615] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[616] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[616] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
-[616] Biber.pm:4168> INFO - No sort tailoring available for locale 'pt-BR'
-[671] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[703] bbl.pm:754> INFO - Output to main.bbl
-[703] Biber.pm:128> INFO - WARNINGS: 14
+[1] Config.pm:315> INFO - Logfile is 'main.blg'
+[164] biber:330> INFO - === sáb jun 19, 2021, 15:08:07
+[192] Biber.pm:415> INFO - Reading 'main.bcf'
+[345] Biber.pm:952> INFO - Found 50 citekeys in bib section 0
+[368] Biber.pm:4334> INFO - Processing section 0
+[388] Biber.pm:4523> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[393] bibtex.pm:1682> INFO - LaTeX decoding ...
+[496] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
+[499] Utils.pm:384> WARN - Duplicate entry key: 'Ewing2009' in file 'referencias.bib', skipping ...
+[943] Utils.pm:384> WARN - month field 'oct' in entry 'Shinar2017' is not an integer - this will probably not sort properly.
+[960] Utils.pm:384> WARN - month field 'jan' in entry 'Zervas2008' is not an integer - this will probably not sort properly.
+[966] Utils.pm:384> WARN - month field 'sep' in entry 'Ashton1980' is not an integer - this will probably not sort properly.
+[982] Utils.pm:384> WARN - month field 'jan' in entry 'Elvik2013' is not an integer - this will probably not sort properly.
+[1041] Utils.pm:384> WARN - month field 'mar' in entry 'Bastos2021' is not an integer - this will probably not sort properly.
+[1061] Utils.pm:384> WARN - month field 'jan' in entry 'Richard2013' is not an integer - this will probably not sort properly.
+[1074] Utils.pm:384> WARN - month field 'apr' in entry 'Hidalgo-Solorzano2020' is not an integer - this will probably not sort properly.
+[1089] Utils.pm:384> WARN - month field 'jan' in entry 'Watson2015' is not an integer - this will probably not sort properly.
+[1096] Utils.pm:384> WARN - month field 'sep' in entry 'Dinh2013' is not an integer - this will probably not sort properly.
+[1110] Utils.pm:384> WARN - month field 'dec' in entry 'Moreno2013' is not an integer - this will probably not sort properly.
+[1125] Utils.pm:384> WARN - month field 'apr' in entry 'Wang2018' is not an integer - this will probably not sort properly.
+[1142] Utils.pm:384> WARN - month field 'sep' in entry 'Bastos2020a' is not an integer - this will probably not sort properly.
+[1149] Utils.pm:384> WARN - month field 'jun' in entry 'Yadav2020' is not an integer - this will probably not sort properly.
+[1590] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1590] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1591] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[1591] Biber.pm:4168> INFO - No sort tailoring available for locale 'pt-BR'
+[1694] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1769] bbl.pm:754> INFO - Output to main.bbl
+[1769] Biber.pm:128> INFO - WARNINGS: 14
