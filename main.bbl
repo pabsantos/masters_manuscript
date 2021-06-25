@@ -726,6 +726,50 @@
       \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Elvik et al. - 2009 - The Handbook of Road Safety Measures.pdf:pdf
       \endverb
     \endentry
+    \entry{Ewing2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b4be218f366717b817a9ec46bfc7f9a2}{%
+           family={Ewing},
+           familyi={E\bibinitperiod},
+           given={Reid},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b4b21cb4a9f57cdb95221a4a669cf85}{%
+           family={Cervero},
+           familyi={C\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cbabda06e7395305f82d1ac4606f2924}
+      \strng{fullhash}{cbabda06e7395305f82d1ac4606f2924}
+      \strng{bibnamehash}{cbabda06e7395305f82d1ac4606f2924}
+      \strng{authorbibnamehash}{cbabda06e7395305f82d1ac4606f2924}
+      \strng{authornamehash}{cbabda06e7395305f82d1ac4606f2924}
+      \strng{authorfullhash}{cbabda06e7395305f82d1ac4606f2924}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{.}
+      \field{issn}{01944363}
+      \field{journaltitle}{Journal of the American Planning Association}
+      \field{number}{3}
+      \field{title}{{Travel and the built environment: A meta analysis}}
+      \field{volume}{76}
+      \field{year}{2010}
+      \field{pages}{265\bibrangedash 294}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1080/01944361003766766
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Ewing, Cervero - 2010 - Travel and the built environment A meta analysis.pdf:pdf
+      \endverb
+      \keyw{built environment,effect sizes,transit,vehicle miles traveled (VMT),walking}
+    \endentry
     \entry{Ewing2009}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b4be218f366717b817a9ec46bfc7f9a2}{%
@@ -1692,6 +1736,53 @@
       \field{type}{techreport}
       \field{year}{2003}
     \endentry
+    \entry{Tiwari}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=663e1b6f9c2f5e599d54ee5b3d1417fc}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Geetam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=663e1b6f9c2f5e599d54ee5b3d1417fc}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Geetam},
+           giveni={G\bibinitperiod}}}%
+        {{hash=174e01077fe132fb8250cd990634ceef}{%
+           family={Mohan},
+           familyi={M\bibinitperiod},
+           given={Dinesh},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{663e1b6f9c2f5e599d54ee5b3d1417fc}
+      \strng{fullhash}{663e1b6f9c2f5e599d54ee5b3d1417fc}
+      \strng{bibnamehash}{663e1b6f9c2f5e599d54ee5b3d1417fc}
+      \strng{authorbibnamehash}{663e1b6f9c2f5e599d54ee5b3d1417fc}
+      \strng{authornamehash}{663e1b6f9c2f5e599d54ee5b3d1417fc}
+      \strng{authorfullhash}{663e1b6f9c2f5e599d54ee5b3d1417fc}
+      \strng{editorbibnamehash}{132df633fdaab24b9706faeb56db4200}
+      \strng{editornamehash}{132df633fdaab24b9706faeb56db4200}
+      \strng{editorfullhash}{132df633fdaab24b9706faeb56db4200}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Transport Planning {\&} Traffic Safety - Making Cities, Roads {\&} Vehicles Safer}
+      \field{chapter}{4}
+      \field{isbn}{978-1-4987-5147-6}
+      \field{title}{{Land Use-Transportation Planning, Mobility and Safety}}
+      \field{year}{2016}
+      \field{pages}{45\bibrangedash 58}
+      \range{pages}{14}
+    \endentry
     \entry{Vasconcellos2013}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d6554b3d7865528b0fc404f3d7055203}{%
@@ -2013,9 +2104,6 @@
       \field{title}{{O Desenho de Cidades Seguras}}
       \field{type}{techreport}
       \field{year}{2016}
-      \verb{file}
-      \verb :home/pabsantos/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Welle et al. - 2016 - O Desenho de Cidades Seguras.pdf:pdf
-      \endverb
     \endentry
     \entry{WHO2011}{report}{}
       \name{author}{1}{}{%
@@ -2220,9 +2308,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1016/j.aap.2020.105512
-      \endverb
-      \verb{file}
-      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Yadav, Velaga - 2020 - Alcohol-impaired driving in rural and urban road environments Effect on speeding behaviour and crash probabilitie.pdf:pdf
       \endverb
       \verb{urlraw}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457519315866
