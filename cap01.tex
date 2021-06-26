@@ -228,9 +228,9 @@ In \autoref{tab:spdfct} is presented a few groups of factors affecting speeding 
         font=footnotesize}
     \caption{FACTORS THAT AFFECTS SPEEDING AND SPEED CHOICE}
     \centering
-    \begin{tabular}{l|l|l}
+    \begin{tabular}{lll}
     \hline
-    \multicolumn{1}{c|}{\textbf{Human}}                  & \multicolumn{1}{c|}{\textbf{Vehicle}} & \multicolumn{1}{c}{\textbf{Environment}} \\ \hline
+    \multicolumn{1}{c}{\textbf{Human}}                  & \multicolumn{1}{c}{\textbf{Vehicle}} & \multicolumn{1}{c}{\textbf{Environment}} \\ \hline
     Background characteristics      & Type/Size        & Road elements        \\
     Demographic characteristics     & Engine power     & Weather              \\
     Physiological factors           & Comfort          & Traffic conditions   \\
@@ -313,7 +313,7 @@ Traffic volume is directly related to crash frequency and the increase of vehicl
 
 %% Tiwari
 
-\autoref{tab:6d} contains the categories previously described and its variables. It is important to note that it is not presented all the possible built environment variables, only the main ones found in previous papers. In addition, these are rough categories, divided by boundaries that are subject to change \cite{Ewing2010}. Density measures a variable of interest per unit of area and can include the quantity of population, housing or number of jobs, showing the ``hotspots'' of the overall activity in a city. Diversity refers to different land use types within a given area, ranging from single-use environments to more varied land uses. The street network and its characteristics is included in the design category, and considers elements like block size, type / quantity of intersections, street widths and quantity of pedestrian crossings.
+\autoref{tab:6d} contains the categories previously described and its variables. It is important to note that it is not presented all the possible built environment variables, only the main ones found in previous papers. In addition, these are rough categories, divided by boundaries that are subject to change \cite{Ewing2010}. Density measures a variable of interest per unit of area and can include the quantity of population, housing or number of jobs, showing the ``hotspots'' of the overall activity in a city. Diversity refers to different land use types within a given area, ranging from single-use environments to more varied land uses. The street network and its characteristics is included in the design category, and considers elements like block size, type / quantity of intersections, street widths, quantity of pedestrian crossings and street network density.
 
 \begin{table}[!hbtp]
     \footnotesize
@@ -322,26 +322,27 @@ Traffic volume is directly related to crash frequency and the increase of vehicl
         font=footnotesize}
     \caption{BUILT ENVIRONMENT VARIABLES}
     \centering
-    \begin{tabular}{l|l}
+    \begin{tabular}{ll}
         \hline
-        \multicolumn{1}{c|}{\textbf{Category}}                          & \multicolumn{1}{c}{\textbf{Variable}}                        \\ \hline
+        \multicolumn{1}{c}{\textbf{Category}}                          & \multicolumn{1}{c}{\textbf{Variable}}                        \\ \hline
         \multirow{3}{*}{Density}                   & Population                               \\
                                                    & Housing                                  \\
                                                    & Employment                               \\ \hline
         \multirow{1}{*}{Diversity}                 & Land use                                 \\
                                                    \hline
-        \multirow{5}{*}{Design}                    & Block size                               \\
+        \multirow{6}{*}{Design}                    & Block size                               \\
                                                    & Type / Quantity of intersections                \\
                                                    & Street widths                            \\
                                                    & Quantity of pedestrian crossings         \\
                                                    & Road hierarchy \\
+                                                   & Street network density \\
                                                     \hline
         \multirow{3}{*}{Destination Accessibility} & Quantity of commercial and service units \\
                                                    & Distance to city center                  \\
                                                    & Quantity of jobs                         \\ \hline
-        \multirow{3}{*}{Distance to Transit}       & Quantity of bus stops                    \\
+        \multirow{2}{*}{Distance to Transit}       & Quantity of bus stops                    \\
                                                    & Distance to nearest transit stop         \\
-                                                   & Street network density                   \\ \hline
+                                                    \hline
         \multirow{3}{*}{Demographics}              & Income                                   \\
                                                    & Age                                      \\
                                                    & Sex                                      \\ \hline
@@ -351,11 +352,176 @@ Traffic volume is directly related to crash frequency and the increase of vehicl
     SOURCE: The Author (2021), based on \textcite{Ewing2009}, \textcite{Ewing2010} and \textcite{Obelheiro2020}.
 \end{table}
 
-Destination accessibility measures how easy is to access places of attraction, including jobs, services, commerce and districts of overall interest, considering business districts and city downtown. Distance to transit usually is measured by the level of offer of transport services, being measured by the quantity of transit stops and network density. Network density also can be included in the design category. Demographics, while not being a characteristic of the build environment, can influence the occurrence of speeding in urban environments, including income, age and sex.
+Destination accessibility measures how easy is to access places of attraction, including jobs, services, commerce and districts of overall interest, considering business districts and city downtown. Distance to transit usually is measured by the level of offer of transport services, being measured by the quantity of transit stops and network density. Network density also can be included in the design category. Demographics, while not being a characteristic of the build environment, can influence the occurrence of speeding in urban environments, including income, age and sex. In the following tables (\autoref{tab:density} to \autoref{tab:demographics}) are presented the built environment categories and its variables considered in this work, considering the authors that investigated them related to the road safety performance in urban areas, with the focus on one final outcome indicator - road crashes and one mediator - occurrence of speeding.
 
 % 3. BE and relationship to road safety
 
 %% table with all the authors
+
+\autoref{tab:density} displays a list of authors which investigated the relationship between population density and road safety in urban areas. Regarding road traffic crashes, \textcite{Dumbaugh2009} and \textcite{Obelheiro2020} found a inverted correlation between number of habitants per area and occurrence of road crashes. Higher densities environments causes people to drive less \cite{Dumbaugh2009}, reducing the exposure to road traffic accidents. A research considering road safety and BEs about another brazilian city - Porto Alegre - also presented a result of a inverted relationship between injury crashes and population density in most of the city's area.
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{CORRELATION BETWEEN DENSITY AND ROAD SAFETY OUTCOMES}
+    \centering
+    \begin{tabular}{llll}
+        \hline
+        \multirow{2}{*}{\textbf{Category}} & \multirow{2}{*}{\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Road safety outcomes}} \\
+         &  & \multicolumn{1}{l}{\textbf{Crashes}} & \multicolumn{1}{l}{\textbf{Speeding}} \\ \hline
+        \multirow{6}{*}{Density} & \multirow{6}{*}{Population} & $(-)$ \textcite{Dumbaugh2009} & \multirow{6}{*}{---} \\
+         &  & $(+)$ \textcite{Dumbaugh2013} &  \\
+         &  & $(+)$ \textcite{Lee2015} &  \\
+         &  & $(-)$ \textcite{Obelheiro2020} &  \\
+         &  & $(+)$ \textcite{Pirdavani2014} &  \\
+         &  & $(\pm)$ \textcite{Welle2016} &  \\ \hline
+    \end{tabular}
+    \label{tab:density}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
+\end{table}
+
+\textcite{Dumbaugh2013}, \textcite{Lee2015} and \textcite{Pirdavani2014} found a direct relationship between population density and the occurrence of road crashes. 
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{CORRELATION BETWEEN DIVERSITY AND ROAD SAFETY OUTCOMES}
+    \centering
+    \begin{tabular}{llll}
+        \hline
+        \multirow{2}{*}{\textbf{Category}} & \multirow{2}{*}{\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Road safety outcomes}} \\
+         &  & \textbf{Crashes} & \textbf{Speeding} \\ \hline
+        \multirow{5}{*}{Diversity} & \multirow{5}{*}{Land use} & $(+)$ \textcite{Amoh-Gyimah2017} & \multirow{5}{*}{---} \\
+         &  & $(+)$ \textcite{Obelheiro2019} &  \\
+         &  & $(+)$ \textcite{Obelheiro2020} &  \\
+         &  & $(+)$ \textcite{Ouyang2014} &  \\
+         &  & $(+)$ \textcite{Rhee2016} &  \\ \hline
+    \end{tabular}
+    \label{tab:diversity}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
+\end{table}
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{CORRELATION BETWEEN DESIGN AND ROAD SAFETY OUTCOMES}
+    \centering
+    \begin{tabular}{p{2.5cm}p{6.2cm}p{6.2cm}}
+        \hline
+        \multicolumn{1}{l}{\multirow{2}{*}{\textbf{Variable}}} & \multicolumn{2}{c}{\textbf{Road safety outcomes}} \\
+        \multicolumn{1}{c}{} & \textbf{Crashes} & \textbf{Speeding} \\ \hline
+        \multirow{9}{2cm}{Density of intersections} & $(\pm)$ \textcite{Dumbaugh2009} & $(-)$ \textcite{Dumbaugh2009} \\
+         & $(+)$ \textcite{Dumbaugh2011} & $(-)$ \textcite{Elvik2009} \\
+         & $(+)$ \textcite{Dumbaugh2013} & $(-)$ \textcite{Ewing2009} \\
+         & $(+)$ \textcite{Elvik2009} & $(-)$ \textcite{Huang2018} \\
+         & $(-)$ \textcite{Ewing2009} & $(-)$ \textcite{Obelheiro2019} \\
+         & $(+)$ \textcite{Huang2018} & $(-)$ \textcite{Obelheiro2020} \\
+         & $(-)$ \textcite{Marshall2011} &  \\
+         & $(-)$ \textcite{Ouyang2014} &  \\
+         & $(-)$ \textcite{Zhang2015} &  \\ \hline
+        \multirow{4}{2cm}{Density of speed cameras} & $(-)$ \textcite{Høye2015} & $(\pm)$ \textcite{Li2020} \\
+         & $(-)$ \textcite{Li2013a} & $(-)$ \textcite{Li2013a} \\
+         & $(-)$ \textcite{Li2020} & $(-)$ \textcite{Oliveira2015} \\
+         & $(+)$ \textcite{Park2019} &  \\ \hline
+        \multirow{3}{2cm}{Density of signalized intersections} & $(-)$ \textcite{Elvik2009} & $(\pm)$ \textcite{Elvik2009} \\
+         & $(+)$ \textcite{Lovegrove2006} & $(\pm)$ \textcite{Furth2018} \\
+         & $(+)$ \textcite{Lee2015} &  \\ \hline
+        \multirow{9}{2cm}{Proportion of arterial roads} & $(+)$ \textcite{Dumbaugh2009} & $(+)$ \textcite{Dumbaugh2011} \\
+         & $(+)$ \textcite{Dumbaugh2011} & $(+)$ \textcite{Dumbaugh2013} \\
+         & $(+)$ \textcite{Dumbaugh2013} & $(+)$ \textcite{Ewing2009} \\
+         & $(+)$ \textcite{Ewing2009} & $(+)$ \textcite{Huang2018} \\
+         & $(+)$ \textcite{Huang2018} & $(+)$ \textcite{Obelheiro2020} \\
+         & $(+)$ \textcite{Obelheiro2020} & $(+)$ \textcite{Welle2016} \\
+         & $(+)$ \textcite{Ukkusuri2012} &  \\
+         & $(+)$ \textcite{Welle2016} &  \\
+         & $(+)$ \textcite{Yu2017} &  \\ \hline
+        \multirow{2}{2cm}{Network density} & $(-)$ \textcite{Marshall2010} & --- \\
+         & $(-)$ \textcite{Marshall2011} &  \\ \hline
+        \end{tabular}
+    \label{tab:design}
+    \par \vspace{1mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
+\end{table}
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{CORRELATION BETWEEN DESTINATION ACCESSIBILITY AND ROAD SAFETY OUTCOMES}
+    \centering
+    \begin{tabular}{p{4cm}p{4cm}p{4cm}p{2cm}}
+        \hline
+        \multirow{2}{4cm}{\textbf{Category}} & \multirow{2}{4cm}{\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Road safety outcomes}} \\
+         &  & \textbf{Crashes} & \textbf{Speeding} \\ \hline
+        \multirow{2}{4cm}{Destination Accessibility} & \multirow{2}{4cm}{Density of commercial and services units} & $(-)$ \textcite{Ouyang2014} & \multirow{2}{2cm}{---} \\
+         &  & $(-)$ \textcite{Welle2016} &  \\ \hline
+    \end{tabular}
+    \label{tab:destination}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
+\end{table}
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{CORRELATION BETWEEN DISTANCE TO TRANSIT AND ROAD SAFETY OUTCOMES}
+    \centering
+    \begin{tabular}{p{2.5cm}p{6.2cm}p{6.2cm}}
+        \hline
+        \multicolumn{1}{c}{\multirow{2}{2.5cm}{\textbf{Variable}}} & \multicolumn{2}{c}{\textbf{Road safety outcomes}} \\
+        \multicolumn{1}{c}{} & \textbf{Crashes} & \textbf{Speeding} \\ \hline
+        \multirow{5}{2.5cm}{Bus stop density} & $(+)$ \textcite{Karim2013} & $(-)$ \textcite{Bansal2014} \\
+         & $(+)$ \textcite{Obelheiro2020} & $(-)$ \textcite{Koshy2005} \\
+         & $(+)$ \textcite{Ouyang2014} &  \\
+         & $(+)$ \textcite{Ukkusuri2012} &  \\
+         & $(+)$ \textcite{Wei2013} &  \\ \hline
+    \end{tabular}
+    \label{tab:distance}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
+\end{table}
+
+\begin{table}[!hbtp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{CORRELATION BETWEEN DEMOGRAPHICS AND ROAD SAFETY OUTCOMES}
+    \centering
+    \begin{tabular}{llll}
+        \hline
+        \multirow{2}{*}{\textbf{Category}} & \multirow{2}{*}{\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Road safety outcomes}} \\
+         &  & \textbf{Crashes} & \textbf{Speeding} \\ \hline
+        \multirow{2}{*}{Demographics} & \multirow{2}{*}{Income} & $(-)$ \textcite{Obelheiro2019} & \multirow{2}{*}{---} \\
+         &  & $(-)$ \textcite{Marshall2017} &  \\ \hline
+    \end{tabular}
+    \label{tab:demographics}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
+\end{table}
 
 % 4. Influence of urban planning in BE
 

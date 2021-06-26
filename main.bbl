@@ -19,6 +19,57 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Amoh-Gyimah2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9ff1e0295db2218139a2955346738136}{%
+           family={Amoh-Gyimah},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3872ad53eb2c61cc186c8c95a1505097}{%
+           family={Saberi},
+           familyi={S\bibinitperiod},
+           given={Meead},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d6a286971b84949291cb7705af40614}{%
+           family={Sarvi},
+           familyi={S\bibinitperiod},
+           given={Majid},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{30b272bf004bf5c3fded35f68f7557a2}
+      \strng{fullhash}{30b272bf004bf5c3fded35f68f7557a2}
+      \strng{bibnamehash}{30b272bf004bf5c3fded35f68f7557a2}
+      \strng{authorbibnamehash}{30b272bf004bf5c3fded35f68f7557a2}
+      \strng{authornamehash}{30b272bf004bf5c3fded35f68f7557a2}
+      \strng{authorfullhash}{30b272bf004bf5c3fded35f68f7557a2}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{22136657}
+      \field{journaltitle}{Analytic Methods in Accident Research}
+      \field{month}{3}
+      \field{title}{{The effect of variations in spatial units on unobserved heterogeneity in macroscopic crash models}}
+      \field{volume}{13}
+      \field{year}{2017}
+      \field{pages}{28\bibrangedash 51}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1016/j.amar.2016.11.001
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2213665716300471
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2213665716300471
+      \endverb
+    \endentry
     \entry{Ashton1980}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b7e15035b91bdf5f8695fa277d8b874f}{%
@@ -52,6 +103,59 @@
       \endverb
       \verb{url}
       \verb https://www.sae.org/content/801315/
+      \endverb
+    \endentry
+    \entry{Bansal2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=edf70fc438046012605b0711144130d3}{%
+           family={Bansal},
+           familyi={B\bibinitperiod},
+           given={Prateek},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7affb63ae9fee80b39005f1b878cd36}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Rishabh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=663e1b6f9c2f5e599d54ee5b3d1417fc}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Geetam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{db6cc9279571d2e1a492b69633fca900}
+      \strng{fullhash}{db6cc9279571d2e1a492b69633fca900}
+      \strng{bibnamehash}{db6cc9279571d2e1a492b69633fca900}
+      \strng{authorbibnamehash}{db6cc9279571d2e1a492b69633fca900}
+      \strng{authornamehash}{db6cc9279571d2e1a492b69633fca900}
+      \strng{authorfullhash}{db6cc9279571d2e1a492b69633fca900}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- Reduction of free flow speed in other motorized vehicles.}
+      \field{issn}{20460430}
+      \field{journaltitle}{International Journal of Transportation Science and Technology}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{{Impacts of Bus-stops on the Speed of Motorized Vehicles under Heterogeneous Traffic Conditions: A Case-Study of Delhi, India}}
+      \field{volume}{3}
+      \field{year}{2014}
+      \field{pages}{167\bibrangedash 178}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1260/2046-0430.3.2.167
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2046043016300946
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2046043016300946
       \endverb
     \endentry
     \entry{Bastos2014}{thesis}{}
@@ -631,6 +735,136 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0967070X13000905
       \endverb
     \endentry
+    \entry{Dumbaugh2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
+           family={Dumbaugh},
+           familyi={D\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f61d280d0ccef8b64bf5fae966ddbe55}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenhao},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a99d948e44d9519bf77a8e381b5e28dc}
+      \strng{fullhash}{a99d948e44d9519bf77a8e381b5e28dc}
+      \strng{bibnamehash}{a99d948e44d9519bf77a8e381b5e28dc}
+      \strng{authorbibnamehash}{a99d948e44d9519bf77a8e381b5e28dc}
+      \strng{authornamehash}{a99d948e44d9519bf77a8e381b5e28dc}
+      \strng{authorfullhash}{a99d948e44d9519bf77a8e381b5e28dc}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{01944363}
+      \field{journaltitle}{Journal of the American Planning Association}
+      \field{number}{1}
+      \field{title}{{Designing for the safety of pedestrians, cyclists, and motorists in urban environments}}
+      \field{volume}{77}
+      \field{year}{2011}
+      \field{pages}{69\bibrangedash 88}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/01944363.2011.536101
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Dumbaugh, Li - 2011 - Designing for the safety of pedestrians, cyclists, and motorists in urban environments.pdf:pdf
+      \endverb
+      \keyw{community design,land use planning,traffic safety,urban design}
+    \endentry
+    \entry{Dumbaugh2013}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
+           family={Dumbaugh},
+           familyi={D\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f61d280d0ccef8b64bf5fae966ddbe55}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenhao},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6a5384292d5cd8794bcdefd0bb0c0b1}{%
+           family={Joh},
+           familyi={J\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf16022dd4191944c01a3222667e7c89}
+      \strng{fullhash}{cf16022dd4191944c01a3222667e7c89}
+      \strng{bibnamehash}{cf16022dd4191944c01a3222667e7c89}
+      \strng{authorbibnamehash}{cf16022dd4191944c01a3222667e7c89}
+      \strng{authornamehash}{cf16022dd4191944c01a3222667e7c89}
+      \strng{authorfullhash}{cf16022dd4191944c01a3222667e7c89}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1357-5317}
+      \field{journaltitle}{URBAN DESIGN International}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{{The built environment and the incidence of pedestrian and cyclist crashes}}
+      \field{volume}{18}
+      \field{year}{2013}
+      \field{pages}{217\bibrangedash 228}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1057/udi.2013.2
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1057/udi.2013.2
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1057/udi.2013.2
+      \endverb
+    \endentry
+    \entry{Dumbaugh2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
+           family={Dumbaugh},
+           familyi={D\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b58ff9c3069c1ed4d01c73bd7562a68}{%
+           family={Rae},
+           familyi={R\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f75f5139acc8c9476b4cb94432e3d71}
+      \strng{fullhash}{2f75f5139acc8c9476b4cb94432e3d71}
+      \strng{bibnamehash}{2f75f5139acc8c9476b4cb94432e3d71}
+      \strng{authorbibnamehash}{2f75f5139acc8c9476b4cb94432e3d71}
+      \strng{authornamehash}{2f75f5139acc8c9476b4cb94432e3d71}
+      \strng{authorfullhash}{2f75f5139acc8c9476b4cb94432e3d71}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Planning Association}
+      \field{number}{3}
+      \field{title}{{Safe Urban Form: Revisiting The Relationship Between Community Design and Traffic Safety}}
+      \field{volume}{75}
+      \field{year}{2009}
+      \field{pages}{309\bibrangedash 329}
+      \range{pages}{21}
+    \endentry
     \entry{Elvik2013}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=863a15ae7b18da8c75f57102c232117e}{%
@@ -797,7 +1031,6 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The article reaches two conclusions counter to accepted transportation engineering theory. First, the traffic environments of dense urban areas appear to be safer than the lower-volume environments of the suburbs. The reason is that many fewer miles are driven on a per capita basis, and the driving that is done is at lower speeds that are less likely to produce fatal crashes. Second, at least in dense urban areas, less-"forgiving" design treatments - such as narrow lanes, traffic-calming measures, and street trees close to the roadway - appear to enhance a roadway's safety performance when compared to more conventional roadway designs. The reason for this apparent anomaly may be that less-forgiving designs provide drivers with clear information on safe and appropriate operating speeds. {©} 2009 SAGE Publications.}
       \field{issn}{08854122}
       \field{journaltitle}{Journal of Planning Literature}
       \field{number}{4}
@@ -865,6 +1098,73 @@
       \field{isbn}{9788598156699}
       \field{title}{{Segurança viária}}
       \field{year}{2012}
+    \endentry
+    \entry{Furth2018}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e3e164b724148bc0392f4a68bcf53996}{%
+           family={Furth},
+           familyi={F\bibinitperiod},
+           given={Peter\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e3bd3e57269c2d14089d7ee8c51a82a}{%
+           family={Halawani},
+           familyi={H\bibinitperiod},
+           given={Ahmed\bibnamedelimb T.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1639dadb1da2bffb2d77f43c6d3247b6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b23514a07a660ba0218c92798705b9cf}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Weimin\bibnamedelima (Jake)},
+           giveni={W\bibinitperiod\bibinitdelim (\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d982a3af6a847e83bc9ba78182d77afc}{%
+           family={Cesme},
+           familyi={C\bibinitperiod},
+           given={Burak},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{81f6f8dda3602f48c9e93955b17d240f}
+      \strng{fullhash}{4643e1a795c66f009e1d79b9195bcc1e}
+      \strng{bibnamehash}{81f6f8dda3602f48c9e93955b17d240f}
+      \strng{authorbibnamehash}{81f6f8dda3602f48c9e93955b17d240f}
+      \strng{authornamehash}{81f6f8dda3602f48c9e93955b17d240f}
+      \strng{authorfullhash}{4643e1a795c66f009e1d79b9195bcc1e}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0361-1981}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{12}
+      \field{number}{18}
+      \field{title}{{Using Traffic Signal Control to Limit Speeding Opportunities on Bidirectional Urban Arterials}}
+      \field{volume}{2672}
+      \field{year}{2018}
+      \field{pages}{107\bibrangedash 116}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1177/0361198118790638
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Furth et al. - 2018 - Using Traffic Signal Control to Limit Speeding Opportunities on Bidirectional Urban Arterials.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.1177/0361198118790638
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.1177/0361198118790638
+      \endverb
     \endentry
     \entry{Gollini2013}{article}{}
       \name{author}{5}{}{%
@@ -1099,6 +1399,97 @@
       \verb http://jech.bmj.com/lookup/doi/10.1136/jech-2019-213352
       \endverb
     \endentry
+    \entry{Høye2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c41bcfc098b594e42a0fa0d132f052d}{%
+           family={H{ø}ye},
+           familyi={H\bibinitperiod},
+           given={Alena},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c41bcfc098b594e42a0fa0d132f052d}
+      \strng{fullhash}{4c41bcfc098b594e42a0fa0d132f052d}
+      \strng{bibnamehash}{4c41bcfc098b594e42a0fa0d132f052d}
+      \strng{authorbibnamehash}{4c41bcfc098b594e42a0fa0d132f052d}
+      \strng{authornamehash}{4c41bcfc098b594e42a0fa0d132f052d}
+      \strng{authorfullhash}{4c41bcfc098b594e42a0fa0d132f052d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- Reduce of crashes on the first km -- Crash effect decrase as distance from cameras increase. -- Depends on the lentgh of the road section}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{9}
+      \field{title}{{Safety effects of fixed speed cameras—An empirical Bayes evaluation}}
+      \field{volume}{82}
+      \field{year}{2015}
+      \field{pages}{263\bibrangedash 269}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.aap.2015.06.001
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457515002225
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457515002225
+      \endverb
+    \endentry
+    \entry{Huang2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fed5caf84a516c72d99ab5164b478c7d}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea754572f9097ae22e72016aec93058b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaoguang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40ad5497434cbd58a78ce10367484cec}{%
+           family={Patton},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{424a63e1eac4943f90ee190623953613}
+      \strng{fullhash}{424a63e1eac4943f90ee190623953613}
+      \strng{bibnamehash}{424a63e1eac4943f90ee190623953613}
+      \strng{authorbibnamehash}{424a63e1eac4943f90ee190623953613}
+      \strng{authornamehash}{424a63e1eac4943f90ee190623953613}
+      \strng{authorfullhash}{424a63e1eac4943f90ee190623953613}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09666923}
+      \field{journaltitle}{Journal of Transport Geography}
+      \field{month}{5}
+      \field{title}{{Examining spatial relationships between crashes and the built environment: A geographically weighted regression approach}}
+      \field{volume}{69}
+      \field{year}{2018}
+      \field{pages}{221\bibrangedash 233}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.jtrangeo.2018.04.027
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0966692317306373
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0966692317306373
+      \endverb
+    \endentry
     \entry{Jorgensen2005}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=cf6491fb0156d508605ef71b40bb8f39}{%
@@ -1145,6 +1536,260 @@
       \field{pages}{121\bibrangedash 137}
       \range{pages}{17}
     \endentry
+    \entry{Karim2013}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5d70be259384ad98f3f57cb091d16ab0}{%
+           family={Karim},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi Ahsanul},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cdb57f4d4e66f245705432438ceea1fc}{%
+           family={Wahba},
+           familyi={W\bibinitperiod},
+           given={Mohamed\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90ecd88a1e70ab5b67dce50413838476}{%
+           family={Sayed},
+           familyi={S\bibinitperiod},
+           given={Tarek},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2665dce145c9a3d5b61d3b366a95e161}
+      \strng{fullhash}{2665dce145c9a3d5b61d3b366a95e161}
+      \strng{bibnamehash}{2665dce145c9a3d5b61d3b366a95e161}
+      \strng{authorbibnamehash}{2665dce145c9a3d5b61d3b366a95e161}
+      \strng{authornamehash}{2665dce145c9a3d5b61d3b366a95e161}
+      \strng{authorfullhash}{2665dce145c9a3d5b61d3b366a95e161}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0361-1981}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{{Spatial Effects on Zone-Level Collision Prediction Models}}
+      \field{volume}{2398}
+      \field{year}{2013}
+      \field{pages}{50\bibrangedash 59}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3141/2398-06
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.3141/2398-06
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.3141/2398-06
+      \endverb
+    \endentry
+    \entry{Koshy2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d7f627301d8dc4ff72c7e7ccca25bab6}{%
+           family={Koshy},
+           familyi={K\bibinitperiod},
+           given={Reebu\bibnamedelima Zachariah},
+           giveni={R\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d490971b2d866ad4bb49a3e411a52304}{%
+           family={Arasan},
+           familyi={A\bibinitperiod},
+           given={V.\bibnamedelimi Thamizh},
+           giveni={V\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{242a4e853bb3517a3301ecbe10cf185f}
+      \strng{fullhash}{242a4e853bb3517a3301ecbe10cf185f}
+      \strng{bibnamehash}{242a4e853bb3517a3301ecbe10cf185f}
+      \strng{authorbibnamehash}{242a4e853bb3517a3301ecbe10cf185f}
+      \strng{authornamehash}{242a4e853bb3517a3301ecbe10cf185f}
+      \strng{authorfullhash}{242a4e853bb3517a3301ecbe10cf185f}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- Reduces average traffic speed.}
+      \field{issn}{0733-947X}
+      \field{journaltitle}{Journal of Transportation Engineering}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{{Influence of Bus Stops on Flow Characteristics of Mixed Traffic}}
+      \field{volume}{131}
+      \field{year}{2005}
+      \field{pages}{640\bibrangedash 643}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1061/(ASCE)0733-947X(2005)131:8(640)
+      \endverb
+      \verb{urlraw}
+      \verb http://ascelibrary.org/doi/10.1061/{\%}28ASCE{\%}290733-947X{\%}282005{\%}29131{\%}3A8{\%}28640{\%}29
+      \endverb
+      \verb{url}
+      \verb http://ascelibrary.org/doi/10.1061/%7B%5C%%7D28ASCE%7B%5C%%7D290733-947X%7B%5C%%7D282005%7B%5C%%7D29131%7B%5C%%7D3A8%7B%5C%%7D28640%7B%5C%%7D29
+      \endverb
+    \endentry
+    \entry{Lee2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a9d27299f16d7baaf16502a4d7b27266}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jaeyoung},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f13dd2f79f10cde9b4d4d55fc2aa404}{%
+           family={Abdel-Aty},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37ad3ca1f42e04af03e38297bb1f4fb5}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Ximiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{82d3d3a9f5fa131eceb77cb877a43f2a}
+      \strng{fullhash}{82d3d3a9f5fa131eceb77cb877a43f2a}
+      \strng{bibnamehash}{82d3d3a9f5fa131eceb77cb877a43f2a}
+      \strng{authorbibnamehash}{82d3d3a9f5fa131eceb77cb877a43f2a}
+      \strng{authornamehash}{82d3d3a9f5fa131eceb77cb877a43f2a}
+      \strng{authorfullhash}{82d3d3a9f5fa131eceb77cb877a43f2a}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{5}
+      \field{title}{{Multivariate crash modeling for motor vehicle and non-motorized modes at the macroscopic level}}
+      \field{volume}{78}
+      \field{year}{2015}
+      \field{pages}{146\bibrangedash 154}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.aap.2015.03.003
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457515000779
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457515000779
+      \endverb
+    \endentry
+    \entry{Li2013a}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=519c47e1ac25bb285467c3358b7901cb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Haojie},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ee45449d153e9dd97b7ca69c1725af4}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ffb81376747847b00fa9899b804c65ec}{%
+           family={Majumdar},
+           familyi={M\bibinitperiod},
+           given={Arnab},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{20e20f99666e4198154e17cb7d218c70}
+      \strng{fullhash}{20e20f99666e4198154e17cb7d218c70}
+      \strng{bibnamehash}{20e20f99666e4198154e17cb7d218c70}
+      \strng{authorbibnamehash}{20e20f99666e4198154e17cb7d218c70}
+      \strng{authornamehash}{20e20f99666e4198154e17cb7d218c70}
+      \strng{authorfullhash}{20e20f99666e4198154e17cb7d218c70}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- Speed cameras are most effective in reducing up to 200 m from camera sites. -- Cameras reduced the drivers mean speed, into a certain buffer from the camera}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{11}
+      \field{title}{{The impacts of speed cameras on road accidents: An application of propensity score matching methods}}
+      \field{volume}{60}
+      \field{year}{2013}
+      \field{pages}{148\bibrangedash 157}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.aap.2013.08.003
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S000145751300314X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S000145751300314X
+      \endverb
+    \endentry
+    \entry{Li2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=519c47e1ac25bb285467c3358b7901cb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Haojie},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3820974e0d994f2bdb3e9c3919496dcc}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yingheng},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf3949e723ada24eadfa04e2e1d2fc14}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac45b20d06684a3e7aa4284a93b1f61b}
+      \strng{fullhash}{ac45b20d06684a3e7aa4284a93b1f61b}
+      \strng{bibnamehash}{ac45b20d06684a3e7aa4284a93b1f61b}
+      \strng{authorbibnamehash}{ac45b20d06684a3e7aa4284a93b1f61b}
+      \strng{authornamehash}{ac45b20d06684a3e7aa4284a93b1f61b}
+      \strng{authorfullhash}{ac45b20d06684a3e7aa4284a93b1f61b}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{- Speed cameras have significantly reduced the number of road accidents near camera sights. - Safety effects of speed cameras experienced a sharp decrease after the installation. (decline in effectiveness after a certain period of time) - "kangaroo effect"}
+      \field{issn}{00224375}
+      \field{journaltitle}{Journal of Safety Research}
+      \field{month}{12}
+      \field{title}{{A causal analysis of time-varying speed camera safety effects based on the propensity score method}}
+      \field{volume}{75}
+      \field{year}{2020}
+      \field{pages}{119\bibrangedash 127}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.jsr.2020.08.007
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0022437520300967
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0022437520300967
+      \endverb
+    \endentry
     \entry{Lindley1987}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2a85acbe3d53663769cf20b0728b505c}{%
@@ -1188,6 +1833,199 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1057/978-1-349-95121-5_1873-1
+      \endverb
+    \endentry
+    \entry{Lovegrove2006}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8356074ac3ac20eee3a47bbf9275ce49}{%
+           family={Lovegrove},
+           familyi={L\bibinitperiod},
+           given={Gordon\bibnamedelima R},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90ecd88a1e70ab5b67dce50413838476}{%
+           family={Sayed},
+           familyi={S\bibinitperiod},
+           given={Tarek},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{39505a99f0226f02568f212613f9e74e}
+      \strng{fullhash}{39505a99f0226f02568f212613f9e74e}
+      \strng{bibnamehash}{39505a99f0226f02568f212613f9e74e}
+      \strng{authorbibnamehash}{39505a99f0226f02568f212613f9e74e}
+      \strng{authornamehash}{39505a99f0226f02568f212613f9e74e}
+      \strng{authorfullhash}{39505a99f0226f02568f212613f9e74e}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0315-1468}
+      \field{journaltitle}{Canadian Journal of Civil Engineering}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{{Macro-level collision prediction models for evaluating neighbourhood traffic safety}}
+      \field{volume}{33}
+      \field{year}{2006}
+      \field{pages}{609\bibrangedash 621}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1139/l06-013
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nrcresearchpress.com/doi/10.1139/l06-013
+      \endverb
+      \verb{url}
+      \verb http://www.nrcresearchpress.com/doi/10.1139/l06-013
+      \endverb
+    \endentry
+    \entry{Marshall2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc01856dcd7b020312bd92afedf58280}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50e4fc5dc5cc36088afe76ed76379cbc}{%
+           family={Ferenchak},
+           familyi={F\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc8e5366efb5f37faef9485099aabc9d}
+      \strng{fullhash}{fc8e5366efb5f37faef9485099aabc9d}
+      \strng{bibnamehash}{fc8e5366efb5f37faef9485099aabc9d}
+      \strng{authorbibnamehash}{fc8e5366efb5f37faef9485099aabc9d}
+      \strng{authornamehash}{fc8e5366efb5f37faef9485099aabc9d}
+      \strng{authorfullhash}{fc8e5366efb5f37faef9485099aabc9d}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-9175}
+      \field{journaltitle}{Journal of Urbanism: International Research on Placemaking and Urban Sustainability}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{{Assessing equity and urban/rural road safety disparities in the US}}
+      \field{volume}{10}
+      \field{year}{2017}
+      \field{pages}{422\bibrangedash 441}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/17549175.2017.1310748
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/17549175.2017.1310748
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/17549175.2017.1310748
+      \endverb
+    \endentry
+    \entry{Marshall2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc01856dcd7b020312bd92afedf58280}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d112e628953db6200650b2bab433b66}{%
+           family={Garrick},
+           familyi={G\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Ltd}%
+      }
+      \strng{namehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{fullhash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{bibnamehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{authorbibnamehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{authornamehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{authorfullhash}{a48e393b0591734b6364ddd40eace8c8}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis and Prevention}
+      \field{number}{3}
+      \field{title}{{Does street network design affect traffic safety?}}
+      \field{volume}{43}
+      \field{year}{2011}
+      \field{pages}{769\bibrangedash 781}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.aap.2010.10.024
+      \endverb
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Marshall, Garrick - 2011 - Does street network design affect traffic safety.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.aap.2010.10.024
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.aap.2010.10.024
+      \endverb
+      \keyw{Community design,Connectivity,Density,Negative binomial,Road safety,Street network,Sustainable infrastructure}
+    \endentry
+    \entry{Marshall2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc01856dcd7b020312bd92afedf58280}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d112e628953db6200650b2bab433b66}{%
+           family={Garrick},
+           familyi={G\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{fullhash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{bibnamehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{authorbibnamehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{authornamehash}{a48e393b0591734b6364ddd40eace8c8}
+      \strng{authorfullhash}{a48e393b0591734b6364ddd40eace8c8}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- higher risk of fatal or severe crashes occurs with very low street network density}
+      \field{issn}{1357-5317}
+      \field{journaltitle}{URBAN DESIGN International}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{{Street network types and road safety: A study of 24 California cities}}
+      \field{volume}{15}
+      \field{year}{2010}
+      \field{pages}{133\bibrangedash 147}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1057/udi.2009.31
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1057/udi.2009.31
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1057/udi.2009.31
       \endverb
     \endentry
     \entry{MinistryofHealth2020}{misc}{}
@@ -1514,6 +2352,283 @@
       \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Obelheiro, Silva, Nodari - 2019 - UMA AN{\'{A}}LISE DA RELA{\c{C}}{\~{A}}O ENTRE AMBIENTE CONSTRU{\'{I}}DO E ACIDENTES DE TR{\^{A}}NSITO EM ZONAS DE TR{\'{A}}FEGO.pdf:pdf
       \endverb
     \endentry
+    \entry{Oliveira2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=adb2f182c3d6e95bc2d287bb000f6973}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Daniele\bibnamedelima Falci},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=c9e9d9740a798a6852b7f98d3a062c8f}{%
+           family={Friche},
+           familyi={F\bibinitperiod},
+           given={Amélia\bibnamedelimb Augusta\bibnamedelimb de\bibnamedelima Lima},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88ece5048ae1bb10be275b428c1b2dbe}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Dário\bibnamedelimb Alves\bibnamedelimb da\bibnamedelima Silva},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9bc58e92586e88572571d8a5014ecd8}{%
+           family={Mingoti},
+           familyi={M\bibinitperiod},
+           given={Sueli\bibnamedelima Aparecida},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0931f291403deceed78c6f46bbc0caf}{%
+           family={Caiaffa},
+           familyi={C\bibinitperiod},
+           given={Waleska\bibnamedelima Teixeira},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aac50758d0832ea006b8e5f994bb7403}
+      \strng{fullhash}{8d4c0a5122843d80c0f642d23040526c}
+      \strng{bibnamehash}{aac50758d0832ea006b8e5f994bb7403}
+      \strng{authorbibnamehash}{aac50758d0832ea006b8e5f994bb7403}
+      \strng{authornamehash}{aac50758d0832ea006b8e5f994bb7403}
+      \strng{authorfullhash}{8d4c0a5122843d80c0f642d23040526c}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- Reduced speeds in a 200m buffer}
+      \field{issn}{0102-311X}
+      \field{journaltitle}{Cadernos de Saúde Pública}
+      \field{month}{11}
+      \field{number}{suppl 1}
+      \field{title}{{Do speed cameras reduce speeding in urban areas?}}
+      \field{volume}{31}
+      \field{year}{2015}
+      \field{pages}{208\bibrangedash 218}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1590/0102-311X00101914
+      \endverb
+      \verb{urlraw}
+      \verb http://www.scielo.br/scielo.php?script=sci{\_}arttext{\&}pid=S0102-311X2015001300208{\&}lng=en{\&}tlng=en
+      \endverb
+      \verb{url}
+      \verb http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0102-311X2015001300208%7B%5C&%7Dlng=en%7B%5C&%7Dtlng=en
+      \endverb
+    \endentry
+    \entry{Ouyang2014}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c827eb3d50a8732214055b0945745f2a}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Yiqiang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f40cdfc282ea9b9b8970f6176b98ceb}{%
+           family={Bejleri},
+           familyi={B\bibinitperiod},
+           given={Ilir},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{681224b98b9b406133ce8f232d089e86}
+      \strng{fullhash}{681224b98b9b406133ce8f232d089e86}
+      \strng{bibnamehash}{681224b98b9b406133ce8f232d089e86}
+      \strng{authorbibnamehash}{681224b98b9b406133ce8f232d089e86}
+      \strng{authornamehash}{681224b98b9b406133ce8f232d089e86}
+      \strng{authorfullhash}{681224b98b9b406133ce8f232d089e86}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0361-1981}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{{Geographic Information System–Based Community-Level Method to Evaluate the Influence of Built Environment on Traffic Crashes}}
+      \field{volume}{2432}
+      \field{year}{2014}
+      \field{pages}{124\bibrangedash 132}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.3141/2432-15
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.3141/2432-15
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.3141/2432-15
+      \endverb
+    \endentry
+    \entry{Park2019}{incollection}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ded685dcee04ed44756b755cfdc5da1b}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Shin\bibnamedelima Hyung},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f5db04c2131ce4726cd342040ba5b48}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Shin\bibnamedelima Hyoung},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e8504af3c8d097574ac3aa6579117ca}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Oh\bibnamedelima Hoon},
+           giveni={O\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08d047e5bc311d62a0d8ae59857a144c}
+      \strng{fullhash}{08d047e5bc311d62a0d8ae59857a144c}
+      \strng{bibnamehash}{08d047e5bc311d62a0d8ae59857a144c}
+      \strng{authorbibnamehash}{08d047e5bc311d62a0d8ae59857a144c}
+      \strng{authornamehash}{08d047e5bc311d62a0d8ae59857a144c}
+      \strng{authorfullhash}{08d047e5bc311d62a0d8ae59857a144c}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{-- Depends on the roadway environment -- Number of accidents increased -- Severity of accidents reduced}
+      \field{title}{{K-Means and CRP-Based Characteristic Investigating Method of Traffic Accidents with Automated Speed Enforcement Cameras}}
+      \field{year}{2019}
+      \field{pages}{631\bibrangedash 637}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/978-981-13-1328-8_81
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-981-13-1328-8{\_}81
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-981-13-1328-8%7B%5C_%7D81
+      \endverb
+    \endentry
+    \entry{Pirdavani2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=567648e32766ced7544906f893b99d6e}{%
+           family={Pirdavani},
+           familyi={P\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c783d63aca6ae759b256e03e046ca702}{%
+           family={Bellemans},
+           familyi={B\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f496685949aa3bcaee2418cfb7fffeb0}{%
+           family={Brijs},
+           familyi={B\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29f4d625c6f532d06cd087edb31c9c24}{%
+           family={Wets},
+           familyi={W\bibinitperiod},
+           given={Geert},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{748bb09a29406128544b0a551cd8296c}
+      \strng{fullhash}{a3e1dd0e50122ad7749627f71100a027}
+      \strng{bibnamehash}{748bb09a29406128544b0a551cd8296c}
+      \strng{authorbibnamehash}{748bb09a29406128544b0a551cd8296c}
+      \strng{authornamehash}{748bb09a29406128544b0a551cd8296c}
+      \strng{authorfullhash}{a3e1dd0e50122ad7749627f71100a027}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0733-947X}
+      \field{journaltitle}{Journal of Transportation Engineering}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{{Application of Geographically Weighted Regression Technique in Spatial Analysis of Fatal and Injury Crashes}}
+      \field{volume}{140}
+      \field{year}{2014}
+      \field{pages}{04014032}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1061/(ASCE)TE.1943-5436.0000680
+      \endverb
+      \verb{urlraw}
+      \verb http://ascelibrary.org/doi/10.1061/{\%}28ASCE{\%}29TE.1943-5436.0000680
+      \endverb
+      \verb{url}
+      \verb http://ascelibrary.org/doi/10.1061/%7B%5C%%7D28ASCE%7B%5C%%7D29TE.1943-5436.0000680
+      \endverb
+    \endentry
+    \entry{Rhee2016}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=858eae9fcd88ddd2833a9fce5ce237d0}{%
+           family={Rhee},
+           familyi={R\bibinitperiod},
+           given={Kyoung-Ah},
+           giveni={K\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0880e0fa9207329d004d80344dbb3756}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Joon-Ki},
+           giveni={J\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e99c4f8cc99877674a442ca4a9eab045}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Young-ihn},
+           giveni={Y\bibinithyphendelim i\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=492bd605ac92305f8dc74c46abfd390e}{%
+           family={Ulfarsson},
+           familyi={U\bibinitperiod},
+           given={Gudmundur\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b0f258dcd2b7f4b10aef8740946c689}
+      \strng{fullhash}{4171773849d0347b8448138014b37d2d}
+      \strng{bibnamehash}{8b0f258dcd2b7f4b10aef8740946c689}
+      \strng{authorbibnamehash}{8b0f258dcd2b7f4b10aef8740946c689}
+      \strng{authornamehash}{8b0f258dcd2b7f4b10aef8740946c689}
+      \strng{authorfullhash}{4171773849d0347b8448138014b37d2d}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{6}
+      \field{title}{{Spatial regression analysis of traffic crashes in Seoul}}
+      \field{volume}{91}
+      \field{year}{2016}
+      \field{pages}{190\bibrangedash 199}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.aap.2016.02.023
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457516300562
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457516300562
+      \endverb
+    \endentry
     \entry{Richard2013}{article}{}
       \name{author}{6}{ul=3}{%
         {{un=0,uniquepart=base,hash=f3fded87228ccf447fcc0855dd8c025f}{%
@@ -1782,6 +2897,64 @@
       \field{year}{2016}
       \field{pages}{45\bibrangedash 58}
       \range{pages}{14}
+    \endentry
+    \entry{Ukkusuri2012}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e27baff2aea873abc65ea5e24361ca3e}{%
+           family={Ukkusuri},
+           familyi={U\bibinitperiod},
+           given={Satish},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a87908b6de784ae2bd62d1e23c0717b0}{%
+           family={Miranda-Moreno},
+           familyi={M\bibinithyphendelim M\bibinitperiod},
+           given={Luis\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0502e15425a37b6502c5f3806a929312}{%
+           family={Ramadurai},
+           familyi={R\bibinitperiod},
+           given={Gitakrishnan},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=653684a7a8b769431ef73ab235aa0937}{%
+           family={Isa-Tavarez},
+           familyi={I\bibinithyphendelim T\bibinitperiod},
+           given={Jhael},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d3654b031ad1a657fc973c551edaab02}
+      \strng{fullhash}{88d4979e0250b1983df44e67de27c755}
+      \strng{bibnamehash}{d3654b031ad1a657fc973c551edaab02}
+      \strng{authorbibnamehash}{d3654b031ad1a657fc973c551edaab02}
+      \strng{authornamehash}{d3654b031ad1a657fc973c551edaab02}
+      \strng{authorfullhash}{88d4979e0250b1983df44e67de27c755}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09257535}
+      \field{journaltitle}{Safety Science}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{{The role of built environment on pedestrian crash frequency}}
+      \field{volume}{50}
+      \field{year}{2012}
+      \field{pages}{1141\bibrangedash 1151}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.ssci.2011.09.012
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0925753511002578
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0925753511002578
+      \endverb
     \endentry
     \entry{Vasconcellos2013}{book}{}
       \name{author}{1}{}{%
@@ -2408,12 +3581,12 @@
     \endentry
     \entry{Zhang2014}{article}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=6a165ce81f591eac196e5172d5663081}{%
+        {{un=1,uniquepart=given,hash=6a165ce81f591eac196e5172d5663081}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
            given={Cuiping},
            giveni={C\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=ac82c9ecb71af52d080d155a1861a839}{%
            family={Yan},
            familyi={Y\bibinitperiod},
@@ -2461,6 +3634,63 @@
       \endverb
       \verb{url}
       \verb http://www.hindawi.com/journals/mpe/2014/987978/
+      \endverb
+    \endentry
+    \entry{Zhang2015}{article}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=9af03dc3de9564c69ac3b85892ee8644}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yuanyuan},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=57192ec9e965e3477f269e5badc2f29f}{%
+           family={Bigham},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92ba3133f46034958d829fe68b3c41dd}{%
+           family={Ragland},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaefa8dd180971cfee840787cf3b798b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaohong},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{606ba77971c3adfc4cd73f344d7b9811}
+      \strng{fullhash}{e30ed5ee94ab1c1021ce88919aeff7aa}
+      \strng{bibnamehash}{606ba77971c3adfc4cd73f344d7b9811}
+      \strng{authorbibnamehash}{606ba77971c3adfc4cd73f344d7b9811}
+      \strng{authornamehash}{606ba77971c3adfc4cd73f344d7b9811}
+      \strng{authorfullhash}{e30ed5ee94ab1c1021ce88919aeff7aa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09666923}
+      \field{journaltitle}{Journal of Transport Geography}
+      \field{month}{1}
+      \field{title}{{Investigating the associations between road network structure and non-motorist accidents}}
+      \field{volume}{42}
+      \field{year}{2015}
+      \field{pages}{34\bibrangedash 47}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.jtrangeo.2014.10.010
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0966692314002336
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0966692314002336
       \endverb
     \endentry
   \enddatalist
