@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.6.10)  26 JUN 2021 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.5.12)  2 JUL 2021 17:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/pabsantos/Documents/masters_quali/main.tex
-(/home/pabsantos/Documents/masters_quali/main.tex
+**/home/pabsantos/Documents/dissertacao/master_quali/main.tex
+(/home/pabsantos/Documents/dissertacao/master_quali/main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-07-17> (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
@@ -456,9 +456,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language84) on input line 105.
+(babel)             (\language5) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language84) on input line 108.
+(babel)             (\language5) on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks24
@@ -470,7 +470,7 @@ Package babel Info: Making > an active character on input line 707.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2020/05/04 v1.2r Portuguese support from the babel system
 Package babel Info: \l@brazil = using hyphenrules for portuguese
-(babel)             (\language73) on input line 111.
+(babel)             (\language38) on input line 111.
 )) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip192
@@ -526,7 +526,7 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 \ABNTEXsignwidth=\skip199
 \ABNTEXsignthickness=\skip256
 \ABNTEXsignskip=\skip257
-) (/home/pabsantos/Documents/masters_quali/UFPR.sty
+) (/home/pabsantos/Documents/dissertacao/master_quali/UFPR.sty
 Package: UFPR 2011/12/04 Criacao desta customizacao do abnTeX2 para UFPR
  (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
@@ -900,7 +900,7 @@ Package: fp-eval 1995/04/03
 \dtl@entrycr=\count386
 \dtl@omitlines=\count387
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 504.
+Package hyperref Info: Option `colorlinks' set `true' on input line 507.
 \myboxa=\box64
 \myboxlena=\skip262
 \mybox=\box65
@@ -912,7 +912,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 504.
 \cftquadronumwidth=\skip266
 \myboxq=\box66
 \myboxlenq=\skip267
-) (/home/pabsantos/Documents/masters_quali/00-pacotes.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+) (/home/pabsantos/Documents/dissertacao/master_quali/00-pacotes.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 112.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
@@ -1432,7 +1432,7 @@ Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
 File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))) (/home/pabsantos/Documents/masters_quali/00-dados.tex)
+)))) (/home/pabsantos/Documents/dissertacao/master_quali/00-dados.tex)
 \main@idxfile=\write7
 \openout7 = `main.idx'.
 
@@ -1446,7 +1446,7 @@ Package csquotes Info: Redefining alias 'default' -> 'brazil'.
 LaTeX Warning: Unused global option(s):
     [subsection=Title].
 
-(/home/pabsantos/Documents/masters_quali/main.aux)
+(/home/pabsantos/Documents/dissertacao/master_quali/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -1639,13 +1639,13 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/home/pabsantos/Documents/masters_quali/main.bbl)
+ (/home/pabsantos/Documents/dissertacao/master_quali/main.bbl)
 Package biblatex Info: Reference section=0 on input line 82.
 Package biblatex Info: Reference segment=0 on input line 82.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.15).
 
-(/home/pabsantos/Documents/masters_quali/00-pretextual.tex
+(/home/pabsantos/Documents/dissertacao/master_quali/00-pretextual.tex
 <fig/capaufpr.png, id=34, 125.5089pt x 142.3719pt>
 File: fig/capaufpr.png Graphic file (type png)
 <use fig/capaufpr.png>
@@ -1653,7 +1653,7 @@ Package pdftex.def Info: fig/capaufpr.png  used on input line 9.
 (pdftex.def)             Requested size: 597.50787pt x 677.83327pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pabsantos/Documents/masters_quali/fig/capaufpr.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pabsantos/Documents/dissertacao/master_quali/fig/capaufpr.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 []\T1/phv/m/n/10.95 (+20) Co-supervisor: Prof. Dr. Os-car Oviedo-
  []
@@ -1670,146 +1670,156 @@ l.14
 
 ] [2] [3
 
-] (/home/pabsantos/Documents/masters_quali/main.lof
+] (/home/pabsantos/Documents/dissertacao/master_quali/main.lof
 Overfull \hbox (2.8699pt too wide) in paragraph at lines 21--21
  [][] [][][]\T1/phv/m/n/12 (-20) MOTORIZATION RATES ON BRAZIL-IAN STATES CAP-I-TAL CITIES, 
  []
 
 ) [4
 
-] (/home/pabsantos/Documents/masters_quali/main.lot) [5
+] (/home/pabsantos/Documents/dissertacao/master_quali/main.lot) [5
 
-] (/home/pabsantos/Documents/masters_quali/main.toc)) (/home/pabsantos/Documents/masters_quali/cap01.tex [6
+] (/home/pabsantos/Documents/dissertacao/master_quali/main.toc)) (/home/pabsantos/Documents/dissertacao/master_quali/cap01.tex [6
 
 ] [7
 
 ] [8]
-<fig/oecd.png, id=220, 668.4975pt x 459.7175pt>
+<fig/oecd.png, id=228, 668.4975pt x 459.7175pt>
 File: fig/oecd.png Graphic file (type png)
 <use fig/oecd.png>
 Package pdftex.def Info: fig/oecd.png  used on input line 52.
 (pdftex.def)             Requested size: 364.00139pt x 250.32712pt.
  [9
 
- </home/pabsantos/Documents/masters_quali/fig/oecd.png>]
-<fig/brazil_abs.pdf, id=243, 433.62pt x 252.945pt>
+]
+<fig/brazil_abs.pdf, id=250, 433.62pt x 252.945pt>
 File: fig/brazil_abs.pdf Graphic file (type pdf)
 <use fig/brazil_abs.pdf>
 Package pdftex.def Info: fig/brazil_abs.pdf  used on input line 69.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [10]
-<fig/brazil_mort.pdf, id=254, 433.62pt x 252.945pt>
+ [10 </home/pabsantos/Documents/dissertacao/master_quali/fig/oecd.png>]
+<fig/brazil_mort.pdf, id=262, 433.62pt x 252.945pt>
 File: fig/brazil_mort.pdf Graphic file (type pdf)
 <use fig/brazil_mort.pdf>
 Package pdftex.def Info: fig/brazil_mort.pdf  used on input line 80.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [11 </home/pabsantos/Documents/masters_quali/fig/brazil_abs.pdf> </home/pabsantos/Documents/masters_quali/fig/brazil_mort.pdf>]
-<fig/brazil_fatality.pdf, id=278, 433.62pt x 252.945pt>
+<fig/brazil_fatality.pdf, id=271, 433.62pt x 252.945pt>
 File: fig/brazil_fatality.pdf Graphic file (type pdf)
 <use fig/brazil_fatality.pdf>
 Package pdftex.def Info: fig/brazil_fatality.pdf  used on input line 91.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/brazil_motor.pdf, id=288, 433.62pt x 252.945pt>
+ [11 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_abs.pdf>] [12 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_mort.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_fatality.pdf>]
+<fig/brazil_motor.pdf, id=307, 433.62pt x 252.945pt>
 File: fig/brazil_motor.pdf Graphic file (type pdf)
 <use fig/brazil_motor.pdf>
 Package pdftex.def Info: fig/brazil_motor.pdf  used on input line 104.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [12 </home/pabsantos/Documents/masters_quali/fig/brazil_fatality.pdf>]
-<fig/cwb_abs.pdf, id=314, 433.62pt x 252.945pt>
+ [13 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_motor.pdf>]
+<fig/cwb_abs.pdf, id=337, 433.62pt x 252.945pt>
 File: fig/cwb_abs.pdf Graphic file (type pdf)
 <use fig/cwb_abs.pdf>
 Package pdftex.def Info: fig/cwb_abs.pdf  used on input line 117.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [13 </home/pabsantos/Documents/masters_quali/fig/brazil_motor.pdf>]
-<fig/cap_motor.pdf, id=333, 433.62pt x 252.945pt>
+<fig/cap_motor.pdf, id=341, 433.62pt x 252.945pt>
 File: fig/cap_motor.pdf Graphic file (type pdf)
 <use fig/cap_motor.pdf>
 Package pdftex.def Info: fig/cap_motor.pdf  used on input line 128.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [14 </home/pabsantos/Documents/masters_quali/fig/cwb_abs.pdf> </home/pabsantos/Documents/masters_quali/fig/cap_motor.pdf>]
-<fig/cap_mort.pdf, id=355, 433.62pt x 252.945pt>
+ [14 </home/pabsantos/Documents/dissertacao/master_quali/fig/cwb_abs.pdf>]
+<fig/cap_mort.pdf, id=362, 433.62pt x 252.945pt>
 File: fig/cap_mort.pdf Graphic file (type pdf)
 <use fig/cap_mort.pdf>
 Package pdftex.def Info: fig/cap_mort.pdf  used on input line 139.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/cap_fatal.pdf, id=361, 433.62pt x 252.945pt>
+ [15 </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_motor.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_mort.pdf>]
+<fig/cap_fatal.pdf, id=382, 433.62pt x 252.945pt>
 File: fig/cap_fatal.pdf Graphic file (type pdf)
 <use fig/cap_fatal.pdf>
 Package pdftex.def Info: fig/cap_fatal.pdf  used on input line 150.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [15 </home/pabsantos/Documents/masters_quali/fig/cap_mort.pdf>]
-<fig/haddon.pdf, id=380, 335.33278pt x 212.71469pt>
+ [16 </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_fatal.pdf>]
+<fig/haddon.pdf, id=403, 335.33278pt x 212.71469pt>
 File: fig/haddon.pdf Graphic file (type pdf)
 <use fig/haddon.pdf>
 Package pdftex.def Info: fig/haddon.pdf  used on input line 163.
 (pdftex.def)             Requested size: 335.33195pt x 212.71416pt.
- [16 </home/pabsantos/Documents/masters_quali/fig/cap_fatal.pdf>] [17 </home/pabsantos/Documents/masters_quali/fig/haddon.pdf>]
-<fig/braking2.png, id=436, 1280.785pt x 734.745pt>
+ [17 </home/pabsantos/Documents/dissertacao/master_quali/fig/haddon.pdf>] [18]
+<fig/braking2.png, id=456, 1280.785pt x 734.745pt>
 File: fig/braking2.png Graphic file (type png)
 <use fig/braking2.png>
 Package pdftex.def Info: fig/braking2.png  used on input line 188.
 (pdftex.def)             Requested size: 364.00139pt x 208.81029pt.
- [18]
-<fig/kinetic.pdf, id=455, 433.62pt x 252.945pt>
+<fig/kinetic.pdf, id=462, 433.62pt x 252.945pt>
 File: fig/kinetic.pdf Graphic file (type pdf)
 <use fig/kinetic.pdf>
 Package pdftex.def Info: fig/kinetic.pdf  used on input line 202.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [19 </home/pabsantos/Documents/masters_quali/fig/braking2.png> </home/pabsantos/Documents/masters_quali/fig/kinetic.pdf>]
-<fig/ash.pdf, id=474, 433.62pt x 252.945pt>
+ [19 </home/pabsantos/Documents/dissertacao/master_quali/fig/braking2.png>]
+<fig/ash.pdf, id=478, 433.62pt x 252.945pt>
 File: fig/ash.pdf Graphic file (type pdf)
 <use fig/ash.pdf>
 Package pdftex.def Info: fig/ash.pdf  used on input line 213.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [20 </home/pabsantos/Documents/masters_quali/fig/ash.pdf>] [21]
-<fig/svd.png, id=528, 826.08624pt x 716.6775pt>
+ [20 </home/pabsantos/Documents/dissertacao/master_quali/fig/kinetic.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/ash.pdf>] [21]
+<fig/svd.png, id=540, 826.08624pt x 716.6775pt>
 File: fig/svd.png Graphic file (type png)
 <use fig/svd.png>
 Package pdftex.def Info: fig/svd.png  used on input line 255.
 (pdftex.def)             Requested size: 364.00139pt x 315.79837pt.
- [22 </home/pabsantos/Documents/masters_quali/fig/svd.png>]
-<fig/richards.pdf, id=553, 436.5108pt x 139.4811pt>
+ [22] [23 </home/pabsantos/Documents/dissertacao/master_quali/fig/svd.png>]
+<fig/richards.pdf, id=572, 436.5108pt x 139.4811pt>
 File: fig/richards.pdf Graphic file (type pdf)
 <use fig/richards.pdf>
 Package pdftex.def Info: fig/richards.pdf  used on input line 274.
 (pdftex.def)             Requested size: 436.50972pt x 139.48074pt.
- [23] [24 </home/pabsantos/Documents/masters_quali/fig/richards.pdf>]
+ [24 </home/pabsantos/Documents/dissertacao/master_quali/fig/richards.pdf>]
 
-pdfTeX warning: pdflatex (file /home/pabsantos/Documents/masters_quali/fig/ewing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/ewing.pdf, id=623, 349.305pt x 139.4811pt>
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/ewing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/ewing.pdf, id=633, 349.305pt x 139.4811pt>
 File: fig/ewing.pdf Graphic file (type pdf)
 <use fig/ewing.pdf>
 Package pdftex.def Info: fig/ewing.pdf  used on input line 301.
 (pdftex.def)             Requested size: 349.30414pt x 139.48074pt.
-[25 </home/pabsantos/Documents/masters_quali/fig/ewing.pdf>] [26]
-Overfull \hbox (4.94588pt too wide) in paragraph at lines 421--454
+[25] [26 </home/pabsantos/Documents/dissertacao/master_quali/fig/ewing.pdf>] [27] [28]
+Overfull \hbox (4.94588pt too wide) in paragraph at lines 429--462
  [][] 
  []
 
-
-Overfull \hbox (4.94589pt too wide) in paragraph at lines 488--499
+[29] [30]
+Overfull \hbox (4.94589pt too wide) in paragraph at lines 510--521
  [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 545.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `phv' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [27] [28] [29] [30]
-<fig/kernel.pdf, id=899, 433.62pt x 252.945pt>
+[31] [32]
+<fig/axes.png, id=985, 497.86pt x 573.14125pt>
+File: fig/axes.png Graphic file (type png)
+<use fig/axes.png>
+Package pdftex.def Info: fig/axes.png  used on input line 574.
+(pdftex.def)             Requested size: 227.5pt x 261.90784pt.
+<fig/macro2.png, id=991, 542.025pt x 565.11125pt>
+File: fig/macro2.png Graphic file (type png)
+<use fig/macro2.png>
+Package pdftex.def Info: fig/macro2.png  used on input line 585.
+(pdftex.def)             Requested size: 273.00278pt x 284.64166pt.
+ [33 </home/pabsantos/Documents/dissertacao/master_quali/fig/axes.png>]
+
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/studies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/studies.pdf, id=1007, 319.1925pt x 118.5228pt>
+File: fig/studies.pdf Graphic file (type pdf)
+<use fig/studies.pdf>
+Package pdftex.def Info: fig/studies.pdf  used on input line 604.
+(pdftex.def)             Requested size: 319.19171pt x 118.52249pt.
+[34 </home/pabsantos/Documents/dissertacao/master_quali/fig/macro2.png>] [35 </home/pabsantos/Documents/dissertacao/master_quali/fig/studies.pdf>] [36] [37] [38]
+<fig/kernel.pdf, id=1112, 433.62pt x 252.945pt>
 File: fig/kernel.pdf Graphic file (type pdf)
 <use fig/kernel.pdf>
-Package pdftex.def Info: fig/kernel.pdf  used on input line 607.
+Package pdftex.def Info: fig/kernel.pdf  used on input line 721.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [31 </home/pabsantos/Documents/masters_quali/fig/kernel.pdf>] [32
+ [39 </home/pabsantos/Documents/dissertacao/master_quali/fig/kernel.pdf>] [40] [41
 
-] [33
+] [42
 
-]) [34
+]) [43
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 160.
@@ -1820,21 +1830,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [35
+ [44
 
-] [36] [37]
+]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 160.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [45] [46] [47]
 Overfull \hbox (143.29533pt too wide) in paragraph at lines 160--160
 \T1/phv/m/n/12 (-20) 947X%7B%5C%%7D282005%7B%5C%%7D29131%7B%5C%%7D3A8%7B%5C%%7D28640%7B%5C%%7D29. 
  []
 
-[38] [39]
+[48] [49] [50]
 Overfull \hbox (14.79782pt too wide) in paragraph at lines 160--160
 \T1/phv/m/n/12 (-20) http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0102- 
  []
 
-[40] [41] [42] 
+[51] [52] [53] 
 AED: lastpage setting LastPage
-[43]
+[54]
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -1846,7 +1865,7 @@ AED: lastpage setting LastPage
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
- (/home/pabsantos/Documents/masters_quali/main.aux)
+ (/home/pabsantos/Documents/dissertacao/master_quali/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 253.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1855,18 +1874,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
- 49553 strings out of 480906
- 1073576 string characters out of 5910772
- 2140896 words of memory out of 5000000
- 63907 multiletter control sequences out of 15000+600000
+ 49732 strings out of 480906
+ 1077189 string characters out of 5910772
+ 2127612 words of memory out of 5000000
+ 64057 multiletter control sequences out of 15000+600000
  560808 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,16n,121p,1189b,4154s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 78i,16n,121p,1276b,4154s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on /home/pabsantos/Documents/masters_quali/main.pdf (44 pages, 1146900 bytes).
+Output written on /home/pabsantos/Documents/dissertacao/master_quali/main.pdf (55 pages, 1922224 bytes).
 PDF statistics:
- 1301 PDF objects out of 1440 (max. 8388607)
- 1166 compressed objects within 12 object streams
- 176 named destinations out of 1000 (max. 500000)
- 21363 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1578 PDF objects out of 1728 (max. 8388607)
+ 1420 compressed objects within 15 object streams
+ 202 named destinations out of 1000 (max. 500000)
+ 21378 words of extra memory for PDF output out of 24883 (max. 10000000)
 

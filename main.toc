@@ -37,35 +37,35 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}NATURALISTIC DRIVING STUDIES}{27}{section.2.4}%
+\contentsline {section}{\numberline {2.4}NATURALISTIC DRIVING STUDIES}{34}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{29}{section.2.5}%
+\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{37}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{32}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{41}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{41}{section.3.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}DATA PROCESSING}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.2}DATA PROCESSING}{41}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED MODEL}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED MODEL}{41}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{33}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{42}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{34}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{43}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -73,6 +73,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{35}{chapter*.34}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{44}{chapter*.38}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
