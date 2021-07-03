@@ -29,43 +29,43 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}SPEEDING AS A RISK FACTOR}{18}{section.2.2}%
+\contentsline {section}{\numberline {2.2}SPEEDING AS A RISK FACTOR}{19}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}ROAD SAFETY PERFORMANCE AND THE BUILT ENVIRONMENT}{25}{section.2.3}%
+\contentsline {section}{\numberline {2.3}ROAD SAFETY PERFORMANCE AND THE BUILT ENVIRONMENT}{26}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}NATURALISTIC DRIVING STUDIES}{34}{section.2.4}%
+\contentsline {section}{\numberline {2.4}NATURALISTIC DRIVING STUDIES}{35}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{37}{section.2.5}%
+\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{40}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{41}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{43}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{41}{section.3.1}%
+\contentsline {section}{\numberline {3.1}NATURALISTIC DATA}{43}{section.3.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}DATA PROCESSING}{41}{section.3.2}%
+\contentsline {section}{\numberline {3.2}DATA PROCESSING}{43}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED MODEL}{41}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED MODEL}{43}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{42}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{44}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{43}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{45}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -73,6 +73,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{44}{chapter*.38}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{46}{chapter*.38}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
