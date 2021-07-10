@@ -645,7 +645,7 @@ Another NDS study performed in the United States was the SHRP2 (Strategic Highwa
 
 In the European Union, the UDRIVE naturalistic driving study was large scale NDS program installed in 6 EU countries: UK, Netherlands, France, Spain, Germany and Poland. It lasted for 5 years, between 2012 and 2017, and its objective was to collect behavioral data from three transport modes: cars, trucks and powered two-wheelers. 192 vehicles and 287 drivers were part of the research. The data collected reached almost 90,000 hours of driving data and approximately 4,000,000 kilometers of travelled distance \cite{VanNes2019}. The Canadian Naturalistic Driving Study (CNDS) instrumented a total of 140 vehicles, including cars, pickup trucks and minivans, with 4 cameras, a frontal radar sensor and one GPS radar. 149 drivers participated in the study, with approximately 53,000 hours of data collected amd 1,800,000 kilometers of travelled distance \cite{CNDS2021}. 
 
-In Brazil, a naturalistic driving study was established in 2019 in the city of Curitiba-PR, conducted by the Universidade Federal do Paraná. The Naturalistic Driving Study - Brazil (NDS-BR) has already collect data from 16 instrumented vehicles, each with a kit of 3 cameras and 1 GPS sensor. Currently, NDS-BR collected almost 280 hours of driven time and 5,000 km of travelled distance in Curitiba and metropolitan area. This research its still ongoing, and further details about the process of data collection will be discussed in Section \ref{ndsc}. In all the previous NDS researches described, the collection of speed data was a possible due to the GPS sensors or accelerometers.
+In Brazil, a naturalistic driving study was established in 2019 in the city of Curitiba-PR, conducted by the Universidade Federal do Paraná. The Naturalistic Driving Study - Brazil (NDS-BR) has already collect data from 16 instrumented vehicles, each with a kit of 3 cameras and 1 GPS sensor. Currently, NDS-BR collected almost 240 hours of driven time and 5,000 km of travelled distance in Curitiba and metropolitan area. This research its still ongoing, and further details about the process of data collection will be discussed in Section \ref{ndsc}. In all the previous NDS researches described, the collection of speed data was a possible due to the GPS sensors or accelerometers.
 
 
 NDS allows the investigation of speeding episodes and how other factors can influence the occurence of speeding. These factors can include environmental elements (road infrastructure, built environment, weather, traffic conditions, etc.), human and behavior elements (age, gender, secondary tasks engagement, education, personality) and vehicle characteristics (engine power, level of conservation). \textcite{Richard2013,Richard2017, Richard2020} utilized NDS speed data to better understand different types of speeding and how the drivers behaves towards them. \textcite{Richard2013} established a classification called behavioral speeding, splitting it into 4 types. The first type consists of speed below the posted limit. In the second type, drivers are speeding but they feel like they are driving at a safe speed. On the third type, speeds reaches above the enforcement limit, where the driver starts to accept a higher level of risk. The 4th type consists of reckless speeding, where the driver reaches speeds way above the posted speed, without any consideration to the risks. 
@@ -828,7 +828,7 @@ The first trip of each driver was defined invalid. This trip was considered to b
 
 % 3. Drivers: How many, characteristics, data gathered, duration, how they were selected
 
-The NDS-BR started collecting data on August, 2019. The local of the study is Curitiba and it's metropolitan region. Curitiba is the capital city of the State of Paraná, in Brazil. Until January of 2021, the project collected data from 16 volunteers, which composed the sample of naturalistic data used in this thesis. The drivers volunteered through a survey that was divulged in social networks. \autoref{tab:drivers} contains information about the participants and its vehicles, including the duration of data collection, age, gender, age of driver license, vehicle model year and horsepower.
+The NDS-BR started collecting data on August, 2019. The local of the study is Curitiba and it's metropolitan region. Curitiba is the capital city of the State of Paraná, in Brazil. Until March of 2021, the project collected data from 16 volunteers, which composed the sample of naturalistic data used in this thesis. The drivers volunteered through a survey that was divulged in social networks. \autoref{tab:drivers} contains information about the participants and its vehicles, including the duration of data collection, age, gender, age of driver license, vehicle model year and horsepower.
 
 \begin{table}[!htbp]
     \footnotesize
@@ -866,7 +866,7 @@ The NDS-BR started collecting data on August, 2019. The local of the study is Cu
     NOTES: Duration in days; age and license age in years; M-male; F-female
 \end{table}
 
-The age of the drivers varied between 21 and 62 years old, with 7 females and 9 males. The duration of data collection from each driver varied between 5 and 17 days. Regarding the volunteers' vehicles, the model year varied between 2001 and 2019, with horsepower varying between 74 and 163 HP. All volunteers received a briefing on how to operate the equipment and signed a term of agreement, allowing the use of their data to academic research purposes. Overall, a total of 535 trips were made, resulting in almost xxx,xx hours of driving and x,xxx.xx km of distanced travelled.  
+The age of the drivers varied between 21 and 62 years old, with 7 females and 9 males. The duration of data collection from each driver varied between 5 and 17 days. Regarding the volunteers' vehicles, the model year varied between 2001 and 2019, with horsepower varying between 74 and 163 HP. All volunteers received a briefing on how to operate the equipment and signed a term of agreement, allowing the use of their data to academic research purposes. Overall, a total of 491 trips were made, resulting in 238.85 hours of driving and 5,362.75 km of distance travelled.  
 
 %% Start of NDS, how much time each collected
 
@@ -881,6 +881,21 @@ The age of the drivers varied between 21 and 62 years old, with 7 females and 9 
 %% How the main dataframe was constructed
 
 % 1. Road axis buffer
+
+In order to extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective posted speed. Posted speed data was collected from the road axis shape file obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with posted speeds from IPPUC road axis shape files \cite{IPPUC2021}. Using the software QGIS, it was created a 10 meter buffer around the road axes. In sequence, a intersection between the NDS points and the road buffer was performed, in order to associate the posted speed and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{ROAD AXIS BUFFER}
+    \includegraphics{fig/buffer.pdf}
+    \label{fig:buffer}
+    \par SOURCE: The Author (2021).
+\end{figure}
+
+Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without posted speed data were removed from the analysis. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurence of speeding is represented by the proportion of distance travelled in speeds above the posted speed, divided by the distance performed in free-flow speeds. It is necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurence of speeding is defined the following equation: \begin{align}
+    SP = \frac{D_{Vsp}}{D_{Vf}} \mbox{ ;} 
+\end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the posted speed (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. Free-flow speeds includes performed speeds higher than the posted speed minus 10 km/h. FIG presents the characterization of these speed behaviors.   
 
 % 2. Intersection with nds points
 

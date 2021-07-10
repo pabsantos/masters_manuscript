@@ -2710,8 +2710,12 @@
     <bcf:citekey order="408">Amancio2021</bcf:citekey>
     <bcf:citekey order="409">Amancio2021</bcf:citekey>
     <bcf:citekey order="410">Borguezani2020</bcf:citekey>
-    <bcf:citekey order="411">Borguezani2020</bcf:citekey>
-    <bcf:citekey order="412">Borguezani2020</bcf:citekey>
+    <bcf:citekey order="411">OpenStreetMap</bcf:citekey>
+    <bcf:citekey order="412">IPPUC2021</bcf:citekey>
+    <bcf:citekey order="413">Richard2013</bcf:citekey>
+    <bcf:citekey order="414">Richard2013</bcf:citekey>
+    <bcf:citekey order="415">Borguezani2020</bcf:citekey>
+    <bcf:citekey order="416">Borguezani2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

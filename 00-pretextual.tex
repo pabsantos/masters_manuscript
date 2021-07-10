@@ -65,17 +65,6 @@
 
 % RESUMOS
 % ----------------------------------------------------------
-% resumo em português
-%\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
- \ifthenelse{\equal{\terResumos}{Sim}}{
-\begin{resumo}
-    \ResumoTexto
-    
-    %\vspace{\onelineskip}
-    \noindent 
-    \textbf{Palavras-chaves}: \PalavraschaveTexto
-\end{resumo}
-
 %% resumo em inglês
 \begin{resumo}[ABSTRACT]
  \begin{otherlanguage*}{english}
@@ -87,6 +76,16 @@
  \end{otherlanguage*}
 \end{resumo}
 
+% resumo em português
+%\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\ifthenelse{\equal{\terResumos}{Sim}}{
+  \begin{resumo}[RESUMO]
+      \ResumoTexto
+      
+      %\vspace{\onelineskip}
+      \noindent 
+      \textbf{Palavras-chaves}: \PalavraschaveTexto
+  \end{resumo}
 
 % resumo em francês 
 \ifthenelse{\equal{\Resume}{}}

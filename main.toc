@@ -57,19 +57,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Speeding}{46}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Built Environment}{46}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Built Environment}{48}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{48}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{48}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{49}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{49}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{50}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -77,20 +77,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{50}{chapter*.44}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{51}{chapter*.45}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- TEST}}{61}{chapter*.44}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- TEST}}{63}{chapter*.45}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- TEST2}}{62}{appendix*.45}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- TEST2}}{64}{appendix*.46}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -99,12 +99,12 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION SYSTEM PYTHON CODES}}{63}{appendix*.46}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION SYSTEM PYTHON CODES}}{65}{appendix*.47}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 2~- TEST}}{64}{appendix*.47}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 2~- TEST}}{66}{appendix*.48}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }

@@ -1931,6 +1931,38 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0966692317306373
       \endverb
     \endentry
+    \entry{IPPUC2021}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=08c6e2c837608f1f668113226cccb25d}{%
+           family={IPPUC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{fullhash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{bibnamehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{authorbibnamehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{authornamehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{authorfullhash}{08c6e2c837608f1f668113226cccb25d}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Instituto de Pesquisa e Planejamento Urbano de Curitiba}
+      \field{title}{{Dados Geográficos}}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ippuc.org.br/geodownloads/geo.htm
+      \endverb
+      \verb{url}
+      \verb https://ippuc.org.br/geodownloads/geo.htm
+      \endverb
+    \endentry
     \entry{Jorgensen2005}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=cf6491fb0156d508605ef71b40bb8f39}{%
@@ -3233,6 +3265,28 @@
       \verb{url}
       \verb http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0102-311X2015001300208%7B%5C&%7Dlng=en%7B%5C&%7Dtlng=en
       \endverb
+    \endentry
+    \entry{OpenStreetMap}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=602f2591276bacf4409eba4a627cff11}{%
+           family={{OpenStreetMap contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{fullhash}{602f2591276bacf4409eba4a627cff11}
+      \strng{bibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorbibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authornamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorfullhash}{602f2591276bacf4409eba4a627cff11}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{ https://www.openstreetmap.org }}
+      \field{title}{{Planet dump retrieved from https://planet.osm.org }}
+      \field{year}{2017}
     \endentry
     \entry{Ouyang2014}{article}{}
       \name{author}{2}{}{%
