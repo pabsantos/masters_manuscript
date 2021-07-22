@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.6.10)  10 JUL 2021 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.5.12)  21 JUL 2021 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/pabsantos/Documents/masters_quali/main.tex
-(/home/pabsantos/Documents/masters_quali/main.tex
+**/home/pabsantos/Documents/dissertacao/master_quali/main.tex
+(/home/pabsantos/Documents/dissertacao/master_quali/main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-07-17> (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
@@ -456,9 +456,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language84) on input line 105.
+(babel)             (\language5) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language84) on input line 108.
+(babel)             (\language5) on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks24
@@ -470,7 +470,7 @@ Package babel Info: Making > an active character on input line 707.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2020/05/04 v1.2r Portuguese support from the babel system
 Package babel Info: \l@brazil = using hyphenrules for portuguese
-(babel)             (\language73) on input line 111.
+(babel)             (\language38) on input line 111.
 )) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip192
@@ -526,7 +526,7 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 \ABNTEXsignwidth=\skip199
 \ABNTEXsignthickness=\skip256
 \ABNTEXsignskip=\skip257
-) (/home/pabsantos/Documents/masters_quali/UFPR.sty
+) (/home/pabsantos/Documents/dissertacao/master_quali/UFPR.sty
 Package: UFPR 2011/12/04 Criacao desta customizacao do abnTeX2 para UFPR
  (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
@@ -912,7 +912,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 507.
 \cftquadronumwidth=\skip266
 \myboxq=\box66
 \myboxlenq=\skip267
-) (/home/pabsantos/Documents/masters_quali/00-pacotes.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+) (/home/pabsantos/Documents/dissertacao/master_quali/00-pacotes.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 112.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
@@ -991,19 +991,41 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count405
+\lst@gtempboxa=\box70
+\lst@token=\toks72
+\lst@length=\count406
+\lst@currlwidth=\dimen307
+\lst@column=\count407
+\lst@pos=\count408
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count409
+\lst@lineno=\count410
+\lst@maxwidth=\dimen310
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count411
+\lst@skipnumbers=\count412
+\lst@framebox=\box71
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/share/texlive/texmf-dist/tex/latex/smartdiagram/smartdiagram.sty
 Package: smartdiagram 2016/12/23 v0.3b Automatic creation of smart diagrams from lists of items.
  (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count405
-\decimalpart=\count406
+\integerpart=\count413
+\decimalpart=\count414
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@layerbox@background=\box70
-\pgf@layerboxsaved@background=\box71
+\pgf@layerbox@background=\box72
+\pgf@layerboxsaved@background=\box73
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
@@ -1021,15 +1043,15 @@ File: tikzlibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-\pgf@layerbox@smart diagram arrow back=\box72
-\pgf@layerboxsaved@smart diagram arrow back=\box73
+\pgf@layerbox@smart diagram arrow back=\box74
+\pgf@layerboxsaved@smart diagram arrow back=\box75
  (/usr/share/texlive/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.definitions.code.tex) (/usr/share/texlive/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.styles.code.tex) (/usr/share/texlive/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.commands.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count407
-\float@exts=\toks72
-\float@box=\box74
-\@float@everytoks=\toks73
-\@floatcapt=\box75
+\c@float@type=\count415
+\float@exts=\toks73
+\float@box=\box76
+\@float@everytoks=\toks74
+\@floatcapt=\box77
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
@@ -1038,44 +1060,42 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip270
 \LTpre=\skip271
 \LTpost=\skip272
-\LTchunksize=\count408
-\LTcapwidth=\dimen307
-\LT@head=\box76
-\LT@firsthead=\box77
-\LT@foot=\box78
-\LT@lastfoot=\box79
-\LT@cols=\count409
-\LT@rows=\count410
-\c@LT@tables=\count411
-\c@LT@chunks=\count412
-\LT@p@ftn=\toks74
+\LTchunksize=\count416
+\LTcapwidth=\dimen311
+\LT@head=\box78
+\LT@firsthead=\box79
+\LT@foot=\box80
+\LT@lastfoot=\box81
+\LT@cols=\count417
+\LT@rows=\count418
+\c@LT@tables=\count419
+\c@LT@chunks=\count420
+\LT@p@ftn=\toks75
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count413
-\mult@box=\box80
-\multicol@leftmargin=\dimen308
-\c@unbalance=\count414
-\c@collectmore=\count415
-\doublecol@number=\count416
-\multicoltolerance=\count417
-\multicolpretolerance=\count418
-\full@width=\dimen309
-\page@free=\dimen310
-\premulticols=\dimen311
-\postmulticols=\dimen312
+\c@tracingmulticols=\count421
+\mult@box=\box82
+\multicol@leftmargin=\dimen312
+\c@unbalance=\count422
+\c@collectmore=\count423
+\doublecol@number=\count424
+\multicoltolerance=\count425
+\multicolpretolerance=\count426
+\full@width=\dimen313
+\page@free=\dimen314
+\premulticols=\dimen315
+\postmulticols=\dimen316
 \multicolsep=\skip273
 \multicolbaselineskip=\skip274
-\partial@page=\box81
-\last@line=\box82
-\maxbalancingoverflow=\dimen313
-\mult@rightbox=\box83
-\mult@grightbox=\box84
-\mult@gfirstbox=\box85
-\mult@firstbox=\box86
-\@tempa=\box87
-\@tempa=\box88
+\partial@page=\box83
+\last@line=\box84
+\maxbalancingoverflow=\dimen317
+\mult@rightbox=\box85
+\mult@grightbox=\box86
+\mult@gfirstbox=\box87
+\mult@firstbox=\box88
 \@tempa=\box89
 \@tempa=\box90
 \@tempa=\box91
@@ -1111,21 +1131,23 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box121
 \@tempa=\box122
 \@tempa=\box123
-\c@minrows=\count419
-\c@columnbadness=\count420
-\c@finalcolumnbadness=\count421
-\last@try=\dimen314
-\multicolovershoot=\dimen315
-\multicolundershoot=\dimen316
-\mult@nat@firstbox=\box124
-\colbreak@box=\box125
-\mc@col@check@num=\count422
+\@tempa=\box124
+\@tempa=\box125
+\c@minrows=\count427
+\c@columnbadness=\count428
+\c@finalcolumnbadness=\count429
+\last@try=\dimen318
+\multicolovershoot=\dimen319
+\multicolundershoot=\dimen320
+\mult@nat@firstbox=\box126
+\colbreak@box=\box127
+\mc@col@check@num=\count430
 ) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip275
-\multirow@cntb=\count423
+\multirow@cntb=\count431
 \multirow@dima=\skip276
-\bigstrutjot=\dimen317
+\bigstrutjot=\dimen321
 ) (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
@@ -1137,22 +1159,23 @@ Package: caption 2020/05/30 v3.4k Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen318
-\captionmargin@=\dimen319
-\captionwidth=\dimen320
-\caption@tempdima=\dimen321
-\caption@indent=\dimen322
-\caption@parindent=\dimen323
-\caption@hangindent=\dimen324
+\captionmargin=\dimen322
+\captionmargin@=\dimen323
+\captionwidth=\dimen324
+\caption@tempdima=\dimen325
+\caption@indent=\dimen326
+\caption@parindent=\dimen327
+\caption@hangindent=\dimen328
 Package caption Info: memoir document class detected.
 )
-\c@caption@flags=\count424
-\c@continuedfloat=\count425
+\c@caption@flags=\count432
+\c@continuedfloat=\count433
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen325
-\caption@adjustwidth@linewidth=\dimen326
+\caption@adjustwidth@hsize=\dimen329
+\caption@adjustwidth@linewidth=\dimen330
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
@@ -1160,51 +1183,51 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count426
+\lrq@indent=\count434
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count427
-\c@listtotal=\count428
-\c@listcount=\count429
-\c@liststart=\count430
-\c@liststop=\count431
-\c@citecount=\count432
-\c@citetotal=\count433
-\c@multicitecount=\count434
-\c@multicitetotal=\count435
-\c@instcount=\count436
-\c@maxnames=\count437
-\c@minnames=\count438
-\c@maxitems=\count439
-\c@minitems=\count440
-\c@citecounter=\count441
-\c@maxcitecounter=\count442
-\c@savedcitecounter=\count443
-\c@uniquelist=\count444
-\c@uniquename=\count445
-\c@refsection=\count446
-\c@refsegment=\count447
-\c@maxextratitle=\count448
-\c@maxextratitleyear=\count449
-\c@maxextraname=\count450
-\c@maxextradate=\count451
-\c@maxextraalpha=\count452
-\c@abbrvpenalty=\count453
-\c@highnamepenalty=\count454
-\c@lownamepenalty=\count455
-\c@maxparens=\count456
-\c@parenlevel=\count457
-\blx@tempcnta=\count458
-\blx@tempcntb=\count459
-\blx@tempcntc=\count460
-\blx@maxsection=\count461
-\blx@maxsegment@0=\count462
-\blx@notetype=\count463
-\blx@parenlevel@text=\count464
-\blx@parenlevel@foot=\count465
-\blx@sectionciteorder@0=\count466
-\blx@entrysetcounter=\count467
+\c@tabx@nest=\count435
+\c@listtotal=\count436
+\c@listcount=\count437
+\c@liststart=\count438
+\c@liststop=\count439
+\c@citecount=\count440
+\c@citetotal=\count441
+\c@multicitecount=\count442
+\c@multicitetotal=\count443
+\c@instcount=\count444
+\c@maxnames=\count445
+\c@minnames=\count446
+\c@maxitems=\count447
+\c@minitems=\count448
+\c@citecounter=\count449
+\c@maxcitecounter=\count450
+\c@savedcitecounter=\count451
+\c@uniquelist=\count452
+\c@uniquename=\count453
+\c@refsection=\count454
+\c@refsegment=\count455
+\c@maxextratitle=\count456
+\c@maxextratitleyear=\count457
+\c@maxextraname=\count458
+\c@maxextradate=\count459
+\c@maxextraalpha=\count460
+\c@abbrvpenalty=\count461
+\c@highnamepenalty=\count462
+\c@lownamepenalty=\count463
+\c@maxparens=\count464
+\c@parenlevel=\count465
+\blx@tempcnta=\count466
+\blx@tempcntb=\count467
+\blx@tempcntc=\count468
+\blx@maxsection=\count469
+\blx@maxsegment@0=\count470
+\blx@notetype=\count471
+\blx@parenlevel@text=\count472
+\blx@parenlevel@foot=\count473
+\blx@sectionciteorder@0=\count474
+\blx@entrysetcounter=\count475
 \labelnumberwidth=\skip277
 \labelalphawidth=\skip278
 \biblabelsep=\skip279
@@ -1215,9 +1238,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read6
 \blx@bcfout=\write6
 \blx@langwohyphens=\language87
-\c@mincomprange=\count468
-\c@maxcomprange=\count469
-\c@mincompwidth=\count470
+\c@mincomprange=\count476
+\c@maxcomprange=\count477
+\c@mincompwidth=\count478
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -1227,74 +1250,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count471
-\c@savedafterword=\count472
-\c@annotator=\count473
-\c@savedannotator=\count474
-\c@author=\count475
-\c@savedauthor=\count476
-\c@bookauthor=\count477
-\c@savedbookauthor=\count478
-\c@commentator=\count479
-\c@savedcommentator=\count480
-\c@editor=\count481
-\c@savededitor=\count482
-\c@editora=\count483
-\c@savededitora=\count484
-\c@editorb=\count485
-\c@savededitorb=\count486
-\c@editorc=\count487
-\c@savededitorc=\count488
-\c@foreword=\count489
-\c@savedforeword=\count490
-\c@holder=\count491
-\c@savedholder=\count492
-\c@introduction=\count493
-\c@savedintroduction=\count494
-\c@namea=\count495
-\c@savednamea=\count496
-\c@nameb=\count497
-\c@savednameb=\count498
-\c@namec=\count499
-\c@savednamec=\count500
-\c@translator=\count501
-\c@savedtranslator=\count502
-\c@shortauthor=\count503
-\c@savedshortauthor=\count504
-\c@shorteditor=\count505
-\c@savedshorteditor=\count506
-\c@labelname=\count507
-\c@savedlabelname=\count508
-\c@institution=\count509
-\c@savedinstitution=\count510
-\c@lista=\count511
-\c@savedlista=\count512
-\c@listb=\count513
-\c@savedlistb=\count514
-\c@listc=\count515
-\c@savedlistc=\count516
-\c@listd=\count517
-\c@savedlistd=\count518
-\c@liste=\count519
-\c@savedliste=\count520
-\c@listf=\count521
-\c@savedlistf=\count522
-\c@location=\count523
-\c@savedlocation=\count524
-\c@organization=\count525
-\c@savedorganization=\count526
-\c@origlocation=\count527
-\c@savedoriglocation=\count528
-\c@origpublisher=\count529
-\c@savedorigpublisher=\count530
-\c@publisher=\count531
-\c@savedpublisher=\count532
-\c@language=\count533
-\c@savedlanguage=\count534
-\c@origlanguage=\count535
-\c@savedoriglanguage=\count536
-\c@pageref=\count537
-\c@savedpageref=\count538
+\c@afterword=\count479
+\c@savedafterword=\count480
+\c@annotator=\count481
+\c@savedannotator=\count482
+\c@author=\count483
+\c@savedauthor=\count484
+\c@bookauthor=\count485
+\c@savedbookauthor=\count486
+\c@commentator=\count487
+\c@savedcommentator=\count488
+\c@editor=\count489
+\c@savededitor=\count490
+\c@editora=\count491
+\c@savededitora=\count492
+\c@editorb=\count493
+\c@savededitorb=\count494
+\c@editorc=\count495
+\c@savededitorc=\count496
+\c@foreword=\count497
+\c@savedforeword=\count498
+\c@holder=\count499
+\c@savedholder=\count500
+\c@introduction=\count501
+\c@savedintroduction=\count502
+\c@namea=\count503
+\c@savednamea=\count504
+\c@nameb=\count505
+\c@savednameb=\count506
+\c@namec=\count507
+\c@savednamec=\count508
+\c@translator=\count509
+\c@savedtranslator=\count510
+\c@shortauthor=\count511
+\c@savedshortauthor=\count512
+\c@shorteditor=\count513
+\c@savedshorteditor=\count514
+\c@labelname=\count515
+\c@savedlabelname=\count516
+\c@institution=\count517
+\c@savedinstitution=\count518
+\c@lista=\count519
+\c@savedlista=\count520
+\c@listb=\count521
+\c@savedlistb=\count522
+\c@listc=\count523
+\c@savedlistc=\count524
+\c@listd=\count525
+\c@savedlistd=\count526
+\c@liste=\count527
+\c@savedliste=\count528
+\c@listf=\count529
+\c@savedlistf=\count530
+\c@location=\count531
+\c@savedlocation=\count532
+\c@organization=\count533
+\c@savedorganization=\count534
+\c@origlocation=\count535
+\c@savedoriglocation=\count536
+\c@origpublisher=\count537
+\c@savedorigpublisher=\count538
+\c@publisher=\count539
+\c@savedpublisher=\count540
+\c@language=\count541
+\c@savedlanguage=\count542
+\c@origlanguage=\count543
+\c@savedoriglanguage=\count544
+\c@pageref=\count545
+\c@savedpageref=\count546
 \shorthandwidth=\skip284
 \shortjournalwidth=\skip285
 \shortserieswidth=\skip286
@@ -1318,19 +1341,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count539
-\c@textcitetotal=\count540
-\c@textcitemaxnames=\count541
-\c@biburlbigbreakpenalty=\count542
-\c@biburlbreakpenalty=\count543
-\c@biburlnumpenalty=\count544
-\c@biburlucpenalty=\count545
-\c@biburllcpenalty=\count546
+\c@textcitecount=\count547
+\c@textcitetotal=\count548
+\c@textcitemaxnames=\count549
+\c@biburlbigbreakpenalty=\count550
+\c@biburlbreakpenalty=\count551
+\c@biburlnumpenalty=\count552
+\c@biburlucpenalty=\count553
+\c@biburllcpenalty=\count554
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count547
+\c@smartand=\count555
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1343,8 +1366,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count548
-\c@bbx:relatedtotal=\count549
+\c@bbx:relatedcount=\count556
+\c@bbx:relatedtotal=\count557
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -1384,7 +1407,7 @@ File: biblatex.cfg
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen327
+\arrowsize=\dimen331
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
@@ -1396,43 +1419,43 @@ File: tikzlibraryquotes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
  (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks75
-\t@pgfplots@tokb=\toks76
-\t@pgfplots@tokc=\toks77
-\pgfplots@tmpa=\dimen328
-\c@pgfplots@coordindex=\count550
-\c@pgfplots@scanlineindex=\count551
+\t@pgfplots@toka=\toks76
+\t@pgfplots@tokb=\toks77
+\t@pgfplots@tokc=\toks78
+\pgfplots@tmpa=\dimen332
+\c@pgfplots@coordindex=\count558
+\c@pgfplots@scanlineindex=\count559
  (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count552
+\c@pgfplotsarray@tmp=\count560
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count553
-\t@pgfplotstable@a=\toks78
+\c@pgfplotstable@counta=\count561
+\t@pgfplotstable@a=\toks79
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count554
+\c@pgfplotslibrarysurf@no=\count562
  (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen329
-\pgfdecoratedremainingdistance=\dimen330
-\pgfdecoratedinputsegmentcompleteddistance=\dimen331
-\pgfdecoratedinputsegmentremainingdistance=\dimen332
-\pgf@decorate@distancetomove=\dimen333
-\pgf@decorate@repeatstate=\count555
-\pgfdecorationsegmentamplitude=\dimen334
-\pgfdecorationsegmentlength=\dimen335
+\pgfdecoratedcompleteddistance=\dimen333
+\pgfdecoratedremainingdistance=\dimen334
+\pgfdecoratedinputsegmentcompleteddistance=\dimen335
+\pgfdecoratedinputsegmentremainingdistance=\dimen336
+\pgf@decorate@distancetomove=\dimen337
+\pgf@decorate@repeatstate=\count563
+\pgfdecorationsegmentamplitude=\dimen338
+\pgfdecorationsegmentlength=\dimen339
 )
-\tikz@lib@dec@box=\box126
+\tikz@lib@dec@box=\box128
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count556
-\pgfplots@xmin@reg=\dimen336
-\pgfplots@xmax@reg=\dimen337
-\pgfplots@ymin@reg=\dimen338
-\pgfplots@ymax@reg=\dimen339
-\pgfplots@zmin@reg=\dimen340
-\pgfplots@zmax@reg=\dimen341
+\pgfplots@numplots=\count564
+\pgfplots@xmin@reg=\dimen340
+\pgfplots@xmax@reg=\dimen341
+\pgfplots@ymin@reg=\dimen342
+\pgfplots@ymax@reg=\dimen343
+\pgfplots@zmin@reg=\dimen344
+\pgfplots@zmax@reg=\dimen345
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))) (/home/pabsantos/Documents/masters_quali/00-dados.tex)
+)))) (/home/pabsantos/Documents/dissertacao/master_quali/00-dados.tex)
 \main@idxfile=\write7
 \openout7 = `main.idx'.
 
@@ -1446,7 +1469,7 @@ Package csquotes Info: Redefining alias 'default' -> 'brazil'.
 LaTeX Warning: Unused global option(s):
     [subsection=Title].
 
-(/home/pabsantos/Documents/masters_quali/main.aux)
+(/home/pabsantos/Documents/dissertacao/master_quali/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -1465,7 +1488,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
-\AtBeginShipoutBox=\box127
+\AtBeginShipoutBox=\box129
 Package hyperref Info: Link coloring ON on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1474,7 +1497,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count557
+\c@section@level=\count565
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1482,21 +1505,21 @@ LaTeX Info: Redefining \nameref on input line 82.
 LaTeX Info: Redefining \ref on input line 82.
 LaTeX Info: Redefining \pageref on input line 82.
 LaTeX Info: Redefining \nameref on input line 82.
-\myptabbox=\box128
+\myptabbox=\box130
 \myptabboxwidth=\skip298
 ABD: EveryShipout initializing macros (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count558
-\scratchdimen=\dimen342
-\scratchbox=\box129
-\nofMPsegments=\count559
-\nofMParguments=\count560
-\everyMPshowfont=\toks79
-\MPscratchCnt=\count561
-\MPscratchDim=\dimen343
-\MPnumerator=\count562
-\makeMPintoPDFobject=\count563
-\everyMPtoPDFconversion=\toks80
+\scratchcounter=\count566
+\scratchdimen=\dimen346
+\scratchbox=\box131
+\nofMPsegments=\count567
+\nofMParguments=\count568
+\everyMPshowfont=\toks80
+\MPscratchCnt=\count569
+\MPscratchDim=\dimen347
+\MPnumerator=\count570
+\makeMPintoPDFobject=\count571
+\everyMPtoPDFconversion=\toks81
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1525,6 +1548,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+\c@lstlisting=\count572
 Package newfloat Info: `float' package detected.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1639,13 +1663,13 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/home/pabsantos/Documents/masters_quali/main.bbl)
+ (/home/pabsantos/Documents/dissertacao/master_quali/main.bbl)
 Package biblatex Info: Reference section=0 on input line 82.
 Package biblatex Info: Reference segment=0 on input line 82.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.15).
 
-(/home/pabsantos/Documents/masters_quali/00-pretextual.tex
+(/home/pabsantos/Documents/dissertacao/master_quali/00-pretextual.tex
 <fig/capaufpr.png, id=34, 125.5089pt x 142.3719pt>
 File: fig/capaufpr.png Graphic file (type png)
 <use fig/capaufpr.png>
@@ -1653,7 +1677,7 @@ Package pdftex.def Info: fig/capaufpr.png  used on input line 9.
 (pdftex.def)             Requested size: 597.50787pt x 677.83327pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pabsantos/Documents/masters_quali/fig/capaufpr.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pabsantos/Documents/dissertacao/master_quali/fig/capaufpr.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 []\T1/phv/m/n/10.95 (+20) Co-supervisor: Prof. Dr. Os-car Oviedo-
  []
@@ -1670,151 +1694,151 @@ l.14
 
 ] [2] [3
 
-] (/home/pabsantos/Documents/masters_quali/main.lof
+] (/home/pabsantos/Documents/dissertacao/master_quali/main.lof
 Overfull \hbox (2.8699pt too wide) in paragraph at lines 21--21
  [][] [][][]\T1/phv/m/n/12 (-20) MOTORIZATION RATES ON BRAZIL-IAN STATES CAP-I-TAL CITIES, 
  []
 
-) [4
+[4
 
-] (/home/pabsantos/Documents/masters_quali/main.lot) [5
+]) [5] (/home/pabsantos/Documents/dissertacao/master_quali/main.lot) [6
 
-] (/home/pabsantos/Documents/masters_quali/main.toc)) (/home/pabsantos/Documents/masters_quali/cap01.tex [6
+] (/home/pabsantos/Documents/dissertacao/master_quali/main.toc)) (/home/pabsantos/Documents/dissertacao/master_quali/cap01.tex [7
 
-] [7
+] [8
 
-] [8]
-<fig/oecd.png, id=258, 668.4975pt x 459.7175pt>
+] [9]
+<fig/oecd.png, id=278, 668.4975pt x 459.7175pt>
 File: fig/oecd.png Graphic file (type png)
 <use fig/oecd.png>
 Package pdftex.def Info: fig/oecd.png  used on input line 52.
 (pdftex.def)             Requested size: 364.00139pt x 250.32712pt.
- [9
+ [10
 
-] [10 </home/pabsantos/Documents/masters_quali/fig/oecd.png>]
-<fig/brazil_abs.pdf, id=285, 433.62pt x 252.945pt>
+] [11 </home/pabsantos/Documents/dissertacao/master_quali/fig/oecd.png>]
+<fig/brazil_abs.pdf, id=305, 433.62pt x 252.945pt>
 File: fig/brazil_abs.pdf Graphic file (type pdf)
 <use fig/brazil_abs.pdf>
 Package pdftex.def Info: fig/brazil_abs.pdf  used on input line 69.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/brazil_mort.pdf, id=289, 433.62pt x 252.945pt>
+<fig/brazil_mort.pdf, id=309, 433.62pt x 252.945pt>
 File: fig/brazil_mort.pdf Graphic file (type pdf)
 <use fig/brazil_mort.pdf>
 Package pdftex.def Info: fig/brazil_mort.pdf  used on input line 80.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [11 </home/pabsantos/Documents/masters_quali/fig/brazil_abs.pdf>]
-<fig/brazil_fatality.pdf, id=310, 433.62pt x 252.945pt>
+ [12 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_abs.pdf>]
+<fig/brazil_fatality.pdf, id=332, 433.62pt x 252.945pt>
 File: fig/brazil_fatality.pdf Graphic file (type pdf)
 <use fig/brazil_fatality.pdf>
 Package pdftex.def Info: fig/brazil_fatality.pdf  used on input line 91.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [12 </home/pabsantos/Documents/masters_quali/fig/brazil_mort.pdf> </home/pabsantos/Documents/masters_quali/fig/brazil_fatality.pdf>]
-<fig/brazil_motor.pdf, id=338, 433.62pt x 252.945pt>
+ [13 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_mort.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_fatality.pdf>]
+<fig/brazil_motor.pdf, id=358, 433.62pt x 252.945pt>
 File: fig/brazil_motor.pdf Graphic file (type pdf)
 <use fig/brazil_motor.pdf>
 Package pdftex.def Info: fig/brazil_motor.pdf  used on input line 104.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [13 </home/pabsantos/Documents/masters_quali/fig/brazil_motor.pdf>]
-<fig/cwb_abs.pdf, id=364, 433.62pt x 252.945pt>
+ [14 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_motor.pdf>]
+<fig/cwb_abs.pdf, id=384, 433.62pt x 252.945pt>
 File: fig/cwb_abs.pdf Graphic file (type pdf)
 <use fig/cwb_abs.pdf>
 Package pdftex.def Info: fig/cwb_abs.pdf  used on input line 117.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/cap_motor.pdf, id=368, 433.62pt x 252.945pt>
+<fig/cap_motor.pdf, id=388, 433.62pt x 252.945pt>
 File: fig/cap_motor.pdf Graphic file (type pdf)
 <use fig/cap_motor.pdf>
 Package pdftex.def Info: fig/cap_motor.pdf  used on input line 128.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [14 </home/pabsantos/Documents/masters_quali/fig/cwb_abs.pdf>]
-<fig/cap_mort.pdf, id=388, 433.62pt x 252.945pt>
+ [15 </home/pabsantos/Documents/dissertacao/master_quali/fig/cwb_abs.pdf>]
+<fig/cap_mort.pdf, id=408, 433.62pt x 252.945pt>
 File: fig/cap_mort.pdf Graphic file (type pdf)
 <use fig/cap_mort.pdf>
 Package pdftex.def Info: fig/cap_mort.pdf  used on input line 139.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/cap_fatal.pdf, id=394, 433.62pt x 252.945pt>
+<fig/cap_fatal.pdf, id=414, 433.62pt x 252.945pt>
 File: fig/cap_fatal.pdf Graphic file (type pdf)
 <use fig/cap_fatal.pdf>
 Package pdftex.def Info: fig/cap_fatal.pdf  used on input line 150.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [15 </home/pabsantos/Documents/masters_quali/fig/cap_motor.pdf>] [16 </home/pabsantos/Documents/masters_quali/fig/cap_mort.pdf> </home/pabsantos/Documents/masters_quali/fig/cap_fatal.pdf>]
-<fig/haddon.pdf, id=427, 335.33278pt x 212.71469pt>
+ [16 </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_motor.pdf>] [17 </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_mort.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_fatal.pdf>]
+<fig/haddon.pdf, id=448, 335.33278pt x 212.71469pt>
 File: fig/haddon.pdf Graphic file (type pdf)
 <use fig/haddon.pdf>
 Package pdftex.def Info: fig/haddon.pdf  used on input line 163.
 (pdftex.def)             Requested size: 335.33195pt x 212.71416pt.
- [17 </home/pabsantos/Documents/masters_quali/fig/haddon.pdf>] [18]
-<fig/braking2.png, id=481, 1280.785pt x 734.745pt>
+ [18 </home/pabsantos/Documents/dissertacao/master_quali/fig/haddon.pdf>] [19]
+<fig/braking2.png, id=501, 1280.785pt x 734.745pt>
 File: fig/braking2.png Graphic file (type png)
 <use fig/braking2.png>
 Package pdftex.def Info: fig/braking2.png  used on input line 188.
 (pdftex.def)             Requested size: 364.00139pt x 208.81029pt.
- [19 </home/pabsantos/Documents/masters_quali/fig/braking2.png>]
-<fig/kinetic.pdf, id=493, 433.62pt x 252.945pt>
+ [20 </home/pabsantos/Documents/dissertacao/master_quali/fig/braking2.png>]
+<fig/kinetic.pdf, id=513, 433.62pt x 252.945pt>
 File: fig/kinetic.pdf Graphic file (type pdf)
 <use fig/kinetic.pdf>
 Package pdftex.def Info: fig/kinetic.pdf  used on input line 202.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/ash.pdf, id=497, 433.62pt x 252.945pt>
+<fig/ash.pdf, id=517, 433.62pt x 252.945pt>
 File: fig/ash.pdf Graphic file (type pdf)
 <use fig/ash.pdf>
 Package pdftex.def Info: fig/ash.pdf  used on input line 213.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [20 </home/pabsantos/Documents/masters_quali/fig/kinetic.pdf>] [21 </home/pabsantos/Documents/masters_quali/fig/ash.pdf>] [22]
-<fig/svd.png, id=573, 826.08624pt x 716.6775pt>
+ [21 </home/pabsantos/Documents/dissertacao/master_quali/fig/kinetic.pdf>] [22 </home/pabsantos/Documents/dissertacao/master_quali/fig/ash.pdf>] [23]
+<fig/svd.png, id=593, 826.08624pt x 716.6775pt>
 File: fig/svd.png Graphic file (type png)
 <use fig/svd.png>
 Package pdftex.def Info: fig/svd.png  used on input line 255.
 (pdftex.def)             Requested size: 364.00139pt x 315.79837pt.
- [23 </home/pabsantos/Documents/masters_quali/fig/svd.png>]
-<fig/richards.pdf, id=596, 436.5108pt x 139.4811pt>
+ [24 </home/pabsantos/Documents/dissertacao/master_quali/fig/svd.png>]
+<fig/richards.pdf, id=617, 436.5108pt x 139.4811pt>
 File: fig/richards.pdf Graphic file (type pdf)
 <use fig/richards.pdf>
 Package pdftex.def Info: fig/richards.pdf  used on input line 274.
 (pdftex.def)             Requested size: 436.50972pt x 139.48074pt.
- [24] [25 </home/pabsantos/Documents/masters_quali/fig/richards.pdf>]
+ [25] [26 </home/pabsantos/Documents/dissertacao/master_quali/fig/richards.pdf>]
 
-pdfTeX warning: pdflatex (file /home/pabsantos/Documents/masters_quali/fig/ewing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/ewing.pdf, id=665, 349.305pt x 139.4811pt>
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/ewing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/ewing.pdf, id=685, 349.305pt x 139.4811pt>
 File: fig/ewing.pdf Graphic file (type pdf)
 <use fig/ewing.pdf>
 Package pdftex.def Info: fig/ewing.pdf  used on input line 301.
 (pdftex.def)             Requested size: 349.30414pt x 139.48074pt.
-[26 </home/pabsantos/Documents/masters_quali/fig/ewing.pdf>] [27] [28]
+[27 </home/pabsantos/Documents/dissertacao/master_quali/fig/ewing.pdf>] [28] [29]
 Overfull \hbox (4.94588pt too wide) in paragraph at lines 429--462
  [][] 
  []
 
-[29] [30] [31]
+[30] [31] [32]
 Overfull \hbox (4.94589pt too wide) in paragraph at lines 510--521
  [][] 
  []
 
-[32]
-<fig/axes.png, id=1010, 497.86pt x 573.14125pt>
+[33]
+<fig/axes.png, id=1030, 497.86pt x 573.14125pt>
 File: fig/axes.png Graphic file (type png)
 <use fig/axes.png>
 Package pdftex.def Info: fig/axes.png  used on input line 574.
 (pdftex.def)             Requested size: 227.5pt x 261.90784pt.
-<fig/macro2.png, id=1016, 542.025pt x 565.11125pt>
+<fig/macro2.png, id=1036, 542.025pt x 565.11125pt>
 File: fig/macro2.png Graphic file (type png)
 <use fig/macro2.png>
 Package pdftex.def Info: fig/macro2.png  used on input line 585.
 (pdftex.def)             Requested size: 273.00278pt x 284.64166pt.
- [33] [34 </home/pabsantos/Documents/masters_quali/fig/axes.png> </home/pabsantos/Documents/masters_quali/fig/macro2.png>]
+ [34] [35 </home/pabsantos/Documents/dissertacao/master_quali/fig/axes.png> </home/pabsantos/Documents/dissertacao/master_quali/fig/macro2.png>]
 
-pdfTeX warning: pdflatex (file /home/pabsantos/Documents/masters_quali/fig/studies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/studies.pdf, id=1039, 319.1925pt x 118.5228pt>
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/studies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/studies.pdf, id=1059, 319.1925pt x 118.5228pt>
 File: fig/studies.pdf Graphic file (type pdf)
 <use fig/studies.pdf>
 Package pdftex.def Info: fig/studies.pdf  used on input line 602.
 (pdftex.def)             Requested size: 319.19171pt x 118.52249pt.
-[35 </home/pabsantos/Documents/masters_quali/fig/studies.pdf>] [36] [37] [38] [39] [40] [41]
-<fig/kernel.pdf, id=1189, 433.62pt x 252.945pt>
+[36 </home/pabsantos/Documents/dissertacao/master_quali/fig/studies.pdf>] [37] [38] [39] [40] [41] [42]
+<fig/kernel.pdf, id=1210, 433.62pt x 252.945pt>
 File: fig/kernel.pdf Graphic file (type pdf)
 <use fig/kernel.pdf>
 Package pdftex.def Info: fig/kernel.pdf  used on input line 724.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
- [42 </home/pabsantos/Documents/masters_quali/fig/kernel.pdf>]
+ [43 </home/pabsantos/Documents/dissertacao/master_quali/fig/kernel.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []|\T1/phv/m/n/10 (+20) Bisquare,
  []
@@ -1834,44 +1858,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 754--754
 []|\T1/phv/m/n/10 (+20) Bisquare,
  []
 
-[43]
-<fig/cam_install.png, id=1251, 365.365pt x 253.94875pt>
+[44]
+<fig/cam_install.png, id=1271, 365.365pt x 253.94875pt>
 File: fig/cam_install.png Graphic file (type png)
 <use fig/cam_install.png>
 Package pdftex.def Info: fig/cam_install.png  used on input line 785.
 (pdftex.def)             Requested size: 273.00278pt x 189.75972pt.
-<fig/cam_cap.png, id=1255, 577.15625pt x 144.54pt>
+<fig/cam_cap.png, id=1275, 577.15625pt x 144.54pt>
 File: fig/cam_cap.png Graphic file (type png)
 <use fig/cam_cap.png>
 Package pdftex.def Info: fig/cam_cap.png  used on input line 796.
 (pdftex.def)             Requested size: 409.49722pt x 102.55573pt.
- [44
+ [45
 
- </home/pabsantos/Documents/masters_quali/fig/cam_install.png>]
+ </home/pabsantos/Documents/dissertacao/master_quali/fig/cam_install.png>]
 
-pdfTeX warning: pdflatex (file /home/pabsantos/Documents/masters_quali/fig/DAS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/DAS.pdf, id=1264, 421.575pt x 132.495pt>
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/DAS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/DAS.pdf, id=1285, 421.575pt x 132.495pt>
 File: fig/DAS.pdf Graphic file (type pdf)
 <use fig/DAS.pdf>
 Package pdftex.def Info: fig/DAS.pdf  used on input line 809.
 (pdftex.def)             Requested size: 421.57396pt x 132.49466pt.
-[45 </home/pabsantos/Documents/masters_quali/fig/cam_cap.png> </home/pabsantos/Documents/masters_quali/fig/DAS.pdf>]
+[46 </home/pabsantos/Documents/dissertacao/master_quali/fig/cam_cap.png> </home/pabsantos/Documents/dissertacao/master_quali/fig/DAS.pdf>]
 
-pdfTeX warning: pdflatex (file /home/pabsantos/Documents/masters_quali/fig/validtime.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/validtime.pdf, id=1282, 442.53331pt x 110.3322pt>
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/validtime.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/validtime.pdf, id=1302, 442.53331pt x 110.3322pt>
 File: fig/validtime.pdf Graphic file (type pdf)
 <use fig/validtime.pdf>
 Package pdftex.def Info: fig/validtime.pdf  used on input line 822.
 (pdftex.def)             Requested size: 442.53223pt x 110.33191pt.
-[46 </home/pabsantos/Documents/masters_quali/fig/validtime.pdf>]
-<fig/buffer.pdf, id=1302, 334.3692pt x 74.1972pt>
+[47 </home/pabsantos/Documents/dissertacao/master_quali/fig/validtime.pdf>]
+
+pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/methods.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/methods.pdf, id=1318, 443.7378pt x 182.6022pt>
+File: fig/methods.pdf Graphic file (type pdf)
+<use fig/methods.pdf>
+Package pdftex.def Info: fig/methods.pdf  used on input line 885.
+(pdftex.def)             Requested size: 443.73671pt x 182.60175pt.
+[48 </home/pabsantos/Documents/dissertacao/master_quali/fig/methods.pdf>]
+<fig/buffer.pdf, id=1343, 334.3692pt x 74.1972pt>
 File: fig/buffer.pdf Graphic file (type pdf)
 <use fig/buffer.pdf>
-Package pdftex.def Info: fig/buffer.pdf  used on input line 891.
+Package pdftex.def Info: fig/buffer.pdf  used on input line 906.
 (pdftex.def)             Requested size: 334.36838pt x 74.197pt.
- [47 </home/pabsantos/Documents/masters_quali/fig/buffer.pdf>] [48] [49
+<fig/spd_occur.pdf, id=1348, 433.62pt x 289.08pt>
+File: fig/spd_occur.pdf Graphic file (type pdf)
+<use fig/spd_occur.pdf>
+Package pdftex.def Info: fig/spd_occur.pdf  used on input line 921.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [49 </home/pabsantos/Documents/dissertacao/master_quali/fig/buffer.pdf>] [50 </home/pabsantos/Documents/dissertacao/master_quali/fig/spd_occur.pdf>]
+<fig/map_PD+LDI.pdf, id=1397, 433.62pt x 289.08pt>
+File: fig/map_PD+LDI.pdf Graphic file (type pdf)
+<use fig/map_PD+LDI.pdf>
+Package pdftex.def Info: fig/map_PD+LDI.pdf  used on input line 980.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [51 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_PD+LDI.pdf>]
+<fig/map_DIS+DSC.pdf, id=1425, 433.62pt x 289.08pt>
+File: fig/map_DIS+DSC.pdf Graphic file (type pdf)
+<use fig/map_DIS+DSC.pdf>
+Package pdftex.def Info: fig/map_DIS+DSC.pdf  used on input line 991.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+<fig/map_TSD+PAR.pdf, id=1434, 433.62pt x 289.08pt>
+File: fig/map_TSD+PAR.pdf Graphic file (type pdf)
+<use fig/map_TSD+PAR.pdf>
+Package pdftex.def Info: fig/map_TSD+PAR.pdf  used on input line 1002.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+<fig/map_SND+DCSU.pdf, id=1441, 433.62pt x 289.08pt>
+File: fig/map_SND+DCSU.pdf Graphic file (type pdf)
+<use fig/map_SND+DCSU.pdf>
+Package pdftex.def Info: fig/map_SND+DCSU.pdf  used on input line 1013.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [52 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_DIS+DSC.pdf>] [53 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_TSD+PAR.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/map_SND+DCSU.pdf>]
+<fig/map_BSD+AVI.pdf, id=1490, 433.62pt x 289.08pt>
+File: fig/map_BSD+AVI.pdf Graphic file (type pdf)
+<use fig/map_BSD+AVI.pdf>
+Package pdftex.def Info: fig/map_BSD+AVI.pdf  used on input line 1024.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [54 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_BSD+AVI.pdf>] [55
 
-]) [50
+]) [56
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 160.
@@ -1882,7 +1947,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [51
+ [57
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 160.
@@ -1898,26 +1963,22 @@ Overfull \hbox (915.1694pt too wide) in paragraph at lines 160--160
 \T1/phv/m/n/12 (-20) http://www.anpet.org.br/anais34/documentos/2020/Tr%7B%5C'%7Ba%7D%7Dfego%20Urbano%20e%20Rodovi%7B%5C'%7Ba%7D%7Drio/Seguran%7B%5Cc%7Bc%7D%7Da%20Vi%7B%5C'%7Ba%7D%7Dria%20III/5%7B%5C_%7D332%7B%5C_%7DCT.pdf. 
  []
 
-[52] [53] [54] [55] [56] [57] [58]
+[58] [59] [60] [61] [62] [63] [64]
 Overfull \hbox (14.79782pt too wide) in paragraph at lines 160--160
 \T1/phv/m/n/12 (-20) http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0102- 
  []
 
-[59] [60] [61] [62] (/home/pabsantos/Documents/masters_quali/ap01.tex [63] [64
+[65] [66] [67] [68] (/home/pabsantos/Documents/dissertacao/master_quali/ap01.tex [69] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 6.
+ (/home/pabsantos/Documents/dissertacao/master_quali/code/points2path.py)) (/home/pabsantos/Documents/dissertacao/master_quali/ax01.tex [70
 
-]) (/home/pabsantos/Documents/masters_quali/ax01.tex [65
+] (/home/pabsantos/Documents/dissertacao/master_quali/code/gps2csv.py [71
 
-]pdfTeX warning (ext4): destination with the same identifier (name{TEST.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.7 \poschap{TEST}
-                   [66
-
-]) 
+] [72] [73]) (/home/pabsantos/Documents/dissertacao/master_quali/code/functions.py [74]) (/home/pabsantos/Documents/dissertacao/master_quali/code/gpsread-v1.py [75] [76]) (/home/pabsantos/Documents/dissertacao/master_quali/code/video.py [77])) 
 AED: lastpage setting LastPage
-[67
-
-]
+[78]
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -1929,7 +1990,7 @@ AED: lastpage setting LastPage
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
- (/home/pabsantos/Documents/masters_quali/main.aux)
+ (/home/pabsantos/Documents/dissertacao/master_quali/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 253.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1938,18 +1999,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
- 49925 strings out of 480906
- 1080691 string characters out of 5910772
- 2132711 words of memory out of 5000000
- 64198 multiletter control sequences out of 15000+600000
- 560759 words of font info for 161 fonts, out of 8000000 for 9000
+ 52348 strings out of 480906
+ 1114586 string characters out of 5910772
+ 2422415 words of memory out of 5000000
+ 66196 multiletter control sequences out of 15000+600000
+ 563962 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,18n,121p,1322b,4154s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on /home/pabsantos/Documents/masters_quali/main.pdf (68 pages, 2288520 bytes).
+ 78i,18n,121p,1333b,4154s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on /home/pabsantos/Documents/dissertacao/master_quali/main.pdf (79 pages, 4410203 bytes).
 PDF statistics:
- 1867 PDF objects out of 2073 (max. 8388607)
- 1681 compressed objects within 17 object streams
- 247 named destinations out of 1000 (max. 500000)
- 21483 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 2516 PDF objects out of 2984 (max. 8388607)
+ 2285 compressed objects within 23 object streams
+ 629 named destinations out of 1000 (max. 500000)
+ 22510 words of extra memory for PDF output out of 24883 (max. 10000000)
 

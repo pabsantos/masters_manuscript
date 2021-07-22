@@ -866,13 +866,26 @@ The NDS-BR started collecting data on August, 2019. The local of the study is Cu
     NOTES: Duration in days; age and license age in years; M-male; F-female
 \end{table}
 
-The age of the drivers varied between 21 and 62 years old, with 7 females and 9 males. The duration of data collection from each driver varied between 5 and 17 days. Regarding the volunteers' vehicles, the model year varied between 2001 and 2019, with horsepower varying between 74 and 163 HP. All volunteers received a briefing on how to operate the equipment and signed a term of agreement, allowing the use of their data to academic research purposes. Overall, a total of 491 trips were made, resulting in 238.85 hours of driving and 5,362.75 km of distance travelled.  
+The age of the drivers varied between 21 and 62 years old, with 7 females and 9 males. The duration of data collection from each driver varied between 5 and 17 days. Regarding the volunteers' vehicles, the model year varied between 2001 and 2019, with horsepower varying between 74 and 163 HP. All volunteers received a briefing on how to operate the equipment and signed a term of agreement, allowing the use of their data to academic research purposes. Overall, a total of 491 trips were made, resulting in 238.85 hours of driving and 5,362.75 km of distance travelled.
+
+Only driver $D_{14}$ had a car with automatic gearbox. All other drivers had vehicles with a manual gearbox. Drivers $D_{1}$, $D_{2}$, $D_{3}$ e $D_{4}$ casually made trips in carpooling situation, offering rides to strangers with the use of carpooling apps. Drivers $D_{14}$, $D_{15}$ and $D_{16}$ worked as mobility app drivers. This caused a greater participation from them in the overall sample, which will be observed in the results.  
 
 %% Start of NDS, how much time each collected
 
 \section{DATA PROCESSING AND VARIABLE CONSTRUCTION} \label{data}
 
 %% Data processing flowchart
+
+This section includes the methods utilized to construct all the utilized variables, divided into two subsections: the speeding variable (dependent variable) and built environment variables (independent variables). \autoref{fig:methods} presents a brief flowchart on the process of transforming the data sources into a complete dataset included in the traffic analysis zones.  
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{VARIABLE DATA FLOWCHART}
+    \includegraphics{fig/methods.pdf}
+    \label{fig:methods}
+    \par SOURCE: The Author (2021).
+\end{figure}
 
 \subsection{Speeding}
 
@@ -881,6 +894,8 @@ The age of the drivers varied between 21 and 62 years old, with 7 females and 9 
 %% How the main dataframe was constructed
 
 % 1. Road axis buffer
+
+% 2. Intersection with nds points
 
 In order to extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective posted speed. Posted speed data was collected from the road axis shape file obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with posted speeds from IPPUC road axis shape files \cite{IPPUC2021}. Using the software QGIS, it was created a 10 meter buffer around the road axes. In sequence, a intersection between the NDS points and the road buffer was performed, in order to associate the posted speed and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
 
@@ -893,15 +908,24 @@ In order to extract speeding information from the NDS sample, it was necessary t
     \par SOURCE: The Author (2021).
 \end{figure}
 
-Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without posted speed data were removed from the analysis. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurence of speeding is represented by the proportion of distance travelled in speeds above the posted speed, divided by the distance performed in free-flow speeds. It is necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurence of speeding is defined the following equation: \begin{align}
+Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without posted speed and without performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurence of speeding is represented by the proportion of distance travelled in speeds above the posted speed, divided by the distance performed in free-flow speeds. It is necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurence of speeding is defined the following equation: \begin{align}
     SP = \frac{D_{Vsp}}{D_{Vf}} \mbox{ ;} 
-\end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the posted speed (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. Free-flow speeds includes performed speeds higher than the posted speed minus 10 km/h. FIG presents the characterization of these speed behaviors.   
-
-% 2. Intersection with nds points
+\end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the posted speed (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. Free-flow speeds includes performed speeds higher than the posted speed minus 10 km/h, and lower than speeding. \autoref{fig:spd_occur} presents a section of a trip, illustrating the thresholds previously described.   
 
 % 3. Filtering points: speed exposure and speeding - explain criteria (based on richards)
 
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{SPEEDING OCCURENCE AND SPEEDING OPPORTUNITY}
+    \includegraphics{fig/spd_occur.pdf}
+    \label{fig:spd_occur}
+    \par SOURCE: The Author (2021).
+\end{figure}
+
 % 4. transforming points into lines to export distances: linestring - python script
+
+To extract distance data from the gps coordinates, it was made a conversion from the coordinates into a linestring, a geometry type from the Well-known text (WKT) format. QGIS is able to read the WKT format and calculate the distances. Only points with a 1 second gap from each other (observed from the time variable) were connected with a linestring. The conversion process was made with a python script, included on Appendix 1. Total distances, distances performed in free-flow speeds and distances in speeding were calculated for each TAZ in Curitiba, in order to calculate the occurence of speeding. 
 
 \subsection{Built Environment}
 
@@ -909,11 +933,98 @@ Points with coordinates outside the buffers (in the middle of street blocks, for
 
 %% How the TAZ shape was constructed
 
-% 1. Table with all variables: group & variable & abbreviation & unit & expected correlation to speeding
+% 1. TAZ shape (general info, source)
 
-% 2. TAZ shape (general info, source)
+All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZs, established in Curitiba's origin / destiny research made by IPPUC in 2018, were used for this work \cite{IPPUC2018b}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data was obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZs. 
 
-% 3. Independent variables calc (how each one was made)
+% 2. Table with all variables: group & variable & abbreviation & unit & expected correlation to speeding
+
+\begin{table}[!htbp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{BUILT ENVIRONMENT VARIABLES}
+    \centering
+    \begin{tabular}{lll}
+        \hline
+        \multicolumn{1}{c}{\textbf{Category}} & \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} \\
+        \hline
+        Density & PD & Population Density [inhab/$km^2$]\\
+        Diversity & LDI & Land use diversity index \\
+        \multirow[t]{5}*{Design} & DIS & Density of intersections [no./km] \\
+                              & DSC & Density of speed cameras [no./km] \\
+                              & TSD & Traffic signal density [no./km] \\
+                              & PAR & Proportion of arterial roads \\
+                              & SND & Street network density [$km/km^2$] \\
+        Destination accessibility & DCSU & Density of commercial and services units [no./$km^2$] \\
+        Distance to transit & BSD & Bus stop density [no./km] \\
+        Demographics & AVI & Average income [BRL] \\
+        \hline
+    \end{tabular}
+    \label{tab:bivar}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021)
+\end{table}
+
+% 3. Independent variables calc (how each one was made) - Insert maps for each variable
+
+Inside the diversity category, the land use diversity index (LDI) used information from Curitiba's zoning plan \cite{Curitiba2019a} as input for it's calculation. For each TAZ, the diversity index was calculated based on the following equation \cite{Huang2018}:\begin{align}
+    LDI = \frac{-\sum_i^n P_i \times \ln(P_i)}{\ln(n)} \mbox{ ;}
+\end{align} where $i$ is the type of land use, $n$ is the total number of land use types in a TAZ and $P_i$ is the proportional area of land use type $i$. LDI varies between 0 and 1, where 0 represents a single land use zone and 1 represents a perfect distribution of land uses. The GIS data of each zoning type was obtained from \textcite{IPPUC2021}. PD and LDI variables are plotted in \autoref{fig:pd_ldi}.
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{PD AND LDI}
+    \includegraphics{fig/map_PD+LDI.pdf}
+    \label{fig:pd_ldi}
+    \par SOURCE: The Author (2021), based on \textcite{IBGE2010, IPPUC2018b, IPPUC2021}.
+\end{figure}
+
+In regard to the design category, the density of intersections (DIS) was calculated based on the number of intersections divided by the length of roads. The intersection points and road lengths were extracted from the \textcite{IPPUC2021} road axis data. Intersection points were extracted using the "line intersection" function included in QGIS. Density of speed cameras (DSC) and traffic signal density (TSD) follows the same method applied on density of intersections. Speed camera points were obtained from the Municipal Office of Social Defense and Transit of Curitiba \cite{SETRAN2020} and traffic signal points were obtained from \textcite{IPPUC2021}. DIS and DSC variables are plotted in \autoref{fig:dis_dsc}. 
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{DIS AND DSC}
+    \includegraphics{fig/map_DIS+DSC.pdf}
+    \label{fig:dis_dsc}
+    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021,SETRAN2020}
+\end{figure}
+
+The proportion of arterials (PAR) used the IPPUC road axis data as well. The road hierarchy data follows the categories established by the Brazilian Traffic Code \cite{Brasil1997}: Rapid transit, arterial, collector and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{TSD AND PAR}
+    \includegraphics{fig/map_TSD+PAR.pdf}
+    \label{fig:tsd_par}
+    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021}
+\end{figure}
+
+Street network density (SND) is the total road length divided by the area in squared kilometers of the respective TAZ. Regarding the destination accessibility, the location of commercial and services units from 2019 was provided by \textcite{IPPUC2021}, making possible the calculation of the density of commercial and services units (DCSU) per TAZ. SND and DCSU variables are plotted in \autoref{fig:snd_dcsu}.
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{SND AND DCSU}
+    \includegraphics{fig/map_SND+DCSU.pdf}
+    \label{fig:snd_dcsu}
+    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021}
+\end{figure}
+
+The distance to transit is represented by the bus stop density (BSD) per road length. The location of bus stops across the city was provided by \textcite{IPPUC2020a}, with data from 2020. The average income (AVI), representing the demographics category, was obtained from the Brazilian Census of 2010 \cite{IBGE2010}. BSD and AVI variables are plotted in \autoref{fig:bsd_avi}. 
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{BSD AND AVI}
+    \includegraphics{fig/map_BSD+AVI.pdf}
+    \label{fig:bsd_avi}
+    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2020a, IBGE2010}
+\end{figure}
 
 \section{GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING} \label{gwm}
 
@@ -933,21 +1044,105 @@ Points with coordinates outside the buffers (in the middle of street blocks, for
 
 % 1. Results from NDS (how much each driver participated)
 
+%% How much each driver participated: Quantity of trips, length of trips (mean, median, 1q, 3q, max , min) - try table or boxplot
+
+\begin{table}[!htbp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{TRIP DISTANCES RESULTS}
+    \centering
+    \begin{tabular}{lrrrrrrrrr}
+        \hline
+        \multicolumn{1}{c}{\textbf{Driver}} & \multicolumn{1}{c}{\textbf{n}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} & \multicolumn{1}{c}{\textbf{Total distance}} \\ 
+        \hline
+        $D_{1}$ & 29 & 5.49 & 2.36 & 1.17 & 4.70 & 5.84 & 6.13 & 12.60 & 159.33 \\ 
+        $D_{2}$ & 14 & 14.09 & 7.81 & 2.41 & 7.14 & 14.40 & 21.94 & 22.70 & 197.31 \\ 
+        $D_{3}$ & 15 & 11.58 & 4.41 & 4.16 & 7.89 & 11.86 & 14.82 & 19.14 & 173.72 \\ 
+        $D_{4}$ & 48 & 4.26 & 2.47 & 0.24 & 2.30 & 3.50 & 5.88 & 9.36 & 204.67 \\ 
+        $D_{5}$ & 56 & 2.71 & 2.86 & 0.00 & 0.66 & 2.14 & 3.72 & 15.69 & 152.01 \\ 
+        $D_{6}$ & 37 & 3.21 & 1.44 & 0.90 & 1.99 & 2.82 & 4.45 & 6.85 & 118.83 \\ 
+        $D_{7}$ & 29 & 10.84 & 5.60 & 0.48 & 5.12 & 12.88 & 15.67 & 17.04 & 314.44 \\ 
+        $D_{8}$ & 31 & 6.40 & 3.55 & 0.67 & 2.46 & 7.00 & 9.15 & 13.14 & 198.55 \\ 
+        $D_{9}$ & 11 & 4.63 & 2.04 & 1.69 & 3.24 & 4.51 & 5.87 & 7.63 & 50.92 \\ 
+        $D_{10}$ & 40 & 5.65 & 4.02 & 0.41 & 2.04 & 5.05 & 8.80 & 14.87 & 225.97 \\ 
+        $D_{11}$ & 12 & 1.72 & 1.63 & 0.17 & 0.66 & 1.07 & 2.30 & 5.90 & 20.62 \\ 
+        $D_{12}$ &  6 & 1.71 & 2.38 & 0.07 & 0.21 & 0.46 & 2.51 & 5.97 & 10.28 \\ 
+        $D_{13}$ & 23 & 3.97 & 2.01 & 0.10 & 2.96 & 3.94 & 4.94 & 7.51 & 91.26 \\ 
+        $D_{14}$ & 31 & 21.06 & 17.28 & 0.06 & 7.70 & 17.68 & 30.05 & 72.93 & 652.71 \\ 
+        $D_{15}$ & 21 & 38.33 & 40.40 & 1.33 & 10.73 & 25.57 & 47.75 & 168.26 & 805.02 \\ 
+        $D_{16}$ &  7 & 12.04 & 15.21 & 0.02 & 3.69 & 3.92 & 14.99 & 42.97 & 84.27 \\ 
+        \hline
+    \end{tabular}
+    \label{tab:trips}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021)
+    \par \vspace{1mm} \footnotesize \raggedright
+    NOTES: Distances in kilometers. 
+\end{table}
+
+
 %% hour of the day, day of the week (per distance travelled, per number of trips)
 
-%% how much travelled in each neighborhood or TAZ
+%% how much travelled in each TAZ (MAP)
+
+% 2. Speeding Results
+
+%% how much speeding for each driver (per trip - mean, median, 1q, 3q, max, min - try table AND boxplot) 
+
+\begin{table}[!htbp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{SPEEDING PER TRIP RESULTS}
+    \centering
+    \begin{tabular}{lrrrrrrr}
+        \hline
+        \multicolumn{1}{c}{\textbf{Driver}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} \\
+        \hline
+        $D_1$ & 0.29 & 0.17 & 0.07 & 0.16 & 0.27 & 0.39 & 0.63 \\ 
+        $D_2$ & 0.35 & 0.16 & 0.09 & 0.20 & 0.43 & 0.47 & 0.53 \\ 
+        $D_3$ & 0.48 & 0.17 & 0.23 & 0.32 & 0.48 & 0.60 & 0.78 \\ 
+        $D_4$ & 0.32 & 0.14 & 0.00 & 0.26 & 0.31 & 0.40 & 0.66 \\ 
+        $D_5$ & 0.25 & 0.24 & 0.00 & 0.03 & 0.18 & 0.40 & 0.79 \\ 
+        $D_6$ & 0.48 & 0.15 & 0.10 & 0.39 & 0.47 & 0.59 & 0.74 \\ 
+        $D_7$ & 0.26 & 0.14 & 0.03 & 0.18 & 0.25 & 0.33 & 0.76 \\ 
+        $D_8$ & 0.33 & 0.21 & 0.00 & 0.18 & 0.26 & 0.52 & 0.70 \\ 
+        $D_9$ & 0.46 & 0.13 & 0.23 & 0.37 & 0.49 & 0.58 & 0.62 \\ 
+        $D_{10}$ & 0.35 & 0.22 & 0.00 & 0.17 & 0.35 & 0.46 & 0.79 \\ 
+        $D_{11}$ & 0.26 & 0.19 & 0.00 & 0.13 & 0.28 & 0.36 & 0.64 \\ 
+        $D_{12}$ & 0.30 & 0.30 & 0.00 & 0.04 & 0.27 & 0.47 & 0.76 \\ 
+        $D_{13}$ & 0.26 & 0.18 & 0.00 & 0.15 & 0.22 & 0.34 & 0.79 \\ 
+        $D_{14}$ & 0.46 & 0.17 & 0.00 & 0.40 & 0.49 & 0.58 & 0.79 \\ 
+        $D_{15}$ & 0.38 & 0.12 & 0.07 & 0.33 & 0.39 & 0.47 & 0.57 \\ 
+        $D_{16}$ & 0.56 & 0.19 & 0.30 & 0.45 & 0.57 & 0.70 & 0.79 \\ 
+        \hline 
+    \end{tabular}
+    \label{tab:speeding}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+\end{table}
+
+
+%% How much speeding in each TAZ (map)
+
+%% hour of the day, day of the week (per distance travelled, per number of trips)
 
 %% How much each driver made speeding (hour of the day, day of the week)
 
-%% NSHTA diagram of speeding
+%% NSHTA diagram of speeding (talvezzzz)
 
-%% How much speeding in each TAZ or neighborhood
+% 3. Results from GWR
 
-% 2. results from GWR
+%% Summary of variables: mean, median, max, min, 1q, 3q
 
-%% Show results
+%% Show models results (quality variables) - AICc, morans I, R-squared
 
 %% Chosen model based on results
+
+%% Map and discuss the variables
 
 % ----------------------------------------------------------------------------------
 

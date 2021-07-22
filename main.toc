@@ -5,71 +5,71 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {1}\bfseries \MakeTextUppercase {INTRODUCTION}}{7}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\bfseries \MakeTextUppercase {INTRODUCTION}}{8}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}OBJECTIVES}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.1}OBJECTIVES}{8}{section.1.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}JUSTIFICATION}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.2}JUSTIFICATION}{8}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}THESIS STRUCTURE}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.3}THESIS STRUCTURE}{9}{section.1.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {2}\bfseries \MakeTextUppercase {LITERATURE REVIEW}}{9}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}\bfseries \MakeTextUppercase {LITERATURE REVIEW}}{10}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}ROAD SAFETY SCENARIO}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.1}ROAD SAFETY SCENARIO}{10}{section.2.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}SPEEDING AS A RISK FACTOR}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.2}SPEEDING AS A RISK FACTOR}{20}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}ROAD SAFETY PERFORMANCE AND THE BUILT ENVIRONMENT}{26}{section.2.3}%
+\contentsline {section}{\numberline {2.3}ROAD SAFETY PERFORMANCE AND THE BUILT ENVIRONMENT}{27}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}NATURALISTIC DRIVING STUDIES}{35}{section.2.4}%
+\contentsline {section}{\numberline {2.4}NATURALISTIC DRIVING STUDIES}{36}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{40}{section.2.5}%
+\contentsline {section}{\numberline {2.5}GEOGRAPHICALLY WEIGHTED REGRESSION}{41}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{44}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{45}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}THE BRAZILIAN NATURALISTIC DRIVING STUDY}{44}{section.3.1}%
+\contentsline {section}{\numberline {3.1}THE BRAZILIAN NATURALISTIC DRIVING STUDY}{45}{section.3.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{46}{section.3.2}%
+\contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{48}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Speeding}{46}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Speeding}{49}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Built Environment}{48}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Built Environment}{50}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{48}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{54}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{49}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{55}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{50}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{56}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -77,20 +77,14 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{51}{chapter*.45}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{57}{chapter*.55}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- TEST}}{63}{chapter*.45}%
-\defcounter {refsection}{0}\relax 
-\addvspace {-12\p@ }
-\defcounter {refsection}{0}\relax 
-\vspace {-0pt}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- TEST2}}{64}{appendix*.46}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{69}{chapter*.55}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -99,12 +93,6 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION SYSTEM PYTHON CODES}}{65}{appendix*.47}%
-\defcounter {refsection}{0}\relax 
-\addvspace {-12\p@ }
-\defcounter {refsection}{0}\relax 
-\vspace {-0pt}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 2~- TEST}}{66}{appendix*.48}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DAS AND CONVERSION PYTHON CODES}}{70}{lstnumber.-1.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
