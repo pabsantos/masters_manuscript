@@ -1931,6 +1931,63 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0966692317306373
       \endverb
     \endentry
+    \entry{IBGE2010}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3898f1ceb6fdd56f963db7f9326130e4}{%
+           family={IBGE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{bibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Instituto Brasileiro de Geografia e Estatística}
+      \field{title}{{Censo 2010}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://censo2010.ibge.gov.br/
+      \endverb
+      \verb{url}
+      \verb https://censo2010.ibge.gov.br/
+      \endverb
+    \endentry
+    \entry{IPPUC2018b}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=08c6e2c837608f1f668113226cccb25d}{%
+           family={IPPUC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{fullhash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{bibnamehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{authorbibnamehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{authornamehash}{08c6e2c837608f1f668113226cccb25d}
+      \strng{authorfullhash}{08c6e2c837608f1f668113226cccb25d}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Instituto de Pesquisa e Planejamento Urbano de Curitiba}
+      \field{title}{{Apresentação dos Resultados da Pesquisa Origem Destino}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.ippuc.org.br/
+      \endverb
+      \verb{url}
+      \verb https://www.ippuc.org.br/
+      \endverb
+    \endentry
     \entry{IPPUC2021}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=08c6e2c837608f1f668113226cccb25d}{%
@@ -1943,6 +2000,7 @@
       \strng{authorbibnamehash}{08c6e2c837608f1f668113226cccb25d}
       \strng{authornamehash}{08c6e2c837608f1f668113226cccb25d}
       \strng{authorfullhash}{08c6e2c837608f1f668113226cccb25d}
+      \field{extraname}{2}
       \field{sortinit}{I}
       \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
       \field{extradatescope}{labelyear}
@@ -1962,6 +2020,33 @@
       \verb{url}
       \verb https://ippuc.org.br/geodownloads/geo.htm
       \endverb
+    \endentry
+    \entry{IPPUC2020a}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=08c6e2c837608f1f668113226cccb25d}{%
+           family={IPPUC},
+           familyi={I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e555140bb77bdbfb05b5e98238ea1f5a}{%
+           family={URBS},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \strng{namehash}{1d8c6bedd5572dba7dcebaecb59e36fe}
+      \strng{fullhash}{1d8c6bedd5572dba7dcebaecb59e36fe}
+      \strng{bibnamehash}{1d8c6bedd5572dba7dcebaecb59e36fe}
+      \strng{authorbibnamehash}{1d8c6bedd5572dba7dcebaecb59e36fe}
+      \strng{authornamehash}{1d8c6bedd5572dba7dcebaecb59e36fe}
+      \strng{authorfullhash}{1d8c6bedd5572dba7dcebaecb59e36fe}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Bus Stops in Curitiba - PR}}
+      \field{year}{2020}
     \endentry
     \entry{Jorgensen2005}{incollection}{}
       \name{author}{1}{}{%
@@ -3414,6 +3499,46 @@
       \verb http://link.springer.com/10.1007/978-981-13-1328-8%7B%5C_%7D81
       \endverb
     \endentry
+    \entry{Pereira2020}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=94832bc76fbdfff5915ae74892403bbc}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Djenifer\bibnamedelima Renata},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67c6c47e1d325277d87b08345adacd20}{%
+           family={Borguezani},
+           familyi={B\bibinitperiod},
+           given={Jackson\bibnamedelima Rossi},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{1725d3f1a4d57b48487a745821aa3ad3}
+      \strng{fullhash}{1725d3f1a4d57b48487a745821aa3ad3}
+      \strng{bibnamehash}{1725d3f1a4d57b48487a745821aa3ad3}
+      \strng{authorbibnamehash}{1725d3f1a4d57b48487a745821aa3ad3}
+      \strng{authornamehash}{1725d3f1a4d57b48487a745821aa3ad3}
+      \strng{authorfullhash}{1725d3f1a4d57b48487a745821aa3ad3}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{gps2csv}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://github.com/djeni98/gps2csv
+      \endverb
+      \verb{url}
+      \verb https://github.com/djeni98/gps2csv
+      \endverb
+    \endentry
     \entry{Pirdavani2014}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=567648e32766ced7544906f893b99d6e}{%
@@ -3841,6 +3966,33 @@
       \verb{url}
       \verb http://doi.wiley.com/10.1002/ad.2053
       \endverb
+    \endentry
+    \entry{SETRAN2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eb6472a18a6ce943b154c39407068f81}{%
+           family={SETRAN},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Secretaria Municipal de Defesa Social e Transito de Curitiba}%
+      }
+      \strng{namehash}{eb6472a18a6ce943b154c39407068f81}
+      \strng{fullhash}{eb6472a18a6ce943b154c39407068f81}
+      \strng{bibnamehash}{eb6472a18a6ce943b154c39407068f81}
+      \strng{authorbibnamehash}{eb6472a18a6ce943b154c39407068f81}
+      \strng{authornamehash}{eb6472a18a6ce943b154c39407068f81}
+      \strng{authorfullhash}{eb6472a18a6ce943b154c39407068f81}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Speed Cameras in Curitiba - PR}}
+      \field{year}{2020}
     \endentry
     \entry{Shinar2017}{book}{}
       \name{author}{1}{}{%
