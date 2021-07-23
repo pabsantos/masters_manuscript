@@ -402,3 +402,8 @@
   "main.run.xml"
   "main.lof"
   "main.aux"
+  "main.pdf"
+  "main.lof"
+  "main.lot"
+  "main.idx"
+  "main.toc"
