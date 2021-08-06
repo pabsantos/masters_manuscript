@@ -1,61 +1,62 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[68] biber:340> INFO - === Fri Jul 23, 2021, 10:02:06
-[84] Biber.pm:415> INFO - Reading 'main.bcf'
-[225] Biber.pm:952> INFO - Found 105 citekeys in bib section 0
-[239] Biber.pm:4340> INFO - Processing section 0
-[249] Biber.pm:4531> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[253] bibtex.pm:1689> INFO - LaTeX decoding ...
-[375] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
-[523] Utils.pm:384> WARN - legacy month field 'oct' in entry 'Shinar2017' is not an integer - this will probably not sort properly.
-[535] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Zervas2008' is not an integer - this will probably not sort properly.
-[538] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Ashton1980' is not an integer - this will probably not sort properly.
-[545] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Elvik2013' is not an integer - this will probably not sort properly.
-[568] Utils.pm:384> WARN - legacy month field 'mar' in entry 'Bastos2021' is not an integer - this will probably not sort properly.
-[582] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Richard2013' is not an integer - this will probably not sort properly.
-[589] Utils.pm:384> WARN - legacy month field 'apr' in entry 'Hidalgo-Solorzano2020' is not an integer - this will probably not sort properly.
-[597] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Watson2015' is not an integer - this will probably not sort properly.
-[602] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Dinh2013' is not an integer - this will probably not sort properly.
-[612] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Moreno2013' is not an integer - this will probably not sort properly.
-[620] Utils.pm:384> WARN - legacy month field 'apr' in entry 'Wang2018' is not an integer - this will probably not sort properly.
-[630] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Bastos2020a' is not an integer - this will probably not sort properly.
-[635] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Yadav2020' is not an integer - this will probably not sort properly.
-[673] Utils.pm:384> WARN - legacy month field 'aug' in entry 'Dumbaugh2013' is not an integer - this will probably not sort properly.
-[679] Utils.pm:384> WARN - legacy month field 'may' in entry 'Lee2015' is not an integer - this will probably not sort properly.
-[686] Utils.pm:384> WARN - legacy month field 'aug' in entry 'Pirdavani2014' is not an integer - this will probably not sort properly.
-[697] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Ouyang2014' is not an integer - this will probably not sort properly.
-[704] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Rhee2016' is not an integer - this will probably not sort properly.
-[710] Utils.pm:384> WARN - legacy month field 'mar' in entry 'Amoh-Gyimah2017' is not an integer - this will probably not sort properly.
-[720] Utils.pm:384> WARN - legacy month field 'may' in entry 'Huang2018' is not an integer - this will probably not sort properly.
-[733] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Zhang2015' is not an integer - this will probably not sort properly.
-[736] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Høye2015' is not an integer - this will probably not sort properly.
-[743] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Li2020' is not an integer - this will probably not sort properly.
-[748] Utils.pm:384> WARN - legacy month field 'nov' in entry 'Li2013a' is not an integer - this will probably not sort properly.
-[756] Utils.pm:384> WARN - legacy month field 'nov' in entry 'Oliveira2015' is not an integer - this will probably not sort properly.
-[772] Utils.pm:384> WARN - legacy month field 'may' in entry 'Lovegrove2006' is not an integer - this will probably not sort properly.
-[780] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Furth2018' is not an integer - this will probably not sort properly.
-[787] Utils.pm:384> WARN - legacy month field 'apr' in entry 'Ukkusuri2012' is not an integer - this will probably not sort properly.
-[799] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Marshall2010' is not an integer - this will probably not sort properly.
-[805] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Kim2010' is not an integer - this will probably not sort properly.
-[812] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Bansal2014' is not an integer - this will probably not sort properly.
-[817] Utils.pm:384> WARN - legacy month field 'aug' in entry 'Koshy2005' is not an integer - this will probably not sort properly.
-[826] Utils.pm:384> WARN - legacy month field 'oct' in entry 'Marshall2017' is not an integer - this will probably not sort properly.
-[830] Utils.pm:384> WARN - legacy month field 'may' in entry 'Rosario2016' is not an integer - this will probably not sort properly.
-[849] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Carsten2013' is not an integer - this will probably not sort properly.
-[880] Utils.pm:384> WARN - legacy month field 'nov' in entry 'VanNes2019' is not an integer - this will probably not sort properly.
-[890] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Richard2017' is not an integer - this will probably not sort properly.
-[898] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Richard2020' is not an integer - this will probably not sort properly.
-[903] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Ellison2015' is not an integer - this will probably not sort properly.
-[909] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Hamzeie2017' is not an integer - this will probably not sort properly.
-[917] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Kong2020' is not an integer - this will probably not sort properly.
-[948] Utils.pm:384> WARN - legacy month field 'may' in entry 'DaSilva2013a' is not an integer - this will probably not sort properly.
-[955] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Nakaya2005a' is not an integer - this will probably not sort properly.
-[961] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Arvin2019' is not an integer - this will probably not sort properly.
-[968] Utils.pm:384> WARN - legacy month field 'mar' in entry 'Hadayeghi2010' is not an integer - this will probably not sort properly.
-[1172] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[62] biber:340> INFO - === Wed Aug  4, 2021, 09:58:19
+[74] Biber.pm:415> INFO - Reading 'main.bcf'
+[219] Biber.pm:952> INFO - Found 109 citekeys in bib section 0
+[233] Biber.pm:4340> INFO - Processing section 0
+[241] Biber.pm:4531> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[246] bibtex.pm:1689> INFO - LaTeX decoding ...
+[369] bibtex.pm:1494> INFO - Found BibTeX data source 'referencias.bib'
+[512] Utils.pm:384> WARN - legacy month field 'oct' in entry 'Shinar2017' is not an integer - this will probably not sort properly.
+[523] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Zervas2008' is not an integer - this will probably not sort properly.
+[526] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Ashton1980' is not an integer - this will probably not sort properly.
+[532] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Elvik2013' is not an integer - this will probably not sort properly.
+[554] Utils.pm:384> WARN - legacy month field 'mar' in entry 'Bastos2021' is not an integer - this will probably not sort properly.
+[568] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Richard2013' is not an integer - this will probably not sort properly.
+[575] Utils.pm:384> WARN - legacy month field 'apr' in entry 'Hidalgo-Solorzano2020' is not an integer - this will probably not sort properly.
+[583] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Watson2015' is not an integer - this will probably not sort properly.
+[587] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Dinh2013' is not an integer - this will probably not sort properly.
+[597] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Moreno2013' is not an integer - this will probably not sort properly.
+[605] Utils.pm:384> WARN - legacy month field 'apr' in entry 'Wang2018' is not an integer - this will probably not sort properly.
+[615] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Bastos2020a' is not an integer - this will probably not sort properly.
+[620] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Yadav2020' is not an integer - this will probably not sort properly.
+[658] Utils.pm:384> WARN - legacy month field 'aug' in entry 'Dumbaugh2013' is not an integer - this will probably not sort properly.
+[663] Utils.pm:384> WARN - legacy month field 'may' in entry 'Lee2015' is not an integer - this will probably not sort properly.
+[670] Utils.pm:384> WARN - legacy month field 'aug' in entry 'Pirdavani2014' is not an integer - this will probably not sort properly.
+[680] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Ouyang2014' is not an integer - this will probably not sort properly.
+[687] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Rhee2016' is not an integer - this will probably not sort properly.
+[693] Utils.pm:384> WARN - legacy month field 'mar' in entry 'Amoh-Gyimah2017' is not an integer - this will probably not sort properly.
+[703] Utils.pm:384> WARN - legacy month field 'may' in entry 'Huang2018' is not an integer - this will probably not sort properly.
+[715] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Zhang2015' is not an integer - this will probably not sort properly.
+[719] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Høye2015' is not an integer - this will probably not sort properly.
+[725] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Li2020' is not an integer - this will probably not sort properly.
+[731] Utils.pm:384> WARN - legacy month field 'nov' in entry 'Li2013a' is not an integer - this will probably not sort properly.
+[739] Utils.pm:384> WARN - legacy month field 'nov' in entry 'Oliveira2015' is not an integer - this will probably not sort properly.
+[756] Utils.pm:384> WARN - legacy month field 'may' in entry 'Lovegrove2006' is not an integer - this will probably not sort properly.
+[764] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Furth2018' is not an integer - this will probably not sort properly.
+[772] Utils.pm:384> WARN - legacy month field 'apr' in entry 'Ukkusuri2012' is not an integer - this will probably not sort properly.
+[781] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Marshall2010' is not an integer - this will probably not sort properly.
+[787] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Kim2010' is not an integer - this will probably not sort properly.
+[793] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Bansal2014' is not an integer - this will probably not sort properly.
+[798] Utils.pm:384> WARN - legacy month field 'aug' in entry 'Koshy2005' is not an integer - this will probably not sort properly.
+[809] Utils.pm:384> WARN - legacy month field 'oct' in entry 'Marshall2017' is not an integer - this will probably not sort properly.
+[813] Utils.pm:384> WARN - legacy month field 'may' in entry 'Rosario2016' is not an integer - this will probably not sort properly.
+[832] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Carsten2013' is not an integer - this will probably not sort properly.
+[862] Utils.pm:384> WARN - legacy month field 'nov' in entry 'VanNes2019' is not an integer - this will probably not sort properly.
+[872] Utils.pm:384> WARN - legacy month field 'jan' in entry 'Richard2017' is not an integer - this will probably not sort properly.
+[879] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Richard2020' is not an integer - this will probably not sort properly.
+[884] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Ellison2015' is not an integer - this will probably not sort properly.
+[890] Utils.pm:384> WARN - legacy month field 'dec' in entry 'Hamzeie2017' is not an integer - this will probably not sort properly.
+[897] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Kong2020' is not an integer - this will probably not sort properly.
+[930] Utils.pm:384> WARN - legacy month field 'may' in entry 'DaSilva2013a' is not an integer - this will probably not sort properly.
+[937] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Nakaya2005a' is not an integer - this will probably not sort properly.
+[943] Utils.pm:384> WARN - legacy month field 'jun' in entry 'Arvin2019' is not an integer - this will probably not sort properly.
+[949] Utils.pm:384> WARN - legacy month field 'mar' in entry 'Hadayeghi2010' is not an integer - this will probably not sort properly.
+[992] Utils.pm:384> WARN - legacy month field 'sep' in entry 'Getis2010' is not an integer - this will probably not sort properly.
+[1171] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
 [1172] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [1172] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
 [1172] Biber.pm:4174> INFO - No sort tailoring available for locale 'pt-BR'
-[1294] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1366] bbl.pm:757> INFO - Output to main.bbl
-[1366] Biber.pm:128> INFO - WARNINGS: 45
+[1295] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1367] bbl.pm:757> INFO - Output to main.bbl
+[1367] Biber.pm:128> INFO - WARNINGS: 46

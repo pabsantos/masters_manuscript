@@ -55,7 +55,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{48}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Speeding}{49}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Speeding}{48}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Built Environment}{50}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
@@ -65,11 +65,27 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{55}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{57}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\addvspace {-3\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}NATURALISTIC DATA}{57}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\addvspace {-3\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}SPEEDING DATA}{60}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\addvspace {-3\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS}{62}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{56}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{70}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\addvspace {-3\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}NEXT STEPS}{70}{section.5.1}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -77,14 +93,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{57}{chapter*.55}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{71}{chapter*.78}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{69}{chapter*.55}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{83}{chapter*.78}%
+\defcounter {refsection}{0}\relax 
+\addvspace {-12\p@ }
+\defcounter {refsection}{0}\relax 
+\vspace {-0pt}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GEOGRAPHICALLY WEIGHTED REGRESSION R SCRIPT}}{84}{lstnumber.-1.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -93,6 +115,6 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DAS AND CONVERSION PYTHON CODES}}{70}{lstnumber.-1.21}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{91}{lstnumber.-2.261}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }

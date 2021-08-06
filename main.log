@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.7.22)  23 JUL 2021 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.7.22)  6 AUG 2021 10:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1146,7 +1146,7 @@ Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
 Class memoir Info: For the caption package to function properly with memoir, we will now reset \caption and friends to kernel defaults and then let the
-caption package take over. Remember: all caption configuration now goes via the caption package interface, not the interface from the memoir class.  on input line 69.
+caption package take over. Remember: all caption configuration now goes via the caption package interface, not the interface from the memoir class.  on input line 72.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
@@ -1173,56 +1173,60 @@ Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
-)) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count440
+\c@subtable=\count441
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count440
+\lrq@indent=\count442
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count441
-\c@listtotal=\count442
-\c@listcount=\count443
-\c@liststart=\count444
-\c@liststop=\count445
-\c@citecount=\count446
-\c@citetotal=\count447
-\c@multicitecount=\count448
-\c@multicitetotal=\count449
-\c@instcount=\count450
-\c@maxnames=\count451
-\c@minnames=\count452
-\c@maxitems=\count453
-\c@minitems=\count454
-\c@citecounter=\count455
-\c@maxcitecounter=\count456
-\c@savedcitecounter=\count457
-\c@uniquelist=\count458
-\c@uniquename=\count459
-\c@refsection=\count460
-\c@refsegment=\count461
-\c@maxextratitle=\count462
-\c@maxextratitleyear=\count463
-\c@maxextraname=\count464
-\c@maxextradate=\count465
-\c@maxextraalpha=\count466
-\c@abbrvpenalty=\count467
-\c@highnamepenalty=\count468
-\c@lownamepenalty=\count469
-\c@maxparens=\count470
-\c@parenlevel=\count471
-\blx@tempcnta=\count472
-\blx@tempcntb=\count473
-\blx@tempcntc=\count474
-\blx@maxsection=\count475
-\blx@maxsegment@0=\count476
-\blx@notetype=\count477
-\blx@parenlevel@text=\count478
-\blx@parenlevel@foot=\count479
-\blx@sectionciteorder@0=\count480
-\blx@entrysetcounter=\count481
-\blx@biblioinstance=\count482
+\c@tabx@nest=\count443
+\c@listtotal=\count444
+\c@listcount=\count445
+\c@liststart=\count446
+\c@liststop=\count447
+\c@citecount=\count448
+\c@citetotal=\count449
+\c@multicitecount=\count450
+\c@multicitetotal=\count451
+\c@instcount=\count452
+\c@maxnames=\count453
+\c@minnames=\count454
+\c@maxitems=\count455
+\c@minitems=\count456
+\c@citecounter=\count457
+\c@maxcitecounter=\count458
+\c@savedcitecounter=\count459
+\c@uniquelist=\count460
+\c@uniquename=\count461
+\c@refsection=\count462
+\c@refsegment=\count463
+\c@maxextratitle=\count464
+\c@maxextratitleyear=\count465
+\c@maxextraname=\count466
+\c@maxextradate=\count467
+\c@maxextraalpha=\count468
+\c@abbrvpenalty=\count469
+\c@highnamepenalty=\count470
+\c@lownamepenalty=\count471
+\c@maxparens=\count472
+\c@parenlevel=\count473
+\blx@tempcnta=\count474
+\blx@tempcntb=\count475
+\blx@tempcntc=\count476
+\blx@maxsection=\count477
+\blx@maxsegment@0=\count478
+\blx@notetype=\count479
+\blx@parenlevel@text=\count480
+\blx@parenlevel@foot=\count481
+\blx@sectionciteorder@0=\count482
+\blx@entrysetcounter=\count483
+\blx@biblioinstance=\count484
 \labelnumberwidth=\skip277
 \labelalphawidth=\skip278
 \biblabelsep=\skip279
@@ -1233,9 +1237,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read6
 \blx@bcfout=\write6
 \blx@langwohyphens=\language87
-\c@mincomprange=\count483
-\c@maxcomprange=\count484
-\c@mincompwidth=\count485
+\c@mincomprange=\count485
+\c@maxcomprange=\count486
+\c@mincompwidth=\count487
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -1245,74 +1249,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count486
-\c@savedafterword=\count487
-\c@annotator=\count488
-\c@savedannotator=\count489
-\c@author=\count490
-\c@savedauthor=\count491
-\c@bookauthor=\count492
-\c@savedbookauthor=\count493
-\c@commentator=\count494
-\c@savedcommentator=\count495
-\c@editor=\count496
-\c@savededitor=\count497
-\c@editora=\count498
-\c@savededitora=\count499
-\c@editorb=\count500
-\c@savededitorb=\count501
-\c@editorc=\count502
-\c@savededitorc=\count503
-\c@foreword=\count504
-\c@savedforeword=\count505
-\c@holder=\count506
-\c@savedholder=\count507
-\c@introduction=\count508
-\c@savedintroduction=\count509
-\c@namea=\count510
-\c@savednamea=\count511
-\c@nameb=\count512
-\c@savednameb=\count513
-\c@namec=\count514
-\c@savednamec=\count515
-\c@translator=\count516
-\c@savedtranslator=\count517
-\c@shortauthor=\count518
-\c@savedshortauthor=\count519
-\c@shorteditor=\count520
-\c@savedshorteditor=\count521
-\c@labelname=\count522
-\c@savedlabelname=\count523
-\c@institution=\count524
-\c@savedinstitution=\count525
-\c@lista=\count526
-\c@savedlista=\count527
-\c@listb=\count528
-\c@savedlistb=\count529
-\c@listc=\count530
-\c@savedlistc=\count531
-\c@listd=\count532
-\c@savedlistd=\count533
-\c@liste=\count534
-\c@savedliste=\count535
-\c@listf=\count536
-\c@savedlistf=\count537
-\c@location=\count538
-\c@savedlocation=\count539
-\c@organization=\count540
-\c@savedorganization=\count541
-\c@origlocation=\count542
-\c@savedoriglocation=\count543
-\c@origpublisher=\count544
-\c@savedorigpublisher=\count545
-\c@publisher=\count546
-\c@savedpublisher=\count547
-\c@language=\count548
-\c@savedlanguage=\count549
-\c@origlanguage=\count550
-\c@savedoriglanguage=\count551
-\c@pageref=\count552
-\c@savedpageref=\count553
+\c@afterword=\count488
+\c@savedafterword=\count489
+\c@annotator=\count490
+\c@savedannotator=\count491
+\c@author=\count492
+\c@savedauthor=\count493
+\c@bookauthor=\count494
+\c@savedbookauthor=\count495
+\c@commentator=\count496
+\c@savedcommentator=\count497
+\c@editor=\count498
+\c@savededitor=\count499
+\c@editora=\count500
+\c@savededitora=\count501
+\c@editorb=\count502
+\c@savededitorb=\count503
+\c@editorc=\count504
+\c@savededitorc=\count505
+\c@foreword=\count506
+\c@savedforeword=\count507
+\c@holder=\count508
+\c@savedholder=\count509
+\c@introduction=\count510
+\c@savedintroduction=\count511
+\c@namea=\count512
+\c@savednamea=\count513
+\c@nameb=\count514
+\c@savednameb=\count515
+\c@namec=\count516
+\c@savednamec=\count517
+\c@translator=\count518
+\c@savedtranslator=\count519
+\c@shortauthor=\count520
+\c@savedshortauthor=\count521
+\c@shorteditor=\count522
+\c@savedshorteditor=\count523
+\c@labelname=\count524
+\c@savedlabelname=\count525
+\c@institution=\count526
+\c@savedinstitution=\count527
+\c@lista=\count528
+\c@savedlista=\count529
+\c@listb=\count530
+\c@savedlistb=\count531
+\c@listc=\count532
+\c@savedlistc=\count533
+\c@listd=\count534
+\c@savedlistd=\count535
+\c@liste=\count536
+\c@savedliste=\count537
+\c@listf=\count538
+\c@savedlistf=\count539
+\c@location=\count540
+\c@savedlocation=\count541
+\c@organization=\count542
+\c@savedorganization=\count543
+\c@origlocation=\count544
+\c@savedoriglocation=\count545
+\c@origpublisher=\count546
+\c@savedorigpublisher=\count547
+\c@publisher=\count548
+\c@savedpublisher=\count549
+\c@language=\count550
+\c@savedlanguage=\count551
+\c@origlanguage=\count552
+\c@savedoriglanguage=\count553
+\c@pageref=\count554
+\c@savedpageref=\count555
 \shorthandwidth=\skip284
 \shortjournalwidth=\skip285
 \shortserieswidth=\skip286
@@ -1336,19 +1340,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count554
-\c@textcitetotal=\count555
-\c@textcitemaxnames=\count556
-\c@biburlbigbreakpenalty=\count557
-\c@biburlbreakpenalty=\count558
-\c@biburlnumpenalty=\count559
-\c@biburlucpenalty=\count560
-\c@biburllcpenalty=\count561
+\c@textcitecount=\count556
+\c@textcitetotal=\count557
+\c@textcitemaxnames=\count558
+\c@biburlbigbreakpenalty=\count559
+\c@biburlbreakpenalty=\count560
+\c@biburlnumpenalty=\count561
+\c@biburlucpenalty=\count562
+\c@biburllcpenalty=\count563
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count562
+\c@smartand=\count564
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1361,8 +1365,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count563
-\c@bbx:relatedtotal=\count564
+\c@bbx:relatedcount=\count565
+\c@bbx:relatedtotal=\count566
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -1418,28 +1422,28 @@ Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
 \t@pgfplots@tokb=\toks77
 \t@pgfplots@tokc=\toks78
 \pgfplots@tmpa=\dimen338
-\c@pgfplots@coordindex=\count565
-\c@pgfplots@scanlineindex=\count566
+\c@pgfplots@coordindex=\count567
+\c@pgfplots@scanlineindex=\count568
  (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count567
+\c@pgfplotsarray@tmp=\count569
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count568
+\c@pgfplotstable@counta=\count570
 \t@pgfplotstable@a=\toks79
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count569
+\c@pgfplotslibrarysurf@no=\count571
  (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen339
 \pgfdecoratedremainingdistance=\dimen340
 \pgfdecoratedinputsegmentcompleteddistance=\dimen341
 \pgfdecoratedinputsegmentremainingdistance=\dimen342
 \pgf@decorate@distancetomove=\dimen343
-\pgf@decorate@repeatstate=\count570
+\pgf@decorate@repeatstate=\count572
 \pgfdecorationsegmentamplitude=\dimen344
 \pgfdecorationsegmentlength=\dimen345
 )
 \tikz@lib@dec@box=\box130
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count571
+\pgfplots@numplots=\count573
 \pgfplots@xmin@reg=\dimen346
 \pgfplots@xmax@reg=\dimen347
 \pgfplots@ymin@reg=\dimen348
@@ -1491,7 +1495,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count572
+\c@section@level=\count574
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1503,16 +1507,16 @@ LaTeX Info: Redefining \nameref on input line 82.
 \myptabboxwidth=\skip298
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count573
+\scratchcounter=\count575
 \scratchdimen=\dimen352
 \scratchbox=\box132
-\nofMPsegments=\count574
-\nofMParguments=\count575
+\nofMPsegments=\count576
+\nofMParguments=\count577
 \everyMPshowfont=\toks80
-\MPscratchCnt=\count576
+\MPscratchCnt=\count578
 \MPscratchDim=\dimen353
-\MPnumerator=\count577
-\makeMPintoPDFobject=\count578
+\MPnumerator=\count579
+\makeMPintoPDFobject=\count580
 \everyMPtoPDFconversion=\toks81
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1542,7 +1546,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count579
+\c@lstlisting=\count581
 Package newfloat Info: `float' package detected.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1710,7 +1714,7 @@ Overfull \hbox (2.8699pt too wide) in paragraph at lines 21--21
 ] [8
 
 ] [9]
-<fig/oecd.png, id=278, 668.4975pt x 459.7175pt>
+<fig/oecd.png, id=337, 668.4975pt x 459.7175pt>
 File: fig/oecd.png Graphic file (type png)
 <use fig/oecd.png>
 Package pdftex.def Info: fig/oecd.png  used on input line 52.
@@ -1718,81 +1722,81 @@ Package pdftex.def Info: fig/oecd.png  used on input line 52.
  [10
 
 ] [11 </home/pabsantos/Documents/dissertacao/master_quali/fig/oecd.png>]
-<fig/brazil_abs.pdf, id=305, 433.62pt x 252.945pt>
+<fig/brazil_abs.pdf, id=365, 433.62pt x 252.945pt>
 File: fig/brazil_abs.pdf Graphic file (type pdf)
 <use fig/brazil_abs.pdf>
 Package pdftex.def Info: fig/brazil_abs.pdf  used on input line 69.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/brazil_mort.pdf, id=309, 433.62pt x 252.945pt>
+<fig/brazil_mort.pdf, id=369, 433.62pt x 252.945pt>
 File: fig/brazil_mort.pdf Graphic file (type pdf)
 <use fig/brazil_mort.pdf>
 Package pdftex.def Info: fig/brazil_mort.pdf  used on input line 80.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
  [12 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_abs.pdf>]
-<fig/brazil_fatality.pdf, id=332, 433.62pt x 252.945pt>
+<fig/brazil_fatality.pdf, id=391, 433.62pt x 252.945pt>
 File: fig/brazil_fatality.pdf Graphic file (type pdf)
 <use fig/brazil_fatality.pdf>
 Package pdftex.def Info: fig/brazil_fatality.pdf  used on input line 91.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
  [13 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_mort.pdf>]
-<fig/brazil_motor.pdf, id=354, 433.62pt x 252.945pt>
+<fig/brazil_motor.pdf, id=413, 433.62pt x 252.945pt>
 File: fig/brazil_motor.pdf Graphic file (type pdf)
 <use fig/brazil_motor.pdf>
 Package pdftex.def Info: fig/brazil_motor.pdf  used on input line 104.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
  [14 </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_fatality.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/brazil_motor.pdf>]
-<fig/cwb_abs.pdf, id=382, 433.62pt x 252.945pt>
+<fig/cwb_abs.pdf, id=441, 433.62pt x 252.945pt>
 File: fig/cwb_abs.pdf Graphic file (type pdf)
 <use fig/cwb_abs.pdf>
 Package pdftex.def Info: fig/cwb_abs.pdf  used on input line 117.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/cap_motor.pdf, id=386, 433.62pt x 252.945pt>
+<fig/cap_motor.pdf, id=445, 433.62pt x 252.945pt>
 File: fig/cap_motor.pdf Graphic file (type pdf)
 <use fig/cap_motor.pdf>
 Package pdftex.def Info: fig/cap_motor.pdf  used on input line 128.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
  [15 </home/pabsantos/Documents/dissertacao/master_quali/fig/cwb_abs.pdf>]
-<fig/cap_mort.pdf, id=408, 433.62pt x 252.945pt>
+<fig/cap_mort.pdf, id=467, 433.62pt x 252.945pt>
 File: fig/cap_mort.pdf Graphic file (type pdf)
 <use fig/cap_mort.pdf>
 Package pdftex.def Info: fig/cap_mort.pdf  used on input line 139.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/cap_fatal.pdf, id=414, 433.62pt x 252.945pt>
+<fig/cap_fatal.pdf, id=473, 433.62pt x 252.945pt>
 File: fig/cap_fatal.pdf Graphic file (type pdf)
 <use fig/cap_fatal.pdf>
 Package pdftex.def Info: fig/cap_fatal.pdf  used on input line 150.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
  [16 </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_motor.pdf>] [17 </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_mort.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/cap_fatal.pdf>]
-<fig/haddon.pdf, id=448, 335.33278pt x 212.71469pt>
+<fig/haddon.pdf, id=507, 335.33278pt x 212.71469pt>
 File: fig/haddon.pdf Graphic file (type pdf)
 <use fig/haddon.pdf>
 Package pdftex.def Info: fig/haddon.pdf  used on input line 163.
 (pdftex.def)             Requested size: 335.33195pt x 212.71416pt.
  [18 </home/pabsantos/Documents/dissertacao/master_quali/fig/haddon.pdf>] [19]
-<fig/braking2.png, id=501, 1280.785pt x 734.745pt>
+<fig/braking2.png, id=560, 1280.785pt x 734.745pt>
 File: fig/braking2.png Graphic file (type png)
 <use fig/braking2.png>
 Package pdftex.def Info: fig/braking2.png  used on input line 188.
 (pdftex.def)             Requested size: 364.00139pt x 208.81029pt.
  [20 </home/pabsantos/Documents/dissertacao/master_quali/fig/braking2.png>]
-<fig/kinetic.pdf, id=513, 433.62pt x 252.945pt>
+<fig/kinetic.pdf, id=572, 433.62pt x 252.945pt>
 File: fig/kinetic.pdf Graphic file (type pdf)
 <use fig/kinetic.pdf>
 Package pdftex.def Info: fig/kinetic.pdf  used on input line 202.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
-<fig/ash.pdf, id=517, 433.62pt x 252.945pt>
+<fig/ash.pdf, id=576, 433.62pt x 252.945pt>
 File: fig/ash.pdf Graphic file (type pdf)
 <use fig/ash.pdf>
 Package pdftex.def Info: fig/ash.pdf  used on input line 213.
 (pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
  [21 </home/pabsantos/Documents/dissertacao/master_quali/fig/kinetic.pdf>] [22 </home/pabsantos/Documents/dissertacao/master_quali/fig/ash.pdf>] [23]
-<fig/svd.png, id=593, 826.08624pt x 716.6775pt>
+<fig/svd.png, id=650, 826.08624pt x 716.6775pt>
 File: fig/svd.png Graphic file (type png)
 <use fig/svd.png>
 Package pdftex.def Info: fig/svd.png  used on input line 255.
 (pdftex.def)             Requested size: 364.00139pt x 315.79837pt.
  [24 </home/pabsantos/Documents/dissertacao/master_quali/fig/svd.png>]
-<fig/richards.pdf, id=617, 436.5108pt x 139.4811pt>
+<fig/richards.pdf, id=674, 436.5108pt x 139.4811pt>
 File: fig/richards.pdf Graphic file (type pdf)
 <use fig/richards.pdf>
 Package pdftex.def Info: fig/richards.pdf  used on input line 274.
@@ -1800,7 +1804,7 @@ Package pdftex.def Info: fig/richards.pdf  used on input line 274.
  [25] [26 </home/pabsantos/Documents/dissertacao/master_quali/fig/richards.pdf>]
 
 pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/ewing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/ewing.pdf, id=685, 349.305pt x 139.4811pt>
+<fig/ewing.pdf, id=743, 349.305pt x 139.4811pt>
 File: fig/ewing.pdf Graphic file (type pdf)
 <use fig/ewing.pdf>
 Package pdftex.def Info: fig/ewing.pdf  used on input line 301.
@@ -1816,12 +1820,12 @@ Overfull \hbox (4.94589pt too wide) in paragraph at lines 510--521
  []
 
 [33]
-<fig/axes.png, id=1029, 497.86pt x 573.14125pt>
+<fig/axes.png, id=1087, 497.86pt x 573.14125pt>
 File: fig/axes.png Graphic file (type png)
 <use fig/axes.png>
 Package pdftex.def Info: fig/axes.png  used on input line 574.
 (pdftex.def)             Requested size: 227.5pt x 261.90784pt.
-<fig/macro2.png, id=1035, 542.025pt x 565.11125pt>
+<fig/macro2.png, id=1093, 542.025pt x 565.11125pt>
 File: fig/macro2.png Graphic file (type png)
 <use fig/macro2.png>
 Package pdftex.def Info: fig/macro2.png  used on input line 585.
@@ -1829,13 +1833,13 @@ Package pdftex.def Info: fig/macro2.png  used on input line 585.
  [34] [35 </home/pabsantos/Documents/dissertacao/master_quali/fig/axes.png> </home/pabsantos/Documents/dissertacao/master_quali/fig/macro2.png>]
 
 pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/studies.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/studies.pdf, id=1059, 319.1925pt x 118.5228pt>
+<fig/studies.pdf, id=1116, 319.1925pt x 118.5228pt>
 File: fig/studies.pdf Graphic file (type pdf)
 <use fig/studies.pdf>
 Package pdftex.def Info: fig/studies.pdf  used on input line 602.
 (pdftex.def)             Requested size: 319.19171pt x 118.52249pt.
 [36 </home/pabsantos/Documents/dissertacao/master_quali/fig/studies.pdf>] [37] [38] [39] [40] [41] [42]
-<fig/kernel.pdf, id=1210, 433.62pt x 252.945pt>
+<fig/kernel.pdf, id=1267, 433.62pt x 252.945pt>
 File: fig/kernel.pdf Graphic file (type pdf)
 <use fig/kernel.pdf>
 Package pdftex.def Info: fig/kernel.pdf  used on input line 724.
@@ -1861,87 +1865,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 754--754
  []
 
 [44]
-<fig/cam_install.png, id=1271, 365.365pt x 253.94875pt>
+<fig/cam_install.png, id=1332, 365.365pt x 253.94875pt>
 File: fig/cam_install.png Graphic file (type png)
 <use fig/cam_install.png>
-Package pdftex.def Info: fig/cam_install.png  used on input line 785.
+Package pdftex.def Info: fig/cam_install.png  used on input line 787.
 (pdftex.def)             Requested size: 273.00278pt x 189.75972pt.
-<fig/cam_cap.png, id=1275, 577.15625pt x 144.54pt>
-File: fig/cam_cap.png Graphic file (type png)
-<use fig/cam_cap.png>
-Package pdftex.def Info: fig/cam_cap.png  used on input line 796.
-(pdftex.def)             Requested size: 409.49722pt x 102.55573pt.
  [45
 
  </home/pabsantos/Documents/dissertacao/master_quali/fig/cam_install.png>]
+<fig/cam_cap.png, id=1341, 577.15625pt x 144.54pt>
+File: fig/cam_cap.png Graphic file (type png)
+<use fig/cam_cap.png>
+Package pdftex.def Info: fig/cam_cap.png  used on input line 798.
+(pdftex.def)             Requested size: 409.49722pt x 102.55573pt.
+
 
 pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/DAS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/DAS.pdf, id=1285, 421.575pt x 132.495pt>
+<fig/DAS.pdf, id=1345, 421.575pt x 132.495pt>
 File: fig/DAS.pdf Graphic file (type pdf)
 <use fig/DAS.pdf>
-Package pdftex.def Info: fig/DAS.pdf  used on input line 809.
+Package pdftex.def Info: fig/DAS.pdf  used on input line 811.
 (pdftex.def)             Requested size: 421.57396pt x 132.49466pt.
 [46 </home/pabsantos/Documents/dissertacao/master_quali/fig/cam_cap.png> </home/pabsantos/Documents/dissertacao/master_quali/fig/DAS.pdf>]
 
 pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/validtime.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/validtime.pdf, id=1302, 442.53331pt x 110.3322pt>
+<fig/validtime.pdf, id=1362, 442.53331pt x 110.3322pt>
 File: fig/validtime.pdf Graphic file (type pdf)
 <use fig/validtime.pdf>
-Package pdftex.def Info: fig/validtime.pdf  used on input line 822.
+Package pdftex.def Info: fig/validtime.pdf  used on input line 824.
 (pdftex.def)             Requested size: 442.53223pt x 110.33191pt.
 [47 </home/pabsantos/Documents/dissertacao/master_quali/fig/validtime.pdf>]
 
 pdfTeX warning: pdflatex (file /home/pabsantos/Documents/dissertacao/master_quali/fig/methods.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/methods.pdf, id=1318, 443.7378pt x 182.6022pt>
+<fig/methods.pdf, id=1378, 443.7378pt x 182.6022pt>
 File: fig/methods.pdf Graphic file (type pdf)
 <use fig/methods.pdf>
-Package pdftex.def Info: fig/methods.pdf  used on input line 885.
+Package pdftex.def Info: fig/methods.pdf  used on input line 887.
 (pdftex.def)             Requested size: 443.73671pt x 182.60175pt.
-[48 </home/pabsantos/Documents/dissertacao/master_quali/fig/methods.pdf>]
-<fig/buffer.pdf, id=1343, 334.3692pt x 74.1972pt>
+<fig/buffer.pdf, id=1384, 334.3692pt x 74.1972pt>
 File: fig/buffer.pdf Graphic file (type pdf)
 <use fig/buffer.pdf>
-Package pdftex.def Info: fig/buffer.pdf  used on input line 906.
+Package pdftex.def Info: fig/buffer.pdf  used on input line 908.
 (pdftex.def)             Requested size: 334.36838pt x 74.197pt.
-<fig/spd_occur.pdf, id=1348, 433.62pt x 289.08pt>
+[48]
+<fig/spd_occur.pdf, id=1396, 433.62pt x 289.08pt>
 File: fig/spd_occur.pdf Graphic file (type pdf)
 <use fig/spd_occur.pdf>
-Package pdftex.def Info: fig/spd_occur.pdf  used on input line 921.
+Package pdftex.def Info: fig/spd_occur.pdf  used on input line 923.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [49 </home/pabsantos/Documents/dissertacao/master_quali/fig/buffer.pdf>] [50 </home/pabsantos/Documents/dissertacao/master_quali/fig/spd_occur.pdf>]
-<fig/map_PD+LDI.pdf, id=1397, 433.62pt x 289.08pt>
+ [49 </home/pabsantos/Documents/dissertacao/master_quali/fig/methods.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/buffer.pdf>] [50 </home/pabsantos/Documents/dissertacao/master_quali/fig/spd_occur.pdf>]
+<fig/map_PD+LDI.pdf, id=1458, 433.62pt x 289.08pt>
 File: fig/map_PD+LDI.pdf Graphic file (type pdf)
 <use fig/map_PD+LDI.pdf>
-Package pdftex.def Info: fig/map_PD+LDI.pdf  used on input line 980.
+Package pdftex.def Info: fig/map_PD+LDI.pdf  used on input line 982.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  [51 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_PD+LDI.pdf>]
-<fig/map_DIS+DSC.pdf, id=1430, 433.62pt x 289.08pt>
+<fig/map_DIS+DSC.pdf, id=1490, 433.62pt x 289.08pt>
 File: fig/map_DIS+DSC.pdf Graphic file (type pdf)
 <use fig/map_DIS+DSC.pdf>
-Package pdftex.def Info: fig/map_DIS+DSC.pdf  used on input line 991.
+Package pdftex.def Info: fig/map_DIS+DSC.pdf  used on input line 993.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-<fig/map_TSD+PAR.pdf, id=1439, 433.62pt x 289.08pt>
+<fig/map_TSD+PAR.pdf, id=1499, 433.62pt x 289.08pt>
 File: fig/map_TSD+PAR.pdf Graphic file (type pdf)
 <use fig/map_TSD+PAR.pdf>
-Package pdftex.def Info: fig/map_TSD+PAR.pdf  used on input line 1002.
+Package pdftex.def Info: fig/map_TSD+PAR.pdf  used on input line 1004.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-<fig/map_SND+DCSU.pdf, id=1446, 433.62pt x 289.08pt>
+<fig/map_SND+DCSU.pdf, id=1506, 433.62pt x 289.08pt>
 File: fig/map_SND+DCSU.pdf Graphic file (type pdf)
 <use fig/map_SND+DCSU.pdf>
-Package pdftex.def Info: fig/map_SND+DCSU.pdf  used on input line 1013.
+Package pdftex.def Info: fig/map_SND+DCSU.pdf  used on input line 1015.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  [52 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_DIS+DSC.pdf>]
-<fig/map_BSD+AVI.pdf, id=1470, 433.62pt x 289.08pt>
+<fig/map_BSD+AVI.pdf, id=1530, 433.62pt x 289.08pt>
 File: fig/map_BSD+AVI.pdf Graphic file (type pdf)
 <use fig/map_BSD+AVI.pdf>
-Package pdftex.def Info: fig/map_BSD+AVI.pdf  used on input line 1024.
+Package pdftex.def Info: fig/map_BSD+AVI.pdf  used on input line 1026.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [53 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_TSD+PAR.pdf>] [54 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_SND+DCSU.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/map_BSD+AVI.pdf>] [55
-
-]) [56
-
-]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 160.
+<fig/gwr-method.pdf, id=1542, 435.54718pt x 146.4672pt>
+File: fig/gwr-method.pdf Graphic file (type pdf)
+<use fig/gwr-method.pdf>
+Package pdftex.def Info: fig/gwr-method.pdf  used on input line 1055.
+(pdftex.def)             Requested size: 435.5461pt x 146.46683pt.
+ [53 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_TSD+PAR.pdf>] [54 </home/pabsantos/Documents/dissertacao/master_quali/fig/map_SND+DCSU.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/map_BSD+AVI.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1068.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1949,7 +1955,126 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [57
+ [55 </home/pabsantos/Documents/dissertacao/master_quali/fig/gwr-method.pdf>] [56] [57
+
+]
+<fig/dotw_dist.pdf, id=1643, 433.62pt x 252.945pt>
+File: fig/dotw_dist.pdf Graphic file (type pdf)
+<use fig/dotw_dist.pdf>
+Package pdftex.def Info: fig/dotw_dist.pdf  used on input line 1142.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/dotw_trips.pdf, id=1644, 433.62pt x 252.945pt>
+File: fig/dotw_trips.pdf Graphic file (type pdf)
+<use fig/dotw_trips.pdf>
+Package pdftex.def Info: fig/dotw_trips.pdf  used on input line 1153.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/hotd_dist.pdf, id=1645, 433.62pt x 252.945pt>
+File: fig/hotd_dist.pdf Graphic file (type pdf)
+<use fig/hotd_dist.pdf>
+Package pdftex.def Info: fig/hotd_dist.pdf  used on input line 1164.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/hotd_trip.pdf, id=1646, 433.62pt x 252.945pt>
+File: fig/hotd_trip.pdf Graphic file (type pdf)
+<use fig/hotd_trip.pdf>
+Package pdftex.def Info: fig/hotd_trip.pdf  used on input line 1175.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+ [58 </home/pabsantos/Documents/dissertacao/master_quali/fig/dotw_dist.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/dotw_trips.pdf>] [59 </home/pabsantos/Documents/dissertacao/master_quali/fig/hotd_dist.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/hotd_trip.pdf>]
+<fig/taz_travel.pdf, id=1677, 433.62pt x 252.945pt>
+File: fig/taz_travel.pdf Graphic file (type pdf)
+<use fig/taz_travel.pdf>
+Package pdftex.def Info: fig/taz_travel.pdf  used on input line 1188.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/dotw_sp.pdf, id=1681, 433.62pt x 252.945pt>
+File: fig/dotw_sp.pdf Graphic file (type pdf)
+<use fig/dotw_sp.pdf>
+Package pdftex.def Info: fig/dotw_sp.pdf  used on input line 1244.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/hotd_sp.pdf, id=1682, 433.62pt x 252.945pt>
+File: fig/hotd_sp.pdf Graphic file (type pdf)
+<use fig/hotd_sp.pdf>
+Package pdftex.def Info: fig/hotd_sp.pdf  used on input line 1253.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+ [60 </home/pabsantos/Documents/dissertacao/master_quali/fig/taz_travel.pdf>] [61 </home/pabsantos/Documents/dissertacao/master_quali/fig/dotw_sp.pdf>]
+<fig/sp_zones.pdf, id=1709, 433.62pt x 252.945pt>
+File: fig/sp_zones.pdf Graphic file (type pdf)
+<use fig/sp_zones.pdf>
+Package pdftex.def Info: fig/sp_zones.pdf  used on input line 1266.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/taz_filter.png, id=1713, 433.62pt x 252.945pt>
+File: fig/taz_filter.png Graphic file (type png)
+<use fig/taz_filter.png>
+Package pdftex.def Info: fig/taz_filter.png  used on input line 1286.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+ [62 </home/pabsantos/Documents/dissertacao/master_quali/fig/hotd_sp.pdf>] [63 </home/pabsantos/Documents/dissertacao/master_quali/fig/sp_zones.pdf> </home/pabsantos/Documents/dissertacao/master_quali/fig/taz_filter.png (PNG copy)>]
+<fig/taz_sp.png, id=1738, 433.62pt x 252.945pt>
+File: fig/taz_sp.png Graphic file (type png)
+<use fig/taz_sp.png>
+Package pdftex.def Info: fig/taz_sp.png  used on input line 1330.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+<fig/corr_spear.pdf, id=1740, 433.62pt x 252.945pt>
+File: fig/corr_spear.pdf Graphic file (type pdf)
+<use fig/corr_spear.pdf>
+Package pdftex.def Info: fig/corr_spear.pdf  used on input line 1343.
+(pdftex.def)             Requested size: 433.61894pt x 252.94438pt.
+ [64 </home/pabsantos/Documents/dissertacao/master_quali/fig/taz_sp.png (PNG copy)>]
+<fig/r2_map.png, id=1746, 216.81pt x 252.945pt>
+File: fig/r2_map.png Graphic file (type png)
+<use fig/r2_map.png>
+Package pdftex.def Info: fig/r2_map.png  used on input line 1451.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/mean_map.png, id=1747, 216.81pt x 252.945pt>
+File: fig/mean_map.png Graphic file (type png)
+<use fig/mean_map.png>
+Package pdftex.def Info: fig/mean_map.png  used on input line 1463.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/sd_map.png, id=1748, 216.81pt x 252.945pt>
+File: fig/sd_map.png Graphic file (type png)
+<use fig/sd_map.png>
+Package pdftex.def Info: fig/sd_map.png  used on input line 1466.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/DSC.png, id=1749, 216.81pt x 252.945pt>
+File: fig/DSC.png Graphic file (type png)
+<use fig/DSC.png>
+Package pdftex.def Info: fig/DSC.png  used on input line 1481.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/PAR.png, id=1750, 216.81pt x 252.945pt>
+File: fig/PAR.png Graphic file (type png)
+<use fig/PAR.png>
+Package pdftex.def Info: fig/PAR.png  used on input line 1484.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/DIS.png, id=1751, 216.81pt x 252.945pt>
+File: fig/DIS.png Graphic file (type png)
+<use fig/DIS.png>
+Package pdftex.def Info: fig/DIS.png  used on input line 1497.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/DCSU.png, id=1752, 216.81pt x 252.945pt>
+File: fig/DCSU.png Graphic file (type png)
+<use fig/DCSU.png>
+Package pdftex.def Info: fig/DCSU.png  used on input line 1500.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/AVI.png, id=1753, 216.81pt x 252.945pt>
+File: fig/AVI.png Graphic file (type png)
+<use fig/AVI.png>
+Package pdftex.def Info: fig/AVI.png  used on input line 1513.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/PD.png, id=1754, 216.81pt x 252.945pt>
+File: fig/PD.png Graphic file (type png)
+<use fig/PD.png>
+Package pdftex.def Info: fig/PD.png  used on input line 1516.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/LDI.png, id=1755, 216.81pt x 252.945pt>
+File: fig/LDI.png Graphic file (type png)
+<use fig/LDI.png>
+Package pdftex.def Info: fig/LDI.png  used on input line 1529.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+<fig/BSD.png, id=1756, 216.81pt x 252.945pt>
+File: fig/BSD.png Graphic file (type png)
+<use fig/BSD.png>
+Package pdftex.def Info: fig/BSD.png  used on input line 1532.
+(pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
+ [65 </home/pabsantos/Documents/dissertacao/master_quali/fig/corr_spear.pdf>] [66 </home/pabsantos/Documents/dissertacao/master_quali/fig/r2_map.png (PNG copy)>] [67 </home/pabsantos/Documents/dissertacao/master_quali/fig/mean_map.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/sd_map.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/DSC.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/PAR.png (PNG copy)>] [68 </home/pabsantos/Documents/dissertacao/master_quali/fig/DIS.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/DCSU.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/AVI.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/PD.png (PNG copy)>] [69 </home/pabsantos/Documents/dissertacao/master_quali/fig/LDI.png (PNG copy)> </home/pabsantos/Documents/dissertacao/master_quali/fig/BSD.png (PNG copy)>]) [70
+
+] [71
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 160.
@@ -1965,22 +2090,30 @@ Overfull \hbox (915.1694pt too wide) in paragraph at lines 160--160
 \T1/phv/m/n/12 (-20) http://www.anpet.org.br/anais34/documentos/2020/Tr%7B%5C'%7Ba%7D%7Dfego%20Urbano%20e%20Rodovi%7B%5C'%7Ba%7D%7Drio/Seguran%7B%5Cc%7Bc%7D%7Da%20Vi%7B%5C'%7Ba%7D%7Dria%20III/5%7B%5C_%7D332%7B%5C_%7DCT.pdf. 
  []
 
-[58] [59] [60] [61] [62] [63] [64]
+[72] [73] [74] [75] [76] [77] [78]
 Overfull \hbox (14.79782pt too wide) in paragraph at lines 160--160
 \T1/phv/m/n/12 (-20) http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0102- 
  []
 
-[65] [66] [67] [68] (/home/pabsantos/Documents/dissertacao/master_quali/ap01.tex [69] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[79] [80] [81] [82] (/home/pabsantos/Documents/dissertacao/master_quali/ap01.tex [83] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 6.
- (/home/pabsantos/Documents/dissertacao/master_quali/code/points2path.py)) (/home/pabsantos/Documents/dissertacao/master_quali/ax01.tex [70
+ (/home/pabsantos/Documents/dissertacao/master_quali/code/points2path.py) [84
 
-] (/home/pabsantos/Documents/dissertacao/master_quali/code/gps2csv.py [71
+] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+) (/home/pabsantos/Documents/dissertacao/master_quali/code/gwr2.R [85
 
-] [72] [73]) (/home/pabsantos/Documents/dissertacao/master_quali/code/functions.py [74]) (/home/pabsantos/Documents/dissertacao/master_quali/code/gpsread-v1.py [75] [76]) (/home/pabsantos/Documents/dissertacao/master_quali/code/video.py [77])) 
+] [86] [87] [88] [89] [90])) (/home/pabsantos/Documents/dissertacao/master_quali/ax01.tex [91] (/home/pabsantos/Documents/dissertacao/master_quali/code/gps2csv.py [92
+
+] [93] [94]) (/home/pabsantos/Documents/dissertacao/master_quali/code/functions.py [95]) (/home/pabsantos/Documents/dissertacao/master_quali/code/gpsread-v1.py [96] [97]) (/home/pabsantos/Documents/dissertacao/master_quali/code/video.py [98])) 
 AED: lastpage setting LastPage
-[78]
+[99]
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -1996,18 +2129,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52434 strings out of 479304
- 1117713 string characters out of 5869779
- 2662544 words of memory out of 5000000
- 67764 multiletter control sequences out of 15000+600000
- 435158 words of font info for 221 fonts, out of 8000000 for 9000
+ 53778 strings out of 479304
+ 1135917 string characters out of 5869779
+ 2682959 words of memory out of 5000000
+ 68748 multiletter control sequences out of 15000+600000
+ 436100 words of font info for 226 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,130p,1333b,4235s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on /home/pabsantos/Documents/dissertacao/master_quali/main.pdf (79 pages, 4411524 bytes).
+Output written on /home/pabsantos/Documents/dissertacao/master_quali/main.pdf (100 pages, 6980601 bytes).
 PDF statistics:
- 2522 PDF objects out of 2984 (max. 8388607)
- 2291 compressed objects within 23 object streams
- 629 named destinations out of 1000 (max. 500000)
- 42478 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 3176 PDF objects out of 3580 (max. 8388607)
+ 2882 compressed objects within 29 object streams
+ 949 named destinations out of 1000 (max. 500000)
+ 44689 words of extra memory for PDF output out of 51595 (max. 10000000)
 

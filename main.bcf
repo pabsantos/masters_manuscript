@@ -2920,10 +2920,27 @@
     <bcf:citekey order="441">IPPUC2018b</bcf:citekey>
     <bcf:citekey order="441">IPPUC2020a</bcf:citekey>
     <bcf:citekey order="441">IBGE2010</bcf:citekey>
-    <bcf:citekey order="442">Pereira2020</bcf:citekey>
-    <bcf:citekey order="443">Pereira2020</bcf:citekey>
-    <bcf:citekey order="444">Borguezani2020</bcf:citekey>
-    <bcf:citekey order="445">Borguezani2020</bcf:citekey>
+    <bcf:citekey order="442">Gollini2013</bcf:citekey>
+    <bcf:citekey order="443">Bivand2013</bcf:citekey>
+    <bcf:citekey order="444">Dodge2010</bcf:citekey>
+    <bcf:citekey order="445">Gollini2013</bcf:citekey>
+    <bcf:citekey order="446">Huang2018</bcf:citekey>
+    <bcf:citekey order="447">Gollini2013</bcf:citekey>
+    <bcf:citekey order="448">Fotheringham2002</bcf:citekey>
+    <bcf:citekey order="449">Fotheringham2002</bcf:citekey>
+    <bcf:citekey order="450">Brunsdon2010</bcf:citekey>
+    <bcf:citekey order="451">Getis2010</bcf:citekey>
+    <bcf:citekey order="452">Bivand2013</bcf:citekey>
+    <bcf:citekey order="453">Richard2013a</bcf:citekey>
+    <bcf:citekey order="454">Richard2013a</bcf:citekey>
+    <bcf:citekey order="455">Richard2013a</bcf:citekey>
+    <bcf:citekey order="456">Richard2013a</bcf:citekey>
+    <bcf:citekey order="457">Richard2013a</bcf:citekey>
+    <bcf:citekey order="458">Richard2013a</bcf:citekey>
+    <bcf:citekey order="459">Pereira2020</bcf:citekey>
+    <bcf:citekey order="460">Pereira2020</bcf:citekey>
+    <bcf:citekey order="461">Borguezani2020</bcf:citekey>
+    <bcf:citekey order="462">Borguezani2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

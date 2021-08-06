@@ -584,6 +584,51 @@
       \verb 10.1201/b19737-2
       \endverb
     \endentry
+    \entry{Bivand2013}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ff64be8a6341d6fa6c289273e62d34e9}{%
+           family={Bivand},
+           familyi={B\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=422fc79d05d5bcdcc598a0a7c6f95159}{%
+           family={Pebesma},
+           familyi={P\bibinitperiod},
+           given={Edzer},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84b1554567e01a66ea1967198aa62c43}{%
+           family={Gomez-Rubio},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Virgilio},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, NY}%
+      }
+      \strng{namehash}{412b295d40995d62f04c6bd8ac9d608b}
+      \strng{fullhash}{412b295d40995d62f04c6bd8ac9d608b}
+      \strng{bibnamehash}{412b295d40995d62f04c6bd8ac9d608b}
+      \strng{authorbibnamehash}{412b295d40995d62f04c6bd8ac9d608b}
+      \strng{authornamehash}{412b295d40995d62f04c6bd8ac9d608b}
+      \strng{authorfullhash}{412b295d40995d62f04c6bd8ac9d608b}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Applied spatial data analysis with {R}, Second edition}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://asdar-book.org/
+      \endverb
+      \verb{url}
+      \verb https://asdar-book.org/
+      \endverb
+    \endentry
     \entry{Borguezani2020}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=67c6c47e1d325277d87b08345adacd20}{%
@@ -1025,6 +1070,39 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0967070X13000905
       \endverb
     \endentry
+    \entry{Dodge2010}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=733d56666b5bd8c1281144e1a187eec4}{%
+           family={Dodge},
+           familyi={D\bibinitperiod},
+           given={Yadolah},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{fullhash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{bibnamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authorbibnamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authornamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authorfullhash}{733d56666b5bd8c1281144e1a187eec4}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-387-31742-7}
+      \field{title}{{The Concise Encyclopedia of Statistics}}
+      \field{year}{2010}
+      \field{pages}{502}
+      \range{pages}{1}
+    \endentry
     \entry{Dumbaugh2011}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=19bfd14275751ef5a346582ed3353699}{%
@@ -1434,6 +1512,52 @@
       \field{title}{{Segurança viária}}
       \field{year}{2012}
     \endentry
+    \entry{Fotheringham2002}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e52298fded4bb1d9451c3fce80fe1bf7}{%
+           family={Fotheringham},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi Stewart},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=246b981b6500d867366bd3930ac52e74}{%
+           family={Brunsdon},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18e010ad6f178bf5db6f777026b33739}{%
+           family={Charlton},
+           familyi={C\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chinchester}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley {\&} Sons, Ltd}%
+      }
+      \strng{namehash}{378d6ed9f40df6676ddd60ea3a6cf91f}
+      \strng{fullhash}{378d6ed9f40df6676ddd60ea3a6cf91f}
+      \strng{bibnamehash}{378d6ed9f40df6676ddd60ea3a6cf91f}
+      \strng{authorbibnamehash}{378d6ed9f40df6676ddd60ea3a6cf91f}
+      \strng{authornamehash}{378d6ed9f40df6676ddd60ea3a6cf91f}
+      \strng{authorfullhash}{378d6ed9f40df6676ddd60ea3a6cf91f}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-471-49616-2}
+      \field{title}{{Geographically Weighted Regression - the analysis of spatially varying relationships}}
+      \field{year}{2002}
+      \verb{file}
+      \verb :home/pabsantos/Documents/dissertacao/material/A. Stewart Fotheringham, Chris Brunsdon, Martin Charlton - Geographically Weighted Regression_ The Analysis of Spatially Varying Relationships (2002, Wiley) - libgen.lc.pdf:pdf
+      \endverb
+    \endentry
     \entry{Furth2018}{article}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=e3e164b724148bc0392f4a68bcf53996}{%
@@ -1499,6 +1623,52 @@
       \endverb
       \verb{url}
       \verb http://journals.sagepub.com/doi/10.1177/0361198118790638
+      \endverb
+    \endentry
+    \entry{Getis2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=147c5148b835e4b0b278768d58b9e7ab}{%
+           family={Getis},
+           familyi={G\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f64e8d2de30f89c2c874fcef25f9145}{%
+           family={Ord},
+           familyi={O\bibinitperiod},
+           given={J.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1fd62cc52665119311db98c25aec1898}
+      \strng{fullhash}{1fd62cc52665119311db98c25aec1898}
+      \strng{bibnamehash}{1fd62cc52665119311db98c25aec1898}
+      \strng{authorbibnamehash}{1fd62cc52665119311db98c25aec1898}
+      \strng{authornamehash}{1fd62cc52665119311db98c25aec1898}
+      \strng{authorfullhash}{1fd62cc52665119311db98c25aec1898}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00167363}
+      \field{journaltitle}{Geographical Analysis}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{{The Analysis of Spatial Association by Use of Distance Statistics}}
+      \field{volume}{24}
+      \field{year}{2010}
+      \field{pages}{189\bibrangedash 206}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/j.1538-4632.1992.tb00261.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1992.tb00261.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1992.tb00261.x
       \endverb
     \endentry
     \entry{Gollini2013}{article}{}
