@@ -1071,7 +1071,7 @@ Minimizing AICc in order to select the bandwidth provides a trade-off between go
     AIC_c = 2n\log_{e}\left(\hat\sigma\right) + n \log_{e}\left(2\pi\right) + n\left\{\frac{n + \Tr(S)}{n - 2 - \Tr(S)}\right\} \mbox{ ;}
 \end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method was based on the \verb|gwr.basic()| function of the GWmodel package. In addition, a global linear regression was performed in order to compare the results with GWR. This is necessary because its important to verify if the GWR model has any advantage over a ordinary least squares (OLS) approach \cite{Brunsdon2010}. 
 
-Moran's $I$ was applied on the models residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on it's residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and / or without the desired statistical significance ($p$-value) represents a lack of spatial autocorrelation. Moran's $I$ consists on the following equation \cite{Getis2010}: \begin{align}
+Moran's $I$ was applied on the models residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on it's residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represents a lack of spatial autocorrelation. Moran's $I$ consists on the following equation \cite{Getis2010}: \begin{align}
     I = \frac{n}{W} \times \frac{\sum_i \sum_j w_{ij} (x_i - \overline{x})(x_j - \overline{x})}{\sum_i (x_i - \overline{x})^2} \mbox{ ;}
 \end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the spdep package \cite{Bivand2013}.
 
@@ -1290,7 +1290,7 @@ The data arrangement process reduced the total sample of 135 TAZs into 107 TAZs.
 
 %% Summary of variables: mean, median, max, min, 1q, 3q
 
-\autoref{tab:var_summary} includes the descriptive statistics of the 11 variables, including speeding, considering the 107 TAZs. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. 
+\autoref{tab:var_summary} includes the descriptive statistics of the 11 variables, including speeding, considering the 107 TAZs. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. DSC, PAR and TSD values resulted in zero for some TAZs, indicating a lack of speed cameras, arterial roads and traffic signals in these zones. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1347,7 +1347,7 @@ The final step of the data arrangement process was the check of correlation betw
 
 %% Show models results (quality variables) - AICc, morans I, R-squared
 
-\autoref{tab:mod_diag} shows the model diagnostics of 5 GWR and one global linear model, based on 4 performance indicators: AICc, $R^2$, Adjusted $R^2$ and Moran's $I$ on residuals.  
+\autoref{tab:mod_diag} shows the model diagnostics of five GWR and one global linear model, based on 4 performance indicators: AICc, $R^2$, Adjusted $R^2$ and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The GWR model using a Boxcar kernel with a bandwidth of 39 neighbors had the best performance, with a AICc value of -119.306, $R^2$ of 0.465, adjusted $R^2$ of 0.329 and Moran's $I$ on residuals of 0.166. Moran's $I$ results shows a spatial autocorrelation in the model's residuals, therefore this model couldn't reach a satisfactory result in estimating the coefficients, considering the spatial dependency and nonstationarity of the speeding variable. The GWR model with the boxcar kernel was selected, considering it's relative performance. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1374,9 +1374,7 @@ The final step of the data arrangement process was the check of correlation betw
     SOURCE: The Author (2021).
 \end{table}
 
-%% Show SP Moran's I
-
-Moran's $I$ on the speeding variable resulted in 0.318 and a $p$-value of 0.001, showing that speeding is spatially autocorrelated in a clustered manner. 
+All GWR models presents a better performance in comparison to the global linear model, indicating that GWR is a better method to explore the relationship between speeding and the built environment. When applying Moran's $I$ on the speeding variable, it resulted in a value of 0.318 ($p$-value of 0.001), revealing that speeding is spatially autocorrelated in a clustered aspect. \autoref{tab:lm_results} shows the coefficient estimates of the linear regression model, in addition to the standard error, $t$-values and $p$-values. The only coefficient statistical significant at the 95\% level is the density of speed cameras (DSC), which express a inverted correlation to speeding.
 
 %% Show lm results
 
@@ -1389,7 +1387,7 @@ Moran's $I$ on the speeding variable resulted in 0.318 and a $p$-value of 0.001,
     \centering
     \begin{tabular}{lrrrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Std. Error}} & \multicolumn{1}{c}{\textbf{$t$- value}} & \multicolumn{1}{c}{\textbf{$p$-value}}  \\
+        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Std. Error}} & \multicolumn{1}{c}{\textbf{$t$-value}} & \multicolumn{1}{c}{\textbf{$p$-value}}  \\
         \hline
         Intercept & 4.296e-01 & 6.904e-02 & 6.222 & 1.21e-08 \\
         DSC       & -2.347e-02 & 1.087e-02 & -2.160 & 0.0332 * \\ 
@@ -1409,18 +1407,16 @@ Moran's $I$ on the speeding variable resulted in 0.318 and a $p$-value of 0.001,
     NOTE: * Significance at 95\%
 \end{table}
 
-%% Chosen model based on results
-
-% Based on diagnostics, the chosen model is the GWR with a boxcar kernel ...
-
 %% Show GWR results
+
+\autoref{tab:gwr_results} contains the descriptive statistics of the chosen GWR model coefficient estimates. Maps in FIGURES \ref{fig:gwr_dsc_par} to \ref{fig:gwr_ldi_bsd} shows these coefficients in each TAZ. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. The western part of the city displays TAZs with higher values of $R^2$, contrary to the east side of Curitiba, which displays lower values. Local $R^2$ values varied between 0.221 and 0.825. 
 
 \begin{table}[!htbp]
     \footnotesize
     \captionsetup{justification=raggedright,
         singlelinecheck=false,
         font=footnotesize}
-    \caption{SUMMARY OF GWR COEFFICIENT ESTIMATES}
+    \caption{DESCRIPTIVE STATISTICS OF GWR COEFFICIENT ESTIMATES}
     \centering
     \begin{tabular}{lrrrrr}
         \hline
@@ -1453,6 +1449,8 @@ Moran's $I$ on the speeding variable resulted in 0.318 and a $p$-value of 0.001,
     \par SOURCE: The Author (2021)
 \end{figure}
 
+\autoref{fig:sp_mean_sd} displays the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba. The western ou southern parts of the city presented a higher values, while the central area presented lowe values of speeding. The east side of Curitiba also has higher values of speeding, indicating a pattern where more peripheral TAZs has higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city has TAZs with higher values, while the southeastern side has lower values. Sd had a variation between 0.105 and 0.171.  
+
 %% Mean and SD gw SP
 
 \begin{figure}[!htbp]
@@ -1470,6 +1468,8 @@ Moran's $I$ on the speeding variable resulted in 0.318 and a $p$-value of 0.001,
 \end{figure}
 
 %% Map and discuss the variables
+
+
 
 %%% DSC and PAR
 

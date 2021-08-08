@@ -1,5 +1,5 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \changetocdepth {4}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {brazil}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
@@ -81,11 +81,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{70}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{71}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}NEXT STEPS}{70}{section.5.1}%
+\contentsline {section}{\numberline {5.1}NEXT STEPS}{71}{section.5.1}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -93,20 +93,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{71}{chapter*.78}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{72}{chapter*.78}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{83}{chapter*.78}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{84}{chapter*.78}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GEOGRAPHICALLY WEIGHTED REGRESSION R SCRIPT}}{84}{lstnumber.-1.21}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{85}{lstnumber.-1.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -115,6 +115,6 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{91}{lstnumber.-2.261}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{92}{lstnumber.-2.261}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
