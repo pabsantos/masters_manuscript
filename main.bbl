@@ -676,12 +676,6 @@
       \field{year}{2020}
       \field{pages}{2610\bibrangedash 2617}
       \range{pages}{8}
-      \verb{urlraw}
-      \verb http://www.anpet.org.br/anais34/documentos/2020/Tr{\'{a}}fego Urbano e Rodovi{\'{a}}rio/Seguran{\c{c}}a Vi{\'{a}}ria III/5{\_}332{\_}CT.pdf
-      \endverb
-      \verb{url}
-      \verb http://www.anpet.org.br/anais34/documentos/2020/Tr%7B%5C'%7Ba%7D%7Dfego%20Urbano%20e%20Rodovi%7B%5C'%7Ba%7D%7Drio/Seguran%7B%5Cc%7Bc%7D%7Da%20Vi%7B%5C'%7Ba%7D%7Dria%20III/5%7B%5C_%7D332%7B%5C_%7DCT.pdf
-      \endverb
     \endentry
     \entry{Brasil2001}{misc}{}
       \name{author}{1}{}{%
@@ -2908,6 +2902,27 @@
       \verb http://link.springer.com/10.1057/udi.2009.31
       \endverb
     \endentry
+    \entry{MinistryofCities2018}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f78a692ee1fc0744f83e6fa1de69b4e5}{%
+           family={{Ministry of Cities}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f78a692ee1fc0744f83e6fa1de69b4e5}
+      \strng{fullhash}{f78a692ee1fc0744f83e6fa1de69b4e5}
+      \strng{bibnamehash}{f78a692ee1fc0744f83e6fa1de69b4e5}
+      \strng{authorbibnamehash}{f78a692ee1fc0744f83e6fa1de69b4e5}
+      \strng{authornamehash}{f78a692ee1fc0744f83e6fa1de69b4e5}
+      \strng{authorfullhash}{f78a692ee1fc0744f83e6fa1de69b4e5}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{National Plan of Reduction of Deaths and Injuries}}
+      \field{year}{2018}
+    \endentry
     \entry{MinistryofHealth2020}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6084931ef0755c98128315da26980b25}{%
@@ -4833,6 +4848,41 @@
       \verb :home/pabsantos/Downloads/9782940395040_eng.pdf:pdf
       \endverb
     \endentry
+    \entry{WHO2020}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
+           family={WHO},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {World Health Organization}%
+      }
+      \list{location}{1}{%
+        {Stockholm}%
+      }
+      \strng{namehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{fullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{bibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
+      \field{extraname}{5}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{{Stockholm Declaration - Third Global Ministerial Conference on Global Safety: Achieving Global Goals 2030}}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \field{pages}{-\bibrangedash undefined}
+      \range{pages}{-1}
+      \verb{file}
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/WHO - 2020 - Stockholm Declaration - Third Global Ministerial Conference on Global Safety Achieving Global Goals 2030.pdf:pdf
+      \endverb
+    \endentry
     \entry{WHO2004}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ed1e9f759b27c20c0ee8a56113c84e3}{%
@@ -4848,7 +4898,7 @@
       \strng{authorbibnamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authornamehash}{9ed1e9f759b27c20c0ee8a56113c84e3}
       \strng{authorfullhash}{9ed1e9f759b27c20c0ee8a56113c84e3}
-      \field{extraname}{5}
+      \field{extraname}{6}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{extradatescope}{labelyear}

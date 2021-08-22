@@ -3,13 +3,13 @@ library(rgdal)
 library(tidyverse)
 library(spdep)
 library(tmap)
+library(xtable)
 
 # Taz import and tidy ----
 
 taz_gwr <- readOGR("input", "taz_quali")
 
 taz_data_tidy <- function(taz_shape){
-  
   taz_shape@data <- taz_shape@data %>% 
     mutate(prop = total_leng / road_l)
   
@@ -22,21 +22,72 @@ taz_data_tidy <- function(taz_shape){
            -prop, -pop)
   
   return(taz_shape)
-  
 }
 
 taz_gwr <- taz_data_tidy(taz_gwr)
 
+# Sample size ----
+
+sample_taz <- readOGR("input", "taz_quali")
+
+calc_sample_size <- function(sample){
+  sample_taz@data <- sample_taz@data %>% 
+    mutate(prop = total_leng / road_l)
+  
+  sample_taz <- sample_taz[!is.na(sample_taz$freeflow_l),]
+  
+  sample_taz <- sample_taz[sample_taz$prop > 0.1,]
+  
+  total <-  sample_taz@data %>% 
+    select(total_leng) %>% 
+    sum()
+  
+  ff <- sample_taz@data %>% 
+    select(freeflow_l) %>% 
+    sum()
+  
+  sp <-  sample_taz@data %>% 
+    select(speeding_l) %>% 
+    sum()
+  
+  results <- c(total, ff, sp)
+  
+  names(results) <- c("Total", "Free-flow", "Speeding")
+  
+  return(results)
+}
+
+sample_size <- calc_sample_size(sample_taz)
+
+# Variable global summary ----
+
+make_global_summary <- function(taz_shape){
+  df <- taz_shape@data %>% 
+    select(-cod_taz) %>% 
+    pivot_longer(PD:BSD, names_to = "var", values_to = "value") %>% 
+    group_by(var) %>% 
+    summarise(mean = mean(value),
+              sd = sd(value),
+              min = min(value),
+              `1q` = quantile(value, 0.25),
+              median = median(value),
+              `3q` = quantile(value, 0.75),
+              max = max(value))
+  
+  xtable(df, type = "latex")
+}
+
+global_summary <- make_global_summary(taz_gwr)
+
+print(global_summary)
+
 # GWR function ----
 
 gwr <- function(taz_shape){
-  
   # Sort independent variables for best fit
-  
   ind_var <- c("PD", "PAR", "DIS", "DSC", "DCSU", "AVI", "LDI", "BSD")
   
   sort_var <- function(taz){
-    
     model_select <- model.selection.gwr(
       DeVar = "SP",
       InDeVars = ind_var,
@@ -46,9 +97,7 @@ gwr <- function(taz_shape){
       kernel = "gaussian",
       adaptive = TRUE
     )
-    
     return(as.formula(model_select[[1]][[36]][[1]]))
-    
   }
   
   sorted_formula <- sort_var(taz_shape)
@@ -59,13 +108,11 @@ gwr <- function(taz_shape){
   bw_sizes <- vector(mode = "integer", length = 5)
   
   calc_bw_sizes <- function(kernel){
-    
     bw.gwr(formula = sorted_formula, 
            data = taz_shape, 
            approach = "AIC", 
            kernel = kernel,
            adaptive = TRUE)
-    
   }
   
   bw_sizes <- map_dbl(kernel_type, calc_bw_sizes)
@@ -74,13 +121,11 @@ gwr <- function(taz_shape){
   
   # Running a GWR for each kernel type
   gwr_calc <- function(bw, kernel){
-    
     gwr.basic(formula = sorted_formula, 
               data = taz_shape, 
               bw = bw, 
               kernel = kernel, 
               adaptive = TRUE)
-    
   }
   
   gwr_results <- vector(mode = "list", length = 5)
@@ -95,7 +140,6 @@ gwr_model_results <- gwr(taz_gwr)
 # Extracting diagnostic for each GWR model ---- 
 
 extract_diagnostic <- function(gwr){
-  
   df <- tibble(test = c("RSS.gw", "AIC", "AICc", "enp", "edf", "gw.R2", "gwR2.adj", "BIC",
                         "bandwidth"),
                gaussian = c(unlist(gwr[[1]][["GW.diagnostic"]]), 
@@ -108,6 +152,10 @@ extract_diagnostic <- function(gwr){
                           gwr[["boxcar"]][["GW.arguments"]][["bw"]]),
                exponential = c(unlist(gwr[[5]][["GW.diagnostic"]]),
                                gwr[["exponential"]][["GW.arguments"]][["bw"]]))
+  
+  df %>% 
+    pivot_longer(-test, names_to = "kernel", values_to = "value") %>% 
+    pivot_wider(names_from = test, values_from = value)
 }
 
 diagnostic_table <- extract_diagnostic(gwr_model_results)
@@ -115,7 +163,6 @@ diagnostic_table <- extract_diagnostic(gwr_model_results)
 # Moran's I on residuals ----
 
 calc_moran <- function(gwr_model_data){
-  
   # Extracting neighbors
   nb <- poly2nb(gwr_model_data[[1]][["SDF"]], queen = TRUE)
   
@@ -126,7 +173,6 @@ calc_moran <- function(gwr_model_data){
   gwr_mmc <- function(gwr_model_data){
     
     moran.mc(gwr_model_data[["SDF"]]$residual, lw, nsim = 999, alternative = "greater")
-    
   }
   
   gwr_mmc_results <- map(gwr_model_data, gwr_mmc)
@@ -146,10 +192,19 @@ calc_moran <- function(gwr_model_data){
   )
   
   return(results)
-  
 }
 
 morans_i <- calc_moran(gwr_model_results)
+
+# Moran's I on SP ----
+
+calc_moran_sp <- function(taz_shape){
+  nb <- poly2nb(taz_shape, queen = TRUE)
+  lw <- nb2listw(nb, style = "W", zero.policy = TRUE)
+  moran.mc(taz_shape$SP, lw, nsim = 999, alternative = "greater")
+}
+
+sp_moran_results <- calc_moran_sp(taz_gwr)
 
 # Selecting best model ----
 # manual process, check diagnostic (code to be implemented ...)
@@ -159,7 +214,6 @@ gwr_chosen_model <- gwr_model_results[[4]]
 # GW summary on speeding (mean and SD maps) ----
 
 summary_maps <- function(taz_shape){
-  
   vars = c("SP", "PD", "PAR", "DIS", "DSC", "DCSU", "AVI", "LDI", "BSD")
   
   # Summary calc
@@ -178,20 +232,25 @@ summary_maps <- function(taz_shape){
     tm_fill(col="grey") + 
     tm_borders(col="black", lwd=0.1) +
     tm_shape(summary[["SDF"]]) + 
-    tm_fill(col="SP_LM", n = 6, style="quantile") + 
+    tm_fill(col="SP_LM", n = 6, style="quantile", title = "Local mean") + 
     tm_borders(col="black", lwd=0.2) + 
-    tm_layout(frame=FALSE,) + 
-    tm_legend(legend.position = c(0.8,0.08))
+    tm_layout(frame=FALSE) + 
+    tm_legend(legend.position = c(0.82,0.00),
+              legend.title.size = 0.8, 
+              legend.text.size = 0.6)
   
   # SD map
   sp_lsd <- tm_shape(taz) + 
     tm_fill(col="grey") + 
     tm_borders(col="black", lwd=0.1) +
     tm_shape(summary[["SDF"]]) + 
-    tm_fill(col="SP_LSD", n = 6, style="quantile") + 
+    tm_fill(col="SP_LSD", n = 6, style="quantile", title = "Local std. deviation",
+            palette = "Greens") + 
     tm_borders(col="black", lwd=0.2) + 
-    tm_layout(frame=FALSE,) + 
-    tm_legend(legend.position = c(0.8,0.08))
+    tm_layout(frame=FALSE) + 
+    tm_legend(legend.position = c(0.82,0.00),
+              legend.title.size = 0.8, 
+              legend.text.size = 0.6)
   
   results <- list(sp_lm, sp_lsd)
   
@@ -202,43 +261,100 @@ summary_maps <- function(taz_shape){
 
 gwr_summary <- summary_maps(taz_gwr)
 
+## Save summary plots ----
+
+tmap_save(tm = gwr_summary[[1]],
+          filename = "plots/mean_map.png",
+          height = 3.5,
+          width = 3,
+          units = "in",
+          dpi = 300)
+
+tmap_save(tm = gwr_summary[[2]],
+          filename = "plots/sd_map.png",
+          height = 3.5,
+          width = 3,
+          units = "in",
+          dpi = 300)
+
+
 # Plot GWR results ----
 
 plot_results <- function(gwr_model_data){
-  
   # Import base map
   taz <- st_read("input", "taz_quali")
   
   # Variables
-  vars <- c(colnames(gwr_model_data[["SDF"]]@data[2:9]), "Local_R2")
+  vars <- c(colnames(gwr_model_data[["SDF"]]@data[2:9]))
   
   make_maps <- function(var){
-    
     maps <- tm_shape(taz) + 
       tm_fill(col="grey") + 
       tm_borders(col="black", lwd=0.1) +
       tm_shape(gwr_model_data[["SDF"]]) +
-      tm_fill(col = var, n = 6, style = "quantile", palette = "-RdYlGn") +
+      tm_fill(col = var, n = 6, style = "quantile", palette = "-BrBG") +
       tm_borders(col="black", lwd = 0.2) +
-      tm_layout(frame=FALSE, legend.width = 0.6) + 
-      tm_legend(legend.position = c(0.8,0.08))
-    
+      tm_layout(frame=FALSE, legend.width = 0.5) + 
+      tm_legend(legend.position = c(0.75,0.00),
+                legend.title.size = 0.8, 
+                legend.text.size = 0.6)
   }
 
   result_maps <- map(vars, make_maps)
   
   return(result_maps)
-  
 }
 
 gwr_results_maps <- plot_results(gwr_chosen_model)
 
+## Save gwr results maps ----
+
+names <- colnames(gwr_chosen_model[["SDF"]]@data[2:9])
+
+save_result_maps <- function(tm, names){
+  tmap_save(tm = tm,
+            filename = paste("plots/", names, ".png", sep = ""),
+            height = 3.5,
+            width = 3,
+            units = "in",
+            dpi = 300)
+}
+
+map2(gwr_results_maps, names, save_result_maps)
+
+# Plot R-squared ----
+
+plot_r2 <- function(gwr_model_data){
+  # Import base map
+  taz <- st_read("input", "taz_quali")
+  
+  maps <- tm_shape(taz) + 
+    tm_fill(col="grey") + 
+    tm_borders(col="black", lwd=0.1) +
+    tm_shape(gwr_model_data[["SDF"]]) +
+    tm_fill(col = "Local_R2", n = 8, style = "quantile", palette = "Blues", 
+            title = "Local R2 ") +
+    tm_borders(col="black", lwd = 0.2) +
+    tm_layout(frame=FALSE, legend.width = 0.6) + 
+    tm_legend(legend.position = c(0.82,0.00),
+              legend.title.size = 0.8, 
+              legend.text.size = 0.6)
+}
+
+r2_map <- plot_r2(gwr_chosen_model)
+
+tmap_save(tm = r2_map,
+          filename = "plots/r2_map.png",
+          height = 3.5,
+          width = 3,
+          units = "in",
+          dpi = 300)
+
 # Count positive and negative coefficients per TAZ and variable ----
 
 make_results_table <- function(gwr_model_data){
-  
   gwr_results <- gwr_model_data[["SDF"]]@data %>% 
-    select(Intercept:LDI)
+    select(Intercept:BSD)
   
   gwr_results %>% 
     mutate(across(everything(), ~ case_when(
@@ -246,7 +362,7 @@ make_results_table <- function(gwr_model_data){
       . < 0 ~ "neg",
       TRUE ~ NA_character_
     ))) %>% 
-    pivot_longer(Intercept:LDI, names_to = "variables", values_to = "count") %>% 
+    pivot_longer(Intercept:BSD, names_to = "variables", values_to = "count") %>% 
     mutate(n = 1) %>% 
     group_by(variables, count) %>% 
     summarise(n = sum(n)) %>% 
@@ -255,7 +371,10 @@ make_results_table <- function(gwr_model_data){
     mutate(prop_neg = neg / (neg+pos),
            prop_pos = pos / (neg+pos)) %>% 
     arrange(-prop_neg)
-  
 }
 
 results_table <- make_results_table(gwr_chosen_model)
+
+results_table %>% 
+  mutate(prop_pos = prop_pos * 100,
+         prop_neg = prop_neg * 100)

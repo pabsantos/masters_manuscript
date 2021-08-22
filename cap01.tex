@@ -2,40 +2,45 @@
 
 % ------------------------------------------------------------------------------------
 
-\chapter[INTRODUCTION]{INTRODUCTION}
-
-% Very general introduction why the topic of the thesis is relevant.
+\chapter[INTRODUCTION]{INTRODUCTION} \label{cap:intro}
 
 % Road Safety Scenario in the World and in Brazil.
 
+% PNATRANS, decades 2010 and 2020
+
+% Brazil Peak and last value
+
+% Curitiba Peak and last value
+
 % Urban planning having a crucial role on the road safety in cities.
+
+In 2010, the United Nations (UN) declared the Decade of Action for Road Safety 2011-2020, calling the signatory countries to reduce in half the predicted number of deaths and injuries in traffic until 2020 \cite{WHO2011}. In Brazil, the National Plan of Reduction of Deaths and Injuries (PNATRANS) was created in 2018, aiming to reduce the national fatality rate (deaths per 10,000 vehicles) and mortality rate (deaths per 100,000 population) in half, within the period of 2019-2028 \cite{MinistryofCities2018}. Following the Decade of Action 2011-2020, the UN declare another Decade of Action for Road Safety with the same objectives of the last one, but considering a time frame of 2021-2030 \cite{WHO2020}.
+
+One of the main risk factors of road crashes is speeding, which increases the severity and occurence of crashes \cite{Mohan2016a}. In urban areas, the severity of crashes has a higher impact to more vulnerable users, like pedestrians and cyclists \cite{Welle2016}. The characteristics inside the urban environment, including land use codes and the built environment can mitigate the occurence of speeding and improve the road safety performance \cite{Knoflacher2016}. Therefore, this work aims to better explore the relationship between the built environment inside cities and the level of road safety performance, considering the occurence of speeding as a intermediate outcome. 
 
 \section{OBJECTIVES}
 
-In the context of the urban planning practices and road safety management, the main objective of this research is to investigate the influence of demographic, socioeconomic, land use and constructed environment on the speeding practices as a risk factor on the frequency and severity of road crashes. The scenario of the study is the city of Curitiba, capital of the state of Paraná, Brazil. The correlation will be analyzed with the use of the Geographically Weighted Regression statistical model.
+In the context of urban planning and road safety management, the main objective of this research is to investigate the influence of demographic, land use and constructed environment on the speeding practices as a risk factor on the frequency and severity of road crashes. The scenario of the study is the city of Curitiba, capital of the state of Paraná, Brazil. The correlation will be analyzed with the use of the Geographically Weighted Regression statistical model.
 
-With the use of speeding data collected from drivers that participated in a Naturalistic Driving Study (NDS) performed in Curitiba, this investigation aims to contribute to the knowledge of its relationship with variables from the built environment (BE). These BE variables are categorized by \textcite{Ewing2009} in five groups called '5D': density, diversity, design, destination accessibility and distance to transit. In addition to these variables, this study aims to relate the income as a socioeconomic variable to the speeding as well.
+With the use of speeding data collected from drivers that participated in a Naturalistic Driving Study (NDS) performed in Curitiba, this investigation aims to contribute to the knowledge of its relationship with variables from the built environment (BE). These BE variables are categorized by \textcite{Ewing2009} in five groups called ``5D'': density, diversity, design, destination accessibility and distance to transit. In addition to these variables, this study aims to relate the income, as a demographic variable, to the speeding as well.
 
 As co-benefits in the investigation, this thesis aims to offer some level of insight regarding the development and update of speed control in cities, considering the operational and structural planning guidelines for the road systems and land use. With these factors in mind, it could be possible to present new ideas to the planning practices in Curitiba, regarding mobility plans, master plans and zoning laws.
     
-
 \section{JUSTIFICATION}
 
-The excess of traffic speed performed by vehicles on urban environments are a main risk factor in the chance and severity of road crashes, considering there is great volume of interaction between motorized and vulnerable users \cite{Elvik2009}. Considering the direct relationship between the mobility, the land use patterns and the built environment \cite{DeVos2013}, it is important to investigate these factors in search of improvements in the management process of the road safety. Speeding, which is on the primary causes for traffic crashes \cite{WHO2013} can be better studied and analyzed by the collection of naturalistic data.
+The excess of traffic speed performed by vehicles on urban environments are a main risk factor in the chance and severity of road crashes, considering there is a great volume of interaction between motorized and vulnerable users \cite{Elvik2009}. Considering the direct relationship between the mobility, the land use patterns and the built environment \cite{DeVos2013}, it is important to investigate these factors in search of improvements in the management process of the road safety. Speeding, which is on the primary causes for traffic crashes \cite{WHO2013} can be better studied and analyzed by the collection of naturalistic data.
 
-Having in mind that most of the traffic crashes and conflicts happens in cities \cite{WHO2018}, as a consequence of the fast process of urbanization in the last decades, it is crucial to create safer conditions in these localities. In Brazil, the management of the mobility is attributed to the municipalities \cite{Brasil1997}. Therefore, the management of road safety, as a task inherent to traffic management, is also an attribution of the municipalities. It is necessary to observe the issues of road safety in cities when conducting the process of urban planning. Having this in mind, it was established laws in which this integration between the planning process by the municipalities and the sustainable mobility are clearly defined: The Statute of the Cities \cite{Brasil2001} and The Law of the Urban Mobility \cite{Brasil2012}.    
+Having in mind that most of the traffic crashes and conflicts happens in cities \cite{WHO2018}, as a consequence of the fast process of urbanization in the last decades, it is crucial to create safer conditions in these localities. In Brazil, the management of the mobility is attributed to the municipalities \cite{Brasil1997}. Therefore, the management of road safety, as a task inherent to traffic management, is also an attribution of the municipalities. It is necessary to observe the issues of road safety in cities when conducting the process of urban planning. Some national laws foresees this integration between the planning process by the municipalities and the sustainable mobility are clearly defined: The Statute of the Cities \cite{Brasil2001} and The Law of the Urban Mobility \cite{Brasil2012}.    
 
-The built environment can affect the traffic safety through three main mediators: the traffic volumes, traffic conflicts and traffic speeds - which can directly affect the crash safety and severity in urban environments \cite{Ewing2009}. Traffic crashes are a final outcome of the problems involving the road safety. Therefore, in order to have a method to analyzed the operational conditions of the traffic safety in cities, it can be beneficial to use a intermediate outcome - or a safety performance indicator (SPI) \cite{Bastos2014} - which can be the amount of speeding that occurs across its territory, in addition to the studies that uses the traffic crashes as dependent variables. 
+The built environment can affect the traffic safety through three main mediators: the traffic volumes, traffic conflicts and traffic speeds - which can directly affect the crash occurrence and severity in urban environments \cite{Ewing2009}. Traffic crashes are a final outcome of the problems involving the road safety. Therefore, in order to have a method to analyzed the operational conditions of the traffic safety in cities, it can be beneficial to use a intermediate outcome - or a safety performance indicator (SPI) \cite{Bastos2014} - which can be the amount of speeding that occurs across its territory, in addition to the studies that uses the traffic crashes as dependent variables.
 
 \section{THESIS STRUCTURE}
 
-%% General composition of the thesis, giving which chapters the reader should expect
+This document is divided into five chapters. Next to this chapter, Chapter \ref{cap:lr} includes the literature review, Chapter \ref{cap:methods} contains the methodological proceedings used in this work and Chapter \ref{cap:results} includes the data that resulted from the method and it's analysis. Chapter \ref{cap:conclusion} includes a brief conclusion of the thesis. 
 
-%% Write this part after completion of chapters 2 and 3
+%------------------------------------------------------------------------------------
 
-% ------------------------------------------------------------------------------------
-
-\chapter{LITERATURE REVIEW}
+\chapter{LITERATURE REVIEW} \label{cap:lr}
 
 This Chapter is divided into 5 sections, each presenting a relevant subject to the study. Section \ref{sec:rss} has discussions involving the road safety problems that occurs and how they can be managed. Section \ref{speeding} presents the main risk factor investigated in this document: speeding. It is discussed how it is related to the road safety, the factors that can influence speeding and how its occurrence can be investigated. Section \ref{be} includes the discussion about the built environment and it's variables, relating to the road safety performance and urban planning practices. Section \ref{nds} discusses naturalistic driving studies as a method of speeding data collection, and how it was performed in previous works. Section \ref{sec:gwr} discusses about the geographically weighted regression statistical method, and how it can be used to investigate built environment variables and road safety outcomes.
 
@@ -60,7 +65,7 @@ As the mobility in general becomes more motorized towards the use of the car, pe
 
 A factor that explains this pattern in a more precise way is the political shift in the road safety paradigm that happened on the OECD countries. Before the 1950s, the belief that drivers were the only responsible for the road crashes lead the discussions regarding road safety. Therefore, most of the interventions in road safety management ignored the design and development of the build environment and the vehicles. Between the 1960s and the 1970s, OECD countries started to regulate transport in order to tackle the road safety problems that were rising, establishing new laws and road safety management institution on national e local levels. \cite{Bhalla2016}. Analyzing the road safety data from Brazil, it is possible to correlate the actual stage with what the OECD countries passed during the 1970s.
 
-According to \textcite{WHO2018}, it was predicted that Brazil would had a road traffic mortality rate (number of deaths per 100,000 inhabitants) of 22.5 in 2016, the highest rate between the south american countries. In 2019 (the last entry available by \textcite{MinistryofHealth2020}), road crashes were responsible for 31.945 deaths. Considering the Decade of Action for Road Safety 2011-2020 \cite{WHO2011}, Brazil will reach the goal of reducing the road traffic deaths in half (comparing to the number projected for 2020, in case of a rising trend in deaths) by the end of the 2010s. \autoref{fig:br_abs} has the time series of road traffic deaths in the last decades.  
+According to \textcite{WHO2018}, it was predicted that Brazil would had a road traffic mortality rate (number of deaths per 100,000 inhabitants) of 22.5 in 2016, the highest rate between the south american countries. In 2019 (the last entry available by \textcite{MinistryofHealth2020}), road crashes were responsible for 31,945 deaths. Considering the Decade of Action for Road Safety 2011-2020 \cite{WHO2011}, Brazil will reach the goal of reducing the road traffic deaths in half (comparing to the number projected for 2020, in case of a rising trend in deaths) by the end of the 2010s. \autoref{fig:br_abs} has the time series of road traffic deaths in the last decades.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -82,7 +87,7 @@ The year of 1979 is the earliest official data entry available. Starting in the 
     \par SOURCE: The Author (2021), based on \textcite{MinistryofHealth2020} and \textcite{MinistryofHealth2021}.
 \end{figure}
 
-The maximum registered mortality rate is 23.1 deaths per 100,000 inhabitants in 2012, the same year which Brazil reached its maximum value for absolute road traffic deaths. Since then the mortality rate has been declining, reaching a rate of 15.2 deaths per 100.000 inhabitants in 2019. In comparison to the OECD countries (\autoref{fig:oecd}), Brazil presented a strong declining pattern a few years later, after the 2010s. Another indicator that considers the exposition to traffic hazards is the fatality rate - number of deaths per 10,000 vehicles (\autoref{fig:br_fatal}). The oldest entry of fleet size in the \textcite{DENATRAN2020} database is 1998.
+The maximum registered mortality rate is 23.1 deaths per 100,000 inhabitants in 2012, the same year which Brazil reached its maximum value for absolute road traffic deaths. Since then the mortality rate has been declining, reaching a rate of 15.2 deaths per 100,000 inhabitants in 2019. In comparison to the OECD countries (\autoref{fig:oecd}), Brazil presented a strong declining pattern a few years later, after the 2010s. Another indicator that considers the exposition to traffic hazards is the fatality rate - number of deaths per 10,000 vehicles (\autoref{fig:br_fatal}). The oldest entry of fleet size in the \textcite{DENATRAN2020} database is 1998.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -152,9 +157,9 @@ Considering the fatality rate as a road safety performance indicator, \autoref{f
     \par SOURCE: The Author (2021), based on \textcite{MinistryofHealth2020} and \textcite{DENATRAN2020}.
 \end{figure} 
 
-Capable interventions in road safety needs to consider traffic deaths and injuries as serious public health problems. Therefore, its control must follow the principle as control of any other public health problem. Road traffic injuries are the result of a complex interaction of multiple factors. These factors can involve human, environmental and vehicle factors, in addition to sociological, psychological, physical and technological factors present the process of traffic crashes. As another health problems, it is possible to analyze road traffic injuries considering three different phases in time: pre-crash, during the crash and post-crash \cite{Mohan2016}.
+Capable interventions in road safety needs to consider traffic deaths and injuries as serious public health problems. Therefore, its control must follow the principle as control of any other public health problem. Road traffic injuries are the result of a complex interaction of multiple factors. These factors can involve human, environmental and vehicle factors, in addition to sociological, psychological, physical and technological factors present the process of traffic crashes. As other health problems, it is possible to analyze road traffic injuries considering three different phases in time: pre-crash, during the crash and post-crash \cite{Mohan2016}.
 
-These distinct phases of time and factors of road traffic crashes can be arranged into a matrix created by \textcite{Haddon1980} in order to map all events related to a injury. Named after its inventor, the Haddon matrix (\autoref{fig:haddon}) consists of two dimensions: one for the time aspect of the event and a second one representing three main discrete factors: human, vehicle and environment. Crossing each step of both dimensions sets nine cells, in which can be made a list of countermeasures to control the damage or to prevent a possible incident, associating these measures to each pair of factors. 
+These distinct phases of time and factors of road traffic crashes can be arranged into a matrix created by \textcite{Haddon1980} in order to map all events related to a injury. Named after its author, the Haddon matrix (\autoref{fig:haddon}) consists of two dimensions: one for the time aspect of the event and a second one representing three main discrete factors: human, vehicle and environment. Crossing each step of both dimensions sets nine cells, in which can be made a list of countermeasures to control the damage or to prevent a possible incident, associating these measures to each pair of factors. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -190,7 +195,7 @@ The excess of speed can influence three main factors in the occurrence of a traf
     \par SOURCE: \textcite{Mohan2016a}.
 \end{figure} 
 
-The horizontal lines from the plot shows the cruising speeds of the vehicle before they start breaking, longer lines at higher speeds represents greater reaction times. In this scenario, only speeds equal or below 40 km/h are able to avoid a collision with the pedestrian. As the vehicle speed rises, the impact speed rises as well. This leads to the increase in force of impact between vehicles and pedestrians. The severity of injuries sustained by pedestrians depends on the energy of impact - the kinetic energy transferred to the human body. This energy of an object (the vehicle), directly related to its velocity and mass, detailed in the following equation: \begin{align}
+The horizontal lines from the plot shows the cruising speeds of the vehicle before they start breaking, longer lines at higher speeds represents greater reaction times. In this scenario, only speeds equal or below 40 km/h are able to avoid a collision with the pedestrian. As the vehicle speed rises, the impact speed rises as well. This leads to the increase in force of impact between vehicles and pedestrians. The severity of injuries sustained by pedestrians depends on the energy of impact - the kinetic energy transferred to the human body. This energy of an object (the vehicle) is directly related to its velocity and mass, detailed in the following equation: \begin{align}
     E = 0.5 \times MV^2 \mbox{;}
     \label{eq:energy}
 \end{align} where $E$ is the kinetic energy, $M$ is the object's mass and $V$ is the velocity of the object. The plot in \autoref{fig:kinetic} shows the increase in kinetic energy, considering an average car mass of 1,500 kg \cite{Zervas2008} and speeds varying between 0 and 100 km/h. The quantity of energy doubles when the speed changes from 40 km/h to 60 km/h, and almost triples at 70 km/h. This variation shows how the reduction of speed limits can greatly change the energy of impact.
@@ -209,7 +214,7 @@ Considering the event of an impact between a front of a car and a pedestrian, \t
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{PROBABILITY OF PEDESTRIAN FATALITY AT DIFFERENT IMPACT FATALITIES}
+    \caption{PROBABILITY OF PEDESTRIAN FATALITY AT DIFFERENT IMPACT SPEEDS}
     \includegraphics{fig/ash.pdf}
     \label{fig:ash}
     \par SOURCE: The Author (2021), based on data from \textcite{Ashton1980}.
@@ -242,9 +247,9 @@ In \autoref{tab:spdfct} is presented a few groups of factors affecting speeding 
     SOURCE: The Author (2021), based on \textcite{Richard2013a}, \textcite{Shinar2017} and \textcite{WHO2008}.
 \end{table}
 
-All these human factors are related to the general driver profile and its performance when driving the car. as an example of the influence in the individual differences present in the demographic characteristics, younger drivers are more likely to speed than mature and older drivers, and men are more likely to speed than women \cite{Shinar2017}. The vehicle characteristics also affects the speed choice of the user. The type, engine power, comfort, field of view and age of the vehicle can affect the possibility to the driver reach the desired speed. 
+All these human factors are related to the general driver profile and its performance when driving the car. As an example of the influence in the individual differences present in the demographic characteristics, younger drivers are more likely to speed than mature and older drivers, and men are more likely to speed than women \cite{Shinar2017}. The vehicle characteristics also affects the speed choice of the user. The type, engine power, comfort, field of view and age of the vehicle can affect the possibility to the driver reach the desired speed. 
 
-The environmental factors affecting speed choice consists of all the elements external to the vehicles and are greatly related to how the driver behaves and to how the vehicle is able to operate. Road elements can include the general characteristics of a road layout, quantity and type of intersections, design and level of maintenance, based on its alignment, gradient, width, surface condition, geometric pattern and road lightning. The presence of intersections and the high density of traffic controls the operating speeds in urban areas \cite{Mohan2016a}. Weather can also affect how the driver will chose his speed, considering its effects on surface conditions (dry, wet, ice) and natural light.  
+The environmental factors affecting speed choice consists of all the elements external to the vehicles and are greatly related to how the driver behaves and to how the vehicle is able to operate. Road elements can include the general characteristics of a road layout, quantity and type of intersections, design and level of maintenance, based on its alignment, gradient, width, surface condition, geometric pattern and road lightning. The presence of intersections and the high density of traffic controls the operating speeds in urban areas \cite{Mohan2016a}. Weather can also affect how the driver will choOse his speed, considering its effects on surface conditions (dry, wet, ice) and natural light.  
 
 The speed and speed variance are to a certain extent determined by the traffic flow regime \cite{Shinar2017}. Depending on the level of flow and density or any other operational condition of the traffic, the driver cannot be able to reach a higher desired speed, removing his ability to have a opportunity to speed \cite{Richard2013a, Bastos2021}. The plot in \autoref{fig:svd} illustrates the relationship between speed, density and volume (or flow) in uninterrupted flow conditions of a certain road. This type of flow occurs in areas without interference from external factors, like intersections or crossings \cite{Green2020}. 
 
@@ -261,7 +266,7 @@ When density and volume are at its lowest value, the road user can reach higher 
 
 Established as an environmental factor affecting speeding choice (\autoref{tab:spdfct}), the surroundings of the road, including equipments and some traffic calming techniques like gateway treatments, can be perceived by the driver as elements that gives hints to avoid higher speeds \cite{WHO2008}. Overall, the built environment and its five elements - density, design, diversity, destination accessibility and distance to transit - can be perceived as environmental factors which affects the road safety, through the relationship to the numbers of road crashes and occurrence of speeding. These characteristics are better explored in the next section (\ref{be}). 
 
-In order to collect speeding data, it is important to establish what defines speeding and to identify a measure of exposure to speeding. To \textcite{Richard2013}, defining speeding and its constitution is one of the key challenges of speeding studies. The authors presented five distinct approaches for defining speeding: ad hoc, analytical, kinematic, psychological and behavioral. The ad hoc approach assumes that the fastest driving in a sample if a proxy for speeding and considers the top X\% of speeds above the posted speed. Although this approach can provide sufficient data for analysis, the speeding collected may be not related to behavior or safety. 
+In order to collect speeding data, it is important to establish what defines speeding and to identify a measure of exposure to speeding. To \textcite{Richard2013}, defining speeding and its constitution is one of the key challenges of speeding studies. The authors presented five distinct approaches for defining speeding: ad hoc, analytical, kinematic, psychological and behavioral. The ad hoc approach assumes that the fastest driving in a sample is a proxy for speeding and considers the top X\% of speeds above the posted speed. Although this approach can provide sufficient data for analysis, the speeding collected may be not related to behavior or safety. 
 
 The analytical approach fixes a criterion relative to the speed limit (+ X\% or + X km/h). It is a simple method to implement, but can miss some factor related to road type and overall speed level. The analytical approach is used in this work and its process of implementation is detailed in Section \ref{data}. The kinematic approach considers the driving environment and its operational conditions, in order to connect the speed behavior to specific situations. This approach requires a certain level of quantity and quality of GIS data to support it. The psychological approach is based on what the driver considers to be speeding, providing insight into factors that are related to individuals perception of speeding. The necessity of additional previous information about the speeding beliefs and attitudes of the drivers can be a disadvantage of this approach. At last, the behavioral approach sets four speed bands to describe different behavior in each one, related to the chosen speed by the driver \cite{Richard2013}.
 
@@ -352,7 +357,7 @@ Traffic volume is directly related to crash frequency and the increase of vehicl
     SOURCE: The Author (2021), based on \textcite{Ewing2009}, \textcite{Ewing2010} and \textcite{Obelheiro2020}.
 \end{table}
 
-Destination accessibility measures how easy is to access places of attraction, including jobs, services, commerce and districts of overall interest, considering business districts and city downtown. Distance to transit usually is measured by the level of offer of transport services, being measured by the quantity of transit stops and network density. Network density also can be included in the design category. Demographics, while not being a characteristic of the build environment, can influence the occurrence of speeding in urban environments, including income, age and sex. In the following tables (\autoref{tab:density} to \autoref{tab:demographics}) are presented the built environment categories and its variables considered in this work, considering the authors that investigated them related to the road safety performance in urban areas, with the focus on one final outcome indicator - road crashes and one mediator - occurrence of speeding.
+Destination accessibility measures how easy is to access places of attraction, including jobs, services, commerce and districts of overall interest, considering business districts and city downtown. Distance to transit usually is measured by the level of offer of transport services, being measured by the quantity of transit stops and network density. Network density also can be included in the design category. Demographics, while not being a characteristic of the build environment, can influence the occurrence of speeding in urban environments, including income, age and sex. In the following tables (\autoref{tab:density} to \autoref{tab:demographics}) are presented the built environment categories and its variables considered in this work, including the authors that investigated them related to the road safety performance in urban areas, with the focus on one final outcome indicator - road crashes and one mediator - occurrence of speeding.
 
 % 3. BE and relationship to road safety
 
@@ -465,7 +470,7 @@ Diversely, three other authors discuss about a inverse correlation between inter
     NOTE: $(+)$: positive correlation between variable and outcome; $(-)$: inverted correlation between variable and outcome; $(\pm)$: correlation not clear / depends on other factors.
 \end{table}
 
-Regarding speeding outcomes, all listed authors correlated the quantity of intersections with less occurrence of speeding. Higher number of intersections decreases traffic flow and average speeds \cite{Elvik2009,Ewing2009}. The quantity of intersections can be related to block sizes. More intersections mean shorter length of road sections between notes, reducing the opportunity fot the drivers to reach higher desired speeds.
+Regarding speeding outcomes, all listed authors correlated the quantity of intersections with less occurrence of speeding. Higher number of intersections decreases traffic flow and average speeds \cite{Elvik2009,Ewing2009}. The quantity of intersections can be related to block sizes. More intersections mean shorter length of road sections between nodes, reducing the opportunity fot the drivers to reach higher desired speeds.
 
 In regard to the correlation between speed cameras and road crashes, \textcite{Park2019} observed a direct correlation between the implementation of speed cameras and overall number of road crashes, but the severity of these crashes reduced. To \textcite{Høye2015,Li2013a}, speed cameras reduced the occurrence of road crashes inside a certain buffer, with its effect decreasing as distance from cameras increase. In addition, the crash reducing effect of speed cameras decrease after a certain time of installation \cite{Li2020}. \textcite{Li2013a,Oliveira2015} detected a speed reduction inside a 200m buffer from the camera. To \textcite{Li2020}, the speed before and near the camera is reduced, but the average speeds can increase after the speed camera, due to the ``kangaroo effect'', where the road users tends to compensate the ``wasted'' time caused by the reduction of speeds when passing through the speed cameras. 
 
@@ -565,7 +570,7 @@ Most of the built environment variables discussed are influenced by the planning
 
 In 1942, the Agache Plan established a radial expansion to the city of Curitiba's territory. In the 1960s happened an unprecedented growth of the city's population, unforeseen by the Agache Plan, creating new housing and mobility problems to the city. Having these problems in mind, in 1965 was created the Instituto de Pesquisa e Planejamento de Curitiba (Institute of Research and Planning of Curitiba - IPPUC), in order to develop a new and formal master plan. The main cornerstone of the plan was the integration between mobility and land use, consisting of 5 main corridors of growth. These corridors contains mixed-use, high-rise developments and bus rapid systems (BRT) to attend this new demand \cite{Rosario2016}. 
 
-Curitiba's master plan promotes the integration between the road system, transport and land use, as a urban development policy \cite{Curitiba2015}. The land use integration with with mobility is lead by the road hierarchy and the distribution of population and economic activities into areas with required infrastructure. Zoning in Curitiba considering a macro scale is driven by the structural axes and densification axes. Structural axes are the main axes of city growth, containing areas that expands the traditional city center and creating corridors of mixed land use og high density, supported by the mobility and public transport infrastructure. Theses axes are shown in red inside the map from \autoref{fig:axis}. 
+Curitiba's master plan promotes the integration between the road system, transport and land use, as a urban development policy \cite{Curitiba2015}. The land use integration with with mobility is lead by the road hierarchy and the distribution of population and economic activities into areas with required infrastructure. Zoning in Curitiba considering a macro scale is driven by the structural axes and densification axes. Structural axes are the main axes of city growth, containing areas that expands the traditional city center and creating corridors of mixed land use of high density, supported by the mobility and public transport infrastructure. Theses axes are shown in red inside the map from \autoref{fig:axis}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -614,7 +619,7 @@ NDS in behavioral studies could be considered as an ``improvement'' in compariso
 
 In comparison, NDS have a typically large sample size and gives practically total immersion to the volunteers' everyday trips. The events occurred in traffic are totally uncontrolled and real. This gives a higher ``credibility'' to the data collected, but makes it harder to isolate the desired variables in study. The exposure to the experiment is usually higher in NDS, where the volunteers have the data registered over multiple trips \cite{Carsten2013}. Overall, the NDS characteristics and advantages are valuable to the present study, considering its capability of collecting a comparably large dataset of speeds and location throughout the city's territory.
 
-\autoref{tab:nds} presents some of the main NDS researches that were established in the last two decades. The 100-Car Naturalistic Driving Study, conducted by the Virginia Tech Transportation Institute, was the first large scale NDS and was performed in the United States. Its instrumentation was composed of 5 cameras, 1 accelerometer and 1 GPS sensors, among others. Some of the vehicles were owned by the researchers and others by the volunteers. The main location of study was the metropolitan of northern virginia and Washington, DC. The main goal of the research was to maximize the potential to record crash and near-crash events. In total, 100 vehicles were used, with 241 drivers among primary and secondary volunteers. The total trip time of the data collected was above 40,000 hours, with a distance above 3 million kilometers \cite{Neale2005}.
+\autoref{tab:nds} presents some of the main NDS researches that were established in the last two decades. The 100-Car Naturalistic Driving Study, conducted by the Virginia Tech Transportation Institute, was the first large scale NDS and was performed in the United States. Its instrumentation was composed of 5 cameras, 1 accelerometer and 1 GPS sensor, among others. Some of the vehicles were owned by the researchers and others by the volunteers. The main location of study was the metropolitan of northern virginia and Washington, DC. The main goal of the research was to maximize the potential to record crash and near-crash events. In total, 100 vehicles were used, with 241 drivers among primary and secondary volunteers. The total trip time of the data collected was above 40,000 hours, with a distance above 3 million kilometers \cite{Neale2005}.
 
 \begin{table}[!hbtp]
     \footnotesize
@@ -660,7 +665,7 @@ Incidental speeding was the most common speeding type detected in the sample. It
 
 \textcite{Hamzeie2017} investigated how the average speed chosen by drivers was influenced by the traffic conditions and how it affected the risk crashes. The authors used the SHRP2 NDS data and concluded that higher travel speeds were directly correlated to higher speed limits, and high speed variance is correlated to higher risk of crash. \textcite{Kong2020} also investigated speeding behavior patterns related to the traffic and road conditions, from a sample of naturalistic data collected from 92 vehicles. The authors concluded that speeding duration is related to driving on roadways with higher function classes, to longer trips and to speed loss causes by congestion, causing a idea of needing to ``recover the lost time'' by the drivers.
 
-Using the BR-NDS data, \textcite{Bastos2021} compared traffic risks behavior between carpooling and non carpooling drivers, including speeding. The authors concluded that carpooling drivers presented a safer behavior towards speeding, having less episodes in comparison to non carpooling drivers. \textcite{Bastos2020a} also investigated the occurrence of mobile phone use (MPU) while driving and concluded that MPU occurs in higher frequencies when the average speed is lower. To analyze the relationship between speeding and speed cameras, \textcite{Amancio2021} also used the BR-NDS dataset. 
+Using the NDS-BR data, \textcite{Bastos2021} compared traffic risks behavior between carpooling and non carpooling drivers, including speeding. The authors concluded that carpooling drivers presented a safer behavior towards speeding, having less episodes in comparison to non carpooling drivers. \textcite{Bastos2020a} also investigated the occurrence of mobile phone use (MPU) while driving and concluded that MPU occurs in higher frequencies when the average speed is lower. To analyze the relationship between speeding and speed cameras, \textcite{Amancio2021} also used the BR-NDS dataset. 
 
 Overall, the papers cited in this Section are just a small sample of the existing studies including speeding behavior and NDS data. The NDS projects that were concluded or are ongoing generates an ample database of speeds and speeding episodes, making possible to continually investigate this risk behavior. 
 
@@ -672,7 +677,7 @@ Regression analysis is a tool to investigate the dependency between variables an
 
 To overcome this limitation, the Geographically Weighted Regression (GWR) allows the exploration of the relationship between variables on a spatial nonstationarity context. The spatial nonstationarity is a scenario where it is assumed that parameters are not constant across the space. A global regression model may be incapable of explaining the relationship between sets of variables with a acceptable level of precision in this scenario. The GWR model considers that the nature of the model must alter over space to reflect the structure within the data, allowing the actual parameters for each location in space to be modeled and mapped \cite{Brunsdon2010}.
 
-The basic form of GWR, is based on the following equation:\begin{align}
+The basic form of GWR is detailed on the following equation:\begin{align}
     y_i = \beta_{i0} + \sum_{k=1}^{m} \beta_{ik} x_{ik} + \epsilon_i \mbox{;}
     \label{eq:gwr}
 \end{align} where $y_i$ is the dependent variable at location $i$, $x_{ik}$ is the value of the $k$th independent variable at location $i$, $m$ is the number of independent variables, $\beta_{i0}$ is the intercept parameter at location $i$, $\beta_{ik}$ is the local regression coefficient for the $k$th parameter at location $i$ and $\epsilon_i$ is the random error at location $i$. The GWR model depends on a spatial weighting function called $w_{ij}$ that controls the contribution of the point $j$ on the calibration of a model for point $i$. The spatial weighting function represents the idea that for each point $i$ there is a bump of influence around it. Considering this "bump", observations closer to $i$ have more influence in the estimation of $i$'s parameters \cite{Brunsdon2010,Gollini2013}.
@@ -766,11 +771,11 @@ Regarding the type of GW model, most authors chose GWNBR or GWPR, considering th
 
 % ----------------------------------------------------------------------------------
 
-\chapter{METHODS}
+\chapter{METHODS} \label{cap:methods}
 
 This chapter is divided into 3 sections. Section \ref{ndsc} contains the steps of collecting and processing naturalistic driving data. Section \ref{data} presents the process of creating the dependent and independent variables. Section \ref{gwm} includes the process of elaborating a GWR model. 
  
-\section{THE BRAZILIAN NATURALISTIC DRIVING STUDY} \label{ndsc}
+\section{NATURALISTIC DRIVING STUDY - BRAZIL} \label{ndsc}
 
 %% How data was collected, where it was collected, from who it as collected, when it was collected
 
@@ -778,7 +783,7 @@ This chapter is divided into 3 sections. Section \ref{ndsc} contains the steps o
 
 % 1. Equipment: composition and how it was installed (equip. scheme - borguezani, camera scheme - amancio)
 
-The Brazilian Naturalistic Driving Study (NDS-BR) utilized a non-intrusive instrumentation of vehicles, with two data acquisition system (DAS). Each DAS contains three high definition cameras, one GPS sensor, one laptop with a Linux distribution and one power supply. One camera was positioned on the right window of the car, towards the inside of the vehicle facing the driver. Two other cameras were positioned on the windshield of the car, facing towards the front outside. Considering these two, one camera is facing slightly to the left and another one to the right. The visual scheme of camera positioning is presented on \autoref{fig:cam_install}.
+The Naturalistic Driving Study - Brazil (NDS-BR) utilized a non-intrusive instrumentation of vehicles, with two data acquisition system (DAS). Each DAS contains three high definition cameras, one GPS sensor, one laptop with a GNU/Linux operational system distribution and one power supply. One camera was positioned on the right window of the car, towards the inside of the vehicle facing the driver. Two other cameras were positioned on the windshield of the car, facing towards the front outside. Considering these two, one camera is facing slightly to the left and another one to the right. The visual scheme of camera positioning is presented on \autoref{fig:cam_install}.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -813,7 +818,7 @@ The DAS kit allowed the acquisition of GPS and video data in synchronization, co
     \par SOURCE: The Author (2021).
 \end{figure}
 
-The GPS sensor signals were translated into a .nmea format file, with the execution of gps-read.py. In order to analyze the collected data, after the NDS runs another Python script was used by the NDS-BR researchers to translate the .nmea into a .csv file. The GPS data contain information including latitude and longitude coordinates, date, time, speed, heading and altitude. The video files from all cameras were processed by the video.py script, having the timestamp and date printed on the screen. All the programs written in python are presented on Annex 1. 
+The GPS sensor signals were translated into a .nmea format file, with the execution of gps-read.py. In order to analyze the collected data, after the NDS runs another Python script was used by the NDS-BR researchers to translate the .nmea into a .csv file. The GPS data contain information including latitude and longitude coordinates, date, time, speed, heading and altitude. The video files from all cameras were processed by the video.py script, having the timestamp and date printed on the screen. All the programs written in Python are presented on Annex 1. 
 
 After data was extracted from the laptop, it was necessary to make a valid time check, in order to exclude times from the final sample where the driver wasn't really driving the vehicle. \autoref{fig:validtime} presents how these invalid times where removed from the sample. For each trip, the period between the start of the car and when the volunteer started driving was considered as invalid. During the trip, if the driver pulled over briefly and then started driving again, this period between the actions was considered as invalid as well. Finally, the gap between parking the car and turning off the DAS was discarded from the sample.  
 
@@ -937,7 +942,7 @@ To extract distance data from the gps coordinates, it was made a conversion from
 
 % 1. TAZ shape (general info, source)
 
-All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZs, established in Curitiba's origin / destiny research made by IPPUC in 2018, were used for this work \cite{IPPUC2018b}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data was obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZs. 
+All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZs, established in Curitiba's origin/destiny research made by IPPUC in 2018, were used for this work \cite{IPPUC2018b}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data was obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZs. 
 
 % 2. Table with all variables: group & variable & abbreviation & unit & expected correlation to speeding
 
@@ -995,7 +1000,7 @@ In regard to the design category, the density of intersections (DIS) was calcula
     \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021,SETRAN2020}
 \end{figure}
 
-The proportion of arterials (PAR) used the IPPUC road axis data as well. The road hierarchy data follows the categories established by the Brazilian Traffic Code \cite{Brasil1997}: Rapid transit, arterial, collector and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}
+The proportion of arterials (PAR) used the IPPUC road axis data as well. The road hierarchy data follows the categories established by the Brazilian Traffic Code \cite{Brasil1997}: rapid transit, arterial, collector and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1046,7 +1051,7 @@ The distance to transit is represented by the bus stop density (BSD) per road le
 
 %% basically a walk through of the code (ref code on appendix)
 
-This section contains the process of modelling a GWR. The steps performed in this section are presented in \autoref{fig:gwr-method}. They were implemented using the R programming language as tha main tool, with the aid of functions extracted from the GWmodel \cite{Gollini2013} and spdep \cite{Bivand2013} packages. The TAZs data passed through 6 main steps in order to construct and make a diagnostic of the GWR model: data arrangement,  bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
+This section contains the process of modelling a GWR. The steps performed in this section are presented in \autoref{fig:gwr-method}. They were implemented using the R programming language as the main tool, with the aid of functions extracted from the GWmodel \cite{Gollini2013} and spdep \cite{Bivand2013} packages. The TAZs data passed through five main steps in order to construct and make a diagnostic of the GWR model: data arrangement,  bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1069,7 +1074,7 @@ Considering the variability of TAZs sizes in the sample, an adaptive bandwidth h
 
 Minimizing AICc in order to select the bandwidth provides a trade-off between goodness of fit and degrees of freedom. \cite{Fotheringham2002}. For GWR, AICc is defined as: \begin{align}
     AIC_c = 2n\log_{e}\left(\hat\sigma\right) + n \log_{e}\left(2\pi\right) + n\left\{\frac{n + \Tr(S)}{n - 2 - \Tr(S)}\right\} \mbox{ ;}
-\end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method was based on the \verb|gwr.basic()| function of the GWmodel package. In addition, a global linear regression was performed in order to compare the results with GWR. This is necessary because its important to verify if the GWR model has any advantage over a ordinary least squares (OLS) approach \cite{Brunsdon2010}. 
+\end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method utilized the \verb|gwr.basic()| function of the GWmodel package. In addition, a global linear regression was performed in order to compare the results with GWR. This is necessary because its important to verify if the GWR model has any advantage over a ordinary least squares (OLS) approach \cite{Brunsdon2010}. 
 
 Moran's $I$ was applied on the models residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on it's residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represents a lack of spatial autocorrelation. Moran's $I$ consists on the following equation \cite{Getis2010}: \begin{align}
     I = \frac{n}{W} \times \frac{\sum_i \sum_j w_{ij} (x_i - \overline{x})(x_j - \overline{x})}{\sum_i (x_i - \overline{x})^2} \mbox{ ;}
@@ -1078,9 +1083,11 @@ Moran's $I$ was applied on the models residuals to examine the presence of spati
 The final step is to analyse the performance between models. This analysis was based on four performance indicators: AICc, $R^2$, adjusted $R^2$ and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicates a better performance. The code with all steps described in this section is included in  Appendix 2.
 % ----------------------------------------------------------------------------------
 
-\chapter{ANALYSIS AND RESULTS}
+\chapter{ANALYSIS AND RESULTS} \label{cap:results}
 
 % Present 
+
+This chapter focus on the results from the NDS-BR (distances, speeding) and the results from the GWR (correlation between speeding and built environment). 
 
 \section{NATURALISTIC DATA} \label{sec:ndsr}
 % 1. Results from NDS (how much each driver participated)
@@ -1290,7 +1297,7 @@ The data arrangement process reduced the total sample of 135 TAZs into 107 TAZs.
 
 %% Summary of variables: mean, median, max, min, 1q, 3q
 
-\autoref{tab:var_summary} includes the descriptive statistics of the 11 variables, including speeding, considering the 107 TAZs. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. DSC, PAR and TSD values resulted in zero for some TAZs, indicating a lack of speed cameras, arterial roads and traffic signals in these zones. 
+\autoref{tab:var_summary} includes the descriptive statistics of the 11 variables, including speeding, and considering the 107 TAZs. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. DSC, PAR and TSD values resulted in zero for some TAZs, indicating a lack of speed cameras, arterial roads and traffic signals in these zones. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1449,7 +1456,7 @@ All GWR models presents a better performance in comparison to the global linear 
     \par SOURCE: The Author (2021)
 \end{figure}
 
-\autoref{fig:sp_mean_sd} displays the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba. The western ou southern parts of the city presented a higher values, while the central area presented lowe values of speeding. The east side of Curitiba also has higher values of speeding, indicating a pattern where more peripheral TAZs has higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city has TAZs with higher values, while the southeastern side has lower values. Sd had a variation between 0.105 and 0.171.  
+\autoref{fig:sp_mean_sd} displays the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba. The western ou southern parts of the city presented a higher values, while the central area presented lowe values of speeding. The east side of Curitiba also has higher values of speeding, indicating a pattern where more peripheral TAZs has higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city has TAZs with higher values, while the southeastern side has lower values. SD had a variation between 0.105 and 0.171.  
 
 %% Mean and SD gw SP
 
@@ -1469,7 +1476,7 @@ All GWR models presents a better performance in comparison to the global linear 
 
 %% Map and discuss the variables
 
-
+\autoref{fig:gwr_dsc_par} displays the coefficient estimates of the density of speed cameras (DSC) and proportion of arterial roads (PAR). DSC presented a inverted correlation to speeding in most of the TAZs. PAR had mixed results, presenting direct and inverted correlations to speeding in different areas of the city. 
 
 %%% DSC and PAR
 
@@ -1489,6 +1496,8 @@ All GWR models presents a better performance in comparison to the global linear 
 
 %%% DIS and DCSU
 
+The density of intersection (DIS) and density of commercial and services units coefficient estimates are displayed in \autoref{fig:gwr_dis_dcsu}. DIS has a inverted correlation to speeding in the northeast part of the city, while the west and south sides shows TAZs with a direct correlation between speeding and DIS. Regarding DCSU, almost all of the TAZs shows a inverted correlation to the dependent variable.  
+
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
@@ -1504,6 +1513,8 @@ All GWR models presents a better performance in comparison to the global linear 
 \end{figure}
 
 %%% AVI and PD
+
+\autoref{fig:gwr_avi_pd} displays the coefficient estimates of average income (AVI) and population density (PD). AVI coefficients showed a inverted correlation to speeding in TAZs closer to the north and center of the city, while the southern side contains TAZs with a direct correlation between AVI and speeding. PD is directly correlated to speeding in most of the area, with higher values in the southern part of the city. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1521,6 +1532,8 @@ All GWR models presents a better performance in comparison to the global linear 
 
 %%% LDI and BSD
 
+Land use diversity index (LDI) and bus stop density (BSD) coefficient estimates are plotted in \autoref{fig:gwr_ldi_bsd}. LDI coefficients shows a direct correlation to speeding in most of the TAZs, with higher values in the northeast part of Curitiba. BSD shows mixed results, with similar quantity of TAZs with direct and inverted correlation to speeding.  
+
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
@@ -1536,6 +1549,8 @@ All GWR models presents a better performance in comparison to the global linear 
 \end{figure}
 
 %% Insert % table of variables
+
+Finally, \autoref{tab:coef_perc} presents a list with the percentage of TAZs with positive and negative coefficients, for each variable presented in the maps. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1567,6 +1582,48 @@ All GWR models presents a better performance in comparison to the global linear 
 
 % ----------------------------------------------------------------------------------
 
-\chapter{CONCLUSIONS}
+\chapter{CONCLUSIONS} \label{cap:conclusion}
 
-\section{NEXT STEPS}
+%% [x] small sample of drivers
+
+%% [x] High proportion of two drivers in the sample (D14 and D15), "contaminating" the sample
+
+%% [x] Most of trips happened in central areas and less in peripheral ones. 
+
+%% [x] Characteristics from drivers (age, experience, license age, education) and from the vehicles (age, engine power) also can influence the speeding results
+
+%% [x] All drivers in the sample are "habitual speeders"
+
+%% [x] The full territory of Curitiba couldn't be analyzed with the current sample
+
+% --------------------
+
+%% [x] None of the models presented a satisfactory performance. GWR with the boxcar kernel is the better model 
+
+%% [x] GWR performance showed it's advantage over the linear regression (Moran's I)
+
+%% [x] Speeding is spatially autocorrelated 
+
+%% [x] "Holes" in the sample lowers GWR performance 
+
+%% [x] Only DSC showed a statistical significance. 
+
+%% [x] speeding cameras (Li, Zhang, Ren; Li, Graham, Majumdar; Oliveira et al.)
+
+%% [x] DSC is inverted correlated to speeding in 97.2% of the current sample of TAZs.
+
+%% [x] Correlation doesn't imply causation
+
+%% [x] Perform these models using a sample of 30 drivers
+
+%% [x] If needed, Choose only key variables to use in the model, in order to improve performance. 
+
+The Naturalistic Driving Study enabled the collection of speed data from a sample of 16 drivers in the city of Curitiba, Brazil. Comparing to the described NDS in Section \ref{nds}, 16 volunteers is a small sample to conduct a more significant analysis. Some volunteers had more participation in the sample than others. Drivers $D_{14}$ and $D_{15}$ had the highest proportion in the total travelled distance:  19\% and 23\%, respectively. Regarding the spatial coverage, most of the travelled distance of the sample was performed in central areas of the city, in comparison to peripheral areas. The quantity of travelled distance wasn't enough to cover all the present TAZs in Curitiba (reducing 135 into 107).
+
+In addition to the built environment, other attributes can influence resultant speeding values. Characteristics from the drivers (age, experience, license age, education) and from the vehicles (age, engine power) also can influence the speeding results. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders". The study would be more complete if the sample contained drivers with other speeding behaviors as well. 
+
+The Geographically Weighted Regression with a Boxcar kernel had the best performance, comparing to other kernel types and the linear regression. But none of the models presented a satisfactory performance, considering that the residuals form all models are spatially autocorrelated. This indicates that they couldn't validly predict the spatial heterogeneity present in the occurence of speeding. All GWR models showed a better performance than the linear regression. To \textcite{Brunsdon2010}, calibration of the GWR model for regions close to the edge of the study area are subject to greater sampling error. The "holes" present in the current sample of TAZs could have caused a negative impact on the GWR performance. 
+
+Based on the results from the linear regression (\autoref{tab:lm_results}), only the density of speed cameras (DSC) coefficient showed statistical significance. It's inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates a inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZs (\autoref{fig:gwr_dsc_par}, \autoref{tab:coef_perc}). It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
+
+Before reaching to any further conclusions, it is important to perform new models based on a sample with a higher number of drivers. NDS-BR is still ongoing, making able to collect more speeding data from new volunteers. More testing with the independent variables is also needed, in order to identify key variables that works better within the model. 
