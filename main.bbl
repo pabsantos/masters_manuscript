@@ -943,6 +943,76 @@
       \field{title}{{Lei N{º} 15.511}}
       \field{year}{2019}
     \endentry
+    \entry{Curitiba2020}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b7bf0a2e00574c0530f21aa8d315782}{%
+           family={Curitiba},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Programa Vida no Trânsito}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \strng{namehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{fullhash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{bibnamehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{authorbibnamehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{authornamehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{authorfullhash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \field{extraname}{3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Perfil dos óbitos em acidentes de trânsito no município de Curitiba - 2011-2019}}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://mid-transito.curitiba.pr.gov.br/2021/5/pdf/00004887.pdf
+      \endverb
+      \verb{url}
+      \verb https://mid-transito.curitiba.pr.gov.br/2021/5/pdf/00004887.pdf
+      \endverb
+    \endentry
+    \entry{Curitiba2021}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b7bf0a2e00574c0530f21aa8d315782}{%
+           family={Curitiba},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Programa Vida no Trânsito}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \strng{namehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{fullhash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{bibnamehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{authorbibnamehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{authornamehash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \strng{authorfullhash}{3b7bf0a2e00574c0530f21aa8d315782}
+      \field{extraname}{4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Perfil dos óbitos em acidentes de trânsito no município de Curitiba - 2011-2020}}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://mid-transito.curitiba.pr.gov.br/2021/5/pdf/00004888.pdf
+      \endverb
+      \verb{url}
+      \verb https://mid-transito.curitiba.pr.gov.br/2021/5/pdf/00004888.pdf
+      \endverb
+    \endentry
     \entry{DeVos2013}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c4c98454616a178ca3f7808872daed38}{%
@@ -3839,6 +3909,34 @@
       \verb http://ascelibrary.org/doi/10.1061/%7B%5C%%7D28ASCE%7B%5C%%7D29TE.1943-5436.0000680
       \endverb
     \endentry
+    \entry{PRF2021b}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=11885b3d27c47c01ab3f6ed5f29f1c0a}{%
+           family={PRF},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{11885b3d27c47c01ab3f6ed5f29f1c0a}
+      \strng{fullhash}{11885b3d27c47c01ab3f6ed5f29f1c0a}
+      \strng{bibnamehash}{11885b3d27c47c01ab3f6ed5f29f1c0a}
+      \strng{authorbibnamehash}{11885b3d27c47c01ab3f6ed5f29f1c0a}
+      \strng{authornamehash}{11885b3d27c47c01ab3f6ed5f29f1c0a}
+      \strng{authorfullhash}{11885b3d27c47c01ab3f6ed5f29f1c0a}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Polícia Rodoviária Federal}
+      \field{title}{{Road crashes - open data}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-acidentes
+      \endverb
+      \verb{url}
+      \verb https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-acidentes
+      \endverb
+    \endentry
     \entry{Rhee2016}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=858eae9fcd88ddd2833a9fce5ce237d0}{%
@@ -5350,6 +5448,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{bast}
 \endrefsection
 \endinput
 

@@ -29,67 +29,67 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}ROAD SAFETY RISK FACTORS}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.2}ROAD SAFETY RISK FACTORS}{21}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}SPEEDING AS A RISK FACTOR}{22}{section.2.3}%
+\contentsline {section}{\numberline {2.3}SPEEDING AS A RISK FACTOR}{23}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}ROAD SAFETY PERFORMANCE AND THE BUILT ENVIRONMENT}{29}{section.2.4}%
+\contentsline {section}{\numberline {2.4}ROAD SAFETY PERFORMANCE AND THE BUILT ENVIRONMENT}{30}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}URBAN PLANNING IN CURITIBA-PR}{36}{section.2.5}%
+\contentsline {section}{\numberline {2.5}URBAN PLANNING IN CURITIBA-PR}{37}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}NATURALISTIC DRIVING STUDIES}{38}{section.2.6}%
+\contentsline {section}{\numberline {2.6}NATURALISTIC DRIVING STUDIES}{40}{section.2.6}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}GEOGRAPHICALLY WEIGHTED REGRESSION}{43}{section.2.7}%
+\contentsline {section}{\numberline {2.7}GEOGRAPHICALLY WEIGHTED REGRESSION}{45}{section.2.7}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{48}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{49}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{48}{section.3.1}%
+\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{49}{section.3.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{51}{section.3.2}%
+\contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{52}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Speeding}{51}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Speeding}{52}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Built Environment}{53}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Built Environment}{54}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{56}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{57}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{61}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{62}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}NATURALISTIC DATA}{61}{section.4.1}%
+\contentsline {section}{\numberline {4.1}NATURALISTIC DATA}{62}{section.4.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}SPEEDING DATA}{62}{section.4.2}%
+\contentsline {section}{\numberline {4.2}SPEEDING DATA}{63}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS}{67}{section.4.3}%
+\contentsline {section}{\numberline {4.3}GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS}{68}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{76}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{77}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -97,20 +97,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{78}{chapter*.78}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{79}{chapter*.80}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{91}{chapter*.78}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{92}{chapter*.80}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{92}{lstnumber.-1.21}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{93}{lstnumber.-1.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -119,6 +119,6 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{101}{lstnumber.-2.380}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{102}{lstnumber.-2.380}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
