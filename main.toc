@@ -41,7 +41,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}URBAN PLANNING IN CURITIBA-PR}{37}{section.2.5}%
+\contentsline {section}{\numberline {2.5}URBAN PLANNING IN CURITIBA-PR}{38}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
@@ -53,43 +53,43 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{49}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {METHODS}}{50}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{49}{section.3.1}%
+\contentsline {section}{\numberline {3.1}NATURALISTIC DATA COLLECTION}{50}{section.3.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{52}{section.3.2}%
+\contentsline {section}{\numberline {3.2}DATA PROCESSING AND VARIABLE CONSTRUCTION}{53}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Speeding}{52}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Speeding}{53}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Built Environment}{54}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Built Environment}{55}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{57}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{58}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{62}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {ANALYSIS AND RESULTS}}{63}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}NATURALISTIC DATA}{62}{section.4.1}%
+\contentsline {section}{\numberline {4.1}NATURALISTIC DATA}{63}{section.4.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}SPEEDING DATA}{63}{section.4.2}%
+\contentsline {section}{\numberline {4.2}SPEEDING DATA}{64}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS}{68}{section.4.3}%
+\contentsline {section}{\numberline {4.3}GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS}{69}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{77}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{78}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
@@ -97,20 +97,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{79}{chapter*.80}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{80}{chapter*.80}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{92}{chapter*.80}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{93}{chapter*.80}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{93}{lstnumber.-1.21}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{94}{lstnumber.-1.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -119,6 +119,6 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{102}{lstnumber.-2.380}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{103}{lstnumber.-2.380}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
