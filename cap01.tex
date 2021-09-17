@@ -16,23 +16,29 @@
 
 In 2010, the United Nations (UN) declared the Decade of Action for Road Safety 2011-2020, calling the signatory countries to reduce by half the predicted number of deaths and injuries in traffic until 2020 \cite{WHO2011}. In Brazil, the National Plan of Reduction of Traffic Deaths and Injuries (PNATRANS) was created in 2018, aiming to reduce the national fatality rate (deaths per 10,000 vehicles) and mortality rate (deaths per 100,000 population) by half, within the period of 2019-2028 \cite{MinistryofCities2018}. Following the Decade of Action 2011-2020, the UN declare another Decade of Action for Road Safety with renewed objectives, but considering a time the frame 2021-2030 \cite{WHO2020}.
 
-One of the main risk factors of road crashes is speeding behavior, which increases the risk and severity of crashes \cite{Mohan2016}. In urban areas, the severity of crashes has a higher impact to more vulnerable users, like pedestrians and cyclists \cite{Welle2016}). The characteristics inside the urban environment, including land use codes and the built environment can mitigate the occurrence of speeding behavior and improve the road safety performance \cite{Knoflacher2016}. Therefore, this manuscript better explores the relationship between the built environment inside an urban scenario and the level of road safety performance, considering the occurrence of speeding as an intermediate outcome.
+%% Insert deaths in curitiba (both sources)
+
+In 2019, Brazil presented 31,945 road traffic deaths. Since 2012, when the country reached a peak value of 44,812, the number of road traffic deaths has been declining \cite{MinistryofHealth2020}. In Curitiba, the number of road traffic deaths was 246 in 2019, according to the \textcite{MinistryofHealth2020} database. The highest value in the database happened in 1994, which contains 663 deaths. Based on data from the municipal government of Curitiba \cite{Curitiba2021}, the city had 181 road traffic deaths in 2020. 
+
+One of the main risk factors of road crashes is speeding behavior, which increases the risk and severity of crashes \cite{Mohan2016}. One of the aspects which can influence the severity of injuries in case of a road crash is the force of impact, which is directly related to the amount of speed. In urban areas, the severity of crashes has a higher impact to more vulnerable users, like pedestrians and cyclists \cite{Welle2016}. In Curitiba, speeding behavior was the second highest causing factor of road traffic fatal crashes between 2011 and 2019 \cite{Curitiba2020}. The characteristics inside the urban environment, including land use codes and the built environment can mitigate the occurrence of speeding behavior and improve the road safety performance \cite{Knoflacher2016}. 
+
+The built environment has influence in the overall mobility, road safety and health levels inside a city, affecting the physical activity within it's territory. Overall, the built environment consists of physical elements and features, including the development pattern and the roadway design of a city \cite{Ewing2010}. These features are related to the choice of destination, modal choice, travel distances and routes, causing an impact on the road safety performance of a city \cite{Tiwari}. Therefore, this manuscript better explores the relationship between the built environment inside an urban scenario and the level of road safety performance, considering the occurrence of speeding as an intermediate outcome.
 
 \section{OBJECTIVES}
 
 In the context of urban planning and road safety management, the main objective of this research is to investigate the influence of demographic, land use and built environment on the engagement on speeding behavior. The scenario of the study is the city of Curitiba, capital of the state of Paraná, Brazil. The correlation will be analyzed with the use of the Geographically Weighted Regression statistical model.
 
-With the use of speeding data collected from drivers that participated in a Naturalistic Driving Study (NDS) performed in Curitiba (Brazilian Naturalistic Driving Study / NDS-BR), this investigation aims to raise knowledge on the relationship between variables from the built environment (BE) and the speeding behavior. These BE variables are categorized by \textcite{Ewing2009} in five groups called ``5D'': density, diversity, design, destination accessibility and distance to transit. In addition to these variables, this study aims to relate the income, as a demographic variable, to the speeding as well.
+With the use of speeding data collected from drivers that participated in a Naturalistic Driving Study (NDS) performed in Curitiba (Brazilian Naturalistic Driving Study / NDS-BR), this investigation aims to establish on the relationship between variables from the built environment (BE) and the speeding behavior. These BE variables are categorized by \textcite{Ewing2009} in five groups called ``5D'': density, diversity, design, destination accessibility and distance to transit. In addition to these variables, this study aims to relate the income, as a demographic variable, to the speeding as well.
 
 As co-benefits in the investigation, this thesis aims to offer some level of insight regarding the development and update of speed control management in urban areas, considering the operational and structural planning guidelines for the road systems and land use. With these factors in mind, there is a potential of presenting new ideas to the planning practices in Curitiba, regarding mobility plans, master plans and zoning laws.
     
 \section{JUSTIFICATION}
 
-Speeding behavior performed by vehicle driver's in urban environment is a main risk factor in the chance and severity of road crashes, considering that there is a great volume of interaction between motorized and vulnerable users \cite{Elvik2009}. Considering the direct relationship between the mobility, the land use patterns and the built environment \cite{DeVos2013}, it is important to investigate these factors in search of improvements in the road safety management process.
+Speeding behavior performed by vehicle driver's in urban environment is a main risk factor in the chance and severity of road crashes. This severity can be higher in urban environments, where there are a great volume of interaction between motorized and non-motorized (more vulnerable) users \cite{Elvik2009}. Considering the direct relationship between the mobility, the land use patterns and the built environment \cite{DeVos2013}, it is important to investigate these factors in search of improvements in the road safety management process.
 
-Having in mind that most of the traffic crashes and conflicts occurs in cities \cite{WHO2018}, as a consequence of the fast process of urbanization in the last decades, it is crucial to create safer conditions in these areas. In Brazil, the management of the traffic and mobility is attributed to the municipalities \cite{Brasil1997}. Therefore, road safety management (including speed management), as an inherent task to traffic management, is also an attribution of the municipalities. It is necessary to observe the issues of road safety in cities when conducting the process of urban planning. Some national laws foresee this integration between the planning process and the sustainable mobility by the municipalities as a clear concept: The Statute of the Cities \cite{Brasil2001} and The Law of the Urban Mobility \cite{Brasil2012}.    
+Having in mind that most of the traffic crashes and conflicts occurs in cities \cite{WHO2018}, as a consequence of the fast process of urbanization in the last decades, it is crucial to create safer conditions in these areas. In Brazil, the management of the traffic and mobility is responsibility of the municipalities \cite{Brasil1997}. Therefore, road safety management (including speed management), as an inherent task to traffic management, is also responsibility of the municipalities. It is necessary to consider the issues of road safety in cities when conducting the process of urban planning. Some national laws foresee this integration between the planning process and the sustainable mobility by the municipalities as a clear concept: The Statute of the Cities \cite{Brasil2001} and The Law of the Urban Mobility \cite{Brasil2012}.    
 
-The built environment can affect the traffic safety through three main mediators: the traffic volumes, traffic conflicts and traffic speeds - which can directly affect the crash occurrence and severity in urban environments \cite{Ewing2009}. Traffic crashes are a final outcome of the problems involving the road safety. Intermediate outcome or safety performance indicators (SPI) might be used in order to analyze the operational conditions of traffic safety in cities \cite{Bastos2014}; which, in terms of the current study,  can be the amount of speeding that occurs across an area.
+According to \textcite{Ewing2009}, the built environment can affect the traffic safety through three main aspects: traffic volumes, traffic conflicts and traffic speeds - which can directly affect the crash occurrence and severity in urban environments. Driving task complexity \cite{Onate-Vega2020} and road user distraction \cite{Chen2021} are another aspects which can be affected by the built environment. Traffic crashes are a final outcome of the problems involving the road safety. Intermediate outcome or safety performance indicators (SPI) might be used in order to analyze the operational conditions of traffic safety in cities \cite{Bastos2014}; which, in terms of the current study, can be the amount of speeding that occurs across an area.
 
 \section{THESIS STRUCTURE}
 
@@ -292,11 +298,11 @@ When density and volume are at its lowest value, the road user can reach higher 
 
 Established as an environmental factor affecting speeding choice (\autoref{tab:spdfct}), the surroundings of the road, including equipments and some traffic calming techniques like gateway treatments, can be perceived by the driver as elements that gives hints to avoid higher speeds \cite{WHO2008}. Overall, the built environment and its five elements - density, design, diversity, destination accessibility and distance to transit - can be perceived as environmental factors which affects the road safety, through the relationship to the numbers of road crashes and occurrence of speeding. These characteristics are better explored in the next section (\ref{be}). 
 
-In order to collect speeding data and to compute a reliable road safety performance indicator, it is important to establish what defines speeding and to identify a measure of exposure to speeding. To \textcite{Richard2013}, defining speeding and its constitution is one of the key challenges of speeding studies. The authors presented five distinct approaches for speeding definition: \textit{ad hoc}, analytical, kinematic, psychological and behavioral. The ad hoc approach assumes that the fastest driving in a sample is a proxy for speeding and considers the top X\% of speeds above the posted speed. Although this approach can provide sufficient data for analysis, the speeding collected may be not related to behavior or safety. 
+In order to collect speeding data and to compute a reliable road safety performance indicator, it is important to establish what defines speeding and to identify a measure of exposure to speeding. To \textcite{Richard2013}, defining speeding and its constitution is one of the key challenges of speeding studies. The authors presented five distinct approaches for speeding definition: \textit{ad hoc}, analytical, kinematic, psychological and behavioral. The ad hoc approach assumes that the fastest driving in a sample is a proxy for speeding and considers the top X\% of speeds above the speed limit. Although this approach can provide sufficient data for analysis, the speeding collected may be not related to behavior or safety. 
 
 The analytical approach fixes a criterion relative to the speed limit (+ X\% or + X km/h). It is a simple method to implement, but can miss some factor related to road type and overall speed level. The analytical approach is used in this work and its process of implementation is detailed in Section \ref{data}. The kinematic approach considers the driving environment and its operational conditions, in order to connect the speed behavior to specific situations. This approach requires a certain level of quantity and quality of GIS data to support it. The psychological approach is based on what the driver considers to be speeding, providing insight into factors that are related to individual's perception of speeding. The need of additional previous information about the speeding beliefs and attitudes of the drivers can be a disadvantage of this approach. At last, the behavioral approach sets four speed bands to describe different behavior in each one, related to the chosen speed by the driver \cite{Richard2013}.
 
-The operational aspects of urban road traffic (mostly in interrupted flow conditions) arbitrary reduces the amount of speeding being measured. To address this problem, it is necessary to extract the free-flow situations of the trip from the total trip distance, removing situations in which drivers had no opportunity to speed. This process of extracting parts of the trip in which the driver is exposed to speeding is presented in \autoref{fig:ff}. Therefore, the actual measure of speeding is distance performed in speeds above the posted speed compared to the distance performed in free-flow speed. This process was applied in this work and it is described in Section \ref{data}. 
+The operational aspects of urban road traffic (mostly in interrupted flow conditions) arbitrary reduces the amount of speeding being measured. To address this problem, it is necessary to extract the free-flow situations of the trip from the total trip distance, removing situations in which drivers had no opportunity to speed. This process of extracting parts of the trip in which the driver is exposed to speeding is presented in \autoref{fig:ff}. Therefore, the actual measure of speeding is distance performed in speeds above the speed limit compared to the distance performed in free-flow speed. This process was applied in this work and it is described in Section \ref{data}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -660,15 +666,16 @@ In comparison, NDS have a typically large sample size and provides practically t
         \hline
         \multicolumn{1}{c}{\textbf{Program}} & \multicolumn{1}{c}{\textbf{Countries}} & \multicolumn{1}{c}{\textbf{Vehicles}} & \multicolumn{1}{c}{\textbf{Drivers}} & \multicolumn{1}{c}{\textbf{Hours}} & \multicolumn{1}{c}{\textbf{Distance} $[km]$} \\
         \hline
-        100 Car NDS & USA & 100 & 241 & 42,300 & 3,218,688 \\
-        SHRP2 NDS & USA & 3,500$^{(2)}$ & 3,500$^{(2)}$ & 1,000,000$^{(2)}$ & 56,327,040 \\
-        ANDS & Australia & 346 & 409 & 716,320 & 1,512,630 \\
-        UDRIVE & EU$^{(1)}$ & 287 & 287 & 87,870 & 4,000,000$^{(2)}$ \\
-        CNDS & Canada & 140 & 149 & 53,000$^{(2)}$ & 1,800,000$^{(2)}$ \\ 
-        - & Japan & 60 & 60 & - & - \\
-        SH-NDS & China & 5 & 60 & - & 161,055 \\
-        - & Iran & 52 & 52 & - & - \\
-        NDS-BR & Brazil & 16 & 16 & 240$^{(2)}$ & 5,000$^{(2)}$ \\ 
+        100 Car NDS & USA        & 100 & 241 & 42,300 & 3,218,688 \\
+        SHRP2 NDS   & USA        & 3,500$^{(2)}$ & 3,500$^{(2)}$ & 1,000,000$^{(2)}$ & 56,327,040 \\
+        ANDS        & Australia  & 346 & 409 & 716,320 & 1,512,630 \\
+        UDRIVE      & EU$^{(1)}$ & 287 & 287 & 87,870 & 4,000,000$^{(2)}$ \\
+        CNDS        & Canada     & 140 & 149 & 53,000$^{(2)}$ & 1,800,000$^{(2)}$ \\
+        Candrive I  & Canada     & 100 & 100 & - & - \\
+        -           & Japan      & 60  & 60  & - & - \\
+        SH-NDS      & China      & 5   & 60  & - & 161,055 \\
+        -           & Iran       & 52  & 52  & 546$^{(2)}$ & 25,740$^{(2)}$ \\
+        NDS-BR      & Brazil     & 16  & 16  & 240$^{(2)}$ & 5,000$^{(2)}$ \\ 
         \hline
     \end{tabular}
     \label{tab:nds}
@@ -680,23 +687,23 @@ In comparison, NDS have a typically large sample size and provides practically t
 
 Another NDS study performed in the United States was the SHRP2 (Strategic Highway Research Program-2) NDS, gathering a massive quantity of data. The study was conducted in 6 states, with more than 3,500 vehicles, one million hours of video and trip data collected and 56 million kilometers travelled. More than 1,500 crashes were registered, establishing a valuable sample for road safety studies \cite{Njord2015}. The Australian Naturalistic Driving Study (ANDS) launched in 2015, aiming to collect road safety data from 360 vehicles - 180 in Sydney and 180 in Melbourne. Vehicles are equipped with 4 cameras, GPS sensors and accelerometer \cite{ANDS2017a}. According to \textcite{Larue2019}, the ANDS was able to collect data from 346 vehicles and 409 participants. The last report related a collection of more than 700,000 hours of travelled period and more than 1,500,000 kilometers of travelled distance \cite{ANDS2017a}. 
 
-In the European Union, the UDRIVE naturalistic driving study was large scale program performed in 6 EU countries: United Kingdom (UK), the Netherlands, France, Spain, Germany and Poland. It lasted for 5 years, between 2012 and 2017, and its objective was to collect behavioral data from three transportation modes: cars, trucks and powered two-wheelers. 287 vehicles and drivers were part of the research. The data collected reached almost 90,000 hours of driving data and approximately 4,000,000 kilometers of travelled distance \cite{VanNes2019}. The Canadian Naturalistic Driving Study (CNDS) instrumented a total of 140 vehicles, including cars, pickup trucks and minivans, with 4 cameras, a frontal radar sensor and one GPS radar. 149 drivers participated in the study, with approximately 53,000 hours of data collected and 1,800,000 kilometers of travelled distance \cite{CNDS2021}. 
+In the European Union, the UDRIVE naturalistic driving study was large scale program performed in 6 EU countries: United Kingdom (UK), the Netherlands, France, Spain, Germany and Poland. It lasted for 5 years, between 2012 and 2017, and its objective was to collect behavioral data from three transportation modes: cars, trucks and powered two-wheelers. 287 vehicles and drivers were part of the research. The data collected reached almost 90,000 hours of driving data and approximately 4,000,000 kilometers of travelled distance \cite{VanNes2019}. The Canadian Naturalistic Driving Study (CNDS) instrumented a total of 140 vehicles, including cars, pickup trucks and minivans, with 4 cameras, a frontal radar sensor and one GPS radar. 149 drivers participated in the study, with approximately 53,000 hours of data collected and 1,800,000 kilometers of travelled distance \cite{CNDS2021}. Also in Canada, the first phase of the Canadian Safe Driving Study (Candrive I) had the participation of 100 active drivers, with age equal or above 70 years old. The main objective of this NDS was to investigate the fitness to drive of older drivers \cite{Marshall2013}. 
 
 %% Japan, China and Iran
 
-In Japan, a NDS was conducted between 2006 and 2008, with the participation of 60 drivers and vehicles. The study was conducted at 16 different regions in Japan. The DAS utilized in the study contained a GPS sensor, 5 cameras, a accelerometer, a steering sensor and digital switches to detect the use of brake and turn signals \cite{Uchida2010}. The Shanghai Naturalistic Driving Study (SH-NDS) was conducted between 2012 and 2015 in Shanghai, China. The study contained 60 participants, who drove 161,055 kilometers. Five vehicles equipped with a DAS developed by VTTI were used in this research \cite{Zhu2018}. Also in Asia, a NDS was conducted in Iran, between April 2017 and April 2018. The study had the participation of 52 drivers, with a pair of cameras equipped in their own vehicles. The cameras allowed the recording of conflict events between motorized vehicles and pedestrians in marked ($n = 392$) and unmarked ($n = 956$) crosswalks \cite{Sheykhfard2021}.
+In Japan, a NDS was conducted between 2006 and 2008, with the participation of 60 drivers and vehicles. The study was conducted at 16 different regions in Japan. The DAS utilized in the study contained a GPS sensor, 5 cameras, an accelerometer, a steering sensor and digital switches to detect the use of brake and turn signals \cite{Uchida2010}. The Shanghai Naturalistic Driving Study (SH-NDS) was conducted between 2012 and 2015 in Shanghai, China. The study contained 60 participants, who drove 161,055 kilometers. Five vehicles equipped with a DAS developed by VTTI were used in this research \cite{Zhu2018}. Also in Asia, a NDS was conducted in Iran, between April 2017 and April 2018. The study had the participation of 52 drivers, with a pair of cameras equipped in their own vehicles. The cameras allowed the recording of conflict events between motorized vehicles and pedestrians in marked ($n = 392$) and unmarked ($n = 956$) crosswalks \cite{Sheykhfard2021}. The sample contained approximately 546 hours of data collected and 25,740 kilometers of travelled distance.
 
 In Brazil, a naturalistic driving study was established in 2019 in the city of Curitiba-PR, conducted by the Universidade Federal do Paraná, funded by the National Council for Scientific and Technological Development (CNPq) and by the National Observatory for Road Safety. A group of partner universities also participate on the project. The Naturalistic Driving Study - Brazil (NDS-BR) has already collect data from 16 instrumented vehicles, each with a set of 3 cameras and 1 GPS sensor. Currently, NDS-BR collected almost 240 hours of driven time and 5,000 km of travelled distance in Curitiba and metropolitan area. This research is still ongoing, and further details about the process of data collection is discussed in Section \ref{ndsc}.
 
-NDS allows the investigation of speeding episodes and how other factors can influence the occurrence of speeding. These factors can include environmental elements (road infrastructure, built environment, weather, traffic conditions, etc.), human and behavior elements (age, gender, secondary tasks engagement, education, personality) and vehicle characteristics (engine power, level of conservation). \textcite{Richard2013,Richard2017, Richard2020} used NDS speed data to better understand different types of speeding and how the drivers behaves towards them. \textcite{Richard2013} established a classification called behavioral speeding, splitting it into 4 types. The first type consists of speed below the posted limit. In the second type, drivers are speeding but they feel like they are driving at a safe speed. On the third type, speed is above the enforcement limit, and the driver starts to accept a higher level of risk. The 4th type consists of reckless speeding, where the driver reaches speeds way above the posted speed, without any consideration to the risks. 
+NDS allows the investigation of speeding episodes and how other factors can influence the occurrence of speeding. These factors can include environmental elements (road infrastructure, built environment, weather, traffic conditions, etc.), human and behavior elements (age, gender, secondary tasks engagement, education, personality) and vehicle characteristics (engine power, level of conservation). \textcite{Richard2013,Richard2017, Richard2020} used NDS speed data to better understand different types of speeding and how the drivers behaves towards them. \textcite{Richard2013} established a classification called behavioral speeding, splitting it into 4 types. The first type consists of speed below the posted limit. In the second type, drivers are speeding but they feel like they are driving at a safe speed. On the third type, speed is above the enforcement limit, and the driver starts to accept a higher level of risk. The 4th type consists of reckless speeding, where the driver reaches speeds way above the speed limit, without any consideration to the risks. 
 
-\textcite{Richard2017} clustered speeding behavior into 6 categories, from a NDS data collected from 88 drivers in Seattle. The authors used the k-means method on the sample, resulting in 6 clusters: (i) speeding up, (ii) speed drop, (iii) incidental speed, (iv) casual speeding, (v) cruising speeding and (vi) aggressive speeding. Speeding up behavior consists on reaching a high exceeding speed in a short period of time. with a high variability. Speed drop is complementary to speeding up, representing characteristics that are consistent with a braking behavior when entering a lower posted speed zone. 
+\textcite{Richard2017} clustered speeding behavior into 6 categories, from a NDS data collected from 88 drivers in Seattle. The authors used the k-means method on the sample, resulting in 6 clusters: (i) speeding up, (ii) speed drop, (iii) incidental speed, (iv) casual speeding, (v) cruising speeding and (vi) aggressive speeding. Speeding up behavior consists on reaching a high exceeding speed in a short period of time. with a high variability. Speed drop is complementary to speeding up, representing characteristics that are consistent with a braking behavior when entering a lower speed limit zone. 
 
-Incidental speeding was the most common speeding type detected in the sample. It consisted of mean speeds barely above the posted speed, occurring in longer periods of time. Casual speeding was the second most common type, and it had a similar behavior to incidental speeding, but it had a higher level of mean speed above the posted speed, with similar lengths of occurrence. Cruising speeding was a deliberate type of speeding, most common on freeways and state highways - places with more opportunity for speeding. Aggressive speeding presented higher levels of mean speed, with a high variability in longer periods of time. In this cluster, drivers engaged in repeated speed adjustments, always trying to reach maximum speed.
+Incidental speeding was the most common speeding type detected in the sample. It consisted of mean speeds barely above the speed limit, occurring in longer periods of time. Casual speeding was the second most common type, and it had a similar behavior to incidental speeding, but it had a higher level of mean speed above the speed limit, with similar lengths of occurrence. Cruising speeding was a deliberate type of speeding, most common on freeways and state highways - places with more opportunity for speeding. Aggressive speeding presented higher levels of mean speed, with a high variability in longer periods of time. In this cluster, drivers engaged in repeated speed adjustments, always trying to reach maximum speed.
 
 \textcite{Richard2020} used a sample of 100 trips from the SHRP2 NDS database in order to examine how the occurrence of speeding episodes are affected by basic factors. The authors found drivers in the age group between 16 to 24 had more speeding episodes than other age categories. Considering the days of the week, the occurrence of speeding was lower between Monday and Thursday. Highways present higher free-flow and speeding episodes in comparison to other type of roads. 
 
-\textcite{Ellison2015} analyzed speeding data from 106 drivers in Sydney, collected with the use of NDS, in order to establish how much time drivers are saving with speeding in urban environments. The speeding stretch of a trip was compared to a simulated stretch with the posted speed traveling the same length. Then, the time delta between the two scenarios was calculated to create the time saved during the speeding episode. The results showed a average time saving of 26 seconds per day, or 3 minutes per week. Considering the median driver, less than 2 hours per year is saved, and 75\% of drivers never save more than 3 min in a single day. 
+\textcite{Ellison2015} analyzed speeding data from 106 drivers in Sydney, collected with the use of NDS, in order to establish how much time drivers are saving with speeding in urban environments. The speeding stretch of a trip was compared to a simulated stretch with the speed limit traveling the same length. Then, the time delta between the two scenarios was calculated to create the time saved during the speeding episode. The results showed a average time saving of 26 seconds per day, or 3 minutes per week. Considering the median driver, less than 2 hours per year is saved, and 75\% of drivers never save more than 3 min in a single day. 
 
 \textcite{Hamzeie2017} investigated how the average speed chosen by drivers was influenced by the traffic conditions and how it affected the risk crashes. The authors used the SHRP2 NDS data and concluded that higher travel speeds were directly correlated to higher speed limits, and high speed variance is correlated to higher risk of crash. \textcite{Kong2020} also investigated speeding behavior patterns related to the traffic and road conditions, from a sample of naturalistic data collected from 92 vehicles. The authors concluded that speeding duration is related to driving on roadways with higher function classes, to longer trips and to speed loss causes by congestion, causing a idea of needing to ``recover the lost time'' by the drivers.
 
@@ -883,22 +890,22 @@ The NDS-BR data collection started in August, 2019. The local of the study is Cu
         \hline
         \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Duration}} & \multicolumn{1}{c}{\textbf{Age}} & \multicolumn{1}{c}{\textbf{Gender}} & \multicolumn{1}{c}{\textbf{License Age}} & \multicolumn{1}{c}{\textbf{Vehicle year}} & \multicolumn{1}{c}{\textbf{Horsepower}} \\
         \hline
-        $D_1$ & 13 & 33 & F & 12 & 2012 & 96 \\
-        $D_2$ & 12 & 40 & M & 3 & 2010 & 113 \\
-        $D_3$ & 8 & 22 & M & 3 & 2011 & 103 \\
-        $D_4$ & 16 & 25 & M & 6 & 2003 & 114 \\
-        $D_5$ & 13 & 41 & F & 23 & 2014 & 75 \\
-        $D_6$ & 13 & 28 & M & 9 & 2013 & 163 \\
-        $D_7$ & 17 & 45 & M & 18 & 2011 & 130 \\
-        $D_8$ & 12 & 32 & F & 10 & 2015 & 79 \\
-        $D_9$ & 11 & 29 & M & 9 & 2019 & 74 \\
-        $D_{10}$ & 14 & 62 & M & 37 & 2018 & 69 \\
-        $D_{11}$ & 6 & 28 & F & 10 & 2012 & 75 \\
-        $D_{12}$ & 5 & 45 & F & 26 & 2001 & 101 \\
-        $D_{13}$ & 14 & 21 & F & 2 & 2006 & 81 \\
-        $D_{14}$ & 6 & 34 & M & 16 & 2014 & 124 \\
-        $D_{15}$ & 8 & 49 & F & 24 & 2018 & 84 \\
-        $D_{16}$ & 11 & 27 & M & 3 & 2014 & 109 \\
+        $D_1$    & 13 & 33 & F & 12 & 2012 & 96  \\ % A
+        $D_2$    & 12 & 40 & M & 3  & 2010 & 113 \\ % B
+        $D_3$    & 8  & 22 & M & 3  & 2011 & 103 \\ % C
+        $D_4$    & 16 & 25 & M & 6  & 2003 & 114 \\ % D
+        $D_5$    & 13 & 41 & F & 23 & 2014 & 75  \\ % J
+        $D_6$    & 13 & 28 & M & 9  & 2013 & 163 \\ % K
+        $D_7$    & 17 & 45 & M & 18 & 2011 & 130 \\ % L 
+        $D_8$    & 12 & 32 & F & 10 & 2015 & 79  \\ % M 
+        $D_9$    & 11 & 29 & M & 9  & 2019 & 74  \\ % N 
+        $D_{10}$ & 14 & 62 & M & 37 & 2018 & 69  \\ % O
+        $D_{11}$ & 6  & 28 & F & 10 & 2012 & 75  \\ % P 
+        $D_{12}$ & 5  & 45 & F & 26 & 2001 & 101 \\ % Q
+        $D_{13}$ & 14 & 21 & F & 2  & 2006 & 81  \\ % R 
+        $D_{14}$ & 6  & 34 & M & 16 & 2014 & 124 \\ % W
+        $D_{15}$ & 8  & 49 & F & 24 & 2018 & 84  \\ % X
+        $D_{16}$ & 11 & 27 & M & 3  & 2014 & 109 \\ % Y 
         \hline
     \end{tabular}
     \label{tab:drivers}
@@ -939,7 +946,7 @@ This section includes the methods utilized to construct all the utilized variabl
 
 % 2. Intersection with nds points
 
-In order to extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective posted speed. Posted speed data was collected from the road axis shape file obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with posted speeds from IPPUC road axis shape files \cite{IPPUC2021}. Using the QGIS software, it was created a 10 meter buffer around the road axes. In sequence, an intersection between the NDS points and the road buffer was performed, in order to associate the posted speed and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
+In order to extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective speed limit. Speed limit data was collected from the road axis shape file obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with speed limits from IPPUC road axis shape files \cite{IPPUC2021}. Using the QGIS software, it was created a 10 meter buffer around the road axes. In sequence, an intersection between the NDS points and the road buffer was performed, in order to associate the speed limit and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -950,9 +957,12 @@ In order to extract speeding information from the NDS sample, it was necessary t
     \par SOURCE: The Author (2021).
 \end{figure}
 
-Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without posted speed and without performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance travelled in speeds above the posted speed, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined the following equation: \begin{align}
+Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without speed limit and without performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance travelled in speeds above the speed limit, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined the following equation: \begin{align}
     SP = \frac{D_{Vsp}}{D_{Vf}} \mbox{ ;} 
-\end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the posted speed (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. Free-flow speeds included performed speeds higher than the posted speed minus 10 km/h (and lower than the speeding threshold). \autoref{fig:spd_occur} contains a representative a section of a trip, illustrating the thresholds previously described.   
+    \label{eq:sp}
+\end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the speed limit (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. 
+
+In Brazil, a speeding infraction is considered when the driver exceeds the speed limit plus 10\% of the speed limit. Therefore, in a rapid transit road with a 80 km/h speed limit, a driver would be fined if it's performed speed reaches above 88 km/h. Considering other urban road hierarchies and limits defined by \textcite{Brasil1997}, speeding in arterial roads (speed limit of 60 km/h) would be considered as speeds above 66 km/h; in collector roads (speed limit of 40 km/h) - speeds above 44 km/h; and local roads - speeds above 33 km/h (speed limit of 30 km/h). Therefore, based on the thresholds of 8 km/h, 6 km/h, 4 km/h and 3 km/h, it was decided to establish a standard threshold for speeding of 5 km/h above the speed limit. Free-flow speeds included performed speeds higher than the speed limit minus 10 km/h (and lower than the speeding threshold). The free-flow threshold was based on the value established by \textcite{Richard2017} of 5 mph. A direct conversion to km/h would result in 8.05 km/h, therefore it was decided to round the threshold to 10 km/h. $SP$ values can vary between 0 and 1, where 0 represents a section without any speeding, and 1 represents a section travelled only in speeds that exceed the limits. \autoref{fig:spd_occur} contains a representative a section of a trip on a road with a 30 km/h speed limit, illustrating the thresholds previously described.   
 
 % 3. Filtering points: speed exposure and speeding - explain criteria (based on richards)
 
@@ -977,7 +987,7 @@ To extract distance data from the gps coordinates, it was made a conversion from
 
 % 1. TAZ shape (general info, source)
 
-All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZ, established in Curitiba's origin/destiny research made by IPPUC in 2018, were used for this work \cite{IPPUC2018b}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data was obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZ. 
+All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZ, established in Curitiba's origin/destiny research made by IPPUC in 2018, were used for this work \cite{IPPUC2018b}. The TAZ are an aggregation of multiple census blocks with similar characteristics inside a defined territory. These blocks were defined in the Brazilian Census of 2010 \cite{IBGE2010}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data was obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZ. 
 
 % 2. Table with all variables: group & variable & abbreviation & unit & expected correlation to speeding
 
@@ -1299,7 +1309,7 @@ Across all days of the week, speeding followed a similar pattern (\autoref{fig:d
 
 %% NSHTA diagram of speeding (maybe)
 
-\textcite{Richard2013a} established four types of speeding behavior - situational speeding, incidental speeding, habitual speeding and casual speeding - based on two variables: percentage of trips with any speeding and average speeding per trip, of each driver. The plotting of these variables and the setting of a zone boundary of 20\% in each variable (arbitrarily defined by \textcite{Richard2013a}) created 4 zones, one for each type of speeding behavior. \autoref{fig:sp_zones} graph manifests the result of this method application on the speeding sample. 
+\textcite{Richard2013a} established four types of speeding behavior - situational speeding, incidental speeding, habitual speeding and casual speeding - based on two variables: percentage of trips with any speeding and average speeding per trip, of each driver. The plotting of these variables and the setting of a zone boundary of 20\% in each variable (arbitrarily defined by \textcite{Richard2013a}) created 4 zones, one for each type of speeding behavior. \autoref{fig:sp_zones} graph manifests the result of this method application on the speeding sample. In this plot, each dot represents a driver, and it's size indicates the quantity of trips performed by each driver. The y axis indicates the average speeding per trip of a driver. This speeding was calculated with the $SP$ equation (\ref{eq:sp}) for each trip. The x axis indicates the percent of trips with any quantity of speeding.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1311,7 +1321,7 @@ Across all days of the week, speeding followed a similar pattern (\autoref{fig:d
     \par NOTE: Dot size indicates quantity of trips.
 \end{figure}
 
-All 16 drivers were classified into habitual speeders, in which they regularly speed and have large proportions of speeding in their trips. Situational speeding happens when a high level of speeding per trip happens a few times, indicating that drivers classified in this category usually do not speed. Incidental speeding happens in small proportions of trips and in a few trips, representing unintentional speeding events. Casual speeding consists of higher percentage of trips with any speeding, but with low average speeding per trip.   
+In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers presented a speeding behavior in at least 80\% of their trips. The average speeding per trip of each driver varied between 20\% and 60\%. All 16 drivers were classified into habitual speeders, in which they regularly speed and have large proportions of speeding in their trips. Situational speeding happens when a high level of speeding per trip happens a few times, indicating that drivers classified in this category usually do not speed. Incidental speeding happens in small proportions of trips and in a few trips, representing unintentional speeding events. Casual speeding consists of higher percentage of trips with any speeding, but with low average speeding per trip.   
 
 \section{GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS} \label{sec:gwrr}
 
@@ -1324,7 +1334,7 @@ The data arrangement process reduced the total sample of 135 TAZ into 107 TAZ. T
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{REMAINING TAZ AFTER DATA ARRANGEMENT}
+    \caption{TAZ CONSIDERED IN THE SAMPLE}
     \includegraphics{fig/taz_filter.png}
     \label{fig:taz_filter}
     \par SOURCE: The Author (2021)
@@ -1491,7 +1501,7 @@ In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model
     \par SOURCE: The Author (2021)
 \end{figure}
 
-In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented a higher values, while the central area presented lowe values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
+In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented a higher values, while the central area presented lower values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
 
 %% Mean and SD gw SP
 
@@ -1511,7 +1521,7 @@ In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local st
 
 %% Map and discuss the variables
 
-In \autoref{fig:gwr_dsc_par}, the coefficient estimates of the density of speed cameras (DSC) and proportion of arterial roads (PAR) are plotted in map. DSC presented an inverted correlation to speeding in most of the TAZ. PAR had mixed results, presenting direct and inverted correlations to speeding in different areas of the city. 
+In \autoref{fig:gwr_dsc_par}, the coefficient estimates of the density of speed cameras (DSC) and proportion of arterial roads (PAR) are plotted in map. DSC presented an inverse correlation to speeding in most of the TAZ. PAR had mixed results, presenting direct and inverted correlations to speeding in different areas of the city. 
 
 %%% DSC and PAR
 
@@ -1585,7 +1595,7 @@ Land use diversity index (LDI) and bus stop density (BSD) coefficient estimates 
 
 %% Insert % table of variables
 
-Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of TAZ with positive and negative coefficients, for each variable presented in the maps. \cite{bast}
+Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of TAZ with positive and negative coefficients, for each variable presented in the maps.
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1594,18 +1604,18 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
         font=footnotesize}
     \caption{PERCENTAGE OF TAZ WITH POSITIVE/NEGATIVE COEFFICIENTS}
     \centering
-    \begin{tabular}{lrr}
+    \begin{tabular}{llrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
+        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
         \hline
-        DSC       & 97.2\% & 2.8\% \\
-        PAR       & 69.2\% & 30.8\% \\
-        DIS       & 62.6\% & 37.4\% \\
-        DCSU      & 99.1\% & 0.9\% \\
-        AVI       & 57.9\% & 42.1\% \\
-        PD        & 19.6\% & 80.4\% \\
-        LDI       & 4.7\% & 95.3\% \\
-        BSD       & 46.7\% & 53.3\% \\
+        PD   & Population Density                       & 19.6\% & 80.4\% \\
+        LDI  & Land use diversity index                 & 4.7\%  & 95.3\% \\
+        DIS  & Density of intersections                 & 62.6\% & 37.4\% \\
+        DSC  & Density of speed cameras                 & 97.2\% & 2.8\%  \\
+        PAR  & Proportion of arterial roads             & 69.2\% & 30.8\% \\
+        DCSU & Density of commercial and services units & 99.1\% & 0.9\%  \\
+        BSD  & Bus stop density                         & 46.7\% & 53.3\% \\
+        AVI  & Average income                           & 57.9\% & 42.1\% \\
         \hline
     \end{tabular}
     \label{tab:coef_perc}
@@ -1655,10 +1665,38 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
 
 The Naturalistic Driving Study enabled the collection of speed data from a sample of 16 drivers in the city of Curitiba, Brazil. Comparing to the described NDS in Section \ref{nds}, 16 participants correspond to a small sample to conduct a more statistically sound analysis. Some participants had higher distance travelled in the sample than others. Drivers $D_{14}$ and $D_{15}$ had the highest proportion in the total travelled distance:  19\% and 23\%, respectively. Regarding the spatial coverage, most of the travelled distance was performed in central areas of the city, in comparison to peripheral areas. The amount of travelled distance wasn't enough to cover all the present TAZ in Curitiba (reducing from 135 to 107 units).
 
-In addition to the built environment, other attributes might influence resultant speeding values. Characteristics from the drivers (age, experience, license age, education) and from the vehicles (age, engine power) might also influence on speeding behavior. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders", which might indicate certain level of similarity with respect to speeding behavior between participants.
+In addition to the built environment, other attributes might influence resultant speeding values. Characteristics from the drivers (e.g., age, experience, license age, education) and from the vehicles (e.g., age, engine power) might also influence on speeding behavior. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders", which might indicate certain level of similarity with respect to speeding behavior between participants.
 
 Preliminary results indicate that the Geographically Weighted Regression with a Boxcar kernel showed the best performance in comparison to other kernel types and the linear regression. However, none of the models presented a desirable performance, considering that the residuals form all models were spatially autocorrelated. This indicates that they couldn't validly predict the spatial heterogeneity present in the occurrence of speeding behavior. All GWR models showed a better performance than the linear regression. To \textcite{Brunsdon2010}, calibration of the GWR model for regions close to the edge of the study area are subject to greater sampling error. The "holes" present in the current sample of TAZ might have caused a negative impact on the GWR performance. 
 
-Based on the results from the linear regression (\autoref{tab:lm_results}), only the density of speed cameras (DSC) coefficient showed statistical significance. The verified inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates an inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZ (\autoref{fig:gwr_dsc_par}, \autoref{tab:coef_perc}). It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
+Based on the results from the linear regression (\autoref{tab:lm_results}), only the density of speed cameras (DSC) coefficient showed statistical significance. GWR model does not have a diagnostic value (e.g., $p$-value) for each parameter estimate, therefore, it is necessary to apply a linear regression to identify statistical significant variables. The verified inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates an inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZ (\autoref{fig:gwr_dsc_par}, \autoref{tab:coef_perc}). It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
 
-Before reaching any further conclusions, it is important to test the performance of new models based on a sample with a higher number of drivers. NDS-BR is still ongoing, making it possible to collect more speeding data from new participants. Additional testing with the independent variables is also needed, in order to identify key variables that works better within the model. 
+Before reaching any further conclusions, it is necessary to test the performance of new models based on a sample with a higher number of drivers. NDS-BR is still ongoing, making it possible to collect more speeding data from new participants. Additional testing with the independent variables is also needed, in order to identify key variables that works better within the model. Based on the current results, it is not possible to reach a conclusion on the impact of the built environment on speeding behavior.
+
+\section{NEXT STEPS}
+
+In \autoref{tab:schedule}, the schedule with the thesis' next steps is displayed. Each line contains a time window of one month.
+
+\begin{table}[!htbp]
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{SCHEDULE OF NEXT STEPS}
+    \centering
+    \begin{tabular}{ll}
+        \hline
+        \multicolumn{1}{c}{\textbf{Month - year}} & \multicolumn{1}{c}{\textbf{Steps}} \\
+        \hline
+        Nov - 2021 & Apply modifications from the qualifying examination panel \\
+        Dec - 2021 & Apply modifications from the qualifying examination panel \\
+        Jan - 2022 & Apply methodology with an increased sample size           \\
+        Feb - 2022 & Write changes in literature review, methods, results and conclusion                                                             \\
+        Mar - 2022 & Review the manuscript                                     \\
+        Apr - 2022 & Master's thesis defense                                   \\
+        \hline
+    \end{tabular}
+    \label{tab:schedule}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2021).
+\end{table}

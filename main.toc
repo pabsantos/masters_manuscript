@@ -9,7 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}OBJECTIVES}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.1}OBJECTIVES}{10}{section.1.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
@@ -17,7 +17,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}THESIS STRUCTURE}{10}{section.1.3}%
+\contentsline {section}{\numberline {1.3}THESIS STRUCTURE}{11}{section.1.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -65,11 +65,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Speeding}{53}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Built Environment}{55}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Built Environment}{56}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-3\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{58}{section.3.3}%
+\contentsline {section}{\numberline {3.3}GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING}{59}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -91,26 +91,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {CONCLUSIONS}}{78}{chapter.5}%
 \defcounter {refsection}{0}\relax 
+\addvspace {-3\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}NEXT STEPS}{79}{section.5.1}%
+\defcounter {refsection}{0}\relax 
 \vspace {\cftbeforepartskip }
 \defcounter {refsection}{0}\relax 
 \vspace {-24pt}
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{80}{chapter*.80}%
+\contentsline {chapter}{\numberline {}{BIBLIOGRAPHY}}{80}{chapter*.81}%
 \defcounter {refsection}{0}\relax 
 \vspace {-12pt}
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{93}{chapter*.80}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 1~- POINTS INTO LINESTRING CONVERSION}}{94}{chapter*.81}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{94}{lstnumber.-1.21}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {APPENDIX~ 2~- GWR R SCRIPT}}{95}{lstnumber.-1.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }
 \defcounter {refsection}{0}\relax 
@@ -119,6 +123,6 @@
 \defcounter {refsection}{0}\relax 
 \vspace {-0pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{103}{lstnumber.-2.380}%
+\contentsline {chapter}{\hspace {14.5mm}\textbf {ANNEX~ 1~- DATA ACQUISITION AND CONVERSION SCRIPTS}}{104}{lstnumber.-2.380}%
 \defcounter {refsection}{0}\relax 
 \addvspace {-12\p@ }

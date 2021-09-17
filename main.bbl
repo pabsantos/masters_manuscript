@@ -869,6 +869,51 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457513002340
       \endverb
     \endentry
+    \entry{Chen2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=118c76248ea663fc6d6a337f1dfb811c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhenhua},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ff392fec7c67c64511f8f9eca2c65ae}{%
+           family={Lym},
+           familyi={L\bibinitperiod},
+           given={Youngbin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{05d98eb84044d574f1c9fe08b658859b}
+      \strng{fullhash}{05d98eb84044d574f1c9fe08b658859b}
+      \strng{bibnamehash}{05d98eb84044d574f1c9fe08b658859b}
+      \strng{authorbibnamehash}{05d98eb84044d574f1c9fe08b658859b}
+      \strng{authornamehash}{05d98eb84044d574f1c9fe08b658859b}
+      \strng{authorfullhash}{05d98eb84044d574f1c9fe08b658859b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0967070X}
+      \field{journaltitle}{Transport Policy}
+      \field{month}{2}
+      \field{title}{{The influence of built environment on distracted driving related crashes in Ohio}}
+      \field{volume}{101}
+      \field{year}{2021}
+      \field{pages}{34\bibrangedash 45}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.tranpol.2020.11.011
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0967070X20309288
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0967070X20309288
+      \endverb
+    \endentry
     \entry{CNDS2021}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b4678cc8686cadeadecd40bdeefecf96}{%
@@ -2963,6 +3008,87 @@
       \verb http://www.nrcresearchpress.com/doi/10.1139/l06-013
       \endverb
     \endentry
+    \entry{Marshall2013}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=2409b8994dbdd089ac2eb6dd39662c7e}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Shawn\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc5a4282bf40c085df3cb9c20d22f993}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Keith\bibnamedelima G.},
+           giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72ef52592e3de31feeda82dcec22600d}{%
+           family={Man-Son-Hing},
+           familyi={M\bibinithyphendelim S\bibinithyphendelim H\bibinitperiod},
+           given={Malcolm},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=834b6445ea99c713413250d4ed213585}{%
+           family={Stiell},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56a71a9efbc344f169ac1454c9e7af49}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63948dac11a9cdcd2c1a8f549d2172d5}{%
+           family={Weegar},
+           familyi={W\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2e097c46ea1bf0d49eb28a522e4dafa}{%
+           family={Kadulina},
+           familyi={K\bibinitperiod},
+           given={Yara},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8dcd1bc2b6385d8922649c0e82817e2}{%
+           family={Molnar},
+           familyi={M\bibinitperiod},
+           given={Frank\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e5100be0906fa1ca2696d59bd5adf68f}
+      \strng{fullhash}{39eb768d889bc22a13954c2079742616}
+      \strng{bibnamehash}{e5100be0906fa1ca2696d59bd5adf68f}
+      \strng{authorbibnamehash}{e5100be0906fa1ca2696d59bd5adf68f}
+      \strng{authornamehash}{e5100be0906fa1ca2696d59bd5adf68f}
+      \strng{authorfullhash}{39eb768d889bc22a13954c2079742616}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00014575}
+      \field{journaltitle}{Accident Analysis {\&} Prevention}
+      \field{month}{12}
+      \field{title}{{The Canadian Safe Driving Study—Phase I pilot: Examining potential logistical barriers to the full cohort study}}
+      \field{volume}{61}
+      \field{year}{2013}
+      \field{pages}{236\bibrangedash 244}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.aap.2013.04.002
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457513001371
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0001457513001371
+      \endverb
+    \endentry
     \entry{Marshall2017}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=cc01856dcd7b020312bd92afedf58280}{%
@@ -3743,6 +3869,59 @@
       \verb{url}
       \verb http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0102-311X2015001300208%7B%5C&%7Dlng=en%7B%5C&%7Dtlng=en
       \endverb
+    \endentry
+    \entry{Onate-Vega2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e1c68da07cca6f3239daeec10ac92191}{%
+           family={Onate-Vega},
+           familyi={O\bibinithyphendelim V\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f1bf5e397dab611d2405b8ac96596bd}{%
+           family={Oviedo-Trespalacios},
+           familyi={O\bibinithyphendelim T\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e17994baf629f796c5363129d41a26c4}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c4064c55d0df8d0a3331746bedcaf7ac}
+      \strng{fullhash}{c4064c55d0df8d0a3331746bedcaf7ac}
+      \strng{bibnamehash}{c4064c55d0df8d0a3331746bedcaf7ac}
+      \strng{authorbibnamehash}{c4064c55d0df8d0a3331746bedcaf7ac}
+      \strng{authornamehash}{c4064c55d0df8d0a3331746bedcaf7ac}
+      \strng{authorfullhash}{c4064c55d0df8d0a3331746bedcaf7ac}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The present study investigates the impact of different sources of task complexity such as driving demands and secondary task demands on driver behaviour. Although much research has been dedicated to understanding the impact of secondary task demands or specific road traffic environments on driving performance, there is little information on how drivers adapt their behaviour to their combined presence. This paper aims to describe driver behaviour while negotiating different sources of task complexity, including mobile phone use while driving (i.e., calling and texting) and different road environments (i.e., straight segments, curves, hills, tunnels, and curves on hills). A driving simulator experiment was conducted to explore the effects of different road scenarios and different types of distraction while driving. The collected data was used to estimate driving behaviour through a Generalized Linear Mixed Model (GLMM) with repeated measures. The analysis was divided into two phases. Phase one aimed to evaluate driver performance under the presence and absence of pedestrians and oncoming traffic, different lanes width and different types of distraction. The second phase analysed driver behaviour when driving through different road geometries and lane widths and under different types of distraction. The results of the experiment indicated that drivers are likely to overcorrect position in the vehicle lane in the presence of pedestrians and oncoming traffic. The effect of road geometry on driver behaviour was found to be greater than the effect of mobile phone distraction. Curved roads and hills were found to influence preferred speeds and lateral position the most. The results of this investigation also show that drivers under visual-manual distraction had a higher standard deviation of speed and lateral position compared to the cognitive distraction and the non-distraction condition.}
+      \field{issn}{13698478}
+      \field{journaltitle}{Transportation Research Part F: Traffic Psychology and Behaviour}
+      \field{month}{5}
+      \field{title}{{How drivers adapt their behaviour to changes in task complexity: The role of secondary task demands and road environment factors}}
+      \field{volume}{71}
+      \field{year}{2020}
+      \field{pages}{145\bibrangedash 156}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.trf.2020.03.015
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1369847819308691
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1369847819308691
+      \endverb
+      \keyw{Cell phone,Driver behaviour,Mobile phone distraction,Road design,Road environment,Road geometry,Smartphone,Task complexity}
     \endentry
     \entry{OpenStreetMap}{misc}{}
       \name{author}{1}{}{%
@@ -5589,7 +5768,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{bast}
 \endrefsection
 \endinput
 
