@@ -512,7 +512,7 @@
       \field{journaltitle}{International Journal of Environmental Research and Public Health}
       \field{month}{9}
       \field{number}{17}
-      \field{title}{{Naturalistic Driving Study in Brazil: An Analysis of Mobile Phone Use Behavior while Driving}}
+      \field{title}{{Naturalistic Driving Study in Brazil: An Analysis of Mobile Phone Use behavior while Driving}}
       \field{volume}{17}
       \field{year}{2020}
       \field{pages}{6412}
@@ -521,7 +521,7 @@
       \verb 10.3390/ijerph17176412
       \endverb
       \verb{file}
-      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Bastos et al. - 2020 - Naturalistic Driving Study in Brazil An Analysis of Mobile Phone Use Behavior while Driving.pdf:pdf
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Bastos et al. - 2020 - Naturalistic Driving Study in Brazil An Analysis of Mobile Phone Use behavior while Driving.pdf:pdf
       \endverb
       \verb{urlraw}
       \verb https://www.mdpi.com/1660-4601/17/17/6412
@@ -1107,7 +1107,7 @@
       \verb{url}
       \verb http://dx.doi.org/10.1016/j.jtrangeo.2013.09.014
       \endverb
-      \keyw{Flanders,Land use,Residential location choice,Road pricing,Transit-oriented development,Travel behaviour}
+      \keyw{Flanders,Land use,Residential location choice,Road pricing,Transit-oriented development,Travel behavior}
     \endentry
     \entry{DENATRAN2020}{misc}{}
       \name{author}{1}{}{%
@@ -3903,11 +3903,11 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The present study investigates the impact of different sources of task complexity such as driving demands and secondary task demands on driver behaviour. Although much research has been dedicated to understanding the impact of secondary task demands or specific road traffic environments on driving performance, there is little information on how drivers adapt their behaviour to their combined presence. This paper aims to describe driver behaviour while negotiating different sources of task complexity, including mobile phone use while driving (i.e., calling and texting) and different road environments (i.e., straight segments, curves, hills, tunnels, and curves on hills). A driving simulator experiment was conducted to explore the effects of different road scenarios and different types of distraction while driving. The collected data was used to estimate driving behaviour through a Generalized Linear Mixed Model (GLMM) with repeated measures. The analysis was divided into two phases. Phase one aimed to evaluate driver performance under the presence and absence of pedestrians and oncoming traffic, different lanes width and different types of distraction. The second phase analysed driver behaviour when driving through different road geometries and lane widths and under different types of distraction. The results of the experiment indicated that drivers are likely to overcorrect position in the vehicle lane in the presence of pedestrians and oncoming traffic. The effect of road geometry on driver behaviour was found to be greater than the effect of mobile phone distraction. Curved roads and hills were found to influence preferred speeds and lateral position the most. The results of this investigation also show that drivers under visual-manual distraction had a higher standard deviation of speed and lateral position compared to the cognitive distraction and the non-distraction condition.}
+      \field{abstract}{The present study investigates the impact of different sources of task complexity such as driving demands and secondary task demands on driver behavior. Although much research has been dedicated to understanding the impact of secondary task demands or specific road traffic environments on driving performance, there is little information on how drivers adapt their behavior to their combined presence. This paper aims to describe driver behavior while negotiating different sources of task complexity, including mobile phone use while driving (i.e., calling and texting) and different road environments (i.e., straight segments, curves, hills, tunnels, and curves on hills). A driving simulator experiment was conducted to explore the effects of different road scenarios and different types of distraction while driving. The collected data was used to estimate driving behavior through a Generalized Linear Mixed Model (GLMM) with repeated measures. The analysis was divided into two phases. Phase one aimed to evaluate driver performance under the presence and absence of pedestrians and oncoming traffic, different lanes width and different types of distraction. The second phase analysed driver behavior when driving through different road geometries and lane widths and under different types of distraction. The results of the experiment indicated that drivers are likely to overcorrect position in the vehicle lane in the presence of pedestrians and oncoming traffic. The effect of road geometry on driver behavior was found to be greater than the effect of mobile phone distraction. Curved roads and hills were found to influence preferred speeds and lateral position the most. The results of this investigation also show that drivers under visual-manual distraction had a higher standard deviation of speed and lateral position compared to the cognitive distraction and the non-distraction condition.}
       \field{issn}{13698478}
-      \field{journaltitle}{Transportation Research Part F: Traffic Psychology and Behaviour}
+      \field{journaltitle}{Transportation Research Part F: Traffic Psychology and behavior}
       \field{month}{5}
-      \field{title}{{How drivers adapt their behaviour to changes in task complexity: The role of secondary task demands and road environment factors}}
+      \field{title}{{How drivers adapt their behavior to changes in task complexity: The role of secondary task demands and road environment factors}}
       \field{volume}{71}
       \field{year}{2020}
       \field{pages}{145\bibrangedash 156}
@@ -3921,7 +3921,7 @@
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S1369847819308691
       \endverb
-      \keyw{Cell phone,Driver behaviour,Mobile phone distraction,Road design,Road environment,Road geometry,Smartphone,Task complexity}
+      \keyw{Cell phone,Driver behavior,Mobile phone distraction,Road design,Road environment,Road geometry,Smartphone,Task complexity}
     \endentry
     \entry{OpenStreetMap}{misc}{}
       \name{author}{1}{}{%
@@ -4640,7 +4640,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{13698478}
-      \field{journaltitle}{Transportation Research Part F: Traffic Psychology and Behaviour}
+      \field{journaltitle}{Transportation Research Part F: Traffic Psychology and behavior}
       \field{month}{1}
       \field{title}{{Analysis of the occurrence and severity of vehicle-pedestrian conflicts in marked and unmarked crosswalks through naturalistic driving study}}
       \field{volume}{76}
@@ -4696,7 +4696,7 @@
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-08-045029-2}
       \field{month}{10}
-      \field{title}{{Traffic Safety and Human Behavior}}
+      \field{title}{{Traffic Safety and Human behavior}}
       \field{year}{2017}
       \verb{doi}
       \verb 10.1108/9780080555874
@@ -5070,7 +5070,7 @@
       \field{issn}{1939-1390}
       \field{journaltitle}{IEEE Intelligent Transportation Systems Magazine}
       \field{number}{3}
-      \field{title}{{Clusters of Driving Behavior From Observational Smartphone Data}}
+      \field{title}{{Clusters of Driving behavior From Observational Smartphone Data}}
       \field{volume}{11}
       \field{year}{2019}
       \field{pages}{171\bibrangedash 180}
@@ -5079,7 +5079,7 @@
       \verb 10.1109/MITS.2019.2919516
       \endverb
       \verb{file}
-      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Warren, Lipkowitz, Sokolov - 2019 - Clusters of Driving Behavior From Observational Smartphone Data.pdf:pdf
+      \verb :home/pabsantos/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Warren, Lipkowitz, Sokolov - 2019 - Clusters of Driving behavior From Observational Smartphone Data.pdf:pdf
       \endverb
       \verb{urlraw}
       \verb https://ieeexplore.ieee.org/document/8743351/
@@ -5491,7 +5491,7 @@
       \field{issn}{00014575}
       \field{journaltitle}{Accident Analysis {\&} Prevention}
       \field{month}{6}
-      \field{title}{{Alcohol-impaired driving in rural and urban road environments: Effect on speeding behaviour and crash probabilities}}
+      \field{title}{{Alcohol-impaired driving in rural and urban road environments: Effect on speeding behavior and crash probabilities}}
       \field{volume}{140}
       \field{year}{2020}
       \field{pages}{105512}
