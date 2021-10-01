@@ -179,7 +179,7 @@ The road traffic deaths data made available by the \textcite{MinistryofHealth202
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{DEATHS FROM ROAD CRASHES WHICH HAPPENED IN CURITIBA}
+    \caption{DEATHS FROM ROAD CRASHES THAT HAPPENED IN CURITIBA}
     \includegraphics{fig/pvt_plot.pdf}
     \label{fig:pvt_deaths}
     \par SOURCE: The Author (2021), based on \textcite{Curitiba2021}.
@@ -917,7 +917,7 @@ The NDS-BR data collection started in August 2019. The local of the study is Cur
 
 The age of the drivers varied between 21 and 62 years old, with 7 females and 9 males. The duration of data collection from each driver varied between 5 and 17 days. Regarding the participants' vehicles, the model year varied between 2001 and 2019, with horsepower varying between 74 and 163 HP. All participants received a briefing on how to operate the equipment and signed a term of the agreement, allowing the use of their data for academic research purposes. Overall, a total of 491 trips were performed, resulting in 238.85 hours of driving and 5,362.75 km of traveled distance.
 
-Only driver $D_{14}$ had a car with automatic gearbox. All other drivers had vehicles with a manual gearbox. Drivers $D_{1}$, $D_{2}$, $D_{3}$ e $D_{4}$ occasionally made trips in carpooling situation, offering rides to passengers with the use of carpooling apps. Drivers $D_{14}$, $D_{15}$ and $D_{16}$ worked as mobility app drivers. This caused a greater participation from them in the overall sample, which will be observed in the results. 
+Only driver $D_{14}$ had a car with an automatic gearbox. All other drivers had vehicles with a manual gearbox. Drivers $D_{1}$, $D_{2}$, $D_{3}$ e $D_{4}$ occasionally made trips in carpooling situations, offering rides to passengers with the use of carpooling apps. Drivers $D_{14}$, $D_{15}$, and $D_{16}$ worked as mobility app drivers. This caused greater participation from them in the overall sample, which will be observed in the results. 
 
 %% Start of NDS, how much time each collected
 
@@ -946,7 +946,7 @@ This section includes the methods utilized to construct all the utilized variabl
 
 % 2. Intersection with nds points
 
-In order to extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective speed limit. Speed limit data was collected from the road axis shape file obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with speed limits from IPPUC road axis shape files \cite{IPPUC2021}. Using the QGIS software, it was created a 10 meter buffer around the road axes. In sequence, an intersection between the NDS points and the road buffer was performed, in order to associate the speed limit and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
+To extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective speed limit. Speed limit data was collected from the road axis shapefile obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with speed limits from IPPUC road axis shapefiles \cite{IPPUC2021}. Using the QGIS software, it was created a 10-meter buffer around the road axes. In sequence, an intersection between the NDS points and the road buffer was performed, to associate the speed limit and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -957,19 +957,19 @@ In order to extract speeding information from the NDS sample, it was necessary t
     \par SOURCE: The Author (2021).
 \end{figure}
 
-Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without speed limit and without performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance traveled in speeds above the speed limit, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined the following equation: \begin{align}
+Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without speed limit and performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance traveled in speeds above the speed limit, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined in the following equation: \begin{align}
     SP = \frac{D_{Vsp}}{D_{Vf}} \mbox{ ;} 
     \label{eq:sp}
 \end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the speed limit (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. 
 
-In Brazil, a speeding infraction is considered when the driver exceeds the speed limit plus 10\% of the speed limit. Therefore, in a rapid transit road with a 80 km/h speed limit, a driver would be fined if it's performed speed reaches above 88 km/h. Considering other urban road hierarchies and limits defined by \textcite{Brasil1997}, speeding in arterial roads (speed limit of 60 km/h) would be considered as speeds above 66 km/h; in collector roads (speed limit of 40 km/h) - speeds above 44 km/h; and local roads - speeds above 33 km/h (speed limit of 30 km/h). Therefore, based on the thresholds of 8 km/h, 6 km/h, 4 km/h and 3 km/h, it was decided to establish a standard threshold for speeding of 5 km/h above the speed limit. Free-flow speeds included performed speeds higher than the speed limit minus 10 km/h (and lower than the speeding threshold). The free-flow threshold was based on the value established by \textcite{Richard2017} of 5 mph. A direct conversion to km/h would result in 8.05 km/h, therefore it was decided to round the threshold to 10 km/h. $SP$ values can vary between 0 and 1, where 0 represents a section without any speeding, and 1 represents a section traveled only in speeds that exceed the limits. \autoref{fig:spd_occur} contains a representative a section of a trip on a road with a 30 km/h speed limit, illustrating the thresholds previously described.   
+In Brazil, a speeding infraction is considered when the driver exceeds the speed limit plus 10\% of the speed limit. Therefore, in a rapid transit road with an 80 km/h speed limit, a driver would be fined if its performed speed reaches above 88 km/h. Considering other urban road hierarchies and limits defined by \textcite{Brasil1997}, speeding in arterial roads (speed limit of 60 km/h) would be considered as speeds above 66 km/h; in collector roads (speed limit of 40 km/h) - speeds above 44 km/h; and local roads - speeds above 33 km/h (speed limit of 30 km/h). Therefore, based on the thresholds of 8 km/h, 6 km/h, 4 km/h, and 3 km/h, it was decided to establish a standard threshold for speeding of 5 km/h above the speed limit. Free-flow speeds included performed speeds higher than the speed limit minus 10 km/h (and lower than the speeding threshold). The free-flow threshold was based on the value established by \textcite{Richard2017} of 5 mph. Direct conversion to km/h would result in 8.05 km/h, therefore it was decided to round the threshold to 10 km/h. $SP$ values can vary between 0 and 1, where 0 represents a section without any speeding, and 1 represents a section traveled only in speeds that exceed the limits. \autoref{fig:spd_occur} contains a representative section of a trip on a road with a 30 km/h speed limit, illustrating the thresholds previously described.   
 
 % 3. Filtering points: speed exposure and speeding - explain criteria (based on richards)
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{SPEEDING OCCURENCE AND SPEEDING OPPORTUNITY}
+    \caption{SPEEDING OCCURRENCE AND SPEEDING OPPORTUNITY}
     \includegraphics{fig/spd_occur.pdf}
     \label{fig:spd_occur}
     \par SOURCE: The Author (2021).
@@ -977,7 +977,7 @@ In Brazil, a speeding infraction is considered when the driver exceeds the speed
 
 % 4. transforming points into lines to export distances: linestring - python script
 
-To extract distance data from the gps coordinates, it was made a conversion from the coordinates into a linestring, a geometry type from the Well-known text (WKT) format. QGIS is able to read the WKT format and calculate the distances. Only points with a 1 second gap from each other (observed from the time variable) were connected with a linestring. The conversion process was made with a python script, included on Appendix 1. Total distances, distances performed in free-flow speeds and distances in speeding were calculated for each TAZ in Curitiba, in order to calculate the occurrence of speeding. 
+To extract distance data from the GPS coordinates, it was made a conversion from the coordinates into a linestring, a geometry type from the Well-known text (WKT) format. QGIS can read the WKT format and calculate the distances. Only points with a 1-second gap from each other (observed from the time variable) were connected with a linestring. The conversion process was made with a python script, included on Appendix 1. Total distances, distances performed in free-flow speeds, and distances in speeding were calculated for each TAZ in Curitiba, to calculate the occurrence of speeding. 
 
 \subsection{Built Environment} \label{sub:be}
 
@@ -987,7 +987,7 @@ To extract distance data from the gps coordinates, it was made a conversion from
 
 % 1. TAZ shape (general info, source)
 
-All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZ, established in Curitiba's origin/destiny research made by IPPUC in 2018, were used for this work \cite{IPPUC2018b}. The TAZ are an aggregation of multiple census blocks with similar characteristics inside a defined territory. These blocks were defined in the Brazilian Census of 2010 \cite{IBGE2010}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data was obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZ. 
+All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZ, established in Curitiba's origin/destiny research made by IPPUC in 2018, was used for this work \cite{IPPUC2018b}. The TAZ is an aggregation of multiple census blocks with similar characteristics inside a defined territory. These blocks were defined in the Brazilian Census of 2010 \cite{IBGE2010}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data were obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZ. 
 
 % 2. Table with all variables: group & variable & abbreviation & unit & expected correlation to speeding
 
@@ -1021,9 +1021,9 @@ All variables (speeding and built environment) were calculated for each traffic 
 
 % 3. Independent variables calc (how each one was made) - Insert maps for each variable
 
-Inside the diversity category, the land use diversity index (LDI) was based on  information from Curitiba's zoning plan \cite{Curitiba2019a} as input for it's calculation. For each TAZ, the diversity index was calculated based on the following equation \cite{Huang2018}:\begin{align}
+Inside the diversity category, the land use diversity index (LDI) was based on  information from Curitiba's zoning plan \cite{Curitiba2019a} as input for its calculation. For each TAZ, the diversity index was calculated based on the following equation \cite{Huang2018}:\begin{align}
     LDI = \frac{-\sum_i^n P_i \times \ln(P_i)}{\ln(n)} \mbox{ ;}
-\end{align} where $i$ is the type of land use, $n$ is the total number of land use types in a TAZ and $P_i$ is the proportional area of land use type $i$. LDI varies between 0 and 1, where 0 represents a single land use zone and 1 represents a perfect distribution of land uses. The GIS data of each zoning type was obtained from \textcite{IPPUC2021}. PD and LDI variables are plotted in \autoref{fig:pd_ldi}.
+\end{align} where $i$ is the type of land use, $n$ is the total number of land use types in a TAZ, and $P_i$ is the proportional area of land use type $i$. LDI varies between 0 and 1, where 0 represents a single land use zone and 1 represents a perfect distribution of land uses. The GIS data of each zoning type was obtained from \textcite{IPPUC2021}. PD and LDI variables are plotted in \autoref{fig:pd_ldi}.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1034,7 +1034,7 @@ Inside the diversity category, the land use diversity index (LDI) was based on  
     \par SOURCE: The Author (2021), based on \textcite{IBGE2010, IPPUC2018b, IPPUC2021}.
 \end{figure}
 
-In regard to the design category, the density of intersections (DIS) was calculated based on the number of intersections divided by the length of roads. The intersection points and road lengths were extracted from the \textcite{IPPUC2021} road axis data. Intersection points were extracted using the "line intersection" function included in QGIS. Density of speed cameras (DSC) and traffic signal density (TSD) computation followed the same method applied on density of intersections. Speed camera points were obtained from the Municipal Office of Social Defense and Transit of Curitiba \cite{SETRAN2020} and traffic signal points were obtained from \textcite{IPPUC2021}. DIS and DSC variables are plotted in \autoref{fig:dis_dsc}. 
+Regarding the design category, the density of intersections (DIS) was calculated based on the number of intersections divided by the length of roads. The intersection points and road lengths were extracted from the \textcite{IPPUC2021} road axis data. Intersection points were extracted using the "line intersection" function included in QGIS. The density of speed cameras (DSC) and traffic signal density (TSD) computation followed the same method applied to the density of intersections. Speed camera points were obtained from the Municipal Office of Social Defense and Transit of Curitiba \cite{SETRAN2020}, and traffic signal points were obtained from \textcite{IPPUC2021}. DIS and DSC variables are plotted in \autoref{fig:dis_dsc}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1045,7 +1045,7 @@ In regard to the design category, the density of intersections (DIS) was calcula
     \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021,SETRAN2020}
 \end{figure}
 
-The proportion of arterials (PAR) used the IPPUC road axis data as well. The road hierarchy data followed the categories established by the Brazilian Traffic Code \cite{Brasil1997}: rapid transit, arterial, collector and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Both rapid transit and arterial roads in Curitiba present a speed limit equal to or above 60 km/h, and both classes of road have similar physical and operation characteristics, which justifies this union of categories. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}
+The proportion of arterials (PAR) used the IPPUC road axis data as well. The road hierarchy data followed the categories established by the Brazilian Traffic Code \cite{Brasil1997}: rapid transit, arterial, collector, and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Both rapid transit and arterial roads in Curitiba present a speed limit equal to or above 60 km/h, and both classes of roads have similar physical and operation characteristics, which justifies this union of categories. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1096,7 +1096,7 @@ The distance to transit is represented by the bus stop density (BSD) per road le
 
 %% basically a walk through of the code (ref code on appendix)
 
-This section contains the process of modelling a GWR. The steps performed in this section are described in \autoref{fig:gwr-method}. They were implemented using R programming language as the main tool, with the aid of functions extracted from the GWmodel \cite{Gollini2013} and spdep \cite{Bivand2013} packages. The TAZ data passed through five main steps in order to construct and make a diagnostic of the GWR model: data arrangement,  bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
+This section contains the process of modeling a GWR. The steps performed in this section are described in \autoref{fig:gwr-method}. They were implemented using the R programming language as the main tool, with the aid of functions extracted from the GWmodel \cite{Gollini2013} and spdep \cite{Bivand2013} packages. The TAZ data passed through five main steps to construct and make a diagnostic of the GWR model: data arrangement,  bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1107,25 +1107,25 @@ This section contains the process of modelling a GWR. The steps performed in thi
     \par SOURCE: The Author (2021).
 \end{figure}
 
-The first two steps of the data arrangement process are related to how the naturalistic data of traveled distances are distributed across the TAZ. In order to check these distances, a new variable was created to represent the proportion of traveled distances per TAZ total road length ($prop_i$). This variable is defined in the following equation: \begin{align}
+The first two steps of the data arrangement process are related to how the naturalistic data of traveled distances are distributed across the TAZ. To check these distances, a new variable was created to represent the proportion of traveled distances per TAZ total road length ($prop_i$). This variable is defined in the following equation: \begin{align}
     prop_i = \frac{D_i}{R_i} \mbox{ ;}
-\end{align} where $D_i$ is the distance traveled in the $i$-th TAZ and $R_i$ is the total road length inside the $i$-th TAZ. Hence, all TAZ with a value above 10\% where kept in the sample. This process was made in order to keep TAZ with a significant amount of travel data.
+\end{align} where $D_i$ is the distance traveled in the $i$-th TAZ and $R_i$ is the total road length inside the $i$-th TAZ. Hence, all TAZ with a value above 10\% were kept in the sample. This process was made to keep TAZ with a significant amount of travel data.
 
 The second step of data arrangement was the exclusion of TAZ without free-flow episodes. Distances performed in free-flow speed corresponds to the exposure variable of the speeding variable. TAZ with zero free-flow distances could not be used in the process of calculating speeding, therefore they were removed from the sample. Finally, Spearman correlation was performed between all the independent variables. This correlation is based on the following equation \cite{Dodge2010}: \begin{align}
     \rho = 1 - \frac{6 \sum d_i^2}{n \left( n^2 - 1\right)} \mbox{ ;}
-\end{align} where $d_i$ is the difference between two ranks of $i$-th observations from different variables and $n$ is the total number of observations. The inclusion of independent variables with correlations above 0.8 can influence negatively in the quality of the GWR model \cite{Gollini2013}. Therefore, variables with a Spearman correlation above 0.8 were removed from the sample. 
+\end{align} where $d_i$ is the difference between two ranks of $i$-th observations from different variables and $n$ is the total number of observations. The inclusion of independent variables with correlations above 0.8 can influence negatively the quality of the GWR model \cite{Gollini2013}. Therefore, variables with a Spearman correlation above 0.8 were removed from the sample. 
 
-Considering the variability of TAZ sizes in the sample, an adaptive bandwidth has better performance than a fixed bandwidth \cite{Huang2018}, therefore an adaptive bandwidth was used in this work. In order to choose the best kernel type, it was necessary to calculate the adaptive bandwidth size (number of neighbors) for each kernel type (gaussian, bisquare, tricube, boxcar and exponential). The GWmodel package in R has a function (\verb|bw.gwr()|) for automatic bandwidth selection. This function runs multiple GWR models with multiple bandwidth values and extracts the bandwidth size for the GWR model with the lowest value of corrected Akaike Information Criterion (AICc) \cite{Gollini2013}.
+Considering the variability of TAZ sizes in the sample, the adaptive bandwidth has better performance than a fixed bandwidth \cite{Huang2018}, therefore an adaptive bandwidth was used in this work. To choose the best kernel type, it was necessary to calculate the adaptive bandwidth size (number of neighbors) for each kernel type (gaussian, bisquare, tricube, boxcar, and exponential). The GWmodel package in R has a function (\verb|bw.gwr()|) for automatic bandwidth selection. This function runs multiple GWR models with multiple bandwidth values and extracts the bandwidth size for the GWR model with the lowest value of corrected Akaike Information Criterion (AICc) \cite{Gollini2013}.
 
-Minimizing AICc in order to select the bandwidth provides a trade-off between goodness of fit and degrees of freedom. \cite{Fotheringham2002}. For GWR, AICc is defined as: \begin{align}
+Minimizing AICc to select the bandwidth provides a trade-off between goodness of fit and degrees of freedom. \cite{Fotheringham2002}. For GWR, AICc is defined as: \begin{align}
     AIC_c = 2n\log_{e}\left(\hat\sigma\right) + n \log_{e}\left(2\pi\right) + n\left\{\frac{n + \Tr(S)}{n - 2 - \Tr(S)}\right\} \mbox{ ;}
-\end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method utilized the \verb|gwr.basic()| function of the GWmodel package. In addition, a global linear regression was performed in order to compare the results with GWR. It was necessary because it is important to verify if the GWR model has any advantage over an ordinary least squares (OLS) approach \cite{Brunsdon2010}. 
+\end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of the error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method utilized the \verb|gwr.basic()| function of the GWmodel package. In addition, a global linear regression was performed to compare the results with GWR. It was necessary because it is important to verify if the GWR model has an advantage over an ordinary least squares (OLS) approach \cite{Brunsdon2010}. The OLS approach also gives a diagnostic ($p$-value) for each estimated coefficient, which GWR is incapable to do.
 
-Moran's $I$ was applied on the models residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on it's residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represents a lack of spatial autocorrelation. Moran's $I$ consists on the following equation \cite{Getis2010}: \begin{align}
+Moran's $I$ was applied to the models' residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on its residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represent a lack of spatial autocorrelation. Moran's $I$ consist of the following equation \cite{Getis2010}: \begin{align}
     I = \frac{n}{W} \times \frac{\sum_i \sum_j w_{ij} (x_i - \overline{x})(x_j - \overline{x})}{\sum_i (x_i - \overline{x})^2} \mbox{ ;}
 \end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the spdep package \cite{Bivand2013}.
 
-The final step was to analyze the performance between models. This analysis was based on four performance indicators: AICc, $R^2$, adjusted $R^2$ and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance. The code with all steps described in this section is included in Appendix 2.
+The final step was to analyze the performance between models. This analysis was based on four performance indicators: AICc, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance. The code with all steps described in this section is included in Appendix 2.
 % ----------------------------------------------------------------------------------
 
 \chapter{ANALYSIS AND RESULTS} \label{cap:results}
@@ -1179,18 +1179,18 @@ The process of removing invalid times from the total sample and choosing the tra
     NOTES: Mean, SD, Min., 1Q, Median, 3Q, Max., and Total distance are represented in kilometers. 
 \end{table}
 
-Concerning to the mean distance of trips, driver $D_{15}$ had the highest mean value of 38.33 kilometers and driver $D_{12}$ had the lowest mean of 1.71 kilometers. The maximum distance of a trip was 168.26 kilometers, performed by driver $D_{15}$ and minimum distance was 0.01 kilometers, by the driver $D_5$. In total, drivers $D_7$, $D_{14}$ and $D_{15}$ had the highest traveled distance in the sample, with distances of 314.44, 652.71 and 805.02 kilometers, respectively. Drivers $D_{14}$ and $D_{15}$ were mobility app drivers during the process of the NDS, leading to this higher amount of total distance traveled and longer trips. 
+Concerning the mean distance of trips, driver $D_{15}$ had the highest mean value of 38.33 kilometers and driver $D_{12}$ had the lowest mean of 1.71 kilometers. The maximum distance of a trip was 168.26 kilometers, performed by driver $D_{15}$ and the minimum distance was 0.01 kilometers, by driver $D_5$. In total, drivers $D_7$, $D_{14}$, and $D_{15}$ had the highest traveled distance in the sample, with distances of 314.44, 652.71 and 805.02 kilometers, respectively. Drivers $D_{14}$ and $D_{15}$ were mobility app drivers during the process of the NDS, leading to this higher amount of total distance traveled and longer trips. 
 
 % hour of the day, day of the week (per distance traveled, per number of trips)
 
 %% dotw dist
 
-In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the week is presented. Tuesdays had most of the traveled distance and Saturdays the least traveled distance. Regarding the trips, in \autoref{fig:dotw_trips} contains information on the quantity per day of the week. Tuesdays had the highest amount of trips and Sundays the lowest. Overall, most traveled distance and trips happened in higher amounts during weekdays. \autoref{fig:hotd_dist} and \autoref{fig:hotd_trips} include traveled distance and trip start distribution per hour of the day, respectively.  
+In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the week is presented. Tuesdays had most of the traveled distance and Saturdays had the least traveled distance. Regarding the trips, \autoref{fig:dotw_trips} contains information on the quantity per day of the week. Tuesdays had the highest amount of trips and Sundays the lowest. Overall, most traveled distances and trips happened in higher amounts during weekdays. \autoref{fig:hotd_dist} and \autoref{fig:hotd_trips} include traveled distance and trip start distribution per hour of the day, respectively.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{DISTANCE traveled PER DAY OF THE WEEK}
+    \caption{DISTANCE TRAVELED PER DAY OF THE WEEK}
     \includegraphics{fig/dotw_dist.pdf}
     \label{fig:dotw_dist}
     \par SOURCE: The Author (2021)
@@ -1212,7 +1212,7 @@ In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{DISTANCE traveled PER HOUR OF THE DAY}
+    \caption{DISTANCE TRAVELED PER HOUR OF THE DAY}
     \includegraphics{fig/hotd_dist.pdf}
     \label{fig:hotd_dist}
     \par SOURCE: The Author (2021)
@@ -1229,14 +1229,14 @@ In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the
     \par SOURCE: The Author (2021)
 \end{figure}
 
-Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19:00 - 20:00. Most of the trips started between 17:00 - 18:00, followed by 19:00 - 20:00 and 7:00 - 8:00. \autoref{fig:taz_travel} contains the traveled distance per TAZ in Curitiba. The TAZ with highest traveled distance had 165.56 kilometers, and the lowest had 0.04 kilometers. 7 TAZ had no traveled distance. Most of the trips happened in the central area of the city.
+Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19:00 - 20:00. Most of the trips started between 17:00 - 18:00, followed by 19:00 - 20:00 and 7:00 - 8:00. \autoref{fig:taz_travel} contains the traveled distance per TAZ in Curitiba. The TAZ with the highest traveled distance had 165.56 kilometers, and the lowest had 0.04 kilometers. 7 TAZ had no traveled distance. Most of the trips happened in the central area of the city.
 
 % how much traveled in each TAZ (MAP)
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{traveled DISTANCE PER TAZ}
+    \caption{TRAVELED DISTANCE PER TAZ}
     \includegraphics{fig/taz_travel.pdf}
     \label{fig:taz_travel}
     \par SOURCE: The Author (2021)
@@ -1247,7 +1247,7 @@ Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19
 
 %% how much speeding for each driver (per trip - mean, median, 1q, 3q, max, min - try table AND boxplot) 
 
-\autoref{tab:speeding} shows the summary of the speeding data per trip for each driver. Driver $D_{16}$ had the highest mean speeding rate value of 0.56, while $D_5$ had the lowest mean value of 0.25. Drivers $D_4$, $D_5$, $D_8$, $D_{10}$, $D_{11}$, $D_{12}$, $D_{13}$ and $D_{14}$ had trips without any speeding. Drivers $D_5$, $D_{10}$, $D_{13}$, $D_{14}$ and $D_{16}$ had the highest speeding value of all trips, reaching 0.79. Considering the sum of all trips, the highest value of speeding was performed by driver $D_{12}$. The average speeding value of the overall trip sample was 0.35, and 0.41 considering all the traveled distance from the sample.  
+\autoref{tab:speeding} shows the summary of the speeding data per trip for each driver. Driver $D_{16}$ had the highest mean speeding rate value of 0.56, while $D_5$ had the lowest mean value of 0.25. Drivers $D_4$, $D_5$, $D_8$, $D_{10}$, $D_{11}$, $D_{12}$, $D_{13}$, and $D_{14}$ had trips without any speeding. Drivers $D_5$, $D_{10}$, $D_{13}$, $D_{14}$, and $D_{16}$ had the highest speeding value of all trips, reaching 0.79. Considering the sum of all trips, the highest value of speeding was performed by driver $D_{12}$. The average speeding value of the overall trip sample was 0.35, and 0.41 considering all the traveled distances from the sample.  
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1287,7 +1287,7 @@ Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19
 
 %% hour of the day, day of the week (SP)
 
-Across all days of the week, speeding followed a similar pattern (\autoref{fig:dotw_sp}). Speeding on Wednesdays and Fridays was a bit higher than other days, and on Sundays and Mondays it presented lower values. Regarding the hour of the day (\autoref{fig:hotd_sp}), the highest value of speeding happened between 0:00 - 1:00 and the lowest between 1:00 and 2:00. 
+Across all days of the week, speeding followed a similar pattern (\autoref{fig:dotw_sp}). Speeding on Wednesdays and Fridays was a bit higher than other days, and on Sundays and Mondays, it presented lower values. Regarding the hour of the day (\autoref{fig:hotd_sp}), the highest value of speeding happened between 0:00 - 1:00 and the lowest between 1:00 and 2:00. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1309,19 +1309,19 @@ Across all days of the week, speeding followed a similar pattern (\autoref{fig:d
 
 %% NSHTA diagram of speeding (maybe)
 
-\textcite{Richard2013a} established four types of speeding behavior - situational speeding, incidental speeding, habitual speeding and casual speeding - based on two variables: percentage of trips with any speeding and average speeding per trip, of each driver. The plotting of these variables and the setting of a zone boundary of 20\% in each variable (arbitrarily defined by \textcite{Richard2013a}) created 4 zones, one for each type of speeding behavior. \autoref{fig:sp_zones} graph manifests the result of this method application on the speeding sample. In this plot, each dot represents a driver, and it's size indicates the quantity of trips performed by each driver. The y axis indicates the average speeding per trip of a driver. This speeding was calculated with the $SP$ equation (\ref{eq:sp}) for each trip. The x axis indicates the percent of trips with any quantity of speeding.
+\textcite{Richard2013a} established four types of speeding behavior - situational speeding, incidental speeding, habitual speeding, and casual speeding - based on two variables: percentage of trips with any speeding and average speeding per trip, of each driver. The plotting of these variables and the setting of a zone boundary of 20\% in each variable (arbitrarily defined by \textcite{Richard2013a}) created 4 zones, one for each type of speeding behavior. \autoref{fig:sp_zones} graph manifests the result of this method applied to the speeding sample. In this plot, each dot represents a driver, and its size indicates the number of trips performed by each driver. The y-axis indicates the average speeding per trip of a driver. This speeding was calculated with the $SP$ equation (\ref{eq:sp}) for each trip. The x-axis indicates the percent of trips with any quantity of speeding.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{TYPES OF SPEEDING behavior OF DRIVERS}
+    \caption{TYPES OF SPEEDING BEHAVIOR OF DRIVERS}
     \includegraphics{fig/sp_zones.pdf}
     \label{fig:sp_zones}
     \par SOURCE: The Author (2021), based on \textcite{Richard2013a}
     \par NOTE: Dot size indicates quantity of trips.
 \end{figure}
 
-In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers presented a speeding behavior in at least 80\% of their trips. The average speeding per trip of each driver varied between 20\% and 60\%. All 16 drivers were classified into habitual speeders, in which they regularly speed and have large proportions of speeding in their trips. Situational speeding happens when a high level of speeding per trip happens a few times, indicating that drivers classified in this category usually do not speed. Incidental speeding happens in small proportions of trips and in a few trips, representing unintentional speeding events. Casual speeding consists of higher percentage of trips with any speeding, but with low average speeding per trip.   
+In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers presented a speeding behavior in at least 80\% of their trips. The average speeding per trip of each driver varied between 20\% and 60\%. All 16 drivers were classified into habitual speeders, in which they regularly speed and have large proportions of speeding in their trips. Situational speeding happens when a high level of speeding per trip happens a few times, indicating that drivers classified in this category usually do not speed. Incidental speeding happens in small proportions of trips and a few trips, representing unintentional speeding events. Casual speeding consists of a higher percentage of trips with any speeding, but with low average speeding behavior per trip.   
 
 \section{GEOGRAPHICALLY WEIGHTED REGRESSION RESULTS} \label{sec:gwrr}
 
@@ -1329,7 +1329,7 @@ In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers pr
 
 %% Show remaining TAZ and remaining sample (distance, time traveled)
 
-The data arrangement process reduced the total sample of 135 TAZ into 107 TAZ. This resulted into a remaining sample of 3,425.04 kilometers of total traveled distance, which includes 2060.31 kilometers performed in free-flow speeds and 840.88 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.  
+The data arrangement process reduced the total sample of 135 TAZ into 107 TAZ. This resulted in a remaining sample of 3,425.04 kilometers of total traveled distance, which includes 2060.31 kilometers performed in free-flow speeds and 840.88 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1342,7 +1342,7 @@ The data arrangement process reduced the total sample of 135 TAZ into 107 TAZ. T
 
 %% Summary of variables: mean, median, max, min, 1q, 3q
 
-In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 107 TAZ. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. DSC, PAR and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads and traffic signals in these zones. 
+In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 107 TAZ. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. DSC, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1386,7 +1386,7 @@ In \autoref{tab:var_summary} is included the descriptive statistics of the 11 va
 
 %% Show correlogram (remaining variables)
 
-The final step of the data arrangement process was the check of correlation between all independent variables, using the Spearman method. The results of this process are displayed in the correlogram in \autoref{fig:corr_spear}. Two Spearman coefficients resulted in values above 0.8: in the correlation between street network density (SND) and density of intersections (DIS); and between traffic signal density (TSD) and density of commercial and services units (DCSU). In order to solve this issue, it was decided to remove SND and TSD from the analysis.  
+The final step of the data arrangement process was the check of correlation between all independent variables, using the Spearman method. The results of this process are displayed in the correlogram in \autoref{fig:corr_spear}. Two Spearman coefficients resulted in values above 0.8: in the correlation between street network density (SND) and density of intersections (DIS); and between traffic signal density (TSD) and density of commercial and services units (DCSU). To solve this issue, it was decided to remove SND and TSD from the analysis.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1399,7 +1399,7 @@ The final step of the data arrangement process was the check of correlation betw
 
 %% Show models results (quality variables) - AICc, morans I, R-squared
 
-In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: AICc, $R^2$, Adjusted $R^2$ and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The GWR model using a Boxcar kernel with a bandwidth of 39 neighbors had the best performance, with a AICc value of -119.306, $R^2$ of 0.465, adjusted $R^2$ of 0.329 and Moran's $I$ on residuals of 0.166. Moran's $I$ results shows a spatial autocorrelation in the model's residuals, therefore this model couldn't reach a satisfactory result in estimating the coefficients, considering the spatial dependency and nonstationarity of the speeding variable. The GWR model with the boxcar kernel was selected, considering it's relative performance. 
+In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: AICc, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The GWR model using a Boxcar kernel with a bandwidth of 39 neighbors had the best performance, with an AICc value of -119.306, $R^2$ of 0.465, adjusted $R^2$ of 0.329, and Moran's $I$ on residuals of 0.166. Moran's $I$ results show a spatial autocorrelation in the model's residuals, therefore this model couldn't reach a satisfactory result in estimating the coefficients, considering the spatial dependency and nonstationarity of the speeding variable. The GWR model with the boxcar kernel was selected, considering its relative performance. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1426,7 +1426,7 @@ In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global line
     SOURCE: The Author (2021).
 \end{table}
 
-All GWR models presented a better performance in comparison to the global linear model, indicating that GWR is a preferred method to explore the relationship between speeding behavior and the built environment. When applying Moran's $I$ on the speeding variable, it resulted in a value of 0.318 ($p$-value of 0.001), revealing that speeding rate is spatially autocorrelated in a clustered aspect. In \autoref{tab:lm_results}, the coefficient estimates of the linear regression model are shown, in addition to the standard error, $t$-values and $p$-values. The only  statistically significant coefficient at the 95\% level was the density of speed cameras (DSC), which expressed an inverted correlation to speeding.
+All GWR models presented a better performance in comparison to the global linear model, indicating that GWR is a preferred method to explore the relationship between speeding behavior and the built environment. When applying Moran's $I$ on the speeding variable, it resulted in a value of 0.318 ($p$-value of 0.001), revealing that the speeding rate is spatially autocorrelated in a clustered aspect. In \autoref{tab:lm_results}, the coefficient estimates of the linear regression model are shown, in addition to the standard error, $t$-values, and $p$-values. The only statistically significant coefficient at the 95\% level was the density of speed cameras (DSC), which expressed an inverted correlation to speeding.
 
 %% Show lm results
 
@@ -1461,7 +1461,7 @@ All GWR models presented a better performance in comparison to the global linear
 
 %% Show GWR results
 
-In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates is showed. Maps in FIGURES \ref{fig:gwr_dsc_par} to \ref{fig:gwr_ldi_bsd} shows these coefficients in each TAZ. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. The western part of the city displays TAZ with higher values of $R^2$, contrary to the east side of Curitiba, which displays lower values. Local $R^2$ values varied between 0.221 and 0.825. 
+In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. Maps in FIGURES \ref{fig:gwr_dsc_par} to \ref{fig:gwr_ldi_bsd} show these coefficients in each TAZ. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. The western part of the city displays TAZ with higher values of $R^2$, contrary to the east side of Curitiba, which displays lower values. Local $R^2$ values varied between 0.221 and 0.825. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1501,7 +1501,7 @@ In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model
     \par SOURCE: The Author (2021)
 \end{figure}
 
-In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented a higher values, while the central area presented lower values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
+In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented higher values, while the central area presented lower values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
 
 %% Mean and SD gw SP
 
@@ -1521,7 +1521,7 @@ In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local st
 
 %% Map and discuss the variables
 
-In \autoref{fig:gwr_dsc_par}, the coefficient estimates of the density of speed cameras (DSC) and proportion of arterial roads (PAR) are plotted in map. DSC presented an inverse correlation to speeding in most of the TAZ. PAR had mixed results, presenting direct and inverted correlations to speeding in different areas of the city. 
+In \autoref{fig:gwr_dsc_par}, the coefficient estimates of the density of speed cameras (DSC) and the proportion of arterial roads (PAR) are plotted on the map. DSC presented an inverse correlation to speeding behavior in most of the TAZ. PAR had mixed results, presenting direct and inverted correlations to speeding in different areas of the city. 
 
 %%% DSC and PAR
 
@@ -1541,7 +1541,7 @@ In \autoref{fig:gwr_dsc_par}, the coefficient estimates of the density of speed 
 
 %%% DIS and DCSU
 
-The density of intersection (DIS) and density of commercial and services units coefficient estimates are displayed in \autoref{fig:gwr_dis_dcsu}. DIS had an inverted correlation to speeding in the northeast part of the city, while the west and south sides showed TAZ with a direct correlation between speeding and DIS. Regarding DCSU, almost all of the TAZ shows a inverted correlation to the dependent variable.  
+The density of intersection (DIS) and density of commercial and services units coefficient estimates are displayed in \autoref{fig:gwr_dis_dcsu}. DIS had an inverted correlation to speeding in the northeast part of the city, while the west and south sides showed TAZ with a direct correlation between speeding and DIS. Regarding DCSU, almost all of the TAZ shows an inverted correlation to the dependent variable.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1559,7 +1559,7 @@ The density of intersection (DIS) and density of commercial and services units c
 
 %%% AVI and PD
 
-In \autoref{fig:gwr_avi_pd}, the coefficient estimates of average income (AVI) and population density (PD) are displayed. AVI coefficients showed a inverted correlation to speeding in TAZ closer to the north and center of the city, while the southern side presented TAZ with a direct correlation between AVI and speeding. PD was directly correlated to speeding in most of the area, with higher values in the southern part of the city. 
+In \autoref{fig:gwr_avi_pd}, the coefficient estimates of average income (AVI) and population density (PD) are displayed. AVI coefficients showed an inverted correlation to speeding in TAZ closer to the north and center of the city, while the southern side presented TAZ with a direct correlation between AVI and speeding. PD was directly correlated to speeding in most of the area, with higher values in the southern part of the city. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1577,7 +1577,7 @@ In \autoref{fig:gwr_avi_pd}, the coefficient estimates of average income (AVI) a
 
 %%% LDI and BSD
 
-Land use diversity index (LDI) and bus stop density (BSD) coefficient estimates are plotted in \autoref{fig:gwr_ldi_bsd}. LDI coefficients showed a direct correlation to speeding in most of the TAZ, with higher values in the northeast part of Curitiba. BSD shows mixed results, with similar quantity of TAZ with direct and inverted correlation to speeding.  
+Land use diversity index (LDI) and bus stop density (BSD) coefficient estimates are plotted in \autoref{fig:gwr_ldi_bsd}. LDI coefficients showed a direct correlation to speeding in most of the TAZ, with higher values in the northeast part of Curitiba. BSD shows mixed results, with a similar quantity of TAZ with direct and inverted correlation to speeding.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1665,13 +1665,13 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
 
 The Naturalistic Driving Study enabled the collection of speed data from a sample of 16 drivers in the city of Curitiba, Brazil. Comparing to the described NDS in Section \ref{nds}, 16 participants correspond to a small sample to conduct a more statistically sound analysis. Some participants had higher distance traveled in the sample than others. Drivers $D_{14}$ and $D_{15}$ had the highest proportion in the total traveled distance:  19\% and 23\%, respectively. Regarding the spatial coverage, most of the traveled distance was performed in central areas of the city, in comparison to peripheral areas. The amount of traveled distance wasn't enough to cover all the present TAZ in Curitiba (reducing from 135 to 107 units).
 
-In addition to the built environment, other attributes might influence resultant speeding values. Characteristics from the drivers (e.g., age, experience, license age, education) and from the vehicles (e.g., age, engine power) might also influence on speeding behavior. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders", which might indicate certain level of similarity with respect to speeding behavior between participants.
+In addition to the built environment, other attributes might influence resultant speeding values. Characteristics from the drivers (e.g., age, experience, license age, education) and the vehicles (e.g., age, engine power) might also influence speeding behavior. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders", which might indicate a certain level of similarity concerning speeding behavior between participants.
 
-Preliminary results indicate that the Geographically Weighted Regression with a Boxcar kernel showed the best performance in comparison to other kernel types and the linear regression. However, none of the models presented a desirable performance, considering that the residuals form all models were spatially autocorrelated. This indicates that they couldn't validly predict the spatial heterogeneity present in the occurrence of speeding behavior. All GWR models showed a better performance than the linear regression. To \textcite{Brunsdon2010}, calibration of the GWR model for regions close to the edge of the study area are subject to greater sampling error. The "holes" present in the current sample of TAZ might have caused a negative impact on the GWR performance. 
+Preliminary results indicate that the Geographically Weighted Regression with a Boxcar kernel showed the best performance in comparison to other kernel types and the linear regression. However, none of the models presented a desirable performance, considering that the residuals from all models were spatially autocorrelated. This indicates that they couldn't validly predict the spatial heterogeneity present in the occurrence of speeding behavior. All GWR models showed a better performance than the linear regression. To \textcite{Brunsdon2010}, calibration of the GWR model for regions close to the edge of the study area is subject to greater sampling error. The "holes" present in the current sample of TAZ might have harmed the GWR performance. 
 
-Based on the results from the linear regression (\autoref{tab:lm_results}), only the density of speed cameras (DSC) coefficient showed statistical significance. GWR model does not have a diagnostic value (e.g., $p$-value) for each parameter estimate, therefore, it is necessary to apply a linear regression to identify statistical significant variables. The verified inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates an inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZ (\autoref{fig:gwr_dsc_par}, \autoref{tab:coef_perc}). It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
+Based on the results from the linear regression (\autoref{tab:lm_results}), only the density of speed cameras (DSC) coefficient showed statistical significance. GWR model does not have a diagnostic value (e.g., $p$-value) for each parameter estimate, therefore, it is necessary to apply a linear regression to identify statistically significant variables. The verified inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates an inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZ (\autoref{fig:gwr_dsc_par}, \autoref{tab:coef_perc}). It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
 
-Before reaching any further conclusions, it is necessary to test the performance of new models based on a sample with a higher number of drivers. NDS-BR is still ongoing, making it possible to collect more speeding data from new participants. Additional testing with the independent variables is also needed, in order to identify key variables that works better within the model. Based on the current results, it is not possible to reach a conclusion on the impact of the built environment on speeding behavior.
+Before reaching any further conclusions, it is necessary to test the performance of new models based on a sample with a higher number of drivers. NDS-BR is still ongoing, making it possible to collect more speeding data from new participants. Additional testing with the independent variables is also needed, to identify key variables that work better within the model. Based on the current results, it is not possible to conclude the impact of the built environment on speeding behavior.
 
 \section{NEXT STEPS}
 
@@ -1691,7 +1691,7 @@ In \autoref{tab:schedule}, the schedule with the thesis' next steps is displayed
         Nov - 2021 & Apply modifications from the qualifying examination panel \\
         Dec - 2021 & Apply modifications from the qualifying examination panel \\
         Jan - 2022 & Apply methodology with an increased sample size           \\
-        Feb - 2022 & Write changes in literature review, methods, results and conclusion                                                             \\
+        Feb - 2022 & Write changes in the literature review, methods, results, and conclusion                                                             \\
         Mar - 2022 & Review the manuscript                                     \\
         Apr - 2022 & Master's thesis defense                                   \\
         \hline
