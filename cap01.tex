@@ -26,13 +26,13 @@ The built environment influences the overall mobility, road safety, and health l
 
 %% Present NDS project
 
-
+The behavioral data utilized in this work was extracted from a research project based on a Naturalistic Driving Study (NDS): The Brazilian Naturalistic Driving Study (NDS-BR). This project started in 2019 in the city of Curitiba and it is still in progress \cite{ceppur_estudo_2021}. 
 
 \section{OBJECTIVES}
 
 In the context of urban planning and road safety management, the main objective of this research is to investigate the influence of demographics, land use, and built environment on the engagement on speeding behavior. The scenario of the study is the city of Curitiba, the capital of the state of Paraná, Brazil. The correlation will be analyzed with the use of the Geographically Weighted Regression statistical model.
 
-With the use of speeding data collected from drivers that participated in a Naturalistic Driving Study (NDS) performed in Curitiba (Brazilian Naturalistic Driving Study / NDS-BR), this investigation aims to establish the relationship between variables from the built environment (BE) and the speeding behavior. These BE variables are categorized by \textcite{Ewing2009} in five groups called ``5D'': density, diversity, design, destination accessibility, and distance to transit. In addition to these variables, this study aims to relate income, as a demographic variable, to speeding behavior as well.
+With the use of speeding data collected from drivers that participated in a NDS performed in Curitiba, this investigation aims to establish the relationship between variables from the built environment (BE) and the speeding behavior. These BE variables are categorized by \textcite{Ewing2009} in five groups called ``5D'': density, diversity, design, destination accessibility, and distance to transit. In addition to these variables, this study aims to relate income, as a demographic variable, to speeding behavior as well.
 
 As co-benefits in the investigation, this thesis aims to offer some level of insight regarding the development and update of speed control management in urban areas, considering the operational and structural planning guidelines for the road systems and land use. With these factors in mind, there is a potential of presenting new ideas to the planning practices in Curitiba, regarding mobility plans, master plans, and zoning laws.
     
@@ -48,7 +48,7 @@ According to \textcite{Ewing2009}, the built environment can affect traffic safe
 
 This document is divided into five chapters. Next to this chapter, Chapter \ref{cap:lr} includes the literature review, Chapter \ref{cap:methods} contains the methodological procedures applied in this work, and Chapter \ref{cap:results} includes the data that resulted from the method implementation and its analysis. Chapter \ref{cap:conclusion} includes a brief of some preliminary findings of the thesis. 
 
-%------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \chapter{LITERATURE REVIEW} \label{cap:lr}
 
@@ -112,6 +112,8 @@ Between 1998 and 2019 there is a declining pattern in the fatality rate, startin
 
 The first stage of motorization - developing motorization - occurs when a country has a motorization rate between 50 and 100 vehicles per 1,000 inhabitants. This first stage happened in Brazil before 1998. The explosion of the motorization is the second stage, and it happens with a motorization rate of between 300 and 400. The third and the last stage is saturation and occurs when the motorization rate reaches more than 400 and its tendency stops rising \cite{Jorgensen2005}. Although Brazil has a present motorization rate above 400, it is plausible to state that the country still hasn't reached the stage of saturation, considering that the rates are still through a rising pattern. 
 
+%% Create a plot with different types of vehicles.
+
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
@@ -156,7 +158,7 @@ The tendency of road traffic deaths presented a rising pattern between 1979 and 
     \par SOURCE: The Author (2021), based on \textcite{MinistryofHealth2021} and \textcite{DENATRAN2020}.
 \end{figure}   
 
-Curitiba was, in 2019, the second most motorized capital in Brazil, with a motorization rate of 825 vehicles per 1,000 population, higher than the Brazilian average, only behind Belo Horizonte, which presented a motorization rate of 907 vehicles per 1,000 population. When comparing the road traffic mortality rate (\autoref{fig:cap_mort}), Curitiba stays in the 13th place between the capitals, with 12.7 deaths per 100,000 inhabitants, below the Brazilian average of 15.2 in 2019. The lowest value of road traffic mortality rate belongs to Rio de Janeiro, presenting a rate of 5.7 deaths per 100,000 population, and the highest belongs to Palmas, with an alarming rate of 36.4. In 2015, Curitiba had a mortality rate of 13.94 deaths per 100,000 inhabitants, a substantially high value when comparing to more developed countries, like Sweden (2.8), the UK (3.1), and Germany (4.1). Curitiba's rate for 2015 has a similar value to other Latin American countries: Mexico (13.1), Uruguay (13.4), Peru (13.5), and Argentina (14.00) \cite{WHO2018}. 
+Curitiba was, in 2019, the second most motorized capital in Brazil, with a motorization rate of 825 vehicles per 1,000 inhabitants, higher than the Brazilian average of 499 vehicles per 1,000 inhabitants, only behind Belo Horizonte, which presented a motorization rate of 907 vehicles per 1,000 inhabitants. When comparing the road traffic mortality rate (\autoref{fig:cap_mort}), Curitiba stays in the 13th place between the capitals, with 12.7 deaths per 100,000 inhabitants, below the Brazilian average of 15.2 in 2019. The lowest value of road traffic mortality rate belongs to Rio de Janeiro, presenting a rate of 5.7 deaths per 100,000 inhabitants, and the highest belongs to Palmas, with an alarming rate of 36.4. In 2015, Curitiba had a mortality rate of 13.94 deaths per 100,000 inhabitants, a substantially high value when comparing to more developed countries, like Sweden (2.8), the UK (3.1), and Germany (4.1). Curitiba's rate for 2015 has a similar value to other Latin American countries: Mexico (13.1), Uruguay (13.4), Peru (13.5), and Argentina (14.00) \cite{WHO2018}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -189,7 +191,7 @@ The road traffic deaths data made available by the \textcite{MinistryofHealth202
     \par SOURCE: The Author (2021), based on \textcite{Curitiba2021}.
 \end{figure} 
 
-According to \textcite{Curitiba2021}, 310 road traffic deaths occurred in 2011, the highest value of the time series. In 2018, the number of road traffic deaths reached its lowest value: 166. In the most recent entry, road traffic deaths reached a value of 181. Between 2011 and 2019, speeding was the second-highest causing factor of road traffic fatal crashes in Curitiba. The highest cause of fatalities was driving under influence \cite{Curitiba2020}. 
+According to \textcite{Curitiba2021}, 310 road traffic deaths occurred in 2011, the highest value of the time series. In 2018, the number of road traffic deaths reached its lowest value: 166. In the most recent entry, road traffic deaths reached a value of 181. Between 2011 and 2019, speeding was the second-highest causing factor of road traffic fatal crashes in Curitiba. The highest cause of fatalities was driving under influence \cite{Curitiba2020}. Between 2012 and 2020, pedestrian fatalities consisted of 37\% of total road traffic deaths, and cyclists' fatalities consisted of 8\% \cite{Curitiba2021}.
 
 \section{ROAD SAFETY RISK FACTORS} \label{sec:risk}
 
@@ -213,6 +215,71 @@ In cell 4 some measures include the use of seat belts, helmets, and protective c
 The road safety problems that happen in urban environments may differ from the ones that happen in major roadways. Even with lower operating speeds, the number of conflicts in urban road systems can be substantially higher when comparing to rural roadways, considering the quantity of different motorized and non-motorized transport modes that use the infrastructure at the same time. Consequently, it is essential to follow the requirements for safe infrastructure. The three main ones are functionality, homogeneity, and recognition \cite{SWOV2003}. Each road on a network needs to have a specific function (balance between mobility and access), with traffic distribution working as intended. Homogeneity consists in reducing the points of conflict between transport modes with a great difference of mass and speed. Finally, the situations on traffic should have a level of predictability, which consists of the road users' expected behavior. 
 
 To reduce road traffic crashes and possible consequent injuries or deaths, it is relevant to consider the main risk factors that cause and intensify these events. According to \textcite{WHO2004}, the risk in road traffic can be classified into four elements that are directly influenced: exposure, crash involvement, crash severity, and post-crash severity. The risk factors that can be classified in these elements also can be distributed within the Haddon matrix as well (\autoref{fig:haddon}). The main risk factors related to the protection of the user consist of the usage of seat belts, helmets, airbags, child restraints, and helmets. Focusing on the behavioral factors, the main ones are driving under influence of alcohol and other drugs (DUI), distraction, and inattention \cite{Shinar2017}.
+
+A framework 
+
+% Safe System Approach (ITF)
+
+%% It comes from a need of a fundamental shift in road safety programmes
+
+%% Traditional road safety interventions have proven their effectiveness and need to be maintained and intensified. 
+
+%% In a Safe System framework, interventions that still leaves open the opportunity for fatality are not enough
+
+%% Therefore, it is necessary to close this gap.
+
+% Main features of Safe System approaches:
+
+%% Aim to develop road systems that are better able to accommodate human error. 
+
+%% Better management of crash forces
+
+%% Rely on economic analysis to understand the scale of the trauma problem
+
+%% Safety management integrating all key government agencies and society.
+
+%% Embrace the ethos of "shared responsibility"
+
+%% The road user is not be relied upon to behave safely. (the weakest link)
+
+% The Safety System approach and societal values in three main areas to be considered.
+
+%% The significance of economic development: transport infrastructure and mobility are important sectors of economic development. Usually, safety has become a subsidiary to mobility. Safe System aims to transform the mobility into a function of safety, where the system designers become one of the responsible for the safety of users in the road system.
+
+%% Sustaining human and environmental health: Economic development cannot come at the cost of death and serious injuries. Public health must come first.
+
+%% The individual as consumer: Safe System recognizes the limits to which individual behaviors can be regulated. The individual needs to recognize the safe constraints of the system and demand safer services and products. Citizens demands and expects safety improvements. (safety culture)
+
+% Infrastructure, speed and physical vulnerability
+
+%% The human body's tolerance is at the center of the Safe System approach.
+
+%% Speed limits must be compatible to this tolerance. 
+
+%% Intersections must reduce impact speeds and number of conflicts, improving the interaction between users.
+
+%% Intelligent infrastructure and vehicles
+
+% Implementation of the Safe System approach
+
+%% This system considers the interaction of multiple components of the transport system, rather than considering individual countermeasures in relative isolation.
+
+%% Constant measure of road safety performance
+
+%% Integration with road safety and another societal goals. (economy, environment, etc.)
+
+% Larsson, Tingvall
+
+%% Safe Systems treats human error as a systems failure, not an individual error. Human error as a consequence of the road system, not as cause of road crashes. 
+
+%% Acceptance that crashes will continue to occur, focus on prevention of serious injuries and deaths. 
+
+%% Consider the fragility of the human body
+
+%% The design of the road transport system should guide the road user to a safe behavior. Human errors cannot be fully eradicated. Infrastructure and vehicles must mitigate the consequence of these errors. 
+
+%% Importance of understanding and integrating road user behavior, traffic environment, speed management and vehicle system in road safety performance. 
+
 
 The excess of speed and the speed differential in urban environments are two risk factors that affect the chance of traffic crashes occurrence and the severity of these crashes. Speed differential is the disparity of speeds between vehicles on the same road, leading to higher chances of conflicts. Speeding, which consists of exceeding the speed limit of a road, is a complex phenomenon with multiple causes, consequences, and methods of prevention. Given its complexity, this risky behavior is discussed in the next section (\ref{speeding}). 
 
