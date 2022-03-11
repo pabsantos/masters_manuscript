@@ -881,7 +881,7 @@ Regarding the type of GW model, most authors chose GWNBR or GWPR, considering th
 
 \chapter{METHODS} \label{cap:methods}
 
-This chapter is divided into 3 sections. Section \ref{ndsc} contains the steps of collecting and processing naturalistic driving data. Section \ref{data} presents the process of creating the dependent and independent variables. Section \ref{gwm} includes the process of elaborating a GWR model. 
+This chapter is divided into 4 sections. Section \ref{ndsc} contains the steps of collecting and processing naturalistic driving data. Section \ref{data} presents the process of creating the dependent and independent variables. Section \ref{gwm} includes the process of elaborating a GWR model. Section \ref{sec:cluster} contains the process of calculating a local indicator of spatial association (LISA) using the Local Moran statistic to identify spatial clusters in the GWR results and desired variables. All process described in Sections \ref{data} through \ref{sec:cluster} were executed using the R programming language. The code can be accessed at \textcite{santos2022}.  
  
 \section{NATURALISTIC DATA COLLECTION} \label{ndsc}
 
@@ -915,7 +915,7 @@ The GPS sensor was positioned near the car panel. The cameras and GPS sensor wer
 
 % 2. Data processing: how they were processed (.py scripts), transformed to csv (gps2csv.py), valid time
 
-The DAS allowed the acquisition of GPS and video data in synchronization, collecting information in a frequency of one second. The process of acquisition is illustrated in \autoref{fig:das}. The main controller of the data collection was the laptop. At the beginning of each trip, the driver needed to manually turn on the laptop after starting the car engine and before beginning the driving task. A Bash script was written to run each time the laptop was turned on, to start two main Python scripts used in the data acquisition: gps-read.py and video.py \cite{Borguezani2020}.  
+The DAS allowed the acquisition of GPS and video data in synchronization, collecting information in a frequency of one second. The process of acquisition is illustrated in \autoref{fig:das}. The main controller of the data collection was the laptop. At the beginning of each trip, the driver needed to manually turn on the laptop after starting the car engine and before beginning the driving task. If the driver didn't turn on the equipment, intentionally or not, the data collection process was not executed. A Bash script was written to run each time the laptop was turned on, to start two main Python scripts used in the data acquisition: \verb|gps-read.py| and \verb|video.py| \cite{Borguezani2020}.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -926,7 +926,7 @@ The DAS allowed the acquisition of GPS and video data in synchronization, collec
     \par SOURCE: The Author (2021).
 \end{figure}
 
-The GPS sensor signals were translated into a .nmea format file, with the execution of gps-read.py. To analyze the collected data, after the NDS runs another Python script was used by the NDS-BR researchers to translate the .nmea into a .csv file. The GPS registered information including latitude and longitude coordinates, date, time, speed, heading, and altitude. The video files from all cameras were processed by the video.py script, having the timestamp and date printed on the screen. All the programs written in Python are presented in Annex 1. 
+The GPS sensor signals were translated into a \verb|.nmea| format file, with the execution of \verb|gps-read.py|. To analyze the collected data, \verb|gps2csv.py| was used by the NDS-BR researchers to translate the \verb|.nmea| into a \verb|.csv| file \cite{Pereira2020}. The GPS registered information including latitude and longitude coordinates, date, time, speed, heading, and altitude. The video files from all cameras were processed by the \verb|video.py| script, having the timestamp and date printed on the screen.
 
 After data was extracted from the laptop, it was necessary to make a valid time check, to exclude times from the final sample where the driver wasn't driving the vehicle. In \autoref{fig:validtime}, it is possible to observe how these invalid times were removed from the sample. For each trip, the period between the start of the car and when the participant started driving was considered invalid. During the trip, if the driver pulled over briefly and then started driving again, this period between the actions was considered as invalid as well. Finally, the gap between parking the car and turning off the DAS was discarded from the sample.  
 
@@ -943,47 +943,46 @@ The first trip of each driver was defined as invalid. This trip was considered t
 
 % 3. Drivers: How many, characteristics, data gathered, duration, how they were selected
 
-The NDS-BR data collection started in August 2019. The local of the study is Curitiba and its metropolitan region. Curitiba is the capital city of the State of Paraná, in Brazil. Until March of 2021, the project collected data from 16 participants, which composed the preliminary sample of naturalistic data used in this thesis. The drivers participated through a survey that was divulged on social networks. \autoref{tab:drivers} contains information about the participants and their vehicles, including the duration of data collection, age, gender, age of driver's license, vehicle model year, and horsepower.
+% \autoref{tab:drivers} contains information about the participants and their vehicles, including the duration of data collection, age, gender, age of driver's license, vehicle model year, and horsepower.
 
-\begin{table}[!htbp]
-    \footnotesize
-    \captionsetup{justification=raggedright,
-        singlelinecheck=false,
-        font=footnotesize}
-    \caption{SELECTED PARTICIPANTS INFORMATION}
-    \centering
-    \begin{tabular}{lllllll}
-        \hline
-        \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Duration}} & \multicolumn{1}{c}{\textbf{Age}} & \multicolumn{1}{c}{\textbf{Gender}} & \multicolumn{1}{c}{\textbf{License Age}} & \multicolumn{1}{c}{\textbf{Vehicle year}} & \multicolumn{1}{c}{\textbf{Horsepower}} \\
-        \hline
-        $D_1$    & 13 & 33 & F & 12 & 2012 & 96  \\ % A
-        $D_2$    & 12 & 40 & M & 3  & 2010 & 113 \\ % B
-        $D_3$    & 8  & 22 & M & 3  & 2011 & 103 \\ % C
-        $D_4$    & 16 & 25 & M & 6  & 2003 & 114 \\ % D
-        $D_5$    & 13 & 41 & F & 23 & 2014 & 75  \\ % J
-        $D_6$    & 13 & 28 & M & 9  & 2013 & 163 \\ % K
-        $D_7$    & 17 & 45 & M & 18 & 2011 & 130 \\ % L 
-        $D_8$    & 12 & 32 & F & 10 & 2015 & 79  \\ % M 
-        $D_9$    & 11 & 29 & M & 9  & 2019 & 74  \\ % N 
-        $D_{10}$ & 14 & 62 & M & 37 & 2018 & 69  \\ % O
-        $D_{11}$ & 6  & 28 & F & 10 & 2012 & 75  \\ % P 
-        $D_{12}$ & 5  & 45 & F & 26 & 2001 & 101 \\ % Q
-        $D_{13}$ & 14 & 21 & F & 2  & 2006 & 81  \\ % R 
-        $D_{14}$ & 6  & 34 & M & 16 & 2014 & 124 \\ % W
-        $D_{15}$ & 8  & 49 & F & 24 & 2018 & 84  \\ % X
-        $D_{16}$ & 11 & 27 & M & 3  & 2014 & 109 \\ % Y 
-        \hline
-    \end{tabular}
-    \label{tab:drivers}
-    \par \vspace{2mm} \footnotesize \raggedright
-    SOURCE: The Author (2021)
-    \par \vspace{1mm} \footnotesize \raggedright
-    NOTES: Duration in days; age and license age in years; M-male; F-female
-\end{table}
+% \begin{table}[!htbp]
+%     \footnotesize
+%     \captionsetup{justification=raggedright,
+%         singlelinecheck=false,
+%         font=footnotesize}
+%     \caption{SELECTED PARTICIPANTS INFORMATION}
+%     \centering
+%     \begin{tabular}{lllllll}
+%         \hline
+%         \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Duration}} & \multicolumn{1}{c}{\textbf{Age}} & \multicolumn{1}{c}{\textbf{Gender}} & \multicolumn{1}{c}{\textbf{License Age}} & \multicolumn{1}{c}{\textbf{Vehicle year}} & \multicolumn{1}{c}{\textbf{Horsepower}} \\
+%         \hline
+%         $D_1$    & 13 & 33 & F & 12 & 2012 & 96  \\ % A
+%         $D_2$    & 12 & 40 & M & 3  & 2010 & 113 \\ % B
+%         $D_3$    & 8  & 22 & M & 3  & 2011 & 103 \\ % C
+%         $D_4$    & 16 & 25 & M & 6  & 2003 & 114 \\ % D
+%         $D_5$    & 13 & 41 & F & 23 & 2014 & 75  \\ % J
+%         $D_6$    & 13 & 28 & M & 9  & 2013 & 163 \\ % K
+%         $D_7$    & 17 & 45 & M & 18 & 2011 & 130 \\ % L 
+%         $D_8$    & 12 & 32 & F & 10 & 2015 & 79  \\ % M 
+%         $D_9$    & 11 & 29 & M & 9  & 2019 & 74  \\ % N 
+%         $D_{10}$ & 14 & 62 & M & 37 & 2018 & 69  \\ % O
+%         $D_{11}$ & 6  & 28 & F & 10 & 2012 & 75  \\ % P 
+%         $D_{12}$ & 5  & 45 & F & 26 & 2001 & 101 \\ % Q
+%         $D_{13}$ & 14 & 21 & F & 2  & 2006 & 81  \\ % R 
+%         $D_{14}$ & 6  & 34 & M & 16 & 2014 & 124 \\ % W
+%         $D_{15}$ & 8  & 49 & F & 24 & 2018 & 84  \\ % X
+%         $D_{16}$ & 11 & 27 & M & 3  & 2014 & 109 \\ % Y 
+%         \hline
+%     \end{tabular}
+%     \label{tab:drivers}
+%     \par \vspace{2mm} \footnotesize \raggedright
+%     SOURCE: The Author (2021)
+%     \par \vspace{1mm} \footnotesize \raggedright
+%     NOTES: Duration in days; age and license age in years; M-male; F-female
+% \end{table}
+The NDS-BR data collection started in August 2019. The local of the study is Curitiba and its metropolitan region. Curitiba is the capital city of the State of Paraná, in Brazil. Until December of 2021, the project collected data from 32 participants, which composed sample of naturalistic data used in this thesis. The drivers participated through a survey that was divulged on social networks. The age of the drivers varied between 21 and 63 years old, with 18 females and 14 males. The duration of data collection from each driver varied between 5 and 20 days. Regarding the participants' vehicles, the model year varied between 2001 and 2020, with horsepower varying between 66 and 166 HP. 
 
-The age of the drivers varied between 21 and 62 years old, with 7 females and 9 males. The duration of data collection from each driver varied between 5 and 17 days. Regarding the participants' vehicles, the model year varied between 2001 and 2019, with horsepower varying between 74 and 163 HP. All participants received a briefing on how to operate the equipment and signed a term of the agreement, allowing the use of their data for academic research purposes. Overall, a total of 491 trips were performed, resulting in 238.85 hours of driving and 5,362.75 km of traveled distance.
-
-Only driver $D_{14}$ had a car with an automatic gearbox. All other drivers had vehicles with a manual gearbox. Drivers $D_{1}$, $D_{2}$, $D_{3}$ e $D_{4}$ occasionally made trips in carpooling situations, offering rides to passengers with the use of carpooling apps. Drivers $D_{14}$, $D_{15}$, and $D_{16}$ worked as mobility app drivers. This caused greater participation from them in the overall sample, which will be observed in the results. 
+Regarding driving experience, the driving license of the participants varied between 2 and 38. All participants received a briefing on how to operate the equipment and signed a term of the agreement, allowing the use of their data for academic research purposes. Overall, a total of 1002 trips were performed, resulting in 382.98 hours of driving and 9,312.82 km of traveled distance. Only two drivers had a car with an automatic gearbox. All other drivers had vehicles with a manual gearbox. Four drivers occasionally made trips in carpooling situations, offering rides to passengers with the use of carpooling apps. Three drivers worked as mobility app drivers. This caused greater participation from them in the overall sample, as observed in the results. 
 
 %% Start of NDS, how much time each collected
 
@@ -991,16 +990,17 @@ Only driver $D_{14}$ had a car with an automatic gearbox. All other drivers had 
 
 %% Data processing flowchart
 
-This section includes the methods utilized to construct all the utilized variables, divided into two subsections: the speeding variable (dependent variable) and built environment variables (independent variables). \autoref{fig:methods} includes a brief flowchart on the process of transforming the data sources into a complete dataset included in the traffic analysis zones. This process is detailed in the following subsections: Subsection \ref{sub:spd} and Subsection \ref{sub:be}.
+This section includes the methods utilized to construct all the utilized variables, divided into two subsections: the speeding variable (dependent variable) and built environment variables (independent variables). This process is detailed in the following subsections: Subsection \ref{sub:spd} and Subsection \ref{sub:be}.
+%  \autoref{fig:methods} includes a brief flowchart on the process of transforming the data sources into a complete dataset included in the traffic analysis zones. 
 
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{VARIABLE DATA FLOWCHART}
-    \includegraphics{fig/methods.pdf}
-    \label{fig:methods}
-    \par SOURCE: The Author (2021).
-\end{figure}
+% \begin{figure}[!htbp]
+%     \centering\footnotesize
+%     \captionsetup{font=footnotesize}
+%     \caption{VARIABLE DATA FLOWCHART}
+%     \includegraphics{fig/methods.pdf}
+%     \label{fig:methods}
+%     \par SOURCE: The Author (2021).
+% \end{figure}
 
 \subsection{Speeding} \label{sub:spd}
 
@@ -1012,7 +1012,7 @@ This section includes the methods utilized to construct all the utilized variabl
 
 % 2. Intersection with nds points
 
-To extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective speed limit. Speed limit data was collected from the road axis shapefile obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with speed limits from IPPUC road axis shapefiles \cite{IPPUC2021}. Using the QGIS software, it was created a 10-meter buffer around the road axes. In sequence, an intersection between the NDS points and the road buffer was performed, to associate the speed limit and the performed speed to the same point in space. This process is illustrated in \autoref{fig:buffer}. 
+To extract speeding information from the NDS sample, it was necessary to compare the performed speeds from drivers with the respective speed limit. Speed limit data was collected from the road axis in the shapefile format, obtained from OpenStreetMap \cite{OpenStreetMap}, completing some missing information with speed limits from IPPUC road axis data \cite{IPPUC2021}. A 10-meter buffer was created around each link of the road axes. In sequence, a spatial join between the NDS points and the road buffer was performed to associate the speed limit and the performed speed to the same point in space. All geometrical operations were executed in R, using the \verb|sf| package \cite{pebesma2018}. This process is illustrated in \autoref{fig:buffer}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1023,7 +1023,7 @@ To extract speeding information from the NDS sample, it was necessary to compare
     \par SOURCE: The Author (2021).
 \end{figure}
 
-Points with coordinates outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without speed limit and performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance traveled in speeds above the speed limit, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined in the following equation: \begin{align}
+Points outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without speed limit and performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance traveled in speeds above the speed limit, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined in the following equation: \begin{align}
     SP = \frac{D_{Vsp}}{D_{Vf}} \mbox{ ;} 
     \label{eq:sp}
 \end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the speed limit (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. 
@@ -1043,7 +1043,7 @@ In Brazil, a speeding infraction is considered when the driver exceeds the speed
 
 % 4. transforming points into lines to export distances: linestring - python script
 
-To extract distance data from the GPS coordinates, it was made a conversion from the coordinates into a linestring, a geometry type from the Well-known text (WKT) format. QGIS can read the WKT format and calculate the distances. Only points with a 1-second gap from each other (observed from the time variable) were connected with a linestring. The conversion process was made with a python script, included on Appendix 1. Total distances, distances performed in free-flow speeds, and distances in speeding were calculated for each TAZ in Curitiba, to calculate the occurrence of speeding. 
+To calculate distance, a line connecting the GPS coordinates wes created. These lines are known as linestrings, a geometry type from the Well-known text (WKT) format. Only points with a 1-second gap from each other (observed from the time variable) were connected with a linestring. Total distances, distances performed in free-flow speeds, and distances in speeding were calculated for each TAZ in Curitiba, to calculate the occurrence of speeding. 
 
 \subsection{Built Environment} \label{sub:be}
 
@@ -1053,7 +1053,7 @@ To extract distance data from the GPS coordinates, it was made a conversion from
 
 % 1. TAZ shape (general info, source)
 
-All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZ, established in Curitiba's origin/destiny research made by IPPUC in 2018, was used for this work \cite{IPPUC2018b}. The TAZ is an aggregation of multiple census blocks with similar characteristics inside a defined territory. These blocks were defined in the Brazilian Census of 2010 \cite{IBGE2010}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data were obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census blocks, it was possible to calculate the population density (PD) data into the TAZ. 
+All variables (speeding and built environment) were calculated for each traffic analysis zone (TAZ) inside Curitiba. 135 TAZ, established in Curitiba's origin/destiny research made by IPPUC in 2018, was used for this work \cite{IPPUC2018b}. The TAZ is an aggregation of multiple census tracts with similar characteristics inside a defined territory. These tracts were defined in the last census that was executed in Brazil, performed in 2010 \cite{IBGE2010}. The BE variables that were calculated are listed in \autoref{tab:bivar}. Inside the density category, population data were obtained from the last Brazilian Census in 2010 \cite{IBGE2010}. Using the available census tracts, it was possible to calculate the population density (PD) data into the TAZ. 
 
 % 2. Table with all variables: group & variable & abbreviation & unit & expected correlation to speeding
 
@@ -1095,9 +1095,14 @@ Inside the diversity category, the land use diversity index (LDI) was based on  
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{PD AND LDI}
-    \includegraphics{fig/map_PD+LDI.pdf}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_PD.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_LDI.png}
+    \end{subfigure}    
     \label{fig:pd_ldi}
-    \par SOURCE: The Author (2021), based on \textcite{IBGE2010, IPPUC2018b, IPPUC2021}.
+    \par SOURCE: The Author (2021)
 \end{figure}
 
 Regarding the design category, the density of intersections (DIS) was calculated based on the number of intersections divided by the length of roads. The intersection points and road lengths were extracted from the \textcite{IPPUC2021} road axis data. Intersection points were extracted using the "line intersection" function included in QGIS. The density of speed cameras (DSC) and traffic signal density (TSD) computation followed the same method applied to the density of intersections. Speed camera points were obtained from the Municipal Office of Social Defense and Transit of Curitiba \cite{SETRAN2020}, and traffic signal points were obtained from \textcite{IPPUC2021}. DIS and DSC variables are plotted in \autoref{fig:dis_dsc}. 
@@ -1106,20 +1111,30 @@ Regarding the design category, the density of intersections (DIS) was calculated
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{DIS AND DSC}
-    \includegraphics{fig/map_DIS+DSC.pdf}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_DIS.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_DSC.png}
+    \end{subfigure}
     \label{fig:dis_dsc}
-    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021,SETRAN2020}
+    \par SOURCE: The Author (2022), based on \textcite{IPPUC2018b,IPPUC2021,SETRAN2020}
 \end{figure}
 
-The proportion of arterials (PAR) used the IPPUC road axis data as well. The road hierarchy data followed the categories established by the Brazilian Traffic Code \cite{Brasil1997}: rapid transit, arterial, collector, and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Both rapid transit and arterial roads in Curitiba present a speed limit equal to or above 60 km/h, and both classes of roads have similar physical and operation characteristics, which justifies this union of categories. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}
+The proportion of arterials (PAR) was based on the IPPUC road axis data as well. The road hierarchy data followed the categories established by the Brazilian Traffic Code \cite{Brasil1997}: rapid transit, arterial, collector, and local roads. In this variable, rapid transit and arterial roads were combined into one category representing arterial roads. Both rapid transit and arterial roads in Curitiba present a speed limit equal to or above 60 km/h, and both classes of roads have similar physical and operation characteristics, which justifies this union of categories. Hence, the proportion of arterial roads was based on the division between arterial roads length and total road length. TSD and PAR variables are plotted in \autoref{fig:tsd_par}.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{TSD AND PAR}
-    \includegraphics{fig/map_TSD+PAR.pdf}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_TSD.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_PAR.png}
+    \end{subfigure}
     \label{fig:tsd_par}
-    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021}
+    \par SOURCE: The Author (2022), based on \textcite{IPPUC2018b,IPPUC2021}
 \end{figure}
 
 Street network density (SND) is the total road length divided by the area in squared kilometers of the respective TAZ. Regarding the destination accessibility, the location of commercial and services units from 2019 was provided by \textcite{IPPUC2021}, making possible the calculation of the density of commercial and services units (DCSU) per TAZ. SND and DCSU variables are plotted in \autoref{fig:snd_dcsu}.
@@ -1128,21 +1143,40 @@ Street network density (SND) is the total road length divided by the area in squ
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{SND AND DCSU}
-    \includegraphics{fig/map_SND+DCSU.pdf}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_SND.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_DCSU.png}
+    \end{subfigure}
     \label{fig:snd_dcsu}
-    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2021}
+    \par SOURCE: The Author (2022), based on \textcite{IPPUC2018b,IPPUC2021}
 \end{figure}
 
-The distance to transit is represented by the bus stop density (BSD) per road length. The location of bus stops across the city was provided by \textcite{IPPUC2020a}, with data from 2020. The average income (AVI), representing the demographics category, was obtained from the Brazilian Census of 2010 \cite{IBGE2010}. BSD and AVI variables are plotted in \autoref{fig:bsd_avi}. 
+The distance to transit is represented by the bus stop density (BSD) per road length. The location of bus stops across the city was provided by \textcite{IPPUC2020a}, with data from 2020. Bus stops located in dedicated bus lanes and streets were removed from the sample. The average income (AVI), representing the demographics category, was obtained from the Brazilian Census of 2010 \cite{IBGE2010}. BSD and AVI variables are plotted in \autoref{fig:bsd_avi}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{BSD AND AVI}
-    \includegraphics{fig/map_BSD+AVI.pdf}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_BSD.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_AVI.png}
+    \end{subfigure}
     \label{fig:bsd_avi}
-    \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2020a, IBGE2010}
+    \par SOURCE: The Author (2022), based on \textcite{IPPUC2018b,IPPUC2020a, IBGE2010}
 \end{figure}
+
+% \begin{figure}[!htbp]
+%     \centering\footnotesize
+%     \captionsetup{font=footnotesize}
+%     \caption{BSD AND AVI}
+%     \includegraphics{fig/map_BSD+AVI.pdf}
+%     \label{fig:bsd_avi}
+%     \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2020a, IBGE2010}
+% \end{figure}
 
 \section{GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING} \label{gwm}
 
@@ -1162,7 +1196,7 @@ The distance to transit is represented by the bus stop density (BSD) per road le
 
 %% basically a walk through of the code (ref code on appendix)
 
-This section contains the process of modeling a GWR. The steps performed in this section are described in \autoref{fig:gwr-method}. They were implemented using the R programming language as the main tool, with the aid of functions extracted from the GWmodel \cite{Gollini2013} and spdep \cite{Bivand2013} packages. The TAZ data passed through five main steps to construct and make a diagnostic of the GWR model: data arrangement,  bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
+This section contains the process of modeling a GWR. The steps performed in this section are described in \autoref{fig:gwr-method}. They were implemented using the R programming language as the main tool, with the aid of functions extracted from the \verb|GWmodel| \cite{Gollini2013} and \verb|spdep| \cite{Bivand2013} packages. The TAZ data passed through five main steps to construct and make a diagnostic of the GWR model: data arrangement, bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1189,12 +1223,19 @@ Minimizing AICc to select the bandwidth provides a trade-off between goodness of
 
 Moran's $I$ was applied to the models' residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on its residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represent a lack of spatial autocorrelation. Moran's $I$ consist of the following equation \cite{Getis2010}: \begin{align}
     I = \frac{n}{W} \times \frac{\sum_i \sum_j w_{ij} (x_i - \overline{x})(x_j - \overline{x})}{\sum_i (x_i - \overline{x})^2} \mbox{ ;}
-\end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the spdep package \cite{Bivand2013}.
+\end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the spdep package \cite{Bivand2013}. The final step was to analyze the performance between models. This analysis was based on four performance indicators: $AIC_c$, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance.
 
-The final step was to analyze the performance between models. This analysis was based on four performance indicators: AICc, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance. The code with all steps described in this section is included in Appendix 2.
-% ----------------------------------------------------------------------------------
+\section{LISA CLUSTERING} \label{sec:cluster}
 
-\chapter{ANALYSIS AND RESULTS} \label{cap:results}
+% Explain LISA
+
+% Explain Local Moran
+
+% Explain why am I using it. 
+
+% ------------------------------------------------------------------------------
+
+\chapter{RESULTS} \label{cap:results}
 
 % Present 
 
@@ -1690,6 +1731,14 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
 \end{table}
 
 %% Update gwr.R in appendix
+
+%% \chapter(DISCUSSION)
+
+%% SPEEDING
+
+%% PROPORTION OF ARTERIAL ROADS
+
+%% PLANNING PRACTICES
 
 % ----------------------------------------------------------------------------------
 
