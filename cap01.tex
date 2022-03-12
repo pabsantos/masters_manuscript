@@ -1223,9 +1223,9 @@ Minimizing AICc to select the bandwidth provides a trade-off between goodness of
 
 Moran's $I$ was applied to the models' residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on its residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represent a lack of spatial autocorrelation. Moran's $I$ consist of the following equation \cite{Getis2010}: \begin{align}
     I = \frac{n}{W} \times \frac{\sum_i \sum_j w_{ij} (x_i - \overline{x})(x_j - \overline{x})}{\sum_i (x_i - \overline{x})^2} \mbox{ ;}
-\end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the spdep package \cite{Bivand2013}. The final step was to analyze the performance between models. This analysis was based on four performance indicators: $AIC_c$, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance.
+\end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the \verb|spdep| package \cite{Bivand2013}. The final step was to analyze the performance between models. This analysis was based on four performance indicators: $AIC_c$, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance.
 
-\section{LISA CLUSTERING} \label{sec:cluster}
+\section{IDENTIFICATION OF CLUSTERS} \label{sec:cluster}
 
 % Explain LISA
 
