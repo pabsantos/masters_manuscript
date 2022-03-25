@@ -881,7 +881,7 @@ Regarding the type of GW model, most authors chose GWNBR or GWPR, considering th
 
 \chapter{METHODS} \label{cap:methods}
 
-This chapter is divided into 4 sections. Section \ref{ndsc} contains the steps of collecting and processing naturalistic driving data. Section \ref{data} presents the process of creating the dependent and independent variables. Section \ref{gwm} includes the process of elaborating a GWR model. Section \ref{sec:cluster} contains the process of calculating a local indicator of spatial association (LISA) using the Local Moran statistic to identify spatial clusters in the GWR results and desired variables. All process described in Sections \ref{data} through \ref{sec:cluster} were executed using the R programming language. The code can be accessed at \textcite{santos2022}.  
+This chapter is divided into 4 sections. Section \ref{ndsc} contains the steps of collecting and processing naturalistic driving data. Section \ref{data} presents the process of creating the dependent and independent variables. Section \ref{gwm} includes the process of elaborating a GWR model. Section \ref{sec:cluster} contains the process of calculating a local indicator of spatial association (LISA) using the Local Moran statistic to identify spatial clusters in the GWR results and desired variables. All process described in Sections \ref{data} through \ref{sec:cluster} were executed using the R programming language \cite{rcoreteam2021}. The code can be accessed at \textcite{santos2022}.  
  
 \section{NATURALISTIC DATA COLLECTION} \label{ndsc}
 
@@ -1105,7 +1105,7 @@ Inside the diversity category, the land use diversity index (LDI) was based on  
     \par SOURCE: The Author (2021)
 \end{figure}
 
-Regarding the design category, the density of intersections (DIS) was calculated based on the number of intersections divided by the length of roads. The intersection points and road lengths were extracted from the \textcite{IPPUC2021} road axis data. Intersection points were extracted using the "line intersection" function included in QGIS. The density of speed cameras (DSC) and traffic signal density (TSD) computation followed the same method applied to the density of intersections. Speed camera points were obtained from the Municipal Office of Social Defense and Transit of Curitiba \cite{SETRAN2020}, and traffic signal points were obtained from \textcite{IPPUC2021}. DIS and DSC variables are plotted in \autoref{fig:dis_dsc}. 
+Regarding the design category, the density of intersections (DIS) was calculated based on the number of intersections divided by the length of roads. The intersection points and road lengths were extracted from the \textcite{IPPUC2021} road axis data. Intersection points were extracted using the "line intersection" function included in QGIS \cite{QGIS_software}. The density of speed cameras (DSC) and traffic signal density (TSD) computation followed the same method applied to the density of intersections. Speed camera points were obtained from the Municipal Office of Social Defense and Transit of Curitiba \cite{SETRAN2020}, and traffic signal points were obtained from \textcite{IPPUC2021}. DIS and DSC variables are plotted in \autoref{fig:dis_dsc}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1196,7 +1196,7 @@ The distance to transit is represented by the bus stop density (BSD) per road le
 
 %% basically a walk through of the code (ref code on appendix)
 
-This section contains the process of modeling a GWR. The steps performed in this section are described in \autoref{fig:gwr-method}. They were implemented using the R programming language as the main tool, with the aid of functions extracted from the \verb|GWmodel| \cite{Gollini2013} and \verb|spdep| \cite{Bivand2013} packages. The TAZ data passed through five main steps to construct and make a diagnostic of the GWR model: data arrangement, bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's I application on the model's residuals. 
+This section contains the process of modeling a GWR. The steps performed in this section are described in \autoref{fig:gwr-method}. They were implemented using the R programming language as the main tool, with the aid of functions extracted from the \verb|GWmodel| \cite{Gollini2013} and \verb|spdep| \cite{Bivand2013} packages. The TAZ data passed through five main steps to construct and make a diagnostic of the GWR model: data arrangement, bandwidth size selection, kernel type selection, calculation of a global linear model and Moran's $I$ application on the model's residuals. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1215,15 +1215,16 @@ The second step of data arrangement was the exclusion of TAZ without free-flow e
     \rho = 1 - \frac{6 \sum d_i^2}{n \left( n^2 - 1\right)} \mbox{ ;}
 \end{align} where $d_i$ is the difference between two ranks of $i$-th observations from different variables and $n$ is the total number of observations. The inclusion of independent variables with correlations above 0.8 can influence negatively the quality of the GWR model \cite{Gollini2013}. Therefore, variables with a Spearman correlation above 0.8 were removed from the sample. 
 
-Considering the variability of TAZ sizes in the sample, the adaptive bandwidth has better performance than a fixed bandwidth \cite{Huang2018}, therefore an adaptive bandwidth was used in this work. To choose the best kernel type, it was necessary to calculate the adaptive bandwidth size (number of neighbors) for each kernel type (gaussian, bisquare, tricube, boxcar, and exponential). The GWmodel package in R has a function (\verb|bw.gwr()|) for automatic bandwidth selection. This function runs multiple GWR models with multiple bandwidth values and extracts the bandwidth size for the GWR model with the lowest value of corrected Akaike Information Criterion (AICc) \cite{Gollini2013}.
+Considering the variability of TAZ sizes in the sample, the adaptive bandwidth has better performance than a fixed bandwidth \cite{Huang2018}, therefore an adaptive bandwidth was used in this work. To choose the best kernel type, it was necessary to calculate the adaptive bandwidth size (number of neighbors) for each kernel type (gaussian, bisquare, tricube, boxcar, and exponential). The GWmodel package in R has a function (\verb|bw.gwr|) for automatic bandwidth selection. This function runs multiple GWR models with multiple bandwidth values and extracts the bandwidth size for the GWR model with the lowest value of corrected Akaike Information Criterion (AICc) \cite{Gollini2013}.
 
 Minimizing AICc to select the bandwidth provides a trade-off between goodness of fit and degrees of freedom. \cite{Fotheringham2002}. For GWR, AICc is defined as: \begin{align}
     AIC_c = 2n\log_{e}\left(\hat\sigma\right) + n \log_{e}\left(2\pi\right) + n\left\{\frac{n + \Tr(S)}{n - 2 - \Tr(S)}\right\} \mbox{ ;}
-\end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of the error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method utilized the \verb|gwr.basic()| function of the GWmodel package. In addition, a global linear regression was performed to compare the results with GWR. It was necessary because it is important to verify if the GWR model has an advantage over an ordinary least squares (OLS) approach \cite{Brunsdon2010}. The OLS approach also gives a diagnostic ($p$-value) for each estimated coefficient, which GWR is incapable to do.
+\end{align} where $n$ is the sample size, $\hat\sigma$ is the estimated standard deviation of the error term and $\Tr(S)$ is the trace of the hat matrix, which depends on the bandwidth \cite{Fotheringham2002}. With the discovered optimal bandwidths, the basic form of GWR, presented previously in \autoref{eq:gwr}, was performed five times, one for each type of kernel (\autoref{tab:kernel}). The application of the GWR method utilized the \verb|gwr.basic| function of the GWmodel package. In addition, a global linear regression was performed to compare the results with GWR. It was necessary because it is important to verify if the GWR model has an advantage over an ordinary least squares (OLS) approach \cite{Brunsdon2010}. The OLS approach also gives a diagnostic ($p$-value) for each estimated coefficient, which GWR is incapable to do.
 
-Moran's $I$ was applied to the models' residuals to examine the presence of spatial autocorrelation. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on its residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and/or without the desired statistical significance ($p$-value) represent a lack of spatial autocorrelation. Moran's $I$ consist of the following equation \cite{Getis2010}: \begin{align}
+Moran's $I$ was applied to the models' residuals to examine the presence of spatial autocorrelation. It is designed to reject the null hypothesis of spatial randomness in favor of an alternative of clustering \cite{anselinLocalSpatialAutocorrelation2020}. A regression model with a good spatial analysis performance shows a lack of spatial autocorrelation on its residuals. The results of Moran's $I$ test varies between -1 and 1, where -1 represents a perfect dispersion pattern and 1 represents a perfect clustering pattern of the data. Results close to 0 and / or without the desired statistical significance ($p$-value) represent a lack of spatial autocorrelation. Moran's $I$ consist of the following equation \cite{Getis2010}: \begin{align}
     I = \frac{n}{W} \times \frac{\sum_i \sum_j w_{ij} (x_i - \overline{x})(x_j - \overline{x})}{\sum_i (x_i - \overline{x})^2} \mbox{ ;}
-\end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test()| function included in the \verb|spdep| package \cite{Bivand2013}. The final step was to analyze the performance between models. This analysis was based on four performance indicators: $AIC_c$, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance.
+    \label{eq:global_moran}
+\end{align} where $n$ is the sample size, $w_{ij}$ is the matrix of spatial weights, $W$ is the sum of all $w_{ij}$, $x$ is the variable of interest, indexed by $i$ and $j$. and $\overline{x}$ is the mean of $x$. This test was applied using the \verb|moran.test| function included in the \verb|spdep| package \cite{Bivand2013}. The final step was to analyze the performance between models. This analysis was based on four performance indicators: $AIC_c$, $R^2$, adjusted $R^2$, and the value of Moran's $I$ on residuals. Higher values of $R^2$ and adjusted $R^2$ indicate a better performance.
 
 \section{IDENTIFICATION OF CLUSTERS} \label{sec:cluster}
 
@@ -1231,68 +1232,106 @@ Moran's $I$ was applied to the models' residuals to examine the presence of spat
 
 % Explain Local Moran
 
-% Explain why am I using it. 
+% Explain why / how am I using it. 
 
-% ------------------------------------------------------------------------------
+The identification of clusters in the GWR results and speeding variable is important to investigate hot spots and cold spots in the data, in addition to spatial outliers. For this objective, the Local Moran statistic was applied. Similar to Moran's $I$, Local Moran is a spatial autocorrelation statistic. Moran's $I$ does not provide an indication of the location of the clusters. However, Local Moran, it's local counterpart, does. Local Moran statistic is classified as a local indicator of spatial association (LISA). LISA is characterized for providing a spatial autocorrelation statistic for each location. It also establishes a proportional relationship between the sum of the local statistics and a corresponding global statistic \cite{anselinLocalIndicatorsSpatial2010,anselinLocalSpatialAutocorrelation2020}.
+
+To \textcite{anselinLocalSpatialAutocorrelation2020}, most of the global spatial autocorrelation statistics can be expresses as a double sum over the $i$ and $j$ indices of $g_{ij}$: $\sum_i \sum_j g_{ij}$. The $g_{ij}$ variable can be expressed as the combination of measure of attribute similarity between pair of observations ($f(x_i, x_j)$) with an indicator for geographical similarity ($w_{ij}$). It's local form is the sum of the relevant expression over the $j$ index, for each location $i$. Therefore, the generic form for a LISA is: \begin{align}
+    \sum_j w_{ij} f\left(x_i, x_j\right) \mbox{.}
+\end{align} Applying the same method to Moran's $I$, showed in \autoref{eq:global_moran}, Local Moran statistic to each observation $i$ is: \begin{align}
+    I_i = \frac{\sum_j w_{ij} z_i z_j}{\sum_i z_i^2} \mbox{;}
+\end{align} where $z$ is the deviation from the mean of the variable of interest $(x - \overline{x})$. The denominator is fixed in the local configuration, therefore, it can be ignored. Replacing the denominator by $c$ and rearranging the equation, the obtained expression is: \begin{align}
+    I_i = c \times z_i \sum_j w_{ij} z_j \mbox{;}
+\end{align} representing the product of the value at location $i$ with the weighted sum of the values at neighboring locations $j$.
+
+To address statistical significance, it is possible to calculate a pseudo $p$-value for each location. In this work, results with $p$-values below 0.05 were defined as statistically significant. It is possible to classify significant locations as High-High; Low-Low spatial clusters, and High-Low; Low-High spatial outliers. High-High locations have high values with neighboring locations that also have high values. The same situation applies to Low-Low spatial clusters, but considering low values. High-Low spatial outliers are locations with high values with neighboring locations that have low values. Low-High spatial outliers follow the same rule, but inverting the values. High and low is relative to the mean of the variable, and does not represent a absolute measure. It is important to observe that identified locations of spatial clusters are not actual clusters, but cores of a cluster. The full cluster is composed of the cores and its direct neighbors \cite{anselinLocalIndicatorsSpatial2010}.
+
+The Local Moran statistic was applied in R, with the aid of the \verb|Rgeoda| package \cite{liRgeodaLibrarySpatial2021}. The \verb|local_moran| function was applied to each coefficient of the GWR model, to SP variable, and to other model's parameter, including local $R^2$. The Local Moran statistic utilized the queen contiguity-based spatial weight. The queen criterion defines neighbors as spatial units sharing a common edge and / or vertices. In this configuration, all neighbors contain the same spatial weight \cite{Bivand2013}. 
+
+%-------------------------------------------------------------------------------
 
 \chapter{RESULTS} \label{cap:results}
 
 % Present 
 
-This chapter focus on the results from the NDS-BR (distances and speeding rate, or example) and the results from the GWR (correlation between speeding behavior and built environment). 
+This chapter focus on the results from the NDS-BR (Sections \ref{sec:ndsr} and \ref{sec:spr}), the results from the GWR (Section \ref{sec:gwrr}), and further discussions (Section \ref{sec:discussion}).
 
 \section{NATURALISTIC DATA} \label{sec:ndsr}
 % 1. Results from NDS (how much each driver participated)
 
 %% How much each driver participated: Quantity of trips, length of trips (mean, median, 1q, 3q, max , min) - try table or boxplot
 
-The process of removing invalid times from the total sample and choosing the traveled data that happened in Curitiba resulted in 3,459.92 kilometers of traveled distance and a total of 410 trips, representing a traveled time of 134.79 hours. Incomplete trips - when a portion of the trip happened inside Curitiba - were kept in the sample, without the sections that were traveled outside the city borders. \autoref{tab:trips} contains a summary of all trips per driver. Overall, all trips in the sample had a mean distance of 8.43 and a median of 4.76 kilometers traveled. Driver $D_5$ had 56 trips, the highest amount, and driver $D_{12}$ had the least trips performed, with a value of 6 trips.
+The process of removing invalid times from the total sample and choosing the traveled data that happened in Curitiba resulted in 6,074.38 kilometers of traveled distance and a total of 818 trips, representing a traveled time of 230.86 hours. Incomplete trips - when a portion of the trip happened inside Curitiba - were kept in the sample, without the sections that were traveled outside the city borders. \autoref{tab:trips} contains a descriptive summary of trip distance and quantity of trips per driver. Overall, all trips in the sample had a mean distance of 7.43 and a median of 4.82 kilometers traveled. The average quantity of trips per driver was 26, with a median value of 24 trips. The range of trips performed by drivers varies from a minimum of 3 trips to a maximum of 56 trips. 
 
 \begin{table}[!htbp]
     \footnotesize
-    \captionsetup{justification=raggedright,
-        singlelinecheck=false,
-        font=footnotesize}
-    \caption{DESCRIPTIVE STATISTICS OF TRIP DISTANCES}
+    \captionsetup{justification=raggedright, singlelinecheck=false,
+    font=footnotesize}
+    \caption{DESCRIPTIVE STATISTICS OF TRIPS}
     \centering
-    \begin{tabular}{lrrrrrrrrr}
+    \begin{tabular}{lrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Driver}} & \multicolumn{1}{c}{\textbf{n}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} & \multicolumn{1}{c}{\textbf{Total distance}} \\ 
+         & \multicolumn{1}{c}{\textbf{Distance of trips [km]}} & \multicolumn{1}{c}{\textbf{Quantity per driver}} \\
         \hline
-        $D_{1}$ & 29 & 5.49 & 2.36 & 1.17 & 4.70 & 5.84 & 6.13 & 12.60 & 159.33 \\ 
-        $D_{2}$ & 14 & 14.09 & 7.81 & 2.41 & 7.14 & 14.40 & 21.94 & 22.70 & 197.31 \\ 
-        $D_{3}$ & 15 & 11.58 & 4.41 & 4.16 & 7.89 & 11.86 & 14.82 & 19.14 & 173.72 \\ 
-        $D_{4}$ & 48 & 4.26 & 2.47 & 0.24 & 2.30 & 3.50 & 5.88 & 9.36 & 204.67 \\ 
-        $D_{5}$ & 56 & 2.71 & 2.86 & 0.01 & 0.66 & 2.14 & 3.72 & 15.69 & 152.01 \\ 
-        $D_{6}$ & 37 & 3.21 & 1.44 & 0.90 & 1.99 & 2.82 & 4.45 & 6.85 & 118.83 \\ 
-        $D_{7}$ & 29 & 10.84 & 5.60 & 0.48 & 5.12 & 12.88 & 15.67 & 17.04 & 314.44 \\ 
-        $D_{8}$ & 31 & 6.40 & 3.55 & 0.67 & 2.46 & 7.00 & 9.15 & 13.14 & 198.55 \\ 
-        $D_{9}$ & 11 & 4.63 & 2.04 & 1.69 & 3.24 & 4.51 & 5.87 & 7.63 & 50.92 \\ 
-        $D_{10}$ & 40 & 5.65 & 4.02 & 0.41 & 2.04 & 5.05 & 8.80 & 14.87 & 225.97 \\ 
-        $D_{11}$ & 12 & 1.72 & 1.63 & 0.17 & 0.66 & 1.07 & 2.30 & 5.90 & 20.62 \\ 
-        $D_{12}$ &  6 & 1.71 & 2.38 & 0.07 & 0.21 & 0.46 & 2.51 & 5.97 & 10.28 \\ 
-        $D_{13}$ & 23 & 3.97 & 2.01 & 0.10 & 2.96 & 3.94 & 4.94 & 7.51 & 91.26 \\ 
-        $D_{14}$ & 31 & 21.06 & 17.28 & 0.06 & 7.70 & 17.68 & 30.05 & 72.93 & 652.71 \\ 
-        $D_{15}$ & 21 & 38.33 & 40.40 & 1.33 & 10.73 & 25.57 & 47.75 & 168.26 & 805.02 \\ 
-        $D_{16}$ &  7 & 12.04 & 15.21 & 0.02 & 3.69 & 3.92 & 14.99 & 42.97 & 84.27 \\ 
+        Mean   &     7.43 & 26 \\
+        SD     &    10.79 & 15 \\
+        Min.   &     0.01 &  3 \\
+        1Q     &     2.44 & 15 \\
+        Median &     4.82 & 24 \\
+        3Q     &     9.27 & 38 \\
+        Max.   &   175.35 & 56 \\
         \hline
-        Total & 410 & 8.43 & 13.76 & 0.01 & 2.27 & 4.76 & 9.22 & 168.26 & 3,459.92 \\
+        Total  & 6,074.38 & 818 \\
         \hline
     \end{tabular}
     \label{tab:trips}
     \par \vspace{2mm} \footnotesize \raggedright
     SOURCE: The Author (2021)
-    \par \vspace{1mm} \footnotesize \raggedright
-    NOTES: Mean, SD, Min., 1Q, Median, 3Q, Max., and Total distance are represented in kilometers. 
 \end{table}
 
-Concerning the mean distance of trips, driver $D_{15}$ had the highest mean value of 38.33 kilometers and driver $D_{12}$ had the lowest mean of 1.71 kilometers. The maximum distance of a trip was 168.26 kilometers, performed by driver $D_{15}$ and the minimum distance was 0.01 kilometers, by driver $D_5$. In total, drivers $D_7$, $D_{14}$, and $D_{15}$ had the highest traveled distance in the sample, with distances of 314.44, 652.71 and 805.02 kilometers, respectively. Drivers $D_{14}$ and $D_{15}$ were mobility app drivers during the process of the NDS, leading to this higher amount of total distance traveled and longer trips. 
+% \begin{table}[!htbp]
+%     \footnotesize
+%     \captionsetup{justification=raggedright,
+%         singlelinecheck=false,
+%         font=footnotesize}
+%     \caption{DESCRIPTIVE STATISTICS OF TRIP DISTANCES}
+%     \centering
+%     \begin{tabular}{lrrrrrrrrr}
+%         \hline
+%         \multicolumn{1}{c}{\textbf{Driver}} & \multicolumn{1}{c}{\textbf{n}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} & \multicolumn{1}{c}{\textbf{Total distance}} \\ 
+%         \hline
+%         $D_{1}$ & 29 & 5.49 & 2.36 & 1.17 & 4.70 & 5.84 & 6.13 & 12.60 & 159.33 \\ 
+%         $D_{2}$ & 14 & 14.09 & 7.81 & 2.41 & 7.14 & 14.40 & 21.94 & 22.70 & 197.31 \\ 
+%         $D_{3}$ & 15 & 11.58 & 4.41 & 4.16 & 7.89 & 11.86 & 14.82 & 19.14 & 173.72 \\ 
+%         $D_{4}$ & 48 & 4.26 & 2.47 & 0.24 & 2.30 & 3.50 & 5.88 & 9.36 & 204.67 \\ 
+%         $D_{5}$ & 56 & 2.71 & 2.86 & 0.01 & 0.66 & 2.14 & 3.72 & 15.69 & 152.01 \\ 
+%         $D_{6}$ & 37 & 3.21 & 1.44 & 0.90 & 1.99 & 2.82 & 4.45 & 6.85 & 118.83 \\ 
+%         $D_{7}$ & 29 & 10.84 & 5.60 & 0.48 & 5.12 & 12.88 & 15.67 & 17.04 & 314.44 \\ 
+%         $D_{8}$ & 31 & 6.40 & 3.55 & 0.67 & 2.46 & 7.00 & 9.15 & 13.14 & 198.55 \\ 
+%         $D_{9}$ & 11 & 4.63 & 2.04 & 1.69 & 3.24 & 4.51 & 5.87 & 7.63 & 50.92 \\ 
+%         $D_{10}$ & 40 & 5.65 & 4.02 & 0.41 & 2.04 & 5.05 & 8.80 & 14.87 & 225.97 \\ 
+%         $D_{11}$ & 12 & 1.72 & 1.63 & 0.17 & 0.66 & 1.07 & 2.30 & 5.90 & 20.62 \\ 
+%         $D_{12}$ &  6 & 1.71 & 2.38 & 0.07 & 0.21 & 0.46 & 2.51 & 5.97 & 10.28 \\ 
+%         $D_{13}$ & 23 & 3.97 & 2.01 & 0.10 & 2.96 & 3.94 & 4.94 & 7.51 & 91.26 \\ 
+%         $D_{14}$ & 31 & 21.06 & 17.28 & 0.06 & 7.70 & 17.68 & 30.05 & 72.93 & 652.71 \\ 
+%         $D_{15}$ & 21 & 38.33 & 40.40 & 1.33 & 10.73 & 25.57 & 47.75 & 168.26 & 805.02 \\ 
+%         $D_{16}$ &  7 & 12.04 & 15.21 & 0.02 & 3.69 & 3.92 & 14.99 & 42.97 & 84.27 \\ 
+%         \hline
+%         Total & 410 & 8.43 & 13.76 & 0.01 & 2.27 & 4.76 & 9.22 & 168.26 & 3,459.92 \\
+%         \hline
+%     \end{tabular}
+%     \label{tab:trips}
+%     \par \vspace{2mm} \footnotesize \raggedright
+%     SOURCE: The Author (2021)
+%     \par \vspace{1mm} \footnotesize \raggedright
+%     NOTES: Mean, SD, Min., 1Q, Median, 3Q, Max., and Total distance are represented in kilometers. 
+% \end{table}
 
 % hour of the day, day of the week (per distance traveled, per number of trips)
 
 %% dotw dist
 
-In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the week is presented. Tuesdays had most of the traveled distance and Saturdays had the least traveled distance. Regarding the trips, \autoref{fig:dotw_trips} contains information on the quantity per day of the week. Tuesdays had the highest amount of trips and Sundays the lowest. Overall, most traveled distances and trips happened in higher amounts during weekdays. \autoref{fig:hotd_dist} and \autoref{fig:hotd_trips} include traveled distance and trip start distribution per hour of the day, respectively.  
+In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the week is presented. Tuesdays had most of the traveled distance and Saturdays had the least traveled distance. Regarding the trips, \autoref{fig:dotw_trips} contains information on the quantity per day of the week. Wednesdays had the highest amount of trips and Sundays the lowest. Overall, most traveled distances and trips happened in higher amounts during weekdays. \autoref{fig:hotd_dist} and \autoref{fig:hotd_trips} include traveled distance and trip start distribution per hour of the day, respectively.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1336,7 +1375,7 @@ In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the
     \par SOURCE: The Author (2021)
 \end{figure}
 
-Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19:00 - 20:00. Most of the trips started between 17:00 - 18:00, followed by 19:00 - 20:00 and 7:00 - 8:00. \autoref{fig:taz_travel} contains the traveled distance per TAZ in Curitiba. The TAZ with the highest traveled distance had 165.56 kilometers, and the lowest had 0.04 kilometers. 7 TAZ had no traveled distance. Most of the trips happened in the central area of the city.
+Most of the traveled distance happened between 7:00 - 8:00 and 18:00 - 19:00. Most of the trips started between 7:00 - 8:00, followed by 17:00 - 19:00 and 12:00 - 13:00. \autoref{fig:taz_travel} contains the traveled distance per TAZ in Curitiba. The TAZ with the highest traveled distance had 230.34 kilometers, and the lowest had 0.2 kilometers. 5 zones had no traveled distance. Most of the trips happened in central areas of the city.
 
 % how much traveled in each TAZ (MAP)
 
@@ -1344,7 +1383,7 @@ Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{TRAVELED DISTANCE PER TAZ}
-    \includegraphics{fig/taz_travel.pdf}
+    \includegraphics{fig/map_dist.png}
     \label{fig:taz_travel}
     \par SOURCE: The Author (2021)
 \end{figure}
@@ -1354,39 +1393,52 @@ Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19
 
 %% how much speeding for each driver (per trip - mean, median, 1q, 3q, max, min - try table AND boxplot) 
 
-\autoref{tab:speeding} shows the summary of the speeding data per trip for each driver. Driver $D_{16}$ had the highest mean speeding rate value of 0.56, while $D_5$ had the lowest mean value of 0.25. Drivers $D_4$, $D_5$, $D_8$, $D_{10}$, $D_{11}$, $D_{12}$, $D_{13}$, and $D_{14}$ had trips without any speeding. Drivers $D_5$, $D_{10}$, $D_{13}$, $D_{14}$, and $D_{16}$ had the highest speeding value of all trips, reaching 0.79. Considering the sum of all trips, the highest value of speeding was performed by driver $D_{12}$. The average speeding value of the overall trip sample was 0.35, and 0.41 considering all the traveled distances from the sample.  
+\autoref{tab:speeding} shows the summary of the speeding rate per trip and per driver. The mean speeding rate of trips was 0.40, with a standard deviation of 0.19. The minimum value was 0.00, indicating a trip without speeding, and the maximum value was 1.00, indicating a trip (or a segment of a trip) totally performed in speeding. Regarding the speeding rate per driver, the mean value was 0.44, with a standard deviation of 0.08. The driver with least speeding presented a value of 0.28, and the driver with the highest level of speeding presented a value of 0.64.
 
 \begin{table}[!htbp]
     \footnotesize
     \captionsetup{justification=raggedright,
         singlelinecheck=false,
         font=footnotesize}
-    \caption{DESCRIPTIVE STATISTICS OF SPEEDING RATE PER TRIP}
+    \caption{DESCRIPTIVE STATISTICS OF SPEEDING RATE PER TRIP AND DRIVER}
     \centering
-    \begin{tabular}{lrrrrrrrr}
+    \begin{tabular}{lrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Driver}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} & \multicolumn{1}{c}{\textbf{Total SP}} \\
+         & \multicolumn{1}{c}{\textbf{Trips}} & \multicolumn{1}{c}{\textbf{Drivers}} \\
         \hline
-        $D_1$ & 0.29 & 0.17 & 0.07 & 0.16 & 0.27 & 0.39 & 0.63 & 0.35 \\ 
-        $D_2$ & 0.35 & 0.16 & 0.09 & 0.20 & 0.43 & 0.47 & 0.53 & 0.42 \\ 
-        $D_3$ & 0.48 & 0.17 & 0.23 & 0.32 & 0.48 & 0.60 & 0.78 & 0.46 \\ 
-        $D_4$ & 0.32 & 0.14 & 0.00 & 0.26 & 0.31 & 0.40 & 0.66 & 0.33 \\ 
-        $D_5$ & 0.25 & 0.24 & 0.00 & 0.03 & 0.18 & 0.40 & 0.79 & 0.31 \\ 
-        $D_6$ & 0.48 & 0.15 & 0.10 & 0.39 & 0.47 & 0.59 & 0.74 & 0.52 \\ 
-        $D_7$ & 0.26 & 0.14 & 0.03 & 0.18 & 0.25 & 0.33 & 0.76 & 0.26 \\ 
-        $D_8$ & 0.33 & 0.21 & 0.00 & 0.18 & 0.26 & 0.52 & 0.70 & 0.38 \\ 
-        $D_9$ & 0.46 & 0.13 & 0.23 & 0.37 & 0.49 & 0.58 & 0.62 & 0.48 \\ 
-        $D_{10}$ & 0.35 & 0.22 & 0.00 & 0.17 & 0.35 & 0.46 & 0.79 & 0.43 \\ 
-        $D_{11}$ & 0.26 & 0.19 & 0.00 & 0.13 & 0.28 & 0.36 & 0.64 & 0.30 \\ 
-        $D_{12}$ & 0.30 & 0.30 & 0.00 & 0.04 & 0.27 & 0.47 & 0.76 & 0.66 \\ 
-        $D_{13}$ & 0.26 & 0.18 & 0.00 & 0.15 & 0.22 & 0.34 & 0.79 & 0.26 \\ 
-        $D_{14}$ & 0.46 & 0.17 & 0.00 & 0.40 & 0.49 & 0.58 & 0.79 & 0.50 \\ 
-        $D_{15}$ & 0.38 & 0.12 & 0.07 & 0.33 & 0.39 & 0.47 & 0.57 & 0.39 \\ 
-        $D_{16}$ & 0.56 & 0.19 & 0.30 & 0.45 & 0.57 & 0.70 & 0.79 & 0.55 \\ 
-        \hline 
-        Total & 0.35 & 0.20 & 0.00 & 0.19 & 0.34 & 0.49 & 0.79 & 0.41 \\
+        Mean   &     0.40 & 0.44 \\
+        SD     &     0.19 & 0.08 \\
+        Min.   &     0.00 & 0.28 \\
+        1Q     &     0.28 & 0.40 \\
+        Median &     0.41 & 0.45 \\
+        3Q     &     0.52 & 0.51 \\
+        Max.   &     1.00 & 0.64 \\
         \hline
     \end{tabular}
+    % \begin{tabular}{lrrrrrrrr}
+    %     \hline
+    %     \multicolumn{1}{c}{\textbf{Driver}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} & \multicolumn{1}{c}{\textbf{Total SP}} \\
+    %     \hline
+    %     $D_1$ & 0.29 & 0.17 & 0.07 & 0.16 & 0.27 & 0.39 & 0.63 & 0.35 \\ 
+    %     $D_2$ & 0.35 & 0.16 & 0.09 & 0.20 & 0.43 & 0.47 & 0.53 & 0.42 \\ 
+    %     $D_3$ & 0.48 & 0.17 & 0.23 & 0.32 & 0.48 & 0.60 & 0.78 & 0.46 \\ 
+    %     $D_4$ & 0.32 & 0.14 & 0.00 & 0.26 & 0.31 & 0.40 & 0.66 & 0.33 \\ 
+    %     $D_5$ & 0.25 & 0.24 & 0.00 & 0.03 & 0.18 & 0.40 & 0.79 & 0.31 \\ 
+    %     $D_6$ & 0.48 & 0.15 & 0.10 & 0.39 & 0.47 & 0.59 & 0.74 & 0.52 \\ 
+    %     $D_7$ & 0.26 & 0.14 & 0.03 & 0.18 & 0.25 & 0.33 & 0.76 & 0.26 \\ 
+    %     $D_8$ & 0.33 & 0.21 & 0.00 & 0.18 & 0.26 & 0.52 & 0.70 & 0.38 \\ 
+    %     $D_9$ & 0.46 & 0.13 & 0.23 & 0.37 & 0.49 & 0.58 & 0.62 & 0.48 \\ 
+    %     $D_{10}$ & 0.35 & 0.22 & 0.00 & 0.17 & 0.35 & 0.46 & 0.79 & 0.43 \\ 
+    %     $D_{11}$ & 0.26 & 0.19 & 0.00 & 0.13 & 0.28 & 0.36 & 0.64 & 0.30 \\ 
+    %     $D_{12}$ & 0.30 & 0.30 & 0.00 & 0.04 & 0.27 & 0.47 & 0.76 & 0.66 \\ 
+    %     $D_{13}$ & 0.26 & 0.18 & 0.00 & 0.15 & 0.22 & 0.34 & 0.79 & 0.26 \\ 
+    %     $D_{14}$ & 0.46 & 0.17 & 0.00 & 0.40 & 0.49 & 0.58 & 0.79 & 0.50 \\ 
+    %     $D_{15}$ & 0.38 & 0.12 & 0.07 & 0.33 & 0.39 & 0.47 & 0.57 & 0.39 \\ 
+    %     $D_{16}$ & 0.56 & 0.19 & 0.30 & 0.45 & 0.57 & 0.70 & 0.79 & 0.55 \\ 
+    %     \hline 
+    %     Total & 0.35 & 0.20 & 0.00 & 0.19 & 0.34 & 0.49 & 0.79 & 0.41 \\
+    %     \hline
+    % \end{tabular}
     \label{tab:speeding}
     \par \vspace{2mm} \footnotesize \raggedright
     SOURCE: The Author (2021).
@@ -1394,7 +1446,7 @@ Most of the traveled distance happened between 7:00 - 8:00, 13:00 - 14:00 and 19
 
 %% hour of the day, day of the week (SP)
 
-Across all days of the week, speeding followed a similar pattern (\autoref{fig:dotw_sp}). Speeding on Wednesdays and Fridays was a bit higher than other days, and on Sundays and Mondays, it presented lower values. Regarding the hour of the day (\autoref{fig:hotd_sp}), the highest value of speeding happened between 0:00 - 1:00 and the lowest between 1:00 and 2:00. 
+Speeding values presented a similar value across all days of the week (\autoref{fig:dotw_sp}). Speeding on Tuesdays and Fridays was a bit higher than other days, and on Thursdays and Saturdays, it presented lower values. Regarding the hour of the day (\autoref{fig:hotd_sp}), the highest value of speeding happened between 0:00 - 1:00 and the lowest between 1:00 and 2:00. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1436,20 +1488,20 @@ In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers pr
 
 %% Show remaining TAZ and remaining sample (distance, time traveled)
 
-The data arrangement process reduced the total sample of 135 TAZ into 107 TAZ. This resulted in a remaining sample of 3,425.04 kilometers of total traveled distance, which includes 2060.31 kilometers performed in free-flow speeds and 840.88 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.  
+The data arrangement process reduced the total sample of 135 TAZ into 118 TAZ. This resulted in a remaining sample of 6,160.91 kilometers of total traveled distance, which includes 3,745.24 kilometers performed in free-flow speeds and 1,674.51 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{TAZ CONSIDERED IN THE SAMPLE}
-    \includegraphics{fig/taz_filter.png}
+    \includegraphics{fig/map_filter.png}
     \label{fig:taz_filter}
     \par SOURCE: The Author (2021)
 \end{figure}
 
 %% Summary of variables: mean, median, max, min, 1q, 3q
 
-In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 107 TAZ. The value of speeding for each TAZ varied between 0.14 and 0.84, with a mean value of 0.43. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ. DSC, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. 
+In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 118 TAZ. The value of speeding for each TAZ varied between 0.01 and 0.65, with a mean value of 0.31.  DSC, LDI, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ, including the Local Moran results for this variable. The Low-Low clusters indicates lower values of SP in the central zones of the city and in the northeast zones. A Low-High outlier was detected between the Low-Low clusters. Regarding higher values of SP, High-High clusters can be observed at six different areas.
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1462,17 +1514,17 @@ In \autoref{tab:var_summary} is included the descriptive statistics of the 11 va
         \hline
         \multicolumn{1}{c}{\textbf{Variable [unit]}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} \\ 
         \hline
-        PD [inhab./$km^2$] & 5650.32 & 2997.25 & 114.66 & 3286.92 & 5387.50 & 7225.75 & 16140.99 \\ 
-        LDI & 0.63 & 0.21 & 0.00 & 0.55 & 0.66 & 0.77 & 0.99 \\
-        DIS [no./km] & 69.97 & 27.49 & 3.57 & 52.34 & 68.40 & 82.98 & 170.64 \\
-        DSC [no./km] & 1.08 & 1.55 & 0.00 & 0.00 & 0.61 & 1.42 & 10.85 \\ 
-        TSD [no./km] & 6.77 & 8.93 & 0.00 & 1.50 & 3.47 & 7.61 & 45.06 \\
-        PAR & 0.06 & 0.06 & 0.00 & 0.00 & 0.05 & 0.08 & 0.32 \\ 
-        SND [$km/km^2$] & 15.16 & 4.04 & 3.68 & 12.61 & 15.72 & 18.12 & 22.36 \\
-        DCSU [no./$km^2$] & 1079.68 & 1468.19 & 15.08 & 436.20 & 694.81 & 1048.59 & 11632.22 \\
-        BSD [no./km] & 3.28 & 2.30 & 0.29 & 1.96 & 2.63 & 3.91 & 14.18 \\
-        AVI [BRL] & 2678.82 & 1521.43 & 836.63 & 1462.05 & 2163.80 & 3650.05 & 6960.25 \\
-        SP & 0.43 & 0.15 & 0.14 & 0.31 & 0.42 & 0.54 & 0.84 \\
+        AVI [$BRL$]& 2,628.16 & 1,557.56 & 807.21 & 1,435.00 & 2,087.21 & 3,572.04 & 9,293.81 \\ 
+        BSD [$no./km$] & 3.04 & 2.15 & 0.29 & 1.78 & 2.49 & 3.54 & 13.90 \\ 
+        DCSU [$no./km^2$] & 847.34 & 1,184.30 & 12.30 & 337.76 & 533.36 & 877.57 & 9,539.73 \\ 
+        DIS [$no./km$] & 4.64 & 1.11 & 0.88 & 3.89 & 4.54 & 5.18 & 7.70 \\ 
+        DSC [$no./km$] & 0.06 & 0.09 & 0.00 & 0.00 & 0.03 & 0.08 & 0.53 \\ 
+        LDI & 0.61 & 0.22 & 0.00 & 0.52 & 0.65 & 0.74 & 0.99 \\ 
+        PAR & 0.05 & 0.05 & 0.00 & 0.00 & 0.05 & 0.08 & 0.21 \\ 
+        PD [$inhab./km^2$] & 5,672.35 & 3,113.04 & 114.68 & 3,286.27 & 5,489.84 & 7,244.98 & 16,142.06 \\ 
+        SND [$km/km^2$] & 15.08 & 4.41 & 3.68 & 12.54 & 15.63 & 18.14 & 25.78 \\ 
+        SP & 0.31 & 0.14 & 0.01 & 0.20 & 0.30 & 0.40 & 0.65 \\ 
+        TSD [$no./km$] & 0.37 & 0.48 & 0.00 & 0.09 & 0.20 & 0.40 & 2.75 \\ 
         \hline
     \end{tabular}
     \label{tab:var_summary}
@@ -1482,31 +1534,47 @@ In \autoref{tab:var_summary} is included the descriptive statistics of the 11 va
 
 %% How much speeding in each TAZ (map)
 
+% \begin{figure}[!htbp]
+%     \centering\footnotesize
+%     \captionsetup{font=footnotesize}
+%     \caption{SPEEDING PER TAZ}
+%     \includegraphics{fig/map_SP.png}
+%     \label{fig:taz_sp}
+%     \par SOURCE: The Author (2021)
+%     \par NOTE: Grey areas have no data.
+% \end{figure}
+
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{SPEEDING PER TAZ}
-    \includegraphics{fig/taz_sp.png}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/map_SP.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_SP.png}
+    \end{subfigure}    
     \label{fig:taz_sp}
-    \par SOURCE: The Author (2021)
+    \par SOURCE: The Author (2022)
+    \par NOTE: Grey zones have no data.
 \end{figure}
 
 %% Show correlogram (remaining variables)
 
-The final step of the data arrangement process was the check of correlation between all independent variables, using the Spearman method. The results of this process are displayed in the correlogram in \autoref{fig:corr_spear}. Two Spearman coefficients resulted in values above 0.8: in the correlation between street network density (SND) and density of intersections (DIS); and between traffic signal density (TSD) and density of commercial and services units (DCSU). To solve this issue, it was decided to remove SND and TSD from the analysis.  
+The final step of the data arrangement process was the check of correlation between all independent variables, using the Spearman method. The results of this process are displayed in the correlogram in \autoref{fig:corr_spear}. None of the variables presented a correlation equal to or above 0.8, therefore, all of them were kept in the regression model.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{SPEARMAN CORRELOGRAM OF INDEPENDENT VARIABLES}
-    \includegraphics{fig/corr_spear.pdf}
+    \includegraphics{fig/plot_spear.pdf}
     \label{fig:corr_spear}
     \par SOURCE: The Author (2021)
 \end{figure}
 
 %% Show models results (quality variables) - AICc, morans I, R-squared
 
-In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: AICc, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The GWR model using a Boxcar kernel with a bandwidth of 39 neighbors had the best performance, with an AICc value of -119.306, $R^2$ of 0.465, adjusted $R^2$ of 0.329, and Moran's $I$ on residuals of 0.166. Moran's $I$ results show a spatial autocorrelation in the model's residuals, therefore this model couldn't reach a satisfactory result in estimating the coefficients, considering the spatial dependency and nonstationarity of the speeding variable. The GWR model with the boxcar kernel was selected, considering its relative performance. 
+In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: $AIC_c$, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The global linear regression presented the best $AIC_c$ and adjusted $R^2$ diagnostics, with values of -144.334 and 0.215, respectively. Regarding $R^2$, the GWR model with bisquare kernel showed the best diagnostic, with a value of 0.350. The boxcar kernel presented the lowest value of Moran's $I$ on residuals (0.130). All GWR models presented a better performance in comparison to the global linear model when considering the spatial autocorrelation of the residuals, but the global model performed better when considering $R^2$ and $AICc$ values. Given that speeding behavior is spatially autocorrelated (\autoref{fig:taz_sp}), it was decided to discard the global linear model in favor of a GWR model. Therefore, the GWR model with the boxcar kernel was selected, having the best adjusted $R^2$ and Moran's $I$ value between the GWR models. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1517,15 +1585,15 @@ In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global line
     \centering
     \begin{tabular}{llrrrrrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{Kernel}} & \multicolumn{1}{c}{\textbf{AICc}} & \multicolumn{1}{c}{\textbf{$R^2$}} &
+        \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{Kernel}} & \multicolumn{1}{c}{\textbf{$AIC_c$}} & \multicolumn{1}{c}{\textbf{$R^2$}} &
         \multicolumn{1}{c}{\textbf{Adj. $R^2$}} & \multicolumn{1}{c}{\textbf{Moran's $I$}} & \multicolumn{1}{c}{\textbf{$p$-value}} & \multicolumn{1}{c}{\textbf{Bandwidth}} \\
         \hline
-        GWR & Gaussian & -116.050 & 0.348 & 0.199 & 0.195 & 0.001 & 37 \\
-            & Bisquare & -117.757 & 0.406 & 0.243 & 0.174 & 0.004 & 94 \\
-            & Tricube & -118.337 & 0.389 & 0.243 & 0.176 & 0.003 & 94 \\
-            & Boxcar & -119.306 & 0.465 & 0.329 & 0.166 & 0.002 & 39 \\
-            & Exponential & -113.918 & 0.354 & 0.178 & 0.201 & 0.002 & 60 \\
-        Global linear & - & -109.915 & 0.188 & 0.121 & 0.214 & 0.001 & - \\
+        GWR & Gaussian    & -143.664 & 0.298 & 0.207 & 0.169 & 0.003 & 115 \\
+            & Bisquare    & -136.431 & 0.350 & 0.197 & 0.131 & 0.016 & 115 \\
+            & Tricube     & -136.696 & 0.332 & 0.195 & 0.135 & 0.009 & 115 \\
+            & Boxcar      & -138.792 & 0.314 & 0.211 & 0.130 & 0.009 &  80 \\
+            & Exponential & -142.001 & 0.340 & 0.207 & 0.158 & 0.001 & 115 \\
+        Global linear & - & -144.334 & 0.282 & 0.215 & 0.178 & 0.006 & -   \\
         \hline
     \end{tabular}
     \label{tab:mod_diag}
@@ -1533,7 +1601,7 @@ In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global line
     SOURCE: The Author (2021).
 \end{table}
 
-All GWR models presented a better performance in comparison to the global linear model, indicating that GWR is a preferred method to explore the relationship between speeding behavior and the built environment. When applying Moran's $I$ on the speeding variable, it resulted in a value of 0.318 ($p$-value of 0.001), revealing that the speeding rate is spatially autocorrelated in a clustered aspect. In \autoref{tab:lm_results}, the coefficient estimates of the linear regression model are shown, in addition to the standard error, $t$-values, and $p$-values. The only statistically significant coefficient at the 95\% level was the density of speed cameras (DSC), which expressed an inverted correlation to speeding.
+In \autoref{tab:lm_results}, the coefficient estimates of the linear regression model are shown, in addition to the standard error, $t$-values, and $p$-values. The only statistically significant coefficient at the 95\% level was the proportion of arterial roads (PAR), which expressed an inverted correlation to speeding. It is necessary to observe the $p$-values of the linear model to identify statistical significance of the GWR parameter estimates, considering that GWR does not have a diagnostic value to analyze significance (e.g., $p$-value). 
 
 %% Show lm results
 
@@ -1548,15 +1616,17 @@ All GWR models presented a better performance in comparison to the global linear
         \hline
         \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Std. Error}} & \multicolumn{1}{c}{\textbf{$t$-value}} & \multicolumn{1}{c}{\textbf{$p$-value}}  \\
         \hline
-        Intercept & 4.296e-01 & 6.904e-02 & 6.222 & 1.21e-08 \\
-        DSC       & -2.347e-02 & 1.087e-02 & -2.160 & 0.0332* \\ 
-        PAR       & 1.954e-02 & 2.458e-01 & 0.079 & 0.9368 \\   
-        DIS       & 6.502e-04 & 6.996e-04 & 0.929 & 0.3550 \\   
-        DCSU      & -1.807e-05 & 1.541e-05 & -1.173 & 0.2438 \\   
-        AVI       & -7.446e-06 & 9.671e-06 & -0.770 & 0.4432 \\  
-        PD        & -2.393e-06 & 6.689e-06 & -0.358 & 0.7213 \\   
-        LDI       & 5.063e-02 & 6.752e-02 & 0.750 & 0.4551 \\   
-        BSD       & 2.809e-04 & 7.577e-03 & 0.037 & 0.9705 \\
+        Intercept & 3.688e-01  & 8.223e-02 & 4.485  & 1.84e-05 \\ 
+        PAR       & -9.005e-01 & 2.845e-01 & -3.165 & 0.00202* \\ 
+        TSD       & -9.115e-02 & 5.389e-02 & -1.691 & 0.09368  \\ 
+        DCSU      & -6.311e-06 & 1.837e-05 & -0.344 & 0.73188  \\ 
+        LDI       & 8.370e-02  & 5.625e-02 & 1.488  & 0.13969  \\ 
+        BSD       & 6.731e-03  & 7.467e-03 & 0.901  & 0.36940  \\ 
+        DSC       & -2.166e-01 & 1.914e-01 & -1.132 & 0.26019  \\ 
+        AVI       & -2.937e-07 & 8.725e-06 & -0.034 & 0.97321  \\ 
+        PD        & -4.012e-07 & 6.716e-06 & -0.060 & 0.95248  \\ 
+        SND       & -4.496e-04 & 4.627e-03 & -0.097 & 0.92278  \\ 
+        DIS       & -3.913e-03 & 1.460e-02 & -0.268 & 0.78925  \\
         \hline
     \end{tabular}
     \label{tab:lm_results}
@@ -1581,15 +1651,17 @@ In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model
         \hline
         \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} \\
         \hline
-        Intercept & 7.0981e-02 & 3.0645e-01 & 4.5490e-01 & 5.5708e-01 & 0.7088 \\
-        DSC       & -6.4562e-02 & -2.6972e-02 & -1.5533e-02 & -9.6683e-03 & 0.0088 \\
-        PAR       & -2.2749e+00 & -1.6285e+00 & -1.2634e+00 & 2.3534e-01 & 0.8133 \\
-        DIS       & -2.8407e-03 & -1.5710e-03 & -4.2615e-04 & 1.3861e-03 & 0.0030 \\
-        DCSU      & -4.5773e-04 & -1.2688e-04 & -2.5941e-05 & -1.7180e-05 & 0.0000 \\
-        AVI       & -4.0573e-05 & -1.4678e-05 & -3.8717e-06 & 3.8475e-05 & 0.0002 \\
-        PD        & -1.0546e-05 & 7.5243e-07 & 6.7442e-06 & 1.2547e-05 & 0.0000 \\
-        LDI       & -3.2753e-02 & 4.2652e-02 & 9.0970e-02 & 1.4980e-01 & 0.2512 \\
-        BSD       & -2.1257e-02 & -2.8852e-03 & 9.1676e-04 & 5.8549e-03 & 0.0254 \\
+        Intercept & 2.665e-01 & 3.611e-01 & 3.852e-01 & 4.135e-01 & 5.243e-01 \\ 
+        PAR & -1.756e+00 & -1.524e+00 & -1.258e+00 & -1.044e+00 & -7.092e-01 \\ 
+        TSD & -1.532e-01 & -8.966e-02 & -8.090e-02 & -6.832e-02 & -3.597e-02 \\
+        DCSU & -2.206e-05 & -1.386e-05 & -1.136e-05 & -5.634e-06 & -7.798e-07 \\
+        LDI & 3.382e-02 & 7.092e-02 & 1.014e-01 & 1.595e-01 & 2.232e-01 \\ 
+        BSD & -5.262e-03 & 4.542e-03 & 9.462e-03 & 1.098e-02 & 1.944e-02 \\
+        DSC & -2.925e-01 & -1.801e-01 & -1.312e-01 & -1.110e-01 & -1.491e-02 \\
+        AVI & -1.039e-05 & -4.306e-06 & -1.686e-06 & 3.367e-06 & 9.646e-06 \\
+        PD & -2.946e-06 & 2.869e-07 & 1.847e-06 & 3.676e-06 & 7.650e-06 \\
+        SND & -8.173e-03 & -5.163e-03 & -3.893e-03 & -1.406e-03 & 2.626e-03 \\
+        DIS & -1.961e-02 & -1.046e-02 & -8.472e-03 & 1.565e-03 & 2.257e-02 \\
         \hline
     \end{tabular}
     \label{tab:gwr_results}
@@ -1599,104 +1671,228 @@ In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model
 
 %% Local r-squared map
 
+% \begin{figure}[!htbp]
+%     \centering\footnotesize
+%     \captionsetup{font=footnotesize}
+%     \caption{GW LOCAL $R^2$}
+%     \includegraphics{fig/r2_map.png}
+%     \label{fig:r2_map}
+%     \par SOURCE: The Author (2021)
+% \end{figure}
+
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{GW LOCAL $R^2$}
-    \includegraphics{fig/r2_map.png}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/r2_map.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_local_R2.png}
+    \end{subfigure}    
     \label{fig:r2_map}
     \par SOURCE: The Author (2021)
 \end{figure}
 
-In \autoref{fig:sp_mean_sd}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented higher values, while the central area presented lower values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
+In \autoref{fig:sp_mean}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented higher values, while the central area presented lower values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
 
 %% Mean and SD gw SP
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{SPEEDING GW LOCAL MEAN AND STANDARD DEVIATION}
+    \caption{SPEEDING GW LOCAL MEAN}
     \begin{subfigure}{0.5\textwidth}
         \includegraphics{fig/mean_map.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/sd_map.png}
+        \includegraphics{fig/lisa_LM_SP.png}
     \end{subfigure}    
-    \label{fig:sp_mean_sd}
+    \label{fig:sp_mean}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{SPEEDING GW LOCAL SD}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/sd_map.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_LSD_SP.png}
+    \end{subfigure}    
+    \label{fig:sp_sd}
     \par SOURCE: The Author (2021)
 \end{figure}
 
 %% Map and discuss the variables
 
-In \autoref{fig:gwr_dsc_par}, the coefficient estimates of the density of speed cameras (DSC) and the proportion of arterial roads (PAR) are plotted on the map. DSC presented an inverse correlation to speeding behavior in most of the TAZ. PAR had mixed results, presenting direct and inverted correlations to speeding in different areas of the city. 
-
-%%% DSC and PAR
+%%% Intercept
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{DSC AND PAR COEFFICIENT ESTIMATES}
+    \caption{MODEL INTERCEPT ESTIMATES}
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/DSC.png}
+        \includegraphics{fig/Intercept.png}
     \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_Intercept.png}
+    \end{subfigure}    
+    \label{fig:gwr_intercept}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% PAR
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{PAR COEFFICIENT ESTIMATES}
     \begin{subfigure}{0.5\textwidth}
         \includegraphics{fig/PAR.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_PAR.png}
     \end{subfigure}    
-    \label{fig:gwr_dsc_par}
+    \label{fig:gwr_par}
     \par SOURCE: The Author (2021)
 \end{figure}
 
-%%% DIS and DCSU
-
-The density of intersection (DIS) and density of commercial and services units coefficient estimates are displayed in \autoref{fig:gwr_dis_dcsu}. DIS had an inverted correlation to speeding in the northeast part of the city, while the west and south sides showed TAZ with a direct correlation between speeding and DIS. Regarding DCSU, almost all of the TAZ shows an inverted correlation to the dependent variable.  
+%%% TSD
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{DIS AND DCSU COEFFICIENT ESTIMATES}
+    \caption{TSD COEFFICIENT ESTIMATES}
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/DIS.png}
+        \includegraphics{fig/TSD.png}
     \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_TSD.png}
+    \end{subfigure}    
+    \label{fig:gwr_tsd}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% DCSU
+
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{DCSU COEFFICIENT ESTIMATES}
     \begin{subfigure}{0.5\textwidth}
         \includegraphics{fig/DCSU.png}
-    \end{subfigure}    
-    \label{fig:gwr_dis_dcsu}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-%%% AVI and PD
-
-In \autoref{fig:gwr_avi_pd}, the coefficient estimates of average income (AVI) and population density (PD) are displayed. AVI coefficients showed an inverted correlation to speeding in TAZ closer to the north and center of the city, while the southern side presented TAZ with a direct correlation between AVI and speeding. PD was directly correlated to speeding in most of the area, with higher values in the southern part of the city. 
-
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{AVI AND PD COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/AVI.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/PD.png}
+        \includegraphics{fig/lisa_DCSU.png}
     \end{subfigure}    
-    \label{fig:gwr_avi_pd}
+    \label{fig:gwr_dcsu}
     \par SOURCE: The Author (2021)
 \end{figure}
 
-%%% LDI and BSD
-
-Land use diversity index (LDI) and bus stop density (BSD) coefficient estimates are plotted in \autoref{fig:gwr_ldi_bsd}. LDI coefficients showed a direct correlation to speeding in most of the TAZ, with higher values in the northeast part of Curitiba. BSD shows mixed results, with a similar quantity of TAZ with direct and inverted correlation to speeding.  
-
+%%% LDI
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{LDI AND BSD COEFFICIENT ESTIMATES}
+    \caption{LDI COEFFICIENT ESTIMATES}
     \begin{subfigure}{0.5\textwidth}
         \includegraphics{fig/LDI.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/BSD.png}
+        \includegraphics{fig/lisa_LDI.png}
     \end{subfigure}    
-    \label{fig:gwr_ldi_bsd}
+    \label{fig:gwr_ldi}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% BSD
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{BSD COEFFICIENT ESTIMATES}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/BSD.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_BSD.png}
+    \end{subfigure}    
+    \label{fig:gwr_bsd}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% DSC
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{DSC COEFFICIENT ESTIMATES}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/DSC.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_DSC.png}
+    \end{subfigure}    
+    \label{fig:gwr_dsc}
+    \par SOURCE: The Author (2021)
+\end{figure}
+%%% AVI
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{AVI COEFFICIENT ESTIMATES}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/AVI.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_AVI.png}
+    \end{subfigure}    
+    \label{fig:gwr_avi}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% PD
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{PD COEFFICIENT ESTIMATES}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/PD.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_PD.png}
+    \end{subfigure}    
+    \label{fig:gwr_pd}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% SND
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{SND COEFFICIENT ESTIMATES}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/SND.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_SND.png}
+    \end{subfigure}    
+    \label{fig:gwr_snd}
+    \par SOURCE: The Author (2021)
+\end{figure}
+
+%%% DIS
+\begin{figure}[!htbp]
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{DIS COEFFICIENT ESTIMATES}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/DIS.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics{fig/lisa_DIS.png}
+    \end{subfigure}    
+    \label{fig:gwr_dis}
     \par SOURCE: The Author (2021)
 \end{figure}
 
@@ -1732,15 +1928,30 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
 
 %% Update gwr.R in appendix
 
-%% \chapter(DISCUSSION)
+\section{DISCUSSION} \label{sec:discussion}
 
-%% SPEEDING
+% SPEEDING
 
-%% PROPORTION OF ARTERIAL ROADS
+% -- Area calma
+% -- Transito no centro
+% -- Alguma explicacao para os High-High?
+
+% GWR
+
+% -- Comparar config com outros autores. 
+% -- Nenhum modelo teve bons residuos.
+% -- 
+
+% PROPORTION OF ARTERIAL ROADS
+
+% -- Trazer revisao (mesmo que seja de autores contrarios)
+% -- Radares em arteriais
+% -- Controle de trafego em arteriais (?)
+% -- influencia pontual de radares (AMANCIO, etc ...)
 
 %% PLANNING PRACTICES
 
-% ----------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
 
 \chapter{CONCLUSIONS} \label{cap:conclusion}
 
