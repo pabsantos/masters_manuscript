@@ -1638,7 +1638,7 @@ In \autoref{tab:lm_results}, the coefficient estimates of the linear regression 
 
 %% Show GWR results
 
-In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. Maps in FIGURES \ref{fig:gwr_dsc_par} to \ref{fig:gwr_ldi_bsd} show these coefficients in each TAZ. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. The western part of the city displays TAZ with higher values of $R^2$, contrary to the east side of Curitiba, which displays lower values. Local $R^2$ values varied between 0.221 and 0.825. 
+In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. Maps in FIGURES \ref{fig:gwr_intercept} to \ref{fig:gwr_dis} show these coefficients in each TAZ. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. The western part of the city displays TAZ with higher values of $R^2$, contrary to the east side of Curitiba, which displays lower values. Local $R^2$ values varied between 0.221 and 0.825. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1911,14 +1911,17 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
         \hline
         \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
         \hline
-        PD   & Population Density                       & 19.6\% & 80.4\% \\
-        LDI  & Land use diversity index                 & 4.7\%  & 95.3\% \\
-        DIS  & Density of intersections                 & 62.6\% & 37.4\% \\
-        DSC  & Density of speed cameras                 & 97.2\% & 2.8\%  \\
-        PAR  & Proportion of arterial roads             & 69.2\% & 30.8\% \\
-        DCSU & Density of commercial and services units & 99.1\% & 0.9\%  \\
-        BSD  & Bus stop density                         & 46.7\% & 53.3\% \\
-        AVI  & Average income                           & 57.9\% & 42.1\% \\
+        \multicolumn{2}{l}{Intercept}                   &       &       \\
+        PAR  & Proportion of arterial roads             & 100\% & 0\%   \\
+        TSD  & Land use diversity index                 & 100\% & 0\%   \\
+        DCSU & Density of intersections                 & 100\% & 0\%   \\
+        LDI  & Density of speed cameras                 & 0\%   & 100\% \\
+        BSD  & Proportion of arterial roads             & 12\%  & 88\%  \\
+        DSC  & Density of commercial and services units & 100\% & 0\%   \\
+        AVI  & Bus stop density                         & 60\%  & 40\%  \\
+        PD   & Average income                           & 18\%  & 82\%  \\
+        SND  & Street network density                   & 81\%  & 19\%  \\
+        DIS  & Density of intersections                 & 71\%  & 29\%  \\
         \hline
     \end{tabular}
     \label{tab:coef_perc}
@@ -1935,6 +1938,7 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
 % -- Area calma
 % -- Transito no centro
 % -- Alguma explicacao para os High-High?
+% -- Speeding local mean --> contorno leste
 
 % GWR
 
