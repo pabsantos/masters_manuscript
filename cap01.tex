@@ -1638,7 +1638,7 @@ In \autoref{tab:lm_results}, the coefficient estimates of the linear regression 
 
 %% Show GWR results
 
-In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. Maps in FIGURES \ref{fig:gwr_intercept} to \ref{fig:gwr_dis} show these coefficients in each TAZ. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. The western part of the city displays TAZ with higher values of $R^2$, contrary to the east side of Curitiba, which displays lower values. Local $R^2$ values varied between 0.221 and 0.825. 
+In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. Maps in FIGURES \ref{fig:gwr_intercept} to \ref{fig:gwr_dis} show these coefficients in each TAZ, in addition to the Local Moran clusters results. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. Local Moran results shows a cluster with higher values in the northern part of the city and another cluster with low values in the southern part. Two outliers were detected, a Low-High and a High-Low. Local $R^2$ values varied between 0.113 and 0.412. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1694,7 +1694,7 @@ In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model
     \par SOURCE: The Author (2021)
 \end{figure}
 
-In \autoref{fig:sp_mean}, the geographically weighted local mean and local standard deviation of the speeding variable across Curitiba are displayed. The western and southern parts of the city presented higher values, while the central area presented lower values of speeding. The east side of Curitiba also presented higher values of speeding, indicating a pattern where more peripheral TAZ had higher values of speeding than central areas. Regarding the standard deviation (SD) of the speeding data, the western side of the city had TAZ with higher values, while the southeastern side showed lower values. SD had a variation between 0.105 and 0.171.  
+In \autoref{fig:sp_mean}, the geographically weighted local mean of the speeding variable across Curitiba is displayed. The western and southern parts of the city presented higher values, as displayed by the High-High cluster, while the eastern area presented lower values of speeding, indicated by the Low-Low cluster. Regarding the geographically weighted standard deviation (SD) of the speeding variable (\autoref{fig:sp_sd}), the western side of the city presented higher values, while the eastern side showed lower values. SD had a variation between 0.126 and 0.149 and local mean varied between 0.291 and 0.322. In \autoref{fig:gwr_intercept}, the model intercept estimates are presented. The Local Moran results identified a High-High cluster in the western part of the city, four Low-Low clusters in the eastern part and one Low-Low cluster in the south. 
 
 %% Mean and SD gw SP
 
@@ -1744,6 +1744,8 @@ In \autoref{fig:sp_mean}, the geographically weighted local mean and local stand
     \par SOURCE: The Author (2021)
 \end{figure}
 
+The proportion of arterial roads coefficient estimates is displayed in \autoref{fig:gwr_par}. All values resulted in negative coefficients, with a Low-Low cluster on the eastern part of the city and two High-High clusters: a bigger one on the south and a smaller one in the northern part. All values of traffic signal density (\autoref{fig:gwr_tsd}) and density of commercial and services units (\autoref{fig:gwr_dcsu}) estimates also resulted in negative values. TSD estimates Local Moran resulted in High-High clusters distributed among two areas, one Low-Low cluster and three TAZs defined as outliers: two High-Low and one Low-High. Regarding DCSU estimates Local Moran, it resulted in High-High and Low-Low clusters, in addition to a Low-High outlier. 
+
 %%% PAR
 
 \begin{figure}[!htbp]
@@ -1791,6 +1793,8 @@ In \autoref{fig:sp_mean}, the geographically weighted local mean and local stand
     \label{fig:gwr_dcsu}
     \par SOURCE: The Author (2021)
 \end{figure}
+
+The land use diversity index coefficient estimates are presented in \autoref{fig:gwr_ldi}. All TAZs presented a direct correlation with speeding, with a higher intensity on the northern side of the city, as shown by the High-High Local Moran cluster. On the southern region, the Low-Low cluster indicates lower values of coefficient estimates. Regarding bus stop density coefficient estimates
 
 %%% LDI
 \begin{figure}[!htbp]
@@ -1911,17 +1915,17 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
         \hline
         \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
         \hline
-        \multicolumn{2}{l}{Intercept}                   &       &       \\
-        PAR  & Proportion of arterial roads             & 100\% & 0\%   \\
-        TSD  & Land use diversity index                 & 100\% & 0\%   \\
-        DCSU & Density of intersections                 & 100\% & 0\%   \\
-        LDI  & Density of speed cameras                 & 0\%   & 100\% \\
-        BSD  & Proportion of arterial roads             & 12\%  & 88\%  \\
-        DSC  & Density of commercial and services units & 100\% & 0\%   \\
-        AVI  & Bus stop density                         & 60\%  & 40\%  \\
-        PD   & Average income                           & 18\%  & 82\%  \\
-        SND  & Street network density                   & 81\%  & 19\%  \\
-        DIS  & Density of intersections                 & 71\%  & 29\%  \\
+        \multicolumn{2}{l}{Intercept}                   & 100\% &   0\% \\
+        PAR  & Proportion of arterial roads             & 100\% &   0\% \\
+        TSD  & Land use diversity index                 & 100\% &   0\% \\
+        DCSU & Density of intersections                 & 100\% &   0\% \\
+        LDI  & Density of speed cameras                 &   0\% & 100\% \\
+        BSD  & Proportion of arterial roads             &  12\% &  88\% \\
+        DSC  & Density of commercial and services units & 100\% &   0\% \\
+        AVI  & Bus stop density                         &  60\% &  40\% \\
+        PD   & Average income                           &  18\% &  82\% \\
+        SND  & Street network density                   &  81\% &  19\% \\
+        DIS  & Density of intersections                 &  71\% &  29\% \\
         \hline
     \end{tabular}
     \label{tab:coef_perc}
@@ -1935,23 +1939,24 @@ Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of T
 
 % SPEEDING
 
-% -- Area calma
-% -- Transito no centro
+% -- Area calma ([x] fazer mapa)
+% -- Transito no centro ([x] fazer mapa de demanda x cluster)
 % -- Alguma explicacao para os High-High?
-% -- Speeding local mean --> contorno leste
+% -- Speeding local mean --> contorno leste ([x] fazer mapa sobrepondo os dois)
+% -- speeding ([x] road ctb x clusters)
 
 % GWR
 
 % -- Comparar config com outros autores. 
 % -- Nenhum modelo teve bons residuos.
-% -- 
+% -- Comentar posicionamento do R-quadrado. 
 
 % PROPORTION OF ARTERIAL ROADS
 
 % -- Trazer revisao (mesmo que seja de autores contrarios)
-% -- Radares em arteriais
-% -- Controle de trafego em arteriais (?)
+% -- Radares em arteriais ([x] fazer mapa e contagem)
 % -- influencia pontual de radares (AMANCIO, etc ...)
+
 
 %% PLANNING PRACTICES
 
