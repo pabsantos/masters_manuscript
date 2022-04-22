@@ -670,7 +670,7 @@ Regarding the population density, \textcite{Curitiba2015} establishes a low dens
 \end{figure}
 
 %% Road axis
-Road hierarchy in Curitiba can be classified using the land zoning characteristics, defined by \textcite{Curitiba2019a}, and using the definition established by the Brazilian Traffic Code (\textit{Código de Trânsito Brasileiro - CTB}). In \autoref{fig:road_cwb}, a map with Curitiba road hierarchy, based on land zoning, is presented. Highways includes rural roads that are administrated by state and federal governments. Structural roads are positioned inside the structural axes. They are arranged in a trinary system, which includes a dedicated bus lane among slow lanes in the center, and two parallel external one-way streets, destined for the continuous flow of vehicles. Sectorial roads have long extension and connects multiple regions of the city and it's neighbors, with a good integration to the structural system. Collector roads have medium to small extension and are designed to handle local traffic. Prioritized roads are located close to the city center. They are designed to handle a great volume and flow of traffic. The "other" category are streets that are not directly characterized in Curitiba's land zoning \cite{Curitiba2019a}. 
+Road hierarchy in Curitiba can be classified using the land zoning characteristics, defined by \textcite{Curitiba2019a}, and using the definition established by the Brazilian Traffic Code (\textit{Código de Trânsito Brasileiro - CTB}). In \autoref{fig:road_cwb}, a map with Curitiba road hierarchy, based on land zoning, is presented. Highways are high-speed roads that are administrated by state and federal governments. Structural roads are positioned inside the structural axes. They are arranged in a trinary system, which includes a dedicated bus lane among slow lanes in the center, and two parallel external one-way streets, destined for the continuous flow of vehicles. Sectorial roads have long extension and connects multiple regions of the city and it's neighbors, with a good integration to the structural system. Collector roads have medium to small extension and are designed to handle local traffic. Prioritized roads are located close to the city center. They are designed to handle a great volume and flow of traffic. The "other" category are streets that are not directly characterized in Curitiba's land zoning \cite{Curitiba2019a}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1575,7 +1575,7 @@ The final step of the data arrangement process was the check of correlation betw
 
 %% Show models results (quality variables) - AICc, morans I, R-squared
 
-In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: $AIC_c$, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The global linear regression presented the best $AIC_c$ and adjusted $R^2$ diagnostics, with values of -144.334 and 0.215, respectively. Regarding $R^2$, the GWR model with bisquare kernel showed the best diagnostic, with a value of 0.350. The boxcar kernel presented the lowest value of Moran's $I$ on residuals (0.130). All GWR models presented a better performance in comparison to the global linear model when considering the spatial autocorrelation of the residuals, but the global model performed better when considering $R^2$ and $AICc$ values. Given that speeding behavior is spatially autocorrelated (\autoref{fig:taz_sp}), it was decided to discard the global linear model in favor of a GWR model. Therefore, the GWR model with the boxcar kernel was selected, having the best adjusted $R^2$ and Moran's $I$ value between the GWR models. 
+In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: $AIC_c$, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The global linear regression presented the best $AIC_c$ and adjusted $R^2$ diagnostics, with values of -144.334 and 0.215, respectively. Regarding $R^2$, the GWR model with bisquare kernel showed the best diagnostic, with a value of 0.350. The boxcar kernel presented the lowest value of Moran's $I$ on residuals (0.130). All GWR models presented a better performance in comparison to the global linear model when considering the spatial autocorrelation of the residuals, but the global model performed better when considering adjusted $R^2$ and $AICc$ values. Given that speeding behavior is spatially autocorrelated (\autoref{fig:taz_sp}), it was decided to discard the global linear model in favor of a GWR model. Therefore, the GWR model with the boxcar kernel was selected, having the best adjusted $R^2$ and Moran's $I$ value between the GWR models. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1943,7 +1943,7 @@ The density of intersections coefficient estimates resulted in a inverted correl
 
 % -- Area calma ([x] fazer mapa)
 % -- Transito no centro ([x] fazer mapa de demanda x cluster)
-% -- Relacionar dados de destino com a quantidade de distancia da amostra
+% -- Relacionar dados de destino com a quantidade de distancia da amostra [x]
 % -- Alguma explicacao para os High-High? (contar o quanto foi percorrido em cada tipo de via (CWB))
 
 As shown in \autoref{fig:taz_sp}, the speeding rate per TAZ is spatially autocorrelated. The Local Moran on speeding data showed areas with High-High and Low-Low clusters, in addition to a Low-High outlier. The High-High clusters were identified in six different positions. One Low-Low cluster was identified in the central area of the city and another one was identified to the northeast of the first. The Low-High outlier is positioned between the Low-Low clusters. In \autoref{fig:sp_area_calma} is displayed the position of Curitiba's \textit{Área Calma} and the speeding clusters. The \textit{Área Calma} (or Calm Zone) is a region in the city center that includes a speed limit of 40 km/h in all of the streets, in addition to traffic calming measures and speed limit enforcement through speed cameras. One of the factors influencing the positioning of a Low-Low cluster in the city center could be the presence of the Calm Zone and its surroundings. 
@@ -1958,7 +1958,8 @@ As shown in \autoref{fig:taz_sp}, the speeding rate per TAZ is spatially autocor
     \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}.
 \end{figure}
 
-Another reason for lower values of speeding in TAZ closer to the city center could be the higher volume of traffic and increased time delays in the area, causing congestion and mitigating the opportunity of drivers reaching their desired speeds. In \autoref{fig:sp_od} is presented the location of speeding clusters and the quantity of destination of trips per TAZ. The destination of trips data is available in Curitiba's origin destination survey of 2018 \cite{IPPUC2018b}. Higher volume of destination of trips is present in the central area of the city, inside one of the Low-Low speeding clusters. High-High speeding clusters present lower values of destination of trips. 
+Another reason for lower values of speeding in TAZ closer to the city center could be the higher volume of traffic and increased time delays in the area, causing congestion and mitigating the opportunity of drivers reaching their desired speeds. In \autoref{fig:sp_od} is presented the location of speeding clusters and the quantity of destination of trips per TAZ. The destination of trips data is available in Curitiba's origin destination survey of 2018 \cite{IPPUC2018b}. Higher volume of destination of trips is present in the central area of the city, inside one of the Low-Low speeding clusters. High-High speeding clusters present lower values of destination of trips. The destination of trips distribution also shows a similar pattern to the traveled distances per TAZ from the naturalistic sample (\autoref{fig:taz_travel}), indicating a 
+certain level of significance of the research sample. 
 
 \begin{figure}[!htbp]
     \footnotesize
@@ -1972,12 +1973,12 @@ Another reason for lower values of speeding in TAZ closer to the city center cou
 
 % GWR
 
-% -- Comparar config com outros autores. 
-% -- Nenhum modelo teve bons residuos.
-% -- Nem todos os indicadores de performance mostraram uma vantagem para os modelos GWR
-% -- Cobertura espacial insuficiente para analisar todas as zonas de tráfego.
-% -- Comentar sobre os rombos no mapa.
-% -- Comentar posicionamento do R-quadrado. 
+% -- [x] Comparar config com outros autores. 
+% -- [x] Nenhum modelo teve bons residuos.
+% -- [x] Nem todos os indicadores de performance mostraram uma vantagem para os modelos GWR
+% -- [x] Comentar posicionamento do R-quadrado. 
+
+After testing five different configurations of the GWR, the model with the boxcar kernel was chosen, with an adaptive bandwidth of 80 neighbors. As shown in \autoref{tab:gwrworks}, previous authors applied the GWR model using the bisquare or gaussian kernels fot the analysis of road crashes. This difference in performance can be related to the different nature and pattern of the independent variables, considering that road crashes consists mostly of count data and the speeding rate in this research is a continuous data. None of the models presented a good performance regarding the residuals, given that they are spatially autocorrelated (\autoref{tab:gwr_results}). Not all performance indicators showed an advantage to the GWR models in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$ and adjusted $R^2$, but worse value of Moran's $I$ on residuals. The local $R^2$ value of the chosen GWR model (\autoref{fig:r2_map}) indicates a better performance on northern part of the city and lower performance on southern areas.
 
 % PROPORTION OF ARTERIAL ROADS
 
@@ -2018,10 +2019,6 @@ Another reason for lower values of speeding in TAZ closer to the city center cou
 %% Limitação: traffic flow não foi considerado
 
 %% [x] small sample of drivers
-
-%% [x] High proportion of two drivers in the sample (D14 and D15), "contaminating" the sample
-
-%% [x] Most of trips happened in central areas and less in peripheral ones. 
 
 %% [x] Characteristics from drivers (age, experience, license age, education) and from the vehicles (age, engine power) also can influence the speeding results
 
