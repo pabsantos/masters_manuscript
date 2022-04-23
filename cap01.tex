@@ -1919,15 +1919,15 @@ The density of intersections coefficient estimates resulted in a inverted correl
         \hline
         \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
         \hline
-        \multicolumn{2}{l}{Intercept}                   & 100\% &   0\% \\
+        \multicolumn{2}{l}{Intercept}                   &   0\% & 100\% \\
         PAR  & Proportion of arterial roads             & 100\% &   0\% \\
-        TSD  & Land use diversity index                 & 100\% &   0\% \\
-        DCSU & Density of intersections                 & 100\% &   0\% \\
-        LDI  & Density of speed cameras                 &   0\% & 100\% \\
-        BSD  & Proportion of arterial roads             &  12\% &  88\% \\
-        DSC  & Density of commercial and services units & 100\% &   0\% \\
-        AVI  & Bus stop density                         &  60\% &  40\% \\
-        PD   & Average income                           &  18\% &  82\% \\
+        TSD  & Traffic signal density                   & 100\% &   0\% \\
+        DCSU & Density of commercial and services units & 100\% &   0\% \\
+        LDI  & Land use diversity                       &   0\% & 100\% \\
+        BSD  & Bus stop density                         &  12\% &  88\% \\
+        DSC  & Density of speed cameras                 & 100\% &   0\% \\
+        AVI  & Average income                           &  60\% &  40\% \\
+        PD   & Population density                       &  18\% &  82\% \\
         SND  & Street network density                   &  81\% &  19\% \\
         DIS  & Density of intersections                 &  71\% &  29\% \\
         \hline
@@ -1946,7 +1946,7 @@ The density of intersections coefficient estimates resulted in a inverted correl
 % -- Relacionar dados de destino com a quantidade de distancia da amostra [x]
 % -- Alguma explicacao para os High-High? (contar o quanto foi percorrido em cada tipo de via (CWB))
 
-As shown in \autoref{fig:taz_sp}, the speeding rate per TAZ is spatially autocorrelated. The Local Moran on speeding data showed areas with High-High and Low-Low clusters, in addition to a Low-High outlier. The High-High clusters were identified in six different positions. One Low-Low cluster was identified in the central area of the city and another one was identified to the northeast of the first. The Low-High outlier is positioned between the Low-Low clusters. In \autoref{fig:sp_area_calma} is displayed the position of Curitiba's \textit{Área Calma} and the speeding clusters. The \textit{Área Calma} (or Calm Zone) is a region in the city center that includes a speed limit of 40 km/h in all of the streets, in addition to traffic calming measures and speed limit enforcement through speed cameras. One of the factors influencing the positioning of a Low-Low cluster in the city center could be the presence of the Calm Zone and its surroundings. 
+As shown in \autoref{fig:taz_sp}, the speeding rate per TAZ is spatially autocorrelated. The Local Moran on speeding data showed areas with High-High and Low-Low clusters, in addition to a Low-High outlier. The High-High clusters were identified in six different positions. One Low-Low cluster was identified in the central area of the city and another one was identified to the northeast of the first. The Low-High outlier is positioned between the Low-Low clusters. In \autoref{fig:sp_area_calma} is displayed the position of Curitiba's \textit{Área Calma} and the speeding clusters. The \textit{Área Calma} (or Calm Zone) is a region in the city center that have a speed limit of 40 km/h in all of its streets, in addition to traffic calming measures and speed limit enforcement through speed cameras. One of the factors influencing the positioning of a Low-Low cluster in the city center could be the presence of the Calm Zone and its surroundings. 
 
 \begin{figure}[!htbp]
     \footnotesize
@@ -1982,11 +1982,30 @@ After testing five different configurations of the GWR, the model with the boxca
 
 % PROPORTION OF ARTERIAL ROADS
 
-% -- Trazer revisao (mesmo que seja de autores contrarios)
-% -- Radares em arteriais ([x] fazer mapa e contagem)
-% -- influencia pontual de radares (AMANCIO, etc ...)
-% -- speeding ([x] road ctb x clusters)
+% -- [x] PAR única variável com significancia à 95%.
+% -- [x] PAR negativamente correlacionada com SP em 100% das TAZ. 
+% -- [x] Trazer revisao (mesmo que seja de autores contrarios)
+% -- [x] speeding clusters ([x] road ctb x clusters)
+% -- [x] Radares em arteriais ([x] fazer mapa e contagem)
+% -- [x] influencia pontual de radares (AMANCIO, etc ...)
+% -- [x] Talvez o efeito de radares so seja observado de forma local, e nao na escala dos modelos desse trabalho. Talvez outros fatores de controle de trafego, como semaforos e interseções, tambem apresentam um efeito mais local
 
+
+According to the summary of the linear model estimates (\autoref{tab:lm_results}), the proportion of arterial roads (PAR) is the only statistically significant coefficient at the 95\% level, with a $p$-value of 0.002. As presented in \autoref{fig:gwr_par} and \autoref{tab:coef_perc}, PAR coefficient estimates from the GWR model resulted in a inverted correlation to speeding in all of the TAZ included in the research. Among previous authors that investigated the influence of the build environment on road safety, most observed a positive correlation between arterial roads and speeding \cite{Dumbaugh2011,Ewing2009, Huang2018,Obelheiro2020}. Therefore, the results found in this work show a different relationship between these variables, in comparison to previous research. 
+
+In \autoref{fig:cluster_road} is presented the road network hierarchy of Curitiba and the location of the speeding clusters. Overall, only Low-Low speeding clusters contain arterial roads, while High-High clusters contain more local roads. This related position of road hierarchy and speeding results could have led to the inverted correlation between proportion of arterial roads and speeding, detected by the GWR model. Other factor that could have influenced this result is the indirect and localized effect of speed cameras installed in arterial and rapid transit roads. To \textcite{Li2013a, Oliveira2015}, there is an effect of speed reduction inside a 200-meter buffer of the speed camera. However, this reduction can also lead to a "kangaroo effect", a phenomenon where road users tend to compensate for the "wasted" time caused by this reduction \cite{Amancio2021,Li2020}. 
+
+\begin{figure}[!htbp]
+    \footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{SPEEDING CLUSTERS AND ROAD NETWORK HIERARCHY}
+    \centering
+    \includegraphics{fig/lisa_sp_roadctb.png}
+    \label{fig:cluster_road}
+    \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}
+\end{figure}
+
+In \autoref{fig:cam_buffer} is presented the positioning of 200-meter buffer of speed cameras in Curitiba and the road network hierarchy. Most of these buffers are positioned on arterial and rapid transit roads. The density of speed cameras (DSC) coefficient did not had a statiscally significant result, however, the localized effect of speed cameras in arterial and rapid transit roads could be influencing the inverted correlation between PAR and speeding. A GWR model, that presents a spatial nature, may not be able to observe these localized effects. It might be possible that other elements of road design and traffic control (\textit{e.g.}, traffic signals, intersections) also affects speeding in a localized level and are not observed in a territorial level.  
 
 \begin{figure}[!htbp]
     \footnotesize
@@ -1996,14 +2015,6 @@ After testing five different configurations of the GWR, the model with the boxca
     \includegraphics{fig/cam_buffer_plot.png}
     \label{fig:cam_buffer}
     \par SOURCE: The Author (2022), based on \textcite{IPPUC2021, SETRAN2020}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{SPEEDING CLUSTERS AND ROAD NETWORK HIERARCHY}
-    \centering
-    \includegraphics{fig/lisa_sp_roadctb.png}
 \end{figure}
 
 % PLANNING PRACTICES
@@ -2016,7 +2027,7 @@ After testing five different configurations of the GWR, the model with the boxca
 
 \chapter{CONCLUSIONS} \label{cap:conclusion}
 
-%% Limitação: traffic flow não foi considerado
+%% [ ] Limitação: traffic flow não foi considerado
 
 %% [x] small sample of drivers
 
@@ -2026,27 +2037,17 @@ After testing five different configurations of the GWR, the model with the boxca
 
 %% [x] The full territory of Curitiba couldn't be analyzed with the current sample
 
-% --------------------
-
 %% [x] None of the models presented a satisfactory performance. GWR with the boxcar kernel is the better model 
 
 %% [x] GWR performance showed it's advantage over the linear regression (Moran's I)
 
 %% [x] Speeding is spatially autocorrelated 
 
-%% [x] "Holes" in the sample lowers GWR performance 
+%% [x] Only PAR showed a statistical significance. 
 
-%% [x] Only DSC showed a statistical significance. 
+%% [x] PAR is inverted correlated to speeding in 100.0% of the current sample of TAZ.
 
-%% [x] speeding cameras (Li, Zhang, Ren; Li, Graham, Majumdar; Oliveira et al.)
-
-%% [x] DSC is inverted correlated to speeding in 97.2% of the current sample of TAZ.
-
-%% [x] Correlation doesn't imply causation
-
-%% [x] Perform these models using a sample of 30 drivers
-
-%% [x] If needed, Choose only key variables to use in the model, in order to improve performance. 
+%% [x] Increase sample size
 
 The Naturalistic Driving Study enabled the collection of speed data from a sample of 16 drivers in the city of Curitiba, Brazil. Comparing to the described NDS in Section \ref{nds}, 16 participants correspond to a small sample to conduct a more statistically sound analysis. Some participants had higher distance traveled in the sample than others. Drivers $D_{14}$ and $D_{15}$ had the highest proportion in the total traveled distance:  19\% and 23\%, respectively. Regarding the spatial coverage, most of the traveled distance was performed in central areas of the city, in comparison to peripheral areas. The amount of traveled distance wasn't enough to cover all the present TAZ in Curitiba (reducing from 135 to 107 units).
 
