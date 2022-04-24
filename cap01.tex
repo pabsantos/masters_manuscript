@@ -1978,7 +1978,7 @@ certain level of significance of the research sample.
 % -- [x] Nem todos os indicadores de performance mostraram uma vantagem para os modelos GWR
 % -- [x] Comentar posicionamento do R-quadrado. 
 
-After testing five different configurations of the GWR, the model with the boxcar kernel was chosen, with an adaptive bandwidth of 80 neighbors. As shown in \autoref{tab:gwrworks}, previous authors applied the GWR model using the bisquare or gaussian kernels fot the analysis of road crashes. This difference in performance can be related to the different nature and pattern of the independent variables, considering that road crashes consists mostly of count data and the speeding rate in this research is a continuous data. None of the models presented a good performance regarding the residuals, given that they are spatially autocorrelated (\autoref{tab:gwr_results}). Not all performance indicators showed an advantage to the GWR models in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$ and adjusted $R^2$, but worse value of Moran's $I$ on residuals. The local $R^2$ value of the chosen GWR model (\autoref{fig:r2_map}) indicates a better performance on northern part of the city and lower performance on southern areas.
+After testing five different configurations of the GWR, the model with the boxcar kernel was chosen, with an adaptive bandwidth of 80 neighbors. As shown in \autoref{tab:gwrworks}, previous authors applied the GWR model using the bisquare or gaussian kernels fot the analysis of road crashes. This difference in performance can be related to the different nature and pattern of the dependent variables, considering that road crashes consists mostly of count data and the speeding rate in this research is a continuous data. None of the models presented a good performance regarding the residuals, given that they are spatially autocorrelated (\autoref{tab:gwr_results}). Not all performance indicators showed an advantage to the GWR models in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$ and adjusted $R^2$, but worse value of Moran's $I$ on residuals. The local $R^2$ value of the chosen GWR model (\autoref{fig:r2_map}) indicates a better performance on northern part of the city and lower performance on southern areas.
 
 % PROPORTION OF ARTERIAL ROADS
 
@@ -2005,7 +2005,7 @@ In \autoref{fig:cluster_road} is presented the road network hierarchy of Curitib
     \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}
 \end{figure}
 
-In \autoref{fig:cam_buffer} is presented the positioning of 200-meter buffer of speed cameras in Curitiba and the road network hierarchy. Most of these buffers are positioned on arterial and rapid transit roads. The density of speed cameras (DSC) coefficient did not had a statiscally significant result, however, the localized effect of speed cameras in arterial and rapid transit roads could be influencing the inverted correlation between PAR and speeding. A GWR model, that presents a spatial nature, may not be able to observe these localized effects. It might be possible that other elements of road design and traffic control (\textit{e.g.}, traffic signals, intersections) also affects speeding in a localized level and are not observed in a territorial level.  
+In \autoref{fig:cam_buffer} is presented the positioning of 200-meter buffer of speed cameras in Curitiba and the road network hierarchy. Most of these buffers are positioned on arterial and rapid transit roads. The density of speed cameras (DSC) coefficient did not had a statiscally significant result, however, the localized effect of speed cameras in arterial and rapid transit roads could be influencing the inverted correlation between PAR and speeding. A GWR model, having a spatial nature, may not be able to observe these localized effects. It might be possible that other elements of road design and traffic control (\textit{e.g.}, traffic signals, intersections) also affects speeding in a localized level and are not observed in a territorial level.  
 
 \begin{figure}[!htbp]
     \footnotesize
@@ -2022,6 +2022,8 @@ In \autoref{fig:cam_buffer} is presented the positioning of 200-meter buffer of 
 % -- Como Curitiba pode usar esses resultados?
 % -- Mais gente, mais infra?
 % -- Foco em infraestrutura viaria (controle e fiscalização)
+
+Between six categories of the built environment, only a variable of the design category resulted in a statistically significant coefficient after the application of the GWR model. It was observed a correlation implying that TAZ with a higher proportion of arterial roads (PAR) presents lower values of speeding rate. A secondary effect of higher values of PAR can be a higher level of road infrastructure and traffic control that caracterizes these arterial roads, including traffic signals in intersections and higher presence of speed enforcement, reducing the speeding rate. Therefore, future policy regarding the reduction of speeding in Curitiba should consider these effects of traffic control management on speeding behavior of car users. 
 
 % ------------------------------------------------------------------------------
 
