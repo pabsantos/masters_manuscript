@@ -2051,40 +2051,12 @@ Between six categories of the built environment, only a variable of the design c
 
 %% [x] Increase sample size
 
-The Naturalistic Driving Study enabled the collection of speed data from a sample of 16 drivers in the city of Curitiba, Brazil. Comparing to the described NDS in Section \ref{nds}, 16 participants correspond to a small sample to conduct a more statistically sound analysis. Some participants had higher distance traveled in the sample than others. Drivers $D_{14}$ and $D_{15}$ had the highest proportion in the total traveled distance:  19\% and 23\%, respectively. Regarding the spatial coverage, most of the traveled distance was performed in central areas of the city, in comparison to peripheral areas. The amount of traveled distance wasn't enough to cover all the present TAZ in Curitiba (reducing from 135 to 107 units).
+The Naturalistic Driving Study enabled the collection of speed data from a sample of 32 drivers in the city of Curitiba, Brazil. Comparing to the described NDS in Section \ref{nds}, 32 participants correspond to a small sample to conduct a more statistically sound analysis. Regarding the spatial coverage, most of the traveled distance was performed in central areas of the city, in comparison to peripheral areas, similar to the distribuition of destination of trips in the city. The amount of traveled distance wasn't enough to cover all the present TAZ in Curitiba (reducing from 135 to 118 zones).
 
-In addition to the built environment, other attributes might influence resultant speeding values. Characteristics from the drivers (e.g., age, experience, license age, education) and the vehicles (e.g., age, engine power) might also influence speeding behavior. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders", which might indicate a certain level of similarity concerning speeding behavior between participants.
+In addition to the built environment, other attributes might influence resultant speeding values. Characteristics from the drivers (\textit{e.g.}, age, experience, license age, education) and the vehicles (\textit{e.g.}, age, engine power) might also influence speeding behavior. Using \textcite{Richard2013a} method of speeding behavior classification, all drivers from the current sample were classified as "habitual speeders", which might indicate a certain level of similarity concerning speeding behavior between participants.
 
-Preliminary results indicate that the Geographically Weighted Regression with a Boxcar kernel showed the best performance in comparison to other kernel types and the linear regression. However, none of the models presented a desirable performance, considering that the residuals from all models were spatially autocorrelated. This indicates that they couldn't validly predict the spatial heterogeneity present in the occurrence of speeding behavior. All GWR models showed a better performance than the linear regression. To \textcite{Brunsdon2010}, calibration of the GWR model for regions close to the edge of the study area is subject to greater sampling error. The "holes" present in the current sample of TAZ might have harmed the GWR performance. 
+Results indicate that the Geographically Weighted Regression with a boxcar kernel showed the best performance in comparison to other kernel types and the linear regression, considering the value of Moran's $I$ on residuals and the adjusted $R^2$. However, none of the models presented a desirable performance, considering that the residuals from all models were spatially autocorrelated. This indicates that they couldn't validly predict the spatial heterogeneity present in the occurrence of speeding behavior. Not all GWR models showed a better performance than the linear regression. To \textcite{Brunsdon2010}, calibration of the GWR model for regions close to the edge of the study area is subject to greater sampling error. The "holes" present in the current sample of TAZ might have harmed the GWR performance. 
 
-Based on the results from the linear regression (\autoref{tab:lm_results}), only the density of speed cameras (DSC) coefficient showed statistical significance. GWR model does not have a diagnostic value (e.g., $p$-value) for each parameter estimate, therefore, it is necessary to apply a linear regression to identify statistically significant variables. The verified inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates an inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZ (\autoref{fig:gwr_dsc_par}, \autoref{tab:coef_perc}). It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
+Based on the results from the linear regression (\autoref{tab:lm_results}), only the proportion of arterial roads (PAR) coefficient showed statistical significance. The verified inverted correlation to speeding is similar to previous results found by \textcite{Li2020,Li2013a,Oliveira2015}. The GWR model indicates an inverted correlation between DSC and speeding on 97.2\% of the current sample of TAZ. It is important to remind that this correlation does not imply causation, therefore further investigation is needed. 
 
 Before reaching any further conclusions, it is necessary to test the performance of new models based on a sample with a higher number of drivers. NDS-BR is still ongoing, making it possible to collect more speeding data from new participants. Additional testing with the independent variables is also needed, to identify key variables that work better within the model. Based on the current results, it is not possible to conclude the impact of the built environment on speeding behavior.
-
-\section{NEXT STEPS}
-
-In \autoref{tab:schedule}, the schedule with the thesis' next steps is displayed. Each line contains a time window of one month.
-
-\begin{table}[!htbp]
-    \footnotesize
-    \captionsetup{justification=raggedright,
-        singlelinecheck=false,
-        font=footnotesize}
-    \caption{SCHEDULE OF NEXT STEPS}
-    \centering
-    \begin{tabular}{ll}
-        \hline
-        \multicolumn{1}{c}{\textbf{Month - year}} & \multicolumn{1}{c}{\textbf{Steps}} \\
-        \hline
-        Nov - 2021 & Apply modifications from the qualifying examination panel \\
-        Dec - 2021 & Apply modifications from the qualifying examination panel \\
-        Jan - 2022 & Apply methodology with an increased sample size           \\
-        Feb - 2022 & Write changes in the literature review, methods, results, and conclusion                                                             \\
-        Mar - 2022 & Review the manuscript                                     \\
-        Apr - 2022 & Master's thesis defense                                   \\
-        \hline
-    \end{tabular}
-    \label{tab:schedule}
-    \par \vspace{2mm} \footnotesize \raggedright
-    SOURCE: The Author (2021).
-\end{table}
