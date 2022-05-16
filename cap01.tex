@@ -744,7 +744,7 @@ In comparison, NDS has a typically large sample size and provides practically to
         -           & Japan      & 60  & 60  & - & - \\
         SH-NDS      & China      & 5   & 60  & - & 161,055 \\
         -           & Iran       & 52  & 52  & 546$^{(2)}$ & 25,740$^{(2)}$ \\
-        NDS-BR      & Brazil     & 32  & 32  & 381.45 & 9,443.83 \\ 
+        NDS-BR      & Brazil     & 32  & 32  & 381 & 9,444 \\ 
         \hline
     \end{tabular}
     \label{tab:nds}
@@ -881,7 +881,7 @@ The GWR model presented in equation \ref{eq:gwr} has a limitation: it can be use
 
 Regarding the type of GW model, most authors chose GWNBR or GWPR, considering that road crash count distribution fits better in these models. Concerning kernel type, it only varied between two options: Bisquare and Gaussian. Most studies contained the use of adaptive kernels, which is a better option for zonal levels with irregular sizes. In conclusion, GWR is a method that enables the exploration of findings that might otherwise be missed if only a global regression method is applied. It is always important to check if the GWR model better describes the data than a global regression model, comparing the results from both. All the processes of constructing a GWR model and its parameters for this work are described in Section \ref{gwm}.
 
-% ----------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \chapter{METHODS} \label{cap:methods}
 
@@ -986,7 +986,7 @@ The first trip of each driver was defined as invalid. This trip was considered t
 % \end{table}
 The NDS-BR data collection started in August 2019. The local of the study is Curitiba and its metropolitan region. Curitiba is the capital city of the State of Paraná, in Brazil. Until December 2021, the project collected data from 32 participants, which composed a sample of naturalistic data used in this thesis. The drivers participated through a survey that was divulged on social networks. The age of the drivers varied between 21 and 63 years old, with 18 females and 14 males. The duration of data collection from each driver varied between 5 and 20 days. Regarding the participants' vehicles, the model year varied between 2001 and 2020, with horsepower varying between 66 and 166 HP. 
 
-Regarding driving experience, the driving license of the participants varied between 2 and 38. All participants received a briefing on how to operate the equipment and signed a term of the agreement, allowing the use of their data for academic research purposes. Overall, a total of 1002 trips were performed, resulting in 382.98 hours of driving and 9,312.82 km of traveled distance. Only two drivers had a car with an automatic gearbox. All other drivers had vehicles with a manual gearbox. Four drivers occasionally made trips in carpooling situations, offering rides to passengers with the use of carpooling apps. Three drivers worked as mobility app drivers.
+Regarding driving experience, the driving license of the participants varied between 2 and 38 years. All participants received a briefing on how to operate the equipment and signed a term of the agreement, allowing the use of their data for academic research purposes. Overall, a total of 1002 trips were performed, resulting in 381.45 hours of driving and 9,443.83 km of traveled distance. Only two drivers had a car with an automatic gearbox. All other drivers had vehicles with a manual gearbox. Four drivers occasionally made trips in carpooling situations, offering rides to passengers with the use of carpooling apps. Three drivers worked as mobility app drivers.
 
 %% Start of NDS, how much time each collected
 
@@ -1258,7 +1258,7 @@ The Local Moran statistic was applied in R, with the aid of the \verb|Rgeoda| pa
 
 % Present 
 
-This chapter focus on the results from the NDS-BR (Sections \ref{sec:ndsr} and \ref{sec:spr}), the results from the GWR (Section \ref{sec:gwrr}), and further discussions (Section \ref{sec:discussion}).
+This chapter focus on the results from the NDS-BR (Sections \ref{sec:ndsr} and \ref{sec:spr}), the results from the GWR (Section \ref{sec:gwrr}).
 
 \section{NATURALISTIC DATA} \label{sec:ndsr}
 % 1. Results from NDS (how much each driver participated)
