@@ -24,7 +24,7 @@ One of the main risk factors of road crashes is speeding behavior, which increas
 
 The built environment influences the overall mobility, road safety, and health levels inside a city, affecting the physical activity within its territory. Overall, the built environment consists of physical elements and features, including the development pattern and the roadway design of a city \cite{Ewing2010}. These features are related to the choice of destination, modal choice, travel distances, and routes, causing an impact on the road safety performance of a city \cite{Tiwari}. Therefore, this manuscript better explores the relationship between the built environment inside an urban scenario and the level of road safety performance, considering the occurrence of speeding as an intermediate outcome. The behavioral data utilized in this work was extracted from a research project based on a Naturalistic Driving Study (NDS): The Brazilian Naturalistic Driving Study (NDS-BR). This project started in 2019 in the city of Curitiba \cite{ceppur_estudo_2021}. 
 
-\section{OBJECTIVES}
+\section{OBJECTIVES} \label{sec:obj}
 
 In the context of urban planning and road safety management, the main objective of this research is to investigate the influence of demographics, land use, and built environment on the engagement of speeding behavior. The scenario of the study is the city of Curitiba, the capital of the state of Paraná, Brazil. The correlation will be analyzed with the use of the Geographically Weighted Regression (GWR) statistical model.
 
@@ -33,7 +33,7 @@ With the use of speeding data collected from drivers that participated in a NDS 
 As co-benefits in the investigation, this thesis aims to offer some level of insight regarding the development and update of speed control management in urban areas, considering the operational and structural planning guidelines for the road systems and land use. With these factors in mind, there is a potential of presenting new ideas to the planning practices in Curitiba, regarding mobility plans, master plans, and zoning laws. In addition, the following list contains specific objectives to be investigated in order:
 
 \begin{enumerate}
-    \item Verify if speeding behavior in Curitiba is spatially autocorrelated;
+    \item Verify if speeding behavior in Curitiba is spatially autocorrelated. If so, identify possible causes for this behavior;
     \item Verify if the GWR model can properly analyze the influence of the BE in the occurrence of speeding in a spatially autocorrelated scenario;
     \item Identify evidences of the influence of the BE in the occurrence of speeding in Curitiba;
     \item Identify practical solutions to mitigate speeding behavior through urban planning practices, based on the results. 
@@ -1448,7 +1448,7 @@ The data arrangement process reduced the total sample of 135 TAZ into 117 TAZ. T
 
 %% Summary of variables: mean, median, max, min, 1q, 3q
 
-In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 117 TAZ. The value of speeding for each TAZ varied between 0.04 and 0.77, with a mean value of 0.46.  DSC, LDI, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ, including the Local Moran results for this variable. The Low-Low clusters indicates lower values of SP in 14 zones of the city. Two Low-High outlier were detected between the High-High clusters. Regarding higher values of SP, High-High clusters can be observed at eight different zones. One High-Low cluster was detected. It was also applied a Moran's $I$ method on the SP values, which resulted in 0.246 with a $p$-value of 0.001. This is an indication that SP is spatially autocorrelated.
+In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 117 TAZ. The value of speeding for each TAZ varied between 0.04 and 0.77, with a mean value of 0.46.  DSC, LDI, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ, including the Local Moran results for this variable. The Low-Low clusters indicates lower values of SP in 14 zones of the city. Two Low-High outlier were detected between the High-High clusters. Regarding higher values of SP, High-High clusters can be observed at eight different zones. One High-Low cluster was detected. It was also applied a Moran's $I$ statistics on the SP values, which resulted in 0.246 with a $p$-value of 0.001. This is an indication that SP is spatially autocorrelated.
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1557,10 +1557,10 @@ In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global line
     \end{tabular}
     \label{tab:mod_diag}
     \par \vspace{2mm} \footnotesize \raggedright
-    SOURCE: The Author (2021).
+    SOURCE: The Author (2022).
 \end{table}
 
-In \autoref{tab:lm_results}, the coefficient estimates of the linear regression model are shown, in addition to the standard error, $t$-values, and $p$-values. The only statistically significant coefficient at the 95\% level was the proportion of arterial roads (PAR), which expressed an inverted correlation to speeding. It is necessary to observe the $p$-values of the linear model to identify statistical significance of the GWR parameter estimates, considering that GWR does not have a diagnostic value to analyze significance (e.g., $p$-value). 
+In \autoref{tab:lm_results}, the coefficient estimates of the linear regression model are shown, in addition to the standard error, $t$-values, and $p$-values. The only statistically significant coefficient at the 95\% level was the proportion of arterial roads (PAR), which expressed an inverted correlation to speeding. It is necessary to observe the $p$-values of the linear model to identify statistical significance of the GWR parameter estimates, considering that GWR does not have a diagnostic value to analyze coefficient significance (e.g., $p$-value). 
 
 %% Show lm results
 
@@ -1573,31 +1573,31 @@ In \autoref{tab:lm_results}, the coefficient estimates of the linear regression 
     \centering
     \begin{tabular}{lrrrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Std. Error}} & \multicolumn{1}{c}{\textbf{$t$-value}} & \multicolumn{1}{c}{\textbf{$p$-value}}  \\
+        \multicolumn{1}{c}{\textbf{Coefficient}} & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Std. Error}} & \multicolumn{1}{c}{\textbf{$t$-value}} & \multicolumn{1}{c}{\textbf{$p$-value}}  \\
         \hline
-        Intercept & 3.688e-01  & 8.223e-02 & 4.485  & 1.84e-05 \\ 
-        PAR       & -9.005e-01 & 2.845e-01 & -3.165 & 0.00202* \\ 
-        TSD       & -9.115e-02 & 5.389e-02 & -1.691 & 0.09368  \\ 
-        DCSU      & -6.311e-06 & 1.837e-05 & -0.344 & 0.73188  \\ 
-        LDI       & 8.370e-02  & 5.625e-02 & 1.488  & 0.13969  \\ 
-        BSD       & 6.731e-03  & 7.467e-03 & 0.901  & 0.36940  \\ 
-        DSC       & -2.166e-01 & 1.914e-01 & -1.132 & 0.26019  \\ 
-        AVI       & -2.937e-07 & 8.725e-06 & -0.034 & 0.97321  \\ 
-        PD        & -4.012e-07 & 6.716e-06 & -0.060 & 0.95248  \\ 
-        SND       & -4.496e-04 & 4.627e-03 & -0.097 & 0.92278  \\ 
-        DIS       & -3.913e-03 & 1.460e-02 & -0.268 & 0.78925  \\
+        Intercept  &  5.362e-01 & 8.322e-02 &  6.444 &  3.52e-09 \\
+        TSD        & -5.747e-02 & 5.425e-02 & -1.059 &  0.2919   \\
+        PAR        & -5.743e-01 & 2.864e-01 & -2.005 &  0.0475*  \\ 
+        DCSU       & -9.240e-06 & 1.842e-05 & -0.502 &  0.6169   \\ 
+        AVI        & -2.949e-06 & 8.748e-06 & -0.337 &  0.7367   \\ 
+        BSD        & -1.781e-03 & 7.530e-03 & -0.236 &  0.8135   \\ 
+        LDI        &  6.655e-02 & 5.754e-02 &  1.156 &  0.2501   \\ 
+        DSC        & -2.636e-01 & 1.919e-01 & -1.374 &  0.1724   \\ 
+        SND        & -3.196e-03 & 4.646e-03 & -0.688 &  0.4930   \\ 
+        PD         &  1.106e-06 & 6.756e-06 &  0.164 &  0.8703   \\ 
+        DIS        &  3.565e-03 & 1.470e-02 &  0.243 &  0.8088   \\ 
         \hline
     \end{tabular}
     \label{tab:lm_results}
     \par \vspace{2mm} \footnotesize \raggedright
-    SOURCE: The Author (2021).
+    SOURCE: The Author (2022).
     \par 
     NOTE: * Significance at 95\%
 \end{table}
 
 %% Show GWR results
 
-In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. Maps in FIGURES \ref{fig:gwr_intercept} to \ref{fig:gwr_dis} show these coefficients in each TAZ, in addition to the Local Moran clusters results. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. Local Moran results shows a cluster with higher values in the northern part of the city and another cluster with low values in the southern part. Two outliers were detected, a Low-High and a High-Low. Local $R^2$ values varied between 0.113 and 0.412. 
+In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model coefficient estimates are showed. The map in \autoref{fig:gwr_par} shows PAR coefficients in each TAZ (the only variable that presented statistical significance), in addition to the Local Moran clusters results. The other nine coefficients are presented in APPENDIX 1. \autoref{fig:r2_map} shows the variation of local geographically weighted $R^2$. Local Moran results shows a cluster with higher values in the northeastern part of the city and another cluster with low values in west and south parts of the city. Local $R^2$ values varied between 0.267 and 0.444. 
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1608,102 +1608,74 @@ In \autoref{tab:gwr_results}, the descriptive statistics of the chosen GWR model
     \centering
     \begin{tabular}{lrrrrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} \\
+        \multicolumn{1}{c}{\textbf{Coefficient}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} \\
         \hline
-        Intercept & 2.665e-01 & 3.611e-01 & 3.852e-01 & 4.135e-01 & 5.243e-01 \\ 
-        PAR & -1.756e+00 & -1.524e+00 & -1.258e+00 & -1.044e+00 & -7.092e-01 \\ 
-        TSD & -1.532e-01 & -8.966e-02 & -8.090e-02 & -6.832e-02 & -3.597e-02 \\
-        DCSU & -2.206e-05 & -1.386e-05 & -1.136e-05 & -5.634e-06 & -7.798e-07 \\
-        LDI & 3.382e-02 & 7.092e-02 & 1.014e-01 & 1.595e-01 & 2.232e-01 \\ 
-        BSD & -5.262e-03 & 4.542e-03 & 9.462e-03 & 1.098e-02 & 1.944e-02 \\
-        DSC & -2.925e-01 & -1.801e-01 & -1.312e-01 & -1.110e-01 & -1.491e-02 \\
-        AVI & -1.039e-05 & -4.306e-06 & -1.686e-06 & 3.367e-06 & 9.646e-06 \\
-        PD & -2.946e-06 & 2.869e-07 & 1.847e-06 & 3.676e-06 & 7.650e-06 \\
-        SND & -8.173e-03 & -5.163e-03 & -3.893e-03 & -1.406e-03 & 2.626e-03 \\
-        DIS & -1.961e-02 & -1.046e-02 & -8.472e-03 & 1.565e-03 & 2.257e-02 \\
+        % Intercept & 2.665e-01 & 3.611e-01 & 3.852e-01 & 4.135e-01 & 5.243e-01 \\ 
+        % PAR & -1.756e+00 & -1.524e+00 & -1.258e+00 & -1.044e+00 & -7.092e-01 \\ 
+        % TSD & -1.532e-01 & -8.966e-02 & -8.090e-02 & -6.832e-02 & -3.597e-02 \\
+        % DCSU & -2.206e-05 & -1.386e-05 & -1.136e-05 & -5.634e-06 & -7.798e-07 \\
+        % LDI & 3.382e-02 & 7.092e-02 & 1.014e-01 & 1.595e-01 & 2.232e-01 \\ 
+        % BSD & -5.262e-03 & 4.542e-03 & 9.462e-03 & 1.098e-02 & 1.944e-02 \\
+        % DSC & -2.925e-01 & -1.801e-01 & -1.312e-01 & -1.110e-01 & -1.491e-02 \\
+        % AVI & -1.039e-05 & -4.306e-06 & -1.686e-06 & 3.367e-06 & 9.646e-06 \\
+        % PD & -2.946e-06 & 2.869e-07 & 1.847e-06 & 3.676e-06 & 7.650e-06 \\
+        % SND & -8.173e-03 & -5.163e-03 & -3.893e-03 & -1.406e-03 & 2.626e-03 \\
+        % DIS & -1.961e-02 & -1.046e-02 & -8.472e-03 & 1.565e-03 & 2.257e-02 \\
+        Intercept & 4.5052e-01 & 4.8525e-01 & 5.1751e-01 & 5.4015e-01 & 0.5908 \\
+        TSD       & -1.0215e-01 & -6.8228e-02 & -5.8685e-02 & -4.7568e-02 & -0.0180 \\
+        PAR       & -1.1447e+00 & -9.6812e-01 & -7.9620e-01 & -6.4543e-01 & -0.5257 \\
+        DCSU      & -2.1754e-05 & -1.5861e-05 & -1.3686e-05 & -1.2182e-05 & 0.0000 \\
+        AVI       & -1.1639e-05 & -5.3192e-06 & -1.4183e-06 & 2.9770e-06 & 0.0000 \\
+        BSD       & -1.3013e-02 & -2.8248e-03 & 1.4463e-03 & 4.6713e-03 & 0.0093 \\
+        LDI       & 2.9687e-02 & 6.3914e-02 & 9.5462e-02 & 1.3020e-01 & 0.1748 \\
+        DSC       & -3.3630e-01 & -2.5344e-01 & -2.0223e-01 & -1.6457e-01 & -0.1194 \\
+        SND       & -5.7131e-03 & -4.2905e-03 & -3.4024e-03 & -2.2709e-03 & 0.0005 \\
+        PD        & -1.2511e-06 & 1.8165e-06 & 3.0573e-06 & 4.5435e-06 & 0.0000 \\
+        DIS       & -6.3914e-03 & -4.3202e-04 & 1.0566e-03 & 2.8706e-03 & 0.0088 \\
         \hline
     \end{tabular}
     \label{tab:gwr_results}
     \par \vspace{2mm} \footnotesize \raggedright
-    SOURCE: The Author (2021).
+    SOURCE: The Author (2022).
 \end{table}
 
 %% Local r-squared map
-
-% \begin{figure}[!htbp]
-%     \centering\footnotesize
-%     \captionsetup{font=footnotesize}
-%     \caption{GW LOCAL $R^2$}
-%     \includegraphics{fig/r2_map.png}
-%     \label{fig:r2_map}
-%     \par SOURCE: The Author (2021)
-% \end{figure}
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{GW LOCAL $R^2$}
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/r2_map.png}
+        \includegraphics{fig/gwr_local_r2.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_local_R2.png}
+        \includegraphics{fig/lisa_local_r2.png}
     \end{subfigure}    
     \label{fig:r2_map}
-    \par SOURCE: The Author (2021)
+    \par SOURCE: The Author (2022)
 \end{figure}
 
-In \autoref{fig:sp_mean}, the geographically weighted local mean of the speeding variable across Curitiba is displayed. The western and southern parts of the city presented higher values, as displayed by the High-High cluster, while the eastern area presented lower values of speeding, indicated by the Low-Low cluster. Regarding the geographically weighted standard deviation (SD) of the speeding variable (\autoref{fig:sp_sd}), the western side of the city presented higher values, while the eastern side showed lower values. SD had a variation between 0.126 and 0.149 and local mean varied between 0.291 and 0.322. In \autoref{fig:gwr_intercept}, the model intercept estimates are presented. The Local Moran results identified a High-High cluster in the western part of the city, four Low-Low clusters in the eastern part and one Low-Low cluster in the south. 
+In \autoref{fig:sp_mean}, the geographically weighted local mean and standard deviation of the speeding variable across Curitiba are displayed. The southern zones of the city presented higher values of local mean, while the western area presented higher values of standard deviation.
 
 %% Mean and SD gw SP
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{SPEEDING GW LOCAL MEAN}
+    \caption{SPEEDING GW LOCAL MEAN AND STD. DEVIATION}
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/mean_map.png}
+        \includegraphics{fig/summary_mean_sp.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_LM_SP.png}
+        \includegraphics{fig/summary_sd_sp.png}
     \end{subfigure}    
     \label{fig:sp_mean}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{SPEEDING GW LOCAL SD}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/sd_map.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_LSD_SP.png}
-    \end{subfigure}    
-    \label{fig:sp_sd}
-    \par SOURCE: The Author (2021)
+    \par SOURCE: The Author (2022)
 \end{figure}
 
 %% Map and discuss the variables
 
-%%% Intercept
-
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{MODEL INTERCEPT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/Intercept.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_Intercept.png}
-    \end{subfigure}    
-    \label{fig:gwr_intercept}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-The proportion of arterial roads coefficient estimates is displayed in \autoref{fig:gwr_par}. All values resulted in negative coefficients, with a Low-Low cluster on the eastern part of the city and two High-High clusters: a bigger one on the south and a smaller one in the northern part. All values of traffic signal density (\autoref{fig:gwr_tsd}) and density of commercial and services units (\autoref{fig:gwr_dcsu}) estimates also resulted in negative values. TSD estimates Local Moran resulted in High-High clusters distributed among two areas, one Low-Low cluster and three TAZ defined as outliers: two High-Low and one Low-High. Regarding DCSU estimates Local Moran, it resulted in High-High and Low-Low clusters, in addition to a Low-High outlier. 
+The proportion of arterial roads coefficient estimates are displayed in \autoref{fig:gwr_par}. All values resulted in negative coefficients, representing an inverted correlation to speeding, with a Low-Low cluster on the northeastern part of the city and a High-High cluster on west and south areas of the city. 
 
 %%% PAR
 
@@ -1712,157 +1684,16 @@ The proportion of arterial roads coefficient estimates is displayed in \autoref{
     \captionsetup{font=footnotesize}
     \caption{PAR COEFFICIENT ESTIMATES}
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/PAR.png}
+        \includegraphics{fig/gwr_PAR.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
         \includegraphics{fig/lisa_PAR.png}
     \end{subfigure}    
     \label{fig:gwr_par}
-    \par SOURCE: The Author (2021)
+    \par SOURCE: The Author (2022)
 \end{figure}
 
-%%% TSD
-
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{TSD COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/TSD.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_TSD.png}
-    \end{subfigure}    
-    \label{fig:gwr_tsd}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-%%% DCSU
-
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{DCSU COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/DCSU.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_DCSU.png}
-    \end{subfigure}    
-    \label{fig:gwr_dcsu}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-The land use diversity index coefficient estimates are presented in \autoref{fig:gwr_ldi}. All TAZ presented a direct correlation with speeding, with a higher intensity on the northern side of the city, as shown by the High-High Local Moran cluster. On the southern region, the Low-Low cluster indicates lower values of coefficient estimates. Regarding bus stop density coefficient estimates (\autoref{fig:gwr_bsd}), most TAZ presented a direct correlation to speeding. The density of speed cameras coefficient estimates, presented in \autoref{fig:gwr_dsc}, indicates an inverted correlation to speeding in all the TAZ. 
-
-%%% LDI
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{LDI COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/LDI.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_LDI.png}
-    \end{subfigure}    
-    \label{fig:gwr_ldi}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-%%% BSD
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{BSD COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/BSD.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_BSD.png}
-    \end{subfigure}    
-    \label{fig:gwr_bsd}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-%%% DSC
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{DSC COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/DSC.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_DSC.png}
-    \end{subfigure}    
-    \label{fig:gwr_dsc}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-AVI estimates presented a mixed result, with positive values in the northeast part of the city and negative values in western and southern parts (\autoref{fig:gwr_avi}). PD estimates also were mixed, with the northern TAZ presenting an inverted correlation to speeding and the remaining areas showing a direct correlation (\autoref{fig:gwr_pd}). SND coefficient estimates resulted in direct correlation to speeding in the southern area of the city, and the remaining areas showed an inverted correlation (\autoref{fig:gwr_snd}).
-
-%%% AVI
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{AVI COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/AVI.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_AVI.png}
-    \end{subfigure}    
-    \label{fig:gwr_avi}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-%%% PD
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{PD COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/PD.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_PD.png}
-    \end{subfigure}    
-    \label{fig:gwr_pd}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-%%% SND
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{SND COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/SND.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_SND.png}
-    \end{subfigure}    
-    \label{fig:gwr_snd}
-    \par SOURCE: The Author (2021)
-\end{figure}
-
-The density of intersections coefficient estimates resulted in an inverted correlation to speeding in most of the TAZ. Few zones showed a stronger direct correlation to speeding (\autoref{fig:gwr_dis}). Finally, in \autoref{tab:coef_perc} is presented a list with the percentage of TAZ with positive and negative coefficients, for each variable presented in the maps. 
-
-%%% DIS
-\begin{figure}[!htbp]
-    \centering\footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{DIS COEFFICIENT ESTIMATES}
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/DIS.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/lisa_DIS.png}
-    \end{subfigure}    
-    \label{fig:gwr_dis}
-    \par SOURCE: The Author (2021)
-\end{figure}
+In \autoref{tab:coef_perc} is presented the percentage of TAZ with positive and negative coefficient estimate for each independent variable. TSD, PAR, DCSU and DSC presented negative coefficient estimates on 100\% of the TAZ, representing an inverted correlation to speeding. On the other hand, only LDI presented positive coefficient estimates on 100\% of the TAZ. AVI, BSD, SND, PD and DIS presented mixed results. 
 
 %% Insert % table of variables
 
@@ -1875,34 +1706,51 @@ The density of intersections coefficient estimates resulted in an inverted corre
     \centering
     \begin{tabular}{llrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
+        \multicolumn{1}{c}{\textbf{Coefficient}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Negative}} & \multicolumn{1}{c}{\textbf{Positive}} \\
         \hline
         \multicolumn{2}{l}{Intercept}                   &   0\% & 100\% \\
-        PAR  & Proportion of arterial roads             & 100\% &   0\% \\
         TSD  & Traffic signal density                   & 100\% &   0\% \\
+        PAR  & Proportion of arterial roads             & 100\% &   0\% \\
         DCSU & Density of commercial and services units & 100\% &   0\% \\
+        AVI  & Average income                           &  55\% &  45\% \\
+        BSD  & Bus stop density                         &  38\% &  62\% \\
         LDI  & Land use diversity                       &   0\% & 100\% \\
-        BSD  & Bus stop density                         &  12\% &  88\% \\
         DSC  & Density of speed cameras                 & 100\% &   0\% \\
-        AVI  & Average income                           &  60\% &  40\% \\
-        PD   & Population density                       &  18\% &  82\% \\
-        SND  & Street network density                   &  81\% &  19\% \\
-        DIS  & Density of intersections                 &  71\% &  29\% \\
+        SND  & Street network density                   &  96\% &   4\% \\
+        PD   & Population density                       &   7\% &  93\% \\
+        DIS  & Density of intersections                 &  36\% &  64\% \\
         \hline
     \end{tabular}
     \label{tab:coef_perc}
     \par \vspace{2mm} \footnotesize \raggedright
-    SOURCE: The Author (2021).
+    SOURCE: The Author (2022).
 \end{table}
 
 \chapter{DISCUSSION} \label{chap:discussion}
+
+This chapter contains the discussion based on the results presented in the last chapter. The section disposition is related to the specific objectives listed in \autoref{sec:obj}:
+
+\begin{enumerate}
+    \item Verify if speeding behavior in Curitiba is spatially autocorrelated. If so, identify possible causes for this behavior - \autoref{sec:sp_corr};
+    \item Verify if the GWR model can properly analyze the influence of the BE in the occurrence of speeding in a spatially autocorrelated scenario - \autoref{sec:gwr_perf};
+    \item Identify evidences of the influence of the BE in the occurrence of speeding in Curitiba - \autoref{sec:be_sp};
+    \item Identify practical solutions to mitigate speeding behavior through urban planning practices, based on the results - \autoref{sec:sp_manag}.
+\end{enumerate}
+
+\section{SPATIAL AUTOCORRELATION OF SPEEDING} \label{sec:sp_corr}
+
+\section{GWR MODEL PERFORMANCE} \label{sec:gwr_perf}
+
+\section{THE BUILT ENVIRONMENT INFLUENCE ON SPEEDING} \label{sec:be_sp}
+
+\section{SPEED MANAGEMENT AND PLANNING PRACTICES} \label{sec:sp_manag}
 
 % SPEEDING and distance
 
 % -- Area calma ([x] fazer mapa)
 % -- Transito no centro ([x] fazer mapa de demanda x cluster)
 % -- Relacionar dados de destino com a quantidade de distancia da amostra [x]
-% -- Alguma explicacao para os High-High? (contar o quanto foi percorrido em cada tipo de via (CWB))
+% -- Analise de Mann witney. 
 
 As shown in \autoref{fig:taz_sp}, the speeding rate per TAZ is spatially autocorrelated. The Local Moran on speeding data showed areas with High-High and Low-Low clusters, in addition to a Low-High outlier. The High-High clusters were identified in six different positions. One Low-Low cluster was identified in the central area of the city, and another one was identified to the northeast of the first. The Low-High outlier is positioned between the Low-Low clusters. In \autoref{fig:sp_area_calma} is displayed the position of Curitiba's \textit{Área Calma} and the speeding clusters. The \textit{Área Calma} (or Calm Zone) is a region in the city center that have a speed limit of 40 km/h in all of its streets, in addition to traffic-calming measures and speed limit enforcement through speed cameras. One of the factors influencing the positioning of a Low-Low cluster in the city center could be the presence of the Calm Zone and its surroundings. 
 
@@ -1911,7 +1759,7 @@ As shown in \autoref{fig:taz_sp}, the speeding rate per TAZ is spatially autocor
     \captionsetup{font=footnotesize}
     \caption{SPEEDING CLUSTERS AND \textit{ÁREA CALMA}}
     \centering
-    \includegraphics{fig/sp_area_calma.png}
+    \includegraphics{fig/area_calma_plot.png}
     \label{fig:sp_area_calma}
     \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}.
 \end{figure}
