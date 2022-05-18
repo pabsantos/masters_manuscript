@@ -1784,29 +1784,31 @@ Lastly, it was investigated if there are any differences between Low-Low and Hig
         \hline
         \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
         \hline
-        AVI  & 13.0 & 0.00217 \\
+        AVI  & 13.0 & 0.00217* \\
         PD   & 40.0 & 0.29734 \\
         SND  & 29.0 & 0.06983 \\
         PAR  & 31.5 & 0.09803 \\
-        DIS  & 87.0 & 0.03517 \\
-        TSD  &  4.0 & 0.00008 \\
-        DCSU &  8.0 & 0.00042 \\
+        DIS  & 87.0 & 0.03517* \\
+        TSD  &  4.0 & 0.00008* \\
+        DCSU &  8.0 & 0.00042* \\
         LDI  & 53.0 & 0.86755 \\
         BSD  & 31.0 & 0.09502 \\
-        DSC  &  5.0 & 0.00046 \\
+        DSC  &  5.0 & 0.00046* \\
         \hline
     \end{tabular}
     \label{tab:wilcox_sp}
     \par \vspace{2mm} \footnotesize \raggedright
     SOURCE: The Author (2022).
+    \par
+    NOTE: * Significance at 95\%.
 \end{table}
 
-AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand, DIS values are higher in High-High clusters. Higher values of average income (AVI) were previously associated with lower quantity of traffic crashes (\cite{Obelheiro2019, Marshall2017}). It can be observed that TAZ with higher AVI are associated with lower values of speeding as well. \textcite{Ouyang2014,Welle2016} observed a relation between higher values of DCSU and reduced occurrence of road crashes. In this case, TAZ inside the Low-Low clusters shows a similar behavior towards speeding. Zones with higher values of DSC are in Low-Low clusters, representing an inverted relation to speeding. This association was also observed by \textcite{Li2013a, Oliveira2015}. TAZ in Low-Low clusters presented higher values of traffic signal density (TSD). Previous research showed that the effects of traffic signals on speeding can be mixed, and it depends on cycle length, progression speed, and the distance between signalized intersections \cite{Elvik2009, Furth2018}. Higher values of density of intersections (DIS) are usually associated with less speeding \cite{Dumbaugh2009, Huang2018, Obelheiro2020}. However, higher values of DIS are present in TAZ of High-High clusters.
+AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand, DIS values are higher in High-High clusters. Higher values of average income (AVI) were previously associated with lower quantity of traffic crashes \cite{Obelheiro2019, Marshall2017}. It can be observed that TAZ with higher AVI are associated with lower values of speeding as well. \textcite{Ouyang2014,Welle2016} observed a relation between higher values of DCSU and reduced occurrence of road crashes. In this case, TAZ inside the Low-Low clusters shows a similar behavior towards speeding. Zones with higher values of DSC are in Low-Low clusters, representing an inverted relation to speeding. This association was also observed by \textcite{Li2013a, Oliveira2015}. TAZ in Low-Low clusters presented higher values of traffic signal density (TSD). Previous research showed that the effects of traffic signals on speeding can be mixed, and it depends on cycle length, progression speed, and the distance between signalized intersections \cite{Elvik2009, Furth2018}. Higher values of density of intersections (DIS) are usually associated with less speeding \cite{Dumbaugh2009, Huang2018, Obelheiro2020}. However, higher values of DIS are present in TAZ of High-High clusters.
 
 \begin{figure}[!htbp]
     \footnotesize
     \captionsetup{font=footnotesize}
-    \caption{BE VARIABLES FOR EACH SP CLUSTER GROUP}
+    \caption{BE VARIABLES IN EACH SP CLUSTER GROUP}
     \centering
     \includegraphics{fig/wilcox_hist.png}
     \label{fig:wilcox_sp}
@@ -1815,12 +1817,6 @@ AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand,
 
 \section{GWR MODEL PERFORMANCE} \label{sec:gwr_perf}
 
-\section{THE BUILT ENVIRONMENT INFLUENCE ON SPEEDING} \label{sec:be_sp}
-
-\section{SPEED MANAGEMENT AND PLANNING PRACTICES} \label{sec:sp_manag}
-
-
-
 % GWR
 
 % -- [x] Comparar config com outros autores. 
@@ -1828,7 +1824,11 @@ AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand,
 % -- [x] Nem todos os indicadores de performance mostraram uma vantagem para os modelos GWR
 % -- [x] Comentar posicionamento do R-quadrado. 
 
-After testing five different configurations of the GWR, the model with the boxcar kernel was chosen, with an adaptive bandwidth of 80 neighbors. As shown in \autoref{tab:gwrworks}, previous authors applied the GWR model using the bisquare or gaussian kernels for the analysis of road crashes. This difference in performance can be related to the different nature and pattern of the dependent variables, considering that road crashes consists mostly of count data and the speeding rate in this research is a continuous data. None of the models presented a good performance regarding the residuals, given that they are spatially autocorrelated (\autoref{tab:gwr_results}). Not all performance indicators showed an advantage to the GWR models in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$ and adjusted $R^2$, but worse value of Moran's $I$ on residuals. The local $R^2$ value of the chosen GWR model (\autoref{fig:r2_map}) indicates a better performance on northern part of the city and lower performance on southern areas.
+After testing five different configurations of the GWR, the model with the bisquare kernel was chosen, with an adaptive bandwidth of 115 neighbors. As shown in \autoref{tab:gwrworks}, most authors also applied the GWR model using the bisquare for the analysis of road crashes. There is a difference considering nature and pattern of the dependent variables (speeding vs. road crashes), considering that road crashes consists mostly of count data and the speeding rate in this research is represented as a continuous data. None of the models tested presented a good performance regarding the residuals, given that they are spatially autocorrelated (\autoref{tab:gwr_results}). Considering that speeding behavior in Curitiba is spatially autocorrelated, it is desirable to establish a regression model that can fully explore the relationship between variables in a spatial nonstationarity context. 
+
+However, the chosen GWR still shows a better performance in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$, but worse values of Moran's $I$ on residuals and $R^2$. The GWR model with the bisquare kernel presented the best values of $R^2$, adjusted $R^2$ and Moran's $I$ on residuals. As seen in \autoref{fig:r2_map}, the performance of the GWR regression model (based on $R^2$) can change depending on the location. Better performance can be identified in northeastern zones of the city, where $R^2$ is higher. In conclusion, the GWR model presented a better performance in comparison to the global regression, but not a desirable performance regarding its residuals.
+
+\section{THE BUILT ENVIRONMENT INFLUENCE ON SPEEDING} \label{sec:be_sp}
 
 % PROPORTION OF ARTERIAL ROADS
 
@@ -1841,31 +1841,63 @@ After testing five different configurations of the GWR, the model with the boxca
 % -- [x] Talvez o efeito de radares so seja observado de forma local, e nao na escala dos modelos desse trabalho. Talvez outros fatores de controle de trafego, como semaforos e interseções, tambem apresentam um efeito mais local
 
 
-According to the summary of the linear model estimates (\autoref{tab:lm_results}), the proportion of arterial roads (PAR) is the only statistically significant coefficient at the 95\% level, with a $p$-value of 0.002. As presented in \autoref{fig:gwr_par} and \autoref{tab:coef_perc}, PAR coefficient estimates from the GWR model resulted in an inverted correlation to speeding in all the TAZ included in the research. Among previous authors that investigated the influence of the build environment on road safety, most observed a positive correlation between arterial roads and speeding \cite{Dumbaugh2011,Ewing2009, Huang2018,Obelheiro2020}. Therefore, the results found in this work show a different relationship between these variables, in comparison to previous research. 
+According to the summary of the linear model estimates (\autoref{tab:lm_results}), the proportion of arterial roads (PAR) is the only statistically significant coefficient at the 95\% level, with a $p$-value of 0.002. As presented in \autoref{fig:gwr_par} and \autoref{tab:coef_perc}, PAR coefficient estimates from the GWR model resulted in an inverted correlation to speeding in all the TAZ included in the research. Among previous authors that investigated the influence of the build environment on road safety, most observed a positive correlation between arterial roads and speeding \cite{Dumbaugh2011,Ewing2009, Huang2018,Obelheiro2020}. Therefore, the results found in this work show a different relationship between these variables, in comparison to previous research. In summary, the design category of the built environment is influencing the speeding behavior in Curitiba, represented by the proportion of arterial roads.
 
-In \autoref{fig:cluster_road} is presented the road network hierarchy of Curitiba and the location of the speeding clusters. Overall, only Low-Low speeding clusters contain arterial roads, while High-High clusters contain more local roads. This related position of road hierarchy and speeding results could have led to the inverted correlation between proportion of arterial roads and speeding, detected by the GWR model. Other factor that could have influenced this result is the indirect and localized effect of speed cameras installed in arterial and rapid transit roads. To \textcite{Li2013a, Oliveira2015}, there is an effect of speed reduction inside a 200-meter buffer of the speed camera. However, this reduction can also lead to a ``kangaroo effect'', a phenomenon where road users tend to compensate for the ``wasted'' time caused by this reduction \cite{Amancio2021,Li2020}. 
+% \begin{figure}[!htbp]
+%     \footnotesize
+%     \captionsetup{font=footnotesize}
+%     \caption{SPEEDING CLUSTERS AND ROAD NETWORK HIERARCHY}
+%     \centering
+%     \includegraphics{fig/lisa_sp_roadctb.png}
+%     \label{fig:cluster_road}
+%     \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}
+% \end{figure}
+
+Other factor that could have influenced this result is the indirect and localized effect of speed cameras installed in arterial and rapid transit roads. To \textcite{Li2013a, Oliveira2015}, there is an effect of speed reduction inside a 200-meter buffer of the speed camera. The density of speed cameras (DSC) coefficient did not have a statistically significant result, however, the localized effect of speed cameras in arterial and rapid transit roads could be influencing the inverted correlation between PAR and speeding, acting as a proxy variable. A GWR model, having a spatial nature, may not be able to observe these localized effects. It might be possible that other elements of road design and traffic control (\textit{e.g.}, traffic signals, intersections) also affects speeding in a localized level and are not observed in a territorial level.
+
+To better explore the incluence of the proportion of arterial roads on speeding behavior, it was decided to ...
+
+\begin{table}
+    \footnotesize
+    \captionsetup{justification=raggedright,
+        singlelinecheck=false,
+        font=footnotesize}
+    \caption{WILCOXON RANK SUM TEST RESULTS FOR PAR GROUPS}
+    \centering
+    \begin{tabular}{lrr}
+        \hline
+        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
+        \hline
+        AVI  & 520.0 & 0.5804  \\
+        PD   & 326.0 & 0.0299* \\
+        SND  & 260.0 & 0.0017* \\
+        DIS  & 287.0 & 0.0061* \\
+        TSD  & 629.5 & 0.0358* \\
+        DCSU & 473.0 & 0.9276  \\
+        LDI  & 745.5 & 0.0002* \\
+        BSD  & 623.0 & 0.0442* \\
+        DSC  & 609.5 & 0.0504  \\
+        \hline
+    \end{tabular}
+    \label{tab:wilcox_par}
+    \par \vspace{2mm} \footnotesize \raggedright
+    SOURCE: The Author (2022).
+    \par
+    NOTE: * Significance at 95\%.
+\end{table}
 
 \begin{figure}[!htbp]
     \footnotesize
     \captionsetup{font=footnotesize}
-    \caption{SPEEDING CLUSTERS AND ROAD NETWORK HIERARCHY}
+    \caption{BE VARIABLES IN EACH PAR GROUP}
     \centering
-    \includegraphics{fig/lisa_sp_roadctb.png}
-    \label{fig:cluster_road}
-    \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}
+    \includegraphics{fig/par_hist.png}
+    \label{fig:wilcox_sp}
+    \par SOURCE: The Author (2022).
 \end{figure}
 
-In \autoref{fig:cam_buffer} is presented the positioning of 200-meter buffer of speed cameras in Curitiba and the road network hierarchy. Most of these buffers are positioned on arterial and rapid transit roads. The density of speed cameras (DSC) coefficient did not have a statistically significant result, however, the localized effect of speed cameras in arterial and rapid transit roads could be influencing the inverted correlation between PAR and speeding. A GWR model, having a spatial nature, may not be able to observe these localized effects. It might be possible that other elements of road design and traffic control (\textit{e.g.}, traffic signals, intersections) also affects speeding in a localized level and are not observed in a territorial level.  
+\section{SPEED MANAGEMENT AND PLANNING PRACTICES} \label{sec:sp_manag}
 
-\begin{figure}[!htbp]
-    \footnotesize
-    \captionsetup{font=footnotesize}
-    \caption{ROAD NETWORK HIERARCHY AND SPEED CAMERAS}
-    \centering
-    \includegraphics{fig/cam_buffer_plot.png}
-    \label{fig:cam_buffer}
-    \par SOURCE: The Author (2022), based on \textcite{IPPUC2021, SETRAN2020}
-\end{figure}
 
 % PLANNING PRACTICES
 
