@@ -1037,9 +1037,9 @@ To extract speeding information from the NDS sample, it was necessary to compare
 \end{figure}
 
 Points outside the buffers (in the middle of street blocks, for example) were removed from the sample. Also, points without speed limit and performed speed data were removed from the sample. The extraction of free-flow and speeding events followed a method defined by \textcite{Richard2013}, presented in \autoref{fig:ff}. The occurrence of speeding was represented by the proportion of distance traveled in speeds above the speed limit, divided by the distance performed in free-flow speeds. It was necessary to remove sections of the sample where drivers had no opportunity to speed. Therefore, the occurrence of speeding is defined in the following equation: \begin{align}
-    SP = \frac{D_{Vsp}}{D_{Vf}} \mbox{ ;} 
+    SP = \frac{D_{sp}}{D_{f}} \mbox{ ;} 
     \label{eq:sp}
-\end{align} where $D_{Vsp}$ is the distance performed in speeds exceeding 5 km/h above the speed limit (analytical approach) and $D_{Vf}$ is the distance performed in free-flow speeds. 
+\end{align} where $D_{sp}$ is the distance performed in speeds exceeding 5 km/h above the speed limit (analytical approach) and $D_{f}$ is the distance performed in free-flow speeds. 
 
 In Brazil, a speeding infraction is considered when the driver exceeds the speed limit plus 10\% of the speed limit. Therefore, in a rapid transit road with an 80 km/h speed limit, a driver would be fined if its performed speed reaches above 88 km/h. Considering other urban road hierarchies and limits defined by \textcite{Brasil1997}, speeding in arterial roads (speed limit of 60 km/h) would be considered as speeds above 66 km/h; in collector roads (speed limit of 40 km/h) – speeds above 44 km/h; and local roads – speeds above 33 km/h (speed limit of 30 km/h). Therefore, based on the thresholds of 8 km/h, 6 km/h, 4 km/h, and 3 km/h, it was decided to establish a standard threshold for speeding of 5 km/h above the speed limit. Free-flow speeds included performed speeds higher than the speed limit minus 10 km/h (and lower than the speeding threshold). The free-flow threshold was based on the value established by \textcite{Richard2017} of 5 mph. Direct conversion to km/h would result in 8.05 km/h, therefore it was decided to round the threshold to 10 km/h. $SP$ values can vary between 0 and 1, where 0 represents a section without any speeding, and 1 represents a section traveled only in speeds that exceed the limits. \autoref{fig:spd_occur} contains a representative section of a trip on a road with a 30 km/h speed limit, illustrating the thresholds previously described.   
 
@@ -1346,7 +1346,7 @@ In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the
     \par SOURCE: The Author (2021)
 \end{figure}
 
-Most of the traveled distance happened between 7:00 – 8:00 and 18:00 – 19:00. Most of the trips started between 7:00 – 8:00, followed by 17:00 – 19:00 and 12:00 – 13:00. \autoref{fig:taz_travel} contains the traveled distance per TAZ in Curitiba. The TAZ with the highest traveled distance had 208.43 kilometers, and the lowest had 0.01 kilometers. Five zones had no traveled distance. Most of the trips happened in central areas of the city.
+Most of the traveled distance happened between 7:00 – 8:00 and 18:00 – 19:00. Most of the trips started between 7:00 – 8:00, followed by 17:00 – 19:00 and 12:00 – 13:00. \autoref{fig:taz_travel} contains the traveled distance per TAZ in Curitiba. The TAZ with the highest traveled distance had 205.29 kilometers, and the lowest had 0.01 kilometers. Five zones had no traveled distance. Most of the trips happened in central areas of the city.
 
 % how much traveled in each TAZ (MAP)
 
@@ -1435,20 +1435,20 @@ In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers pr
 
 %% Show remaining TAZ and remaining sample (distance, time traveled)
 
-The data arrangement process reduced the total sample of 135 TAZ into 118 TAZ. This resulted in a remaining sample of 6,160.91 kilometers of total traveled distance, which includes 3,745.24 kilometers performed in free-flow speeds and 1,674.51 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.  
+The data arrangement process reduced the total sample of 135 TAZ into 117 TAZ. This resulted in a remaining sample of 5,657.25 kilometers of total traveled distance, which includes 3,419.19 kilometers performed in free-flow speeds and 1,508.05 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{TAZ CONSIDERED IN THE SAMPLE}
-    \includegraphics{fig/map_filter.png}
+    \includegraphics{fig/map_removal.png}
     \label{fig:taz_filter}
-    \par SOURCE: The Author (2021)
+    \par SOURCE: The Author (2022)
 \end{figure}
 
 %% Summary of variables: mean, median, max, min, 1q, 3q
 
-In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 118 TAZ. The value of speeding for each TAZ varied between 0.01 and 0.65, with a mean value of 0.31.  DSC, LDI, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ, including the Local Moran results for this variable. The Low-Low clusters indicates lower values of SP in the central zones of the city and in the northeast zones. A Low-High outlier was detected between the Low-Low clusters. Regarding higher values of SP, High-High clusters can be observed at six different areas.
+In \autoref{tab:var_summary} is included the descriptive statistics of the 11 variables, including speeding, and considering the 117 TAZ. The value of speeding for each TAZ varied between 0.04 and 0.77, with a mean value of 0.46.  DSC, LDI, PAR, and TSD values resulted in zero for some TAZ, indicating a lack of speed cameras, arterial roads, and traffic signals in these zones. The map in \autoref{fig:taz_sp} shows the speeding results for each TAZ, including the Local Moran results for this variable. The Low-Low clusters indicates lower values of SP in 14 zones of the city. Two Low-High outlier were detected between the High-High clusters. Regarding higher values of SP, High-High clusters can be observed at eight different zones. One High-Low cluster was detected. It was also applied a Moran's $I$ method on the SP values, which resulted in 0.246 with a $p$-value of 0.001. This is an indication that SP is spatially autocorrelated.
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1461,17 +1461,29 @@ In \autoref{tab:var_summary} is included the descriptive statistics of the 11 va
         \hline
         \multicolumn{1}{c}{\textbf{Variable [unit]}} & \multicolumn{1}{c}{\textbf{Mean}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{Min.}} & \multicolumn{1}{c}{\textbf{1Q}} & \multicolumn{1}{c}{\textbf{Median}} & \multicolumn{1}{c}{\textbf{3Q}} & \multicolumn{1}{c}{\textbf{Max.}} \\ 
         \hline
-        AVI [$BRL$]& 2,628.16 & 1,557.56 & 807.21 & 1,435.00 & 2,087.21 & 3,572.04 & 9,293.81 \\ 
-        BSD [$no./km$] & 3.04 & 2.15 & 0.29 & 1.78 & 2.49 & 3.54 & 13.90 \\ 
-        DCSU [$no./km^2$] & 847.34 & 1,184.30 & 12.30 & 337.76 & 533.36 & 877.57 & 9,539.73 \\ 
-        DIS [$no./km$] & 4.64 & 1.11 & 0.88 & 3.89 & 4.54 & 5.18 & 7.70 \\ 
+        % AVI [$BRL$]& 2,628.16 & 1,557.56 & 807.21 & 1,435.00 & 2,087.21 & 3,572.04 & 9,293.81 \\ 
+        % BSD [$no./km$] & 3.04 & 2.15 & 0.29 & 1.78 & 2.49 & 3.54 & 13.90 \\ 
+        % DCSU [$no./km^2$] & 847.34 & 1,184.30 & 12.30 & 337.76 & 533.36 & 877.57 & 9,539.73 \\ 
+        % DIS [$no./km$] & 4.64 & 1.11 & 0.88 & 3.89 & 4.54 & 5.18 & 7.70 \\ 
+        % DSC [$no./km$] & 0.06 & 0.09 & 0.00 & 0.00 & 0.03 & 0.08 & 0.53 \\ 
+        % LDI & 0.61 & 0.22 & 0.00 & 0.52 & 0.65 & 0.74 & 0.99 \\ 
+        % PAR & 0.05 & 0.05 & 0.00 & 0.00 & 0.05 & 0.08 & 0.21 \\ 
+        % PD [$inhab./km^2$] & 5,672.35 & 3,113.04 & 114.68 & 3,286.27 & 5,489.84 & 7,244.98 & 16,142.06 \\ 
+        % SND [$km/km^2$] & 15.08 & 4.41 & 3.68 & 12.54 & 15.63 & 18.14 & 25.78 \\ 
+        % SP & 0.31 & 0.14 & 0.01 & 0.20 & 0.30 & 0.40 & 0.65 \\ 
+        % TSD [$no./km$] & 0.37 & 0.48 & 0.00 & 0.09 & 0.20 & 0.40 & 2.75 \\
+
+        AVI [$BRL$] & 2635.66 & 1562.12 & 807.21 & 1407.53 & 2102.42 & 3603.45 & 9293.81 \\ 
+        BSD [$no./km$] & 3.05 & 2.15 & 0.29 & 1.79 & 2.50 & 3.55 & 13.90 \\ 
+        DCSU [$no./km^2$] & 852.48 & 1188.07 & 12.30 & 340.66 & 536.74 & 881.25 & 9539.73 \\ 
+        DIS [$no./km$] & 4.64 & 1.11 & 0.88 & 3.89 & 4.53 & 5.19 & 7.70 \\ 
         DSC [$no./km$] & 0.06 & 0.09 & 0.00 & 0.00 & 0.03 & 0.08 & 0.53 \\ 
         LDI & 0.61 & 0.22 & 0.00 & 0.52 & 0.65 & 0.74 & 0.99 \\ 
         PAR & 0.05 & 0.05 & 0.00 & 0.00 & 0.05 & 0.08 & 0.21 \\ 
-        PD [$inhab./km^2$] & 5,672.35 & 3,113.04 & 114.68 & 3,286.27 & 5,489.84 & 7,244.98 & 16,142.06 \\ 
-        SND [$km/km^2$] & 15.08 & 4.41 & 3.68 & 12.54 & 15.63 & 18.14 & 25.78 \\ 
-        SP & 0.31 & 0.14 & 0.01 & 0.20 & 0.30 & 0.40 & 0.65 \\ 
-        TSD [$no./km$] & 0.37 & 0.48 & 0.00 & 0.09 & 0.20 & 0.40 & 2.75 \\ 
+        PD [$inhab./km^2$] & 5692.36 & 3118.80 & 114.68 & 3285.42 & 5591.78 & 7248.87 & 16142.06 \\ 
+        SND [$km/km^2$] & 15.10 & 4.43 & 3.68 & 12.60 & 15.72 & 18.15 & 25.78 \\ 
+        SP & 0.46 & 0.14 & 0.04 & 0.35 & 0.47 & 0.54 & 0.77 \\ 
+        TSD [$no./km$] & 0.38 & 0.48 & 0.00 & 0.09 & 0.20 & 0.41 & 2.75 \\ 
         \hline
     \end{tabular}
     \label{tab:var_summary}
@@ -1496,7 +1508,7 @@ In \autoref{tab:var_summary} is included the descriptive statistics of the 11 va
     \captionsetup{font=footnotesize}
     \caption{SPEEDING PER TAZ}
     \begin{subfigure}{0.5\textwidth}
-        \includegraphics{fig/map_SP.png}
+        \includegraphics{fig/taz_SP.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
         \includegraphics{fig/lisa_SP.png}
@@ -1514,14 +1526,14 @@ The final step of the data arrangement process was the check of correlation betw
     \centering\footnotesize
     \captionsetup{font=footnotesize}
     \caption{SPEARMAN CORRELOGRAM OF INDEPENDENT VARIABLES}
-    \includegraphics{fig/plot_spear.pdf}
+    \includegraphics{fig/spear.png}
     \label{fig:corr_spear}
-    \par SOURCE: The Author (2021)
+    \par SOURCE: The Author (2022)
 \end{figure}
 
 %% Show models results (quality variables) - AICc, morans I, R-squared
 
-In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: $AIC_c$, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The global linear regression presented the best $AIC_c$ and adjusted $R^2$ diagnostics, with values of -144.334 and 0.215, respectively. Regarding $R^2$, the GWR model with bisquare kernel showed the best diagnostic, with a value of 0.350. The boxcar kernel presented the lowest value of Moran's $I$ on residuals (0.130). All GWR models presented a better performance in comparison to the global linear model when considering the spatial autocorrelation of the residuals, but the global model performed better when considering adjusted $R^2$ and $AICc$ values. Given that speeding behavior is spatially autocorrelated (\autoref{fig:taz_sp}), it was decided to discard the global linear model in favor of a GWR model. Therefore, the GWR model with the boxcar kernel was selected, having the best adjusted $R^2$ and Moran's $I$ value between the GWR models. 
+In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global linear model is shown, based on 4 performance indicators: $AIC_c$, $R^2$, Adjusted $R^2$, and Moran's $I$ on residuals. The $p$-value indicates the statistical significance of Moran's $I$ results. The global linear regression presented the best $AIC_c$, with a value of -142.372. Regarding $R^2$ and adjusted $R^2$, the GWR model with bisquare kernel showed the best diagnostic, presenting values of 0.342 and 0.195, respectively. The bisquare kernel presented the lowest value of Moran's $I$ on residuals (0.106). All GWR models presented a better performance in comparison to the global linear model when considering the spatial autocorrelation of the residuals, but the global model performed better when considering $AICc$ values. Given that speeding behavior is spatially autocorrelated (\autoref{fig:taz_sp}), it was decided to discard the global linear model in favor of a GWR model. Therefore, the GWR model with the bisquare kernel was selected, having the best $R^2$, adjusted $R^2$ and Moran's $I$ value between the GWR models.
 
 \begin{table}[!htbp]
     \footnotesize
@@ -1535,12 +1547,12 @@ In \autoref{tab:mod_diag}, the model diagnostics of five GWR and one global line
         \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{Kernel}} & \multicolumn{1}{c}{\textbf{$AIC_c$}} & \multicolumn{1}{c}{\textbf{$R^2$}} &
         \multicolumn{1}{c}{\textbf{Adj. $R^2$}} & \multicolumn{1}{c}{\textbf{Moran's $I$}} & \multicolumn{1}{c}{\textbf{$p$-value}} & \multicolumn{1}{c}{\textbf{Bandwidth}} \\
         \hline
-        GWR & Gaussian    & -143.664 & 0.298 & 0.207 & 0.169 & 0.003 & 115 \\
-            & Bisquare    & -136.431 & 0.350 & 0.197 & 0.131 & 0.016 & 115 \\
-            & Tricube     & -136.696 & 0.332 & 0.195 & 0.135 & 0.009 & 115 \\
-            & Boxcar      & -138.792 & 0.314 & 0.211 & 0.130 & 0.009 &  80 \\
-            & Exponential & -142.001 & 0.340 & 0.207 & 0.158 & 0.001 & 115 \\
-        Global linear & - & -144.334 & 0.282 & 0.215 & 0.178 & 0.006 & -   \\
+        GWR & Gaussian    & -141.905 & 0.282 & 0.186 & 0.130 & 0.013 & 115 \\
+            & Bisquare    & -138.502 & 0.342 & 0.195 & 0.106 & 0.031 & 115 \\
+            & Tricube     & -136.661 & 0.324 & 0.192 & 0.112 & 0.028 & 115 \\
+            & Boxcar      & -141.828 & 0.273 & 0.190 & 0.122 & 0.016 & 105 \\
+            & Exponential & -141.122 & 0.324 & 0.190 & 0.121 & 0.018 & 115 \\
+        Global linear & - & -142.372 & 0.262 & 0.192 & 0.137 & 0.008 & -   \\
         \hline
     \end{tabular}
     \label{tab:mod_diag}
