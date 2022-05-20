@@ -1302,6 +1302,17 @@ The process of removing invalid times from the total sample and choosing the tra
     SOURCE: The Author (2022)
 \end{table}
 
+In \autoref{fig:taz_drivers} is displayed a map of tht quantity of drivers that traveled in each TAZ. Zones closer to the city center show a higher amount of passing drivers, reaching a maximum value of 25. Five zones did not have any travel data from drivers. Overall, none of the TAZ presented the total amount of drivers (32) included in the sample.
+
+\begin{figure}
+    \centering\footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{QUANTITY OF DRIVERS THAT TRAVELED PER TAZ}
+    \includegraphics{fig/taz_drivers.png}
+    \label{fig:taz_drivers}
+    \par SOURCE: The Author (2022)
+\end{figure}
+
 In \autoref{fig:dotw_dist}, the distribution of distance traveled per day of the week is presented. Tuesdays had most of the traveled distance, and Saturdays had the least traveled distance. Regarding the trips, \autoref{fig:dotw_trips} contains information on the quantity per day of the week. Wednesdays had the highest amount of trips and Sundays the lowest. Overall, most traveled distances and trips happened in higher amounts during weekdays. \autoref{fig:hotd_dist} and \autoref{fig:hotd_trips} include traveled distance and trip start distribution per hour of the day, respectively.  
 
 \begin{figure}[!htbp]
@@ -1435,7 +1446,7 @@ In \autoref{fig:sp_zones}, it is possible to observe that most of the drivers pr
 
 %% Show remaining TAZ and remaining sample (distance, time traveled)
 
-The data arrangement process reduced the total sample of 135 TAZ into 117 TAZ. This resulted in a remaining sample of 5,657.25 kilometers of total traveled distance, which includes 3,419.19 kilometers performed in free-flow speeds and 1,508.05 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample.
+The data arrangement process reduced the total sample of 135 TAZ into 117 TAZ. This resulted in a remaining sample of 5,657.25 kilometers of total traveled distance, which includes 3,419.19 kilometers performed in free-flow speeds and 1,508.05 kilometers performed in speeding. In \autoref{fig:taz_filter} a map is presented with the remaining TAZ of the sample. Two removed zones that formed a "hole" in the remaining sample mainly contain industrial zoning. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -1675,7 +1686,7 @@ In \autoref{fig:sp_mean}, the geographically weighted local mean and standard de
 
 %% Map and discuss the variables
 
-The proportion of arterial roads coefficient estimates are displayed in \autoref{fig:gwr_par}. All values resulted in negative coefficients, representing an inverted correlation to speeding, with a Low-Low cluster on the northeastern part of the city and a High-High cluster on west and south areas of the city. 
+The proportion of arterial roads coefficient estimates are displayed in \autoref{fig:gwr_par}. All values resulted in negative coefficients, representing an inverted correlation to speeding, with a Low-Low cluster on the northeastern part of the city and a High-High cluster on west and south areas of the city. The GWR models performed with other kernel configurations also presented a negative PAR coefficient estimate in all of the TAZ.
 
 %%% PAR
 
@@ -1714,7 +1725,7 @@ In \autoref{tab:coef_perc} is presented the percentage of TAZ with positive and 
         DCSU & Density of commercial and services units & 100\% &   0\% \\
         AVI  & Average income                           &  55\% &  45\% \\
         BSD  & Bus stop density                         &  38\% &  62\% \\
-        LDI  & Land use diversity                       &   0\% & 100\% \\
+        LDI  & Land use diversity index                 &   0\% & 100\% \\
         DSC  & Density of speed cameras                 & 100\% &   0\% \\
         SND  & Street network density                   &  96\% &   4\% \\
         PD   & Population density                       &   7\% &  93\% \\
@@ -1734,7 +1745,7 @@ This chapter contains the discussion based on the results presented in the last 
     \item Verify if speeding behavior in Curitiba is spatially autocorrelated. If so, explore the characteristics of speeding clusters - Section \ref{sec:sp_corr};
     \item Verify if the GWR model can properly analyze the influence of the BE in the occurrence of speeding in a spatially autocorrelated scenario - Section \ref{sec:gwr_perf};
     \item Identify evidences of the influence of the BE in the occurrence of speeding in Curitiba - Section \ref{sec:be_sp};
-    \item Identify practical solutions to mitigate speeding behavior through urban planning practices, based on the results - Section \autoref{sec:sp_manag}.
+    \item Identify practical solutions to mitigate speeding behavior through urban planning practices, based on the results - Section \ref{sec:sp_manag}.
 \end{enumerate}
 
 \section{SPATIAL AUTOCORRELATION OF SPEEDING} \label{sec:sp_corr}
@@ -1780,20 +1791,20 @@ Lastly, it was investigated if there are any differences between Low-Low and Hig
         font=footnotesize}
     \caption{WILCOXON RANK SUM TEST RESULTS FOR SP CLUSTERS}
     \centering
-    \begin{tabular}{lrr}
+    \begin{tabular}{llrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
+        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
         \hline
-        AVI  & 13.0 & 0.00217* \\
-        PD   & 40.0 & 0.29734 \\
-        SND  & 29.0 & 0.06983 \\
-        PAR  & 31.5 & 0.09803 \\
-        DIS  & 87.0 & 0.03517* \\
-        TSD  &  4.0 & 0.00008* \\
-        DCSU &  8.0 & 0.00042* \\
-        LDI  & 53.0 & 0.86755 \\
-        BSD  & 31.0 & 0.09502 \\
-        DSC  &  5.0 & 0.00046* \\
+        AVI  & Average income                           & 13.0 & 0.00217* \\
+        PD   & Population density                       & 40.0 & 0.29734  \\
+        SND  & Street network density                   & 29.0 & 0.06983  \\
+        PAR  & Proportion of arterial roads             & 31.5 & 0.09803  \\
+        DIS  & Density of intersections                 & 87.0 & 0.03517* \\
+        TSD  & Traffic signal density                   &  4.0 & 0.00008* \\
+        DCSU & Density of commercial and services units &  8.0 & 0.00042* \\
+        LDI  & Land use diversity index                 & 53.0 & 0.86755  \\
+        BSD  & Bus stop density                         & 31.0 & 0.09502  \\
+        DSC  & Density of speed cameras                 &  5.0 & 0.00046* \\
         \hline
     \end{tabular}
     \label{tab:wilcox_sp}
@@ -1826,7 +1837,9 @@ AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand,
 
 After testing five different configurations of the GWR, the model with the bisquare kernel was chosen, with an adaptive bandwidth of 115 neighbors. As shown in \autoref{tab:gwrworks}, most authors also applied the GWR model using the bisquare for the analysis of road crashes. There is a difference considering nature and pattern of the dependent variables (speeding vs. road crashes), considering that road crashes consists mostly of count data and the speeding rate in this research is represented as a continuous data. None of the models tested presented a good performance regarding the residuals, given that they are spatially autocorrelated (\autoref{tab:gwr_results}). Considering that speeding behavior in Curitiba is spatially autocorrelated, it is desirable to establish a regression model that can fully explore the relationship between variables in a spatial nonstationarity context. 
 
-However, the chosen GWR still shows a better performance in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$, but worse values of Moran's $I$ on residuals and $R^2$. The GWR model with the bisquare kernel presented the best values of $R^2$, adjusted $R^2$ and Moran's $I$ on residuals. As seen in \autoref{fig:r2_map}, the performance of the GWR regression model (based on $R^2$) can change depending on the location. Better performance can be identified in northeastern zones of the city, where $R^2$ is higher. In conclusion, the GWR model presented a better performance in comparison to the global regression, but not a desirable performance regarding its residuals.
+However, the chosen GWR still shows a better performance in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$, but worse values of Moran's $I$ on residuals and $R^2$. The GWR model with the bisquare kernel presented the best values of $R^2$, adjusted $R^2$ and Moran's $I$ on residuals. As seen in \autoref{fig:r2_map}, the performance of the GWR regression model (based on $R^2$) can change depending on the location. Better performance can be identified in northeastern zones of the city, where $R^2$ is higher. 
+
+The GWR model presented a better performance in comparison to the global regression, but not a desirable performance regarding its residuals. A statistical model may not be able to properly analyze the speeding behavior considering Curitiba's full territorial extension. The current sample of drivers and their traveled distance might not be sufficient to base a more significant statistical analysis.
 
 \section{THE BUILT ENVIRONMENT INFLUENCE ON SPEEDING} \label{sec:be_sp}
 
@@ -1864,19 +1877,19 @@ To better explore the incluence of the proportion of arterial roads on speeding 
         font=footnotesize}
     \caption{WILCOXON RANK SUM TEST RESULTS FOR PAR GROUPS}
     \centering
-    \begin{tabular}{lrr}
+    \begin{tabular}{llrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
+        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} &\multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
         \hline
-        AVI  & 520.0 & 0.5804  \\
-        PD   & 326.0 & 0.0299* \\
-        SND  & 260.0 & 0.0017* \\
-        DIS  & 287.0 & 0.0061* \\
-        TSD  & 629.5 & 0.0358* \\
-        DCSU & 473.0 & 0.9276  \\
-        LDI  & 745.5 & 0.0002* \\
-        BSD  & 623.0 & 0.0442* \\
-        DSC  & 609.5 & 0.0504  \\
+        AVI  & Average income                           & 520.0 & 0.5804  \\
+        PD   & Population density                       & 326.0 & 0.0299* \\
+        SND  & Street network density                   & 260.0 & 0.0017* \\
+        DIS  & Density of intersections                 & 287.0 & 0.0061* \\
+        TSD  & Traffic signal density                   & 629.5 & 0.0358* \\
+        DCSU & Density of commercial and services units & 473.0 & 0.9276  \\
+        LDI  & Land use diversity index                 & 745.5 & 0.0002* \\
+        BSD  & Bus stop density                         & 623.0 & 0.0442* \\
+        DSC  & Density of speed cameras                 & 609.5 & 0.0504  \\
         \hline
     \end{tabular}
     \label{tab:wilcox_par}
@@ -1892,7 +1905,7 @@ To better explore the incluence of the proportion of arterial roads on speeding 
     \caption{BE VARIABLES IN EACH PAR GROUP}
     \centering
     \includegraphics{fig/par_hist.png}
-    \label{fig:wilcox_sp}
+    \label{fig:wilcox_par}
     \par SOURCE: The Author (2022).
 \end{figure}
 
