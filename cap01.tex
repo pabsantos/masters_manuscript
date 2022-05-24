@@ -1854,21 +1854,23 @@ The GWR model presented a better performance in comparison to the global regress
 % -- [x] Talvez o efeito de radares so seja observado de forma local, e nao na escala dos modelos desse trabalho. Talvez outros fatores de controle de trafego, como semaforos e interseções, tambem apresentam um efeito mais local
 
 
-According to the summary of the linear model estimates (\autoref{tab:lm_results}), the proportion of arterial roads (PAR) is the only statistically significant coefficient at the 95\% level, with a $p$-value of 0.002. As presented in \autoref{fig:gwr_par} and \autoref{tab:coef_perc}, PAR coefficient estimates from the GWR model resulted in an inverted correlation to speeding in all the TAZ included in the research. Among previous authors that investigated the influence of the build environment on road safety, most observed a positive correlation between arterial roads and speeding \cite{Dumbaugh2011,Ewing2009, Huang2018,Obelheiro2020}. Therefore, the results found in this work show a different relationship between these variables, in comparison to previous research. In summary, the design category of the built environment is influencing the speeding behavior in Curitiba, represented by the proportion of arterial roads.
+According to the summary of the linear model estimates (\autoref{tab:lm_results}), the proportion of arterial roads (PAR) is the only statistically significant coefficient at the 95\% level, with a $p$-value of 0.002. As presented in \autoref{fig:gwr_par} and \autoref{tab:coef_perc}, PAR coefficient estimates from the GWR model resulted in an inverted correlation to speeding in all the TAZ included in the research. Among previous authors that investigated the influence of the build environment on road safety, most observed a positive correlation between arterial roads and speeding \cite{Dumbaugh2011,Ewing2009, Huang2018,Obelheiro2020}. Therefore, the results found in this work show a different relationship between these variables, in comparison to previous research. In summary, the design category of the built environment is influencing the speeding behavior in Curitiba, represented by the proportion of arterial roads. 
+
+% In \autoref{fig:cluster_road} is presented the speeding clusters and the road network hierarchy. Inside Low-Low clusters there are a greater extension of arterial roads, in comparison to High-High clusters. 
 
 % \begin{figure}[!htbp]
 %     \footnotesize
 %     \captionsetup{font=footnotesize}
 %     \caption{SPEEDING CLUSTERS AND ROAD NETWORK HIERARCHY}
 %     \centering
-%     \includegraphics{fig/lisa_sp_roadctb.png}
+%     \includegraphics{fig/road_sp_cluster_map.png}
 %     \label{fig:cluster_road}
 %     \par SOURCE: The Author (2022), based on \textcite{IPPUC2021}
 % \end{figure}
 
 Other factor that could have influenced this result is the indirect and localized effect of speed cameras installed in arterial and rapid transit roads. To \textcite{Li2013a, Oliveira2015}, there is an effect of speed reduction inside a 200-meter buffer of the speed camera. The density of speed cameras (DSC) coefficient did not have a statistically significant result, however, the localized effect of speed cameras in arterial and rapid transit roads could be influencing the inverted correlation between PAR and speeding, acting as a proxy variable. A GWR model, having a spatial nature, may not be able to observe these localized effects. It might be possible that other elements of road design and traffic control (\textit{e.g.}, traffic signals, intersections) also affects speeding in a localized level and are not observed in a territorial level.
 
-To better explore the incluence of the proportion of arterial roads on speeding behavior, it was decided to ...
+To better characterize the relationship between proportion of arterial roads and other BE variables, it was decided to compare these values between two groups of TAZ. These groups were defined by high and low values of PAR. High values are defined as values above the 3rd quartile of PAR and low values are defined as values below the 1st quartile. A Wilcoxson Rank Sum Text was applied to identify if there is any difference between the independent variables in the TAZ of high ($n = 30$) and low ($n = 32$) groups. The variables where the null hypothesis could be rejected ($p$-value < 0.05) were PD, SND, DIS, TSD, LDI and BSD, indicating a significant difference. The boxplot included in \autoref{fig:wilcox_par} illustrates the difference between these variables.
 
 \begin{table}
     \footnotesize
@@ -1879,7 +1881,7 @@ To better explore the incluence of the proportion of arterial roads on speeding 
     \centering
     \begin{tabular}{llrr}
         \hline
-        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} &\multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
+        \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{W}} & \multicolumn{1}{c}{\textbf{$p$-value}} \\
         \hline
         AVI  & Average income                           & 520.0 & 0.5804  \\
         PD   & Population density                       & 326.0 & 0.0299* \\
@@ -1898,6 +1900,8 @@ To better explore the incluence of the proportion of arterial roads on speeding 
     \par
     NOTE: * Significance at 95\%.
 \end{table}
+
+TAZ in the high group presented higher values of BSD, LDI and TSD, while TAZ in the low group presented higher values of DIS, PD and SND. Considering the inverted relationship between speeding and PAR, TAZ with higher values of TSD, LDI and BSD are indirectly related to lower values of speeding. Regarding bus top density (BSD), these results are similar to previous research. Their presence on a road can reduce the free-flow of other motorized vehicles, mitigating the occurrence of speeding \cite{Bansal2014,Koshy2005}. The land use diversity index (LDI) relationship with speeding behavior was not explored in previous research. 
 
 \begin{figure}[!htbp]
     \footnotesize
@@ -1918,7 +1922,9 @@ To better explore the incluence of the proportion of arterial roads on speeding 
 % -- Mais gente, mais infra?
 % -- Foco em infraestrutura viaria (controle e fiscalização)
 
-Between six categories of the built environment, only a variable of the design category resulted in a statistically significant coefficient after the application of the GWR model. It was observed a correlation implying that TAZ with a higher proportion of arterial roads (PAR) presents lower values of speeding rate. A secondary effect of higher values of PAR can be a higher level of road infrastructure and traffic control that characterizes these arterial roads, including traffic signals in intersections and higher presence of speed enforcement, reducing the speeding rate. Therefore, future policy regarding the reduction of speeding in Curitiba should consider these effects of traffic control management on speeding behavior of car users. 
+Between six categories of the built environment, only a variable of the design category resulted in a statistically significant coefficient after the application of the GWR model. It was observed a correlation implying that TAZ with a higher proportion of arterial roads (PAR) presents lower values of speeding rate. A secondary effect of higher values of PAR can be a higher level of road infrastructure and traffic control that characterizes these arterial roads, including traffic signals in intersections and higher presence of speed enforcement, reducing the speeding rate.
+
+The integration of road system, transport and land use is one of the principles regarding urban development policies integrated in Curitiba's Master Plan \cite{Curitiba2015}. This includes the establishment of the road system hierarchy, aligning the characteristics of mobility with land use and promoting the correct growth and densification of the urban environment. Future policy regarding the reduction of speeding in Curitiba should consider the effects of traffic control management on speeding behavior of car users, understanding the factors that lead to greater safety of arterial roads and apply them on other roads of the city.
 
 % ------------------------------------------------------------------------------
 
