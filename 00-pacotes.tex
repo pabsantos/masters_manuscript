@@ -20,6 +20,7 @@
 %\usepackage[style=long]{glossaries}
 %\usepackage{abntex2glossaries}
 
+
 \usepackage{listings}
 %% Listings and xcolor config
 
@@ -96,6 +97,14 @@
 	 backrefpages = {Cited on pages},	% originally "cited on pages"
 	 urlfrom      = {Available in},
 }
+
+\usepackage{xpatch}
+
+\xpatchbibmacro{name:andothers}{%
+  \bibstring{andothers}%
+}{%
+  \bibstring[\emph]{andothers}%
+}{}{}
 
 % Ajusta indentação de Referencias no ToC
 % ----------------------------------------------------------
