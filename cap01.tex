@@ -55,7 +55,7 @@ This document is divided into six chapters. Next to this chapter, Chapter \ref{c
 
 \chapter{LITERATURE REVIEW} \label{cap:lr}
 
-This chapter is divided into seven sections, each presenting a relevant subject to the study. Section \ref{sec:rss} has discussions involving the road safety scenario in Brazil and Curitiba, in comparison to the international scenario. Section \ref{sec:risk} presents road safety risk factors and how they can be managed. Section \ref{speeding} presents the main risk factor investigated in this document: speeding behavior. It is discussed how it is related to road safety, the factors that can influence speeding, and how its occurrence can be investigated. Section \ref{be} includes the discussion about the built environment and its variables, relating to road safety performance. Section \ref{sec:cwb_be} presents urban planning practices in Curitiba. Section \ref{nds} discusses naturalistic driving studies as a method of speeding data collection, and how it was performed in previous works. Section \ref{sec:gwr} discusses the geographically weighted regression statistical method, and how it can be used to investigate built environment variables and road safety outcomes.
+This chapter is divided into seven sections, each presenting a relevant subject to the study. Section \ref{sec:rss} has discussions involving the road safety scenario in Brazil and Curitiba, in comparison to the international scenario. Section \ref{sec:risk} presents road safety risk factors and how to manage them. Section \ref{speeding} presents the main risk factor investigated in this document: speeding behavior. It is discussed how it is related to road safety, the factors that can influence speeding, and how its occurrence can be investigated. Section \ref{be} includes the discussion about the built environment and its variables, relating to road safety performance. Section \ref{sec:cwb_be} presents urban planning practices in Curitiba. Section \ref{nds} discusses naturalistic driving studies as a method of speeding data collection, and how it was performed in previous works. Section \ref{sec:gwr} discusses the geographically weighted regression statistical method, and how it can be used to investigate built environment variables and road safety outcomes.
 
 \section{ROAD SAFETY SCENARIO} \label{sec:rss}
 
@@ -72,13 +72,13 @@ Over the last century, the road safety performance of the OECD countries showed 
     \par SOURCE: \textcite{Bhalla2016}.
 \end{figure}
 
-In the scope of economic determinism, road traffic deaths are defined as a process related to the country's development. The rising pattern is associated with the increase in motorization, and the decreasing pattern appears after a certain level of development is achieved, in other words, the countries have the means to implement effective investments in road safety. But this hypothesis has some flaws. This creates an impression that LMICs are not able to invest in road safety before becoming fully developed, which is inaccurate. Also, this idea shifts the focus on investment in direct interventions, encouraging the countries to focus on income growth as a strategy for road safety \cite{Bhalla2016}.
+In the scope of economic determinism, road traffic deaths are defined as a process related to the country's development. The rising pattern is associated with the increase in motorization, and the decreasing pattern appears after a certain level of development is achieved. In other words, the countries have the means to implement effective investments in road safety. But this hypothesis has some flaws. This creates an impression that LMICs are not able to invest in road safety before becoming fully developed, which is inaccurate. Also, this idea shifts the focus on investment in direct interventions, encouraging the countries to focus on income growth as a strategy for road safety \cite{Bhalla2016}.
 
 As mobility, in general, becomes more motorized towards car use, pedestrians start shifting into car users. This circumstance is known as risk substitution, where the increase in car users occurs at the same time as the number of pedestrians declines, lowering the exposure to more severe road traffic injuries like the collision between cars and pedestrians and lowering the number of road traffic deaths. However, this phenomenon can be imprecise when considering the motorization of LMICs, in which mass transit, motorcycles, and other non-motorized transportation means have a greater role on the vehicle fleet \cite{Bhalla2016}.   
 
 A factor that explains this pattern in a more precise way is the political shift in the road safety paradigm that happened in the OECD countries. Before the 1950s, the belief that drivers were the only ones responsible for road crashes lead the discussions regarding road safety. Therefore, most of the interventions in road safety management ignored the design and development of the built environment and the vehicles. Between the 1960s and the 1970s, OECD countries started to regulate transport to tackle the road safety problems that were rising, establishing new laws and road safety management institutions on national and local levels. \cite{Bhalla2016}. Analyzing the road safety data from Brazil, it is possible to correlate the current stage with the stage experienced by the OECD countries during the 1970s.
 
-According to \textcite{WHO2018}, it was predicted that Brazil would have a road traffic mortality rate (number of deaths per 100,000 inhabitants) of 22.5 in 2016, the highest rate among the South American countries. In 2019, road crashes were responsible for 31,945 deaths. Considering the Decade of Action for Road Safety 2011-2020 \cite{WHO2011}, Brazil reached the goal of reducing the road traffic deaths by half (comparing to the number projected for 2020, in case of a rising trend in deaths) by the end of the 2010s. \autoref{fig:br_abs} contains the time series of road traffic deaths in the last decades.  
+According to \textcite{WHO2018}, it was predicted that Brazil would have a road traffic mortality rate (number of deaths per 100,000 inhabitants) of 22.5 in 2016, the highest rate among the South American countries. In 2020, road crashes were responsible for 32,716 deaths. Considering the Decade of Action for Road Safety 2011-2020 \cite{WHO2011}, Brazil reached the goal of reducing the road traffic deaths by half (comparing to the number projected for 2020, in case of a rising trend in deaths) by the end of the 2010s. \autoref{fig:br_abs} contains the time series of road traffic deaths in the last decades.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -86,10 +86,10 @@ According to \textcite{WHO2018}, it was predicted that Brazil would have a road 
     \caption{ROAD TRAFFIC DEATHS IN BRAZIL}
     \includegraphics{fig/brazil_abs.pdf}
     \label{fig:br_abs}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2020}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022}.
 \end{figure}
 
-The year 1979 is the earliest official data entry available. Starting in the 1980s, there is an overall rising trend in the number of road traffic deaths, that reach its peak in 2012, then it starts to decline. In 2010, the year before the Decade of Action, Brazil had 42,844 deaths and reached the maximum value in 2012: 44,812 road traffic deaths. Almost at the end of the decade, the number of deaths declined, reaching 31,945. The next plot (\autoref{fig:br_mort}) includes a time series of the mortality rate in Brazil, considering the same period. In general, it follows the same pattern of absolute road traffic deaths.
+The year 1979 is the earliest official data entry available. Starting in the 1980s, there is an overall rising trend in the number of road traffic deaths, that reached its peak in 2012, then it started to decline. In 2010, the year before the Decade of Action, Brazil had 42,844 deaths and reached the maximum value in 2012: 44,812 road traffic deaths. At the end of the decade, the number of deaths declined, reaching 32,716. The next plot (\autoref{fig:br_mort}) includes a time series of the mortality rate in Brazil, considering the same period. In general, it follows the same pattern of absolute road traffic deaths.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -97,10 +97,10 @@ The year 1979 is the earliest official data entry available. Starting in the 198
     \caption{ROAD TRAFFIC MORTALITY RATE IN BRAZIL}
     \includegraphics{fig/brazil_mort.pdf}
     \label{fig:br_mort}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2020, MinistryofHealth2021}. 
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022, MinistryofHealth2021}. 
 \end{figure}
 
-The maximum registered mortality rate is 23.1 deaths per 100,000 inhabitants in 2012, the same year in which Brazil reached its maximum value for absolute road traffic deaths. Since then, the mortality rate has been declining, reaching a rate of 15.2 deaths per 100,000 inhabitants in 2019. In comparison to the OECD countries (\autoref{fig:oecd}), Brazil presented a strong decreasing pattern a few years later, after the 2010s. Another indicator that considers the exposition to traffic hazards is the fatality rate – the number of deaths per 10,000 vehicles (\autoref{fig:br_fatal}). The oldest entry of fleet size in the \textcite{DENATRAN2020} database is 1998.
+The maximum registered mortality rate was 23.1 deaths per 100,000 inhabitants in 2012, the same year in which Brazil reached its maximum value for absolute road traffic deaths. Since then, the mortality rate has been declining, reaching a rate of 15.4 deaths per 100,000 inhabitants in 2020. In comparison to the OECD countries (\autoref{fig:oecd}), Brazil presented a strong decreasing pattern a few years later, after the 2010s. Another indicator that considers the exposition to traffic hazards is the fatality rate – the number of deaths per 10,000 vehicles (\autoref{fig:br_fatal}). The oldest entry of fleet size in the \textcite{DENATRAN2020} database is 1998.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -108,12 +108,12 @@ The maximum registered mortality rate is 23.1 deaths per 100,000 inhabitants in 
     \caption{ROAD TRAFFIC FATALITY RATE IN BRAZIL}
     \includegraphics{fig/brazil_fatality.pdf}
     \label{fig:br_fatal}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2020} and \textcite{DENATRAN2020}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022} and \textcite{DENATRAN2020}.
 \end{figure}                                
 
-Between 1998 and 2019 there is a declining pattern in the fatality rate, starting with 12.7 deaths per 10,000 vehicles in 1998 and ending with 3.0 in 2019, representing a reduction of 76\%. This declining pattern can be explained by the continuous rise of the motorization rate (\autoref{fig:br_motor}). In 1998, motorization rate was 151 vehicles per 1,000 inhabitants, increasing to the rate of 499 in 2019. Motorization can be defined as one indicator of development in the country. Considering the motorization stages defined by \textcite{Jorgensen2005}, Brazil can be classified nowadays with exploding motorization. 
+Between 1998 and 2020 there is a declining pattern in the fatality rate, starting with 12.7 deaths per 10,000 vehicles in 1998 and ending with 3.0 in 2020, representing a reduction of 76\%. This declining pattern can be explained by the continuous rise of the motorization rate (\autoref{fig:br_motor}). In 1998, motorization rate was 151 vehicles per 1,000 inhabitants, increasing to the rate of 509 in 2020. Motorization can be defined as one indicator of development in the country. Considering the motorization stages defined by \textcite{Jorgensen2005}, Brazil can be classified nowadays with exploding motorization. 
 
-The first stage of motorization – developing motorization – occurs when a country has a motorization rate between 50 and 100 vehicles per 1,000 inhabitants. This first stage happened in Brazil before 1998. The explosion of the motorization is the second stage, and it happens with a motorization rate of between 300 and 400. The third and the last stage is saturation and occurs when the motorization rate reaches more than 400 and its tendency stops rising \cite{Jorgensen2005}. Although Brazil has a present motorization rate above 400, it is plausible to state that the country still hasn't reached the stage of saturation, considering that the rates are still through a rising pattern. 
+The first stage of motorization – developing motorization – occurs when a country has a motorization rate between 50 and 100 vehicles per 1,000 inhabitants. This first stage happened in Brazil before 1998. The explosion of the motorization is the second stage, and it happens with a motorization rate of between 300 and 400. The third and the last stage is saturation and occurs when the motorization rate reaches more than 400 and its tendency stops rising \cite{Jorgensen2005}. Although Brazil has a motorization rate above 400 since 2013, it is plausible to state that the country still hasn't reached the stage of saturation, considering that the rates are still through a rising pattern. 
 
 %% Create a plot with different types of vehicles.
 
@@ -123,10 +123,10 @@ The first stage of motorization – developing motorization – occurs when a co
     \caption{MOTORIZATION RATE IN BRAZIL}
     \includegraphics{fig/brazil_motor.pdf}
     \label{fig:br_motor}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2021} and \textcite{DENATRAN2020}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022} and \textcite{DENATRAN2020}.
 \end{figure} 
 
-The evolution of Brazil's fleet size between 1998 and 2019 is presented in \autoref{fig:br_fleet}. Between 2007 and 2018, the quantity of vehicles in the country doubled. Car is the type of vehicle with the most quantity in all years presented in the time series. Motorcycle comes in second, followed by the quantity of trucks. In 2019, 66\% of the vehicle fleet was composed of cars. Motorcycles represented 27\% of the fleet, followed by trucks (3\%), other (3\%) and buses (1\%). 
+The evolution of Brazil's fleet size between 1998 and 2020 is presented in \autoref{fig:br_fleet}. Between 2007 and 2018, the quantity of vehicles in the country doubled. Car is the type of vehicle with the most quantity in all years presented in the time series. Motorcycle comes in second, followed by the quantity of trucks. In 2020, 66\% of the vehicle fleet was composed of cars. Motorcycles represented 27\% of the fleet, followed by trucks (3\%), other (3\%) and buses (1\%). 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
@@ -158,32 +158,32 @@ The variation in the number of road traffic deaths and road traffic mortality is
     \caption{ROAD TRAFFIC DEATHS IN CURITIBA}
     \includegraphics{fig/cwb_abs.pdf}
     \label{fig:cwb_abs}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2020}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022}.
 \end{figure}  
 
-The tendency of road traffic deaths presented a rising pattern between 1979 and 1994, starting with 312 deaths and reaching a maximum of 663 deaths. Overall, the pattern of the time series started declining after 1995, ending with a minimum value of 246 in 2019. Following the Brazilian trend, Curitiba's motorization rate kept rising in the last decades. The increase in motorized transit can lead to more exposition to traffic crashes and injuries, in case road safety interventions are not implemented correctly. The plot in \autoref{fig:cap_motor} compares the motorization rate between all Brazilian states' capital cities.    
+The tendency of road traffic deaths presented a rising pattern between 1979 and 1994, starting with 312 deaths and reaching a maximum of 663 deaths. Overall, the pattern of the time series started declining after 1995, ending with a minimum value of 243 in 2020. Following the Brazilian trend, Curitiba's motorization rate kept rising in the last decades. The increase in motorized transit can lead to more exposition to traffic crashes and injuries, in case road safety interventions are not implemented correctly. The plot in \autoref{fig:cap_motor} compares the motorization rate between all Brazilian states' capital cities.    
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{MOTORIZATION RATES IN BRAZILIAN STATES CAPITAL CITIES, IN 2019}
+    \caption{MOTORIZATION RATES IN BRAZILIAN STATES CAPITAL CITIES, IN 2020}
     \includegraphics{fig/cap_motor.pdf}
     \label{fig:cap_motor}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2021} and \textcite{DENATRAN2020}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022} and \textcite{DENATRAN2020}.
 \end{figure}   
 
-Curitiba was, in 2019, the second most motorized capital in Brazil, with a motorization rate of 825 vehicles per 1,000 inhabitants, higher than the Brazilian average of 499 vehicles per 1,000 inhabitants, only behind Belo Horizonte, which presented a motorization rate of 907 vehicles per 1,000 inhabitants. When comparing the road traffic mortality rate (\autoref{fig:cap_mort}), Curitiba stays in the 13th place between the capitals, with 12.7 deaths per 100,000 inhabitants, below the Brazilian average of 15.2 in 2019. The lowest value of road traffic mortality rate belongs to Rio de Janeiro, presenting a rate of 5.7 deaths per 100,000 inhabitants, and the highest belongs to Palmas, with an alarming rate of 36.4. In 2015, Curitiba had a mortality rate of 13.94 deaths per 100,000 inhabitants, a substantially high value when comparing to more developed countries, like Sweden (2.8), the UK (3.1), and Germany (4.1). Curitiba's rate for 2015 has a similar value to other Latin American countries: Mexico (13.1), Uruguay (13.4), Peru (13.5), and Argentina (14.00) \cite{WHO2018}. 
+Curitiba was, in 2020, the second most motorized capital in Brazil, with a motorization rate of 833 vehicles per 1,000 inhabitants, higher than the Brazilian average of 509 vehicles per 1,000 inhabitants, only behind Belo Horizonte, which presented a motorization rate of 902 vehicles per 1,000 inhabitants. When comparing the road traffic mortality rate (\autoref{fig:cap_mort}), Curitiba is in the 12th place between the capitals, with 12.5 deaths per 100,000 inhabitants, below the Brazilian average of 15.4 in 2020. The lowest value of road traffic mortality rate belongs to Belém, presenting a rate of 6.0 deaths per 100,000 inhabitants, and the highest belongs to Palmas, with an alarming rate of 34.3. In 2016, Curitiba had a mortality rate of 14.09 deaths per 100,000 inhabitants, a substantially high value when comparing to more developed countries, like Sweden (2.8), the UK (3.1), and Germany (4.1). Curitiba's rate for 2015 has a similar value to other Latin American countries: Mexico (13.1), Uruguay (13.4), Peru (13.5), and Argentina (14.00) \cite{WHO2018}. 
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{MORTALITY RATES IN BRAZILIAN STATES CAPITAL CITIES, IN 2019}
+    \caption{MORTALITY RATES IN BRAZILIAN STATES CAPITAL CITIES, IN 2020}
     \includegraphics{fig/cap_mort.pdf}
     \label{fig:cap_mort}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2020,MinistryofHealth2021}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022,MinistryofHealth2021}.
 \end{figure}  
 
-The evolution of vehicle fleet size in Curitiba is shown in \autoref{fig:cwb_fleet}. Following the Brazilian trend (\autoref{fig:br_fleet}), Curitiba's vehicle fleet is mostly composed of cars (82\%). Motorcycles represent 11\% of the fleet, followed by trucks (3\%), other (3\%) and buses (1\%). The car percentage in Curitiba's fleet is higher than the Brazilian average (66\%) for the same year, and the motorcycle percentage is lower (11\% vs 27\%).
+The evolution of vehicle fleet size in Curitiba is shown in \autoref{fig:cwb_fleet}. Following the Brazilian trend (\autoref{fig:br_fleet}), Curitiba's vehicle fleet in 2020 is mostly composed of cars (82\%). Motorcycles represent 11\% of the fleet, followed by trucks (3\%), other (3\%) and buses (1\%). The car percentage in Curitiba's fleet is higher than the Brazilian average (66\%) for the same year, and the motorcycle percentage is lower (11\% vs 27\%).
 
 \begin{figure}
     \centering\footnotesize
@@ -194,23 +194,23 @@ The evolution of vehicle fleet size in Curitiba is shown in \autoref{fig:cwb_fle
     \par SOURCE: The Author (2022), based on \textcite{DENATRAN2020}
 \end{figure}
 
-Considering the fatality rate as a road safety performance indicator, Curitiba has the 6th best performance (\autoref{fig:cap_fatal}), with a fatality rate of 1.5 deaths per 10,000 vehicles. São Paulo is the capital with the lowest fatality rate (0.9) and Recife has the highest one (5.9). Observing the fatality rate in Brazil in the same period (3.0), Curitiba is below the country average, with exactly 50\% fewer deaths per 10,000 vehicles. Road traffic crashes and their related injuries have become a serious health problem across Brazilian cities. As motorization increases, the number of conflicts and possible crashes increases as well.
+Considering the fatality rate as a road safety performance indicator, Curitiba has the 5th best performance (\autoref{fig:cap_fatal}), with a fatality rate of 1.5 deaths per 10,000 vehicles. São Paulo is the capital with the lowest fatality rate (0.9) and Maceió has the highest one (5.9). Observing the fatality rate in Brazil in the same period (3.0), Curitiba is below the country average, with exactly 50\% fewer deaths per 10,000 vehicles. Road traffic crashes and their related injuries have become a serious health problem across Brazilian cities. As motorization increases, the number of conflicts and possible crashes increases as well.
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{FATALITY RATES IN BRAZILIAN STATES CAPITAL CITIES, IN 2019}
+    \caption{FATALITY RATES IN BRAZILIAN STATES CAPITAL CITIES, IN 2020}
     \includegraphics{fig/cap_fatal.pdf}
     \label{fig:cap_fatal}
-    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2020} and \textcite{DENATRAN2020}.
+    \par SOURCE: The Author (2022), based on \textcite{MinistryofHealth2022} and \textcite{DENATRAN2020}.
 \end{figure} 
 
-The road traffic deaths data made available by the \textcite{MinistryofHealth2020} do not only count the occurrences from road crashes that happened in Curitiba, but also consider the deaths that occurred in the city's hospitals and ambulances. Therefore, this data also can include deaths from crashes that happened outside Curitiba, but the rescue of the victim was carried out inside the city health system. To overcome this inaccuracy in the data, the municipal government of Curitiba has been compiling the data of road traffic deaths that happened only inside the city's territory since 2018, with the earliest entry in 2011 and the latest in 2020, as shown in \autoref{fig:pvt_deaths}.  
+The road traffic deaths data made available by the \textcite{MinistryofHealth2022} do not only count the occurrences from road crashes in Curitiba, but also consider the deaths that occurred in the city's hospitals and ambulances. Therefore, this data also can include deaths from crashes that happened outside Curitiba, but the rescue of the victim was carried out inside the city health system. To overcome this inaccuracy in the data, the municipal government of Curitiba has been compiling the data of road traffic deaths that happened only inside the city's territory, with the earliest entry in 2011 and the latest in 2020, as shown in \autoref{fig:pvt_deaths}.  
 
 \begin{figure}[!htbp]
     \centering\footnotesize
     \captionsetup{font=footnotesize}
-    \caption{DEATHS FROM ROAD CRASHES THAT HAPPENED IN CURITIBA}
+    \caption{DEATHS FROM ROAD CRASHES IN CURITIBA}
     \includegraphics{fig/pvt_plot.pdf}
     \label{fig:pvt_deaths}
     \par SOURCE: The Author (2022), based on \textcite{Curitiba2021}.
