@@ -1201,6 +1201,8 @@ The distance to transit is represented by the bus stop density (BSD) per road le
 %     \par SOURCE: The Author (2021), based on \textcite{IPPUC2018b,IPPUC2020a, IBGE2010}
 % \end{figure}
 
+It is important to observe that two built environment variables that were defined does not necessarily represent the actual characteristics of Curitiba: land use diversity index (LDI) and proportion of arterial roads (PAR). These variables were constructed based on the current laws defined by the city administration, and not based on the actual use of the territory. 
+
 \section{GEOGRAPHICALLY WEIGHTED REGRESSION MODELLING} \label{gwm}
 
 % 1. Filters: free flow_l > 0, prop > 0.1
@@ -1826,7 +1828,7 @@ Lastly, it was investigated if there are any differences between Low-Low and Hig
     NOTE: * Significance at 95\%.
 \end{table}
 
-AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand, DIS values are higher in High-High clusters. Higher values of average income (AVI) were previously associated with lower quantity of traffic crashes \cite{Obelheiro2019, Marshall2017}. It can be observed that TAZ with higher AVI are associated with lower values of speeding as well. \textcite{Ouyang2014,Welle2016} observed a relation between higher values of DCSU and reduced occurrence of road crashes. In this case, TAZ inside the Low-Low clusters show a similar behavior towards speeding. Zones with higher values of DSC are in Low-Low clusters, representing an inverted relation to speeding. This association was also observed by \textcite{Li2013a, Oliveira2015}. TAZ in Low-Low clusters presented higher values of traffic signal density (TSD). Previous research showed that the effects of traffic signals on speeding can be mixed, and it depends on cycle length, progression speed, and the distance between signalized intersections \cite{Elvik2009, Furth2018}. Higher values of density of intersections (DIS) are usually associated with less speeding \cite{Dumbaugh2009, Huang2018, Obelheiro2020}. However, higher values of DIS are present in TAZ of High-High clusters.
+AVI, DCSU, DSC and TSD values are higher in Low-Low clusters. On the other hand, DIS values are higher in High-High clusters. Higher values of average income (AVI) were previously associated with lower quantity of traffic crashes \cite{Obelheiro2019, Marshall2017}. It can be observed that TAZ with higher AVI are associated with lower values of speeding as well. There are higher values of speeding in lower income areas, showing that poorer areas don't have proper attention regarding road safety. This is another reflection of Brazilian inequalities regarding income. \textcite{Ouyang2014,Welle2016} observed a relation between higher values of DCSU and reduced occurrence of road crashes. In this case, TAZ inside the Low-Low clusters show a similar behavior towards speeding. Zones with higher values of DSC are in Low-Low clusters, representing an inverted relation to speeding. This association was also observed by \textcite{Li2013a, Oliveira2015}. TAZ in Low-Low clusters presented higher values of traffic signal density (TSD). Previous research showed that the effects of traffic signals on speeding can be mixed, and it depends on cycle length, progression speed, and the distance between signalized intersections \cite{Elvik2009, Furth2018}. Higher values of density of intersections (DIS) are usually associated with less speeding \cite{Dumbaugh2009, Huang2018, Obelheiro2020}. However, higher values of DIS are present in TAZ of High-High clusters.
 
 \begin{figure}[!htbp]
     \footnotesize
@@ -1851,7 +1853,7 @@ After testing five different configurations of the GWR, the model with the bisqu
 
 The chosen GWR still showed a better performance in comparison to the global regression. Overall, the global regression presented better values of $AIC_c$, but worse values of Moran's $I$ on residuals and $R^2$. The GWR model with the bisquare kernel presented the best values of $R^2$, adjusted $R^2$ and Moran's $I$ on residuals. As seen in \autoref{fig:r2_map}, the performance of the GWR regression model (based on $R^2$) can change depending on the location. Better performance can be identified in northeastern zones of the city, where $R^2$ is higher. 
 
-The GWR model presented a better performance in comparison to the global regression, but not a desirable performance regarding its residuals. A statistical model may not be able to properly analyze the speeding behavior, considering Curitiba's full territorial extension. The current sample of drivers and their traveled distance might not be sufficient to support a more significant statistical analysis.
+The GWR model presented a better performance in comparison to the global regression, but not a desirable performance regarding its residuals. A statistical model may not be able to properly analyze the speeding behavior, considering Curitiba's full territorial extension. The current sample of drivers and their traveled distance might not be sufficient to support a more significant statistical analysis. In conclusion, the use of the GWR model (or other model that considers the spatial heterogeneity) is recommended for future analysis regarding the correlation between road safety and urban planning, considering the spatial autocorrelation in speeding behavior and road crashes. 
 
 \section{THE BUILT ENVIRONMENT INFLUENCE ON SPEEDING} \label{sec:be_sp}
 
@@ -1925,6 +1927,18 @@ The boxplot included in \autoref{fig:wilcox_par} illustrates the difference betw
     \par SOURCE: The Author (2022).
 \end{figure}
 
+Even through the results of density of speed cameras (DSC) didn't present a statistical significance difference in the Wilcoxon Rank Sum Test results, it might present a practical significance, considering its effects on speeding behavior. Therefore, it was decided to investigate the effect size between high and low groups using the Cohen's $d$ method to verify the existance of a practical significance. This method compares the means and the standard deviations of two independent groups \cite{peetersPracticalSignificanceMoving2016}. Cohen's $d$  resulted in 0.64, which represents a medium effect size of DSC in high group compared to the low group. The boxplot included in \autoref{fig:dsc_hist} illustrates greater values of DSC in high PAR group, representing higher presence of speed enforcement on TAZ with higher levels of PAR.
+
+\begin{figure}
+    \footnotesize
+    \captionsetup{font=footnotesize}
+    \caption{DSC IN EACH PAR GROUP}
+    \centering
+    \includegraphics{fig/dsc_hist.png}
+    \label{fig:dsc_hist}
+    \par SOURCE: The Author (2022).
+\end{figure}
+
 \section{SPEED MANAGEMENT AND PLANNING PRACTICES} \label{sec:sp_manag}
 
 
@@ -1984,4 +1998,4 @@ In addition to the built environment, other attributes might influence resultant
 
 Through the methods described in this work, it was possible to investigate the influence of the built environment on speeding behavior. The results indicated an influence of the design category, through an inverted correlation between proportion of arterial roads and speeding. This does not mean that future policies should increase the number of arterial and fast transit roads, but understand the factors that lead to a greater level of safety performance on these roads, regarding speeding behavior, and apply them to other roads and regions in the city. Zones with higher levels of proportion of arterial roads (PAR) also higher values of bus stop density (BSD), land use diversity index (LDI), and traffic signal density (TSD); and lower values of density of intersections (DIS), population density (PD) and street network density (SND).
 
-Future studies should consider the effects of traffic flow on speeding behavior in more detailed manner, regarding the spatial analysis of the built environment. Future statistical models should be tested considering different time frames and/or smaller regions inside Curitiba, aiming to improve performance. Future research can reduce the scale of analysis to achieve more meaningful results based on the current sample size. Other units of analysis and zonal systems can be tested, such as census tracts, road sections, intersections and speeding episodes, in order to analyze and address a possible occurrence of the modified areal unit problem. Also, it would be important to increase the sample size and variety of the naturalistic data in Brazil, collecting data from other cities with different characteristics regarding population size and level of development. Data of different cities would help to better understand the effect of the built environment on speeding behavior, allowing the observation of results that does not only manifest characteristics of Curitiba.
+Future studies should consider the effects of traffic flow on speeding behavior in more detailed manner, regarding the spatial analysis of the built environment. New BE variables could be defined using satellite imagery to consider the actual land use on the city, instead of the land use defined by law. Future statistical models should be tested considering different time frames and/or smaller regions inside Curitiba, aiming to improve performance. Future research can reduce the scale of analysis to achieve more meaningful results based on the current sample size. Other units of analysis and zonal systems can be tested, such as census tracts, road sections, intersections and speeding episodes, in order to analyze and address a possible occurrence of the modified areal unit problem. Also, it would be important to increase the sample size and variety of the naturalistic data in Brazil, collecting data from other cities with different characteristics regarding population size and level of development. Data of different cities would help to better understand the effect of the built environment on speeding behavior, allowing the observation of results that does not only manifest characteristics of Curitiba.
