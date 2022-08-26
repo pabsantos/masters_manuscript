@@ -47,7 +47,7 @@
 % ----------------------------------------------------------
 
  \ifthenelse{\equal{\terAgradecimentos}{Sim}}
- {\begin{agradecimentos}
+ {\begin{agradecimentos}[ACKNOWLEDGEMENTS]
     \AgradecimentosTexto
   \end{agradecimentos}
   }{}
@@ -66,15 +66,15 @@
 % RESUMOS
 % ----------------------------------------------------------
 %% resumo em inglês
-\begin{resumo}[ABSTRACT]
- \begin{otherlanguage*}{english}
-   \AbstractTexto
-   
-   %\vspace{\onelineskip}
-   \noindent 
-   \textbf{Keywords}: \KeywordsTexto
- \end{otherlanguage*}
-\end{resumo}
+% \begin{resumo}[ABSTRACT]
+%  \begin{otherlanguage*}{english}
+%    \AbstractTexto
+%    
+%    %\vspace{\onelineskip}
+%    \noindent 
+%    \textbf{Keywords}: \KeywordsTexto
+%  \end{otherlanguage*}
+% \end{resumo}
 
 % resumo em português
 %\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
@@ -86,6 +86,18 @@
       \noindent 
       \textbf{Palavras-chaves}: \PalavraschaveTexto
   \end{resumo}
+
+\begin{resumo}[ABSTRACT]
+ \begin{otherlanguage*}{english}
+   \AbstractTexto
+   
+   %\vspace{\onelineskip}
+   \noindent 
+   \textbf{Keywords}: \KeywordsTexto
+ \end{otherlanguage*}
+\end{resumo}
+
+
 
 % resumo em francês 
 \ifthenelse{\equal{\Resume}{}}
